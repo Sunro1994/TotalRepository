@@ -1,0 +1,35 @@
+var person={
+    name:'Lee'
+
+};
+
+//마침표 표기법에 의한 프로퍼티 접근
+console.log(person.name); //Lee
+
+//대괄호 표기법에 의한 프로퍼티 접근
+//따옴표로 감싸지 않은 이름을 프로퍼티 키로 사용하면 JS엔진은 식별자로 해석한다.
+//객체에 존재하지 않는 프로퍼티에 접근하면 undefined반환
+//이때 ReferenceError가 발생하지 않는데 주의하자.
+console.log(person['name']);
+console.log(perosn.age);
+
+
+
+var person2 = {
+    name:'Lee',
+    1:10
+};
+
+person.'last-name'; //SyntaxError : Unexpected string
+person["last-name"];    //브라우저 : NaN, Node.js : ReferenceError : name is not defined
+//브라우저에서 NaN인 이유  person.last는 없기 때문에 undefined이고
+// name은 window의 전역 변수 이며 값은 ''이다.. 따라서 undefined - ''이므로NaN
+// Node.js에서는 name이라는 식별자(변수,함수 등의 이름) 선언이 없으므로 참조에러가 발생한다.
+person[last-name] // ReferenceError : last is not defined
+person['last-name'] //Lee
+
+//프로퍼티 키가 숫자로 이뤄진 문자열인 경우 따옴표 생략 가능
+person.1; //SyntaxError : Unexpected number
+person.'1'; //SyntaxError : Unexpected string
+person[1]; //10 1-> '1'로 자동변환
+person['1'] // 10
