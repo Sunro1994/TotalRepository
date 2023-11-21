@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT/과학 홈: 네이버 뉴스</title>
+    <style>
+        html{
+            font-size: 10px;
+            margin: 0;
+            padding: 0;
+        }
+        .sb{
+            display: flex;
+            justify-content: space-between;
+        }
+        .flex{
+            display: flex;
+        }
+        .TopLogo{
+            display: inline-block;
+            background-image: url('https://ssl.pstatic.net/static.news/image/news/2022/11/08/sp_retina.png');
+            background-repeat: no-repeat;
+            background-size: 164px 115px;
+            width: 30px;
+            height: 30px;
+            background-position: -137px -86px;
+            vertical-align: top;
+        }
+        
+        .NewsName{
+            background-image:url('https://ssl.pstatic.net/static.news/image/news/2022/11/08/sp_retina.png') ;
+            display: inline-block;
+            vertical-align: top;
+            width: 48px;
+            height: 24px;
+            background-position: 0px -207px;
+            background-size: 195px 115px;
+        }
+        .blind{
+            visibility: hidden;
+            border: 1px solid black;
+        }
+        .frame{
+            width: 1080px;
+            margin: 0 auto;
+        }
+        #TopBox{
+            width: 100%;
+            min-width: 1080px;
+            height: 52px;
+            background-color: #3f63bf;
+        }
+
+        #BlueTop{
+            background-color: #3f63bf;
+            height: 52px;
+            margin: auto;
+            align-items: center;
+        }
+        ul{
+            margin: 0;
+            display: flex;
+            list-style: none;
+            text-align: center;
+            align-items: center;
+            padding-left: 10px;
+        }
+        
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        .TopMenuName{
+            color: white;
+            font-size: 2em;
+            opacity: 0.5;
+        }
+        .bar{
+            font-size: 2em;
+            opacity: 0.3;
+            padding: 0 5px;
+        }
+        .bell{
+            background-image: url('https://ssl.pstatic.net/static/common/gnb/one/sp_gnb_v15.png?v=2006');
+            width: 17px;
+            height: 19px;
+            background-position: -220px -140px;
+            display: block;
+        }
+        #Menubar{
+            width: 100%;
+            line-height: 46px;
+            position: relative;
+            margin: 0 auto;
+            padding: 0;
+            font-size: 1.2em;
+            height: 46px;
+            box-sizing: border-box;
+            border-bottom: 1px solid black;
+        }
+        #MenuBox{
+            height: 46px;
+            margin: auto;
+        }
+        #MenuBox ul{
+            margin: 0;
+        }
+        #MenuBox li{
+            font-size: 1.2em;
+            font-weight: bold;
+            padding-right: 24px;
+        }
+        #void{
+            height: 80px;
+            visibility: hidden;
+        }
+        #overMain{
+            height: 26px;
+            border-bottom: 1px solid #828691;
+            box-sizing: border-box;
+            border-bottom: 1px solid black;
+        }
+        #overLeft{
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        #overRight{
+            font-size: 1.3em;
+            
+        }
+        #overRight span{
+            padding: 0 15px;
+        }
+       ol{
+        list-style: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.09) ;
+       }
+       #MainBox{
+        width: 1080px;
+        height: 3860px;
+        margin: auto;
+       }
+       #Mainleft{
+        width: 105px;
+        
+       }
+       h2{
+        width: 90px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        text-align: left;
+        justify-content: center;
+        margin: 0;
+        
+        font-size: 1.6em;
+        font-weight: 700;
+        border-bottom: 1px solid black;
+       }
+       #Main{
+        width: 650px;
+        height: 3860px;
+        padding: 22px 26px 0 26px;
+        box-sizing: border-box;
+        border-left: 1px solid #828691;
+        border-right: 1px solid #828691;
+       }
+       #content{
+        width: 560px;
+       }
+       ol{
+        padding-left: 0;
+        list-style: none;
+        margin-bottom: 30px;
+        
+       }
+       ol>li{
+        padding: 0 1px;
+        padding-left: 0;
+        font-size: 13px;
+        font-weight: bold;
+        padding: 3px 0 10px 0;
+    }
+    .ad{
+        width: 70px;
+    }
+    #title{
+        font-size: 15px;
+        padding: 13px 0;
+        font-weight: bold;
+        border-bottom: 1px solid grey;
+    }
+    #content{
+        width: 100%;
+        margin: 0;
+        margin: 10px 0;
+    }
+    .itemRight{
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    
+    .line1{
+        font-size: 1.4em;
+        font-weight: bold;
+        padding-bottom: 7px;
+    }
+    .line2{
+        font-size: 1.2em;
+        color: #828691;
+        padding-bottom: 10px;
+    }
+    .line3{
+        font-size: 1.2em;
+    }
+    #Mainright{
+        width: 300px;
+        padding: 22px 0 0 26px;
+        box-sizing: border-box;
+    }
+    #infoTopLeft{
+        margin-bottom: 15px;
+    }
+    #infoTopLeft p:first-child{
+        font-size: 1.4em;
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+    }
+    #infoTopLeft p:nth-child(2){
+        font-size: 1.3em;
+        color: #828691;
+        padding: 0;
+        margin: 0;
+    }
+    #infoTopRight{
+        font-size: 1.3em;
+    }
+    #infoLeft p{
+        padding: 0;
+        margin: 0;
+        font-size: 1.3em;
+        padding-bottom: 5px;
+    }
+    #infoLeft{
+        margin: 6px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+    }
+    .company{
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+    }
+    .rotate{
+        background-image: url('https://ssl.pstatic.net/static.news/image/news/2023/06/20/sp_news.png');
+        width: 5px;
+        height: 5px;
+        background-size: 681px 665px;
+        background-repeat: no-repeat;
+        background-position: -648px -238px;
+    }
+    .dog{
+        width: 28;
+        height: 28px;
+        border-radius: 50%;
+    }
+    #TopRight li{
+        padding-right: 10px;
+    }
+    .Bell{
+        background-image: url('https://ssl.pstatic.net/static/common/gnb/one/sp_gnb_v15.png?v=2006');
+        background-repeat: no-repeat;
+        display: block;
+        width: 17px;
+        height: 19px;
+        background-position: -220px -120px;
+    }
+    .letter{
+        background-image: url('https://ssl.pstatic.net/static/common/gnb/one/sp_gnb_v15.png?v=2006');
+        background-repeat: no-repeat;
+        display: block;
+        width: 22px;
+        height: 16px;
+        background-position: -238px -121px;
+    }
+    .dial{
+        background-image: url('https://ssl.pstatic.net/static/common/gnb/one/sp_gnb_v15.png?v=2006');
+        background-repeat: no-repeat;
+        display: block;
+        width: 18px;
+        height: 18px;
+        background-position: -261px -120px;
+    }
+    .dotbogi{
+        background-image: url('https://ssl.pstatic.net/static.news/image/news/2022/11/08/sp_retina.png');
+        background-repeat: no-repeat;
+        display: block;
+        width: 21px;
+        height: 21px;
+        background-position: -140px -24px;
+        background-size: 164px 115px;
+        
+    }
+    .info{
+        background-image: url('https://ssl.pstatic.net/static.news/image/news/2023/06/20/sp_news.png');
+        width: 15px;
+        height: 15px;
+        background-size: 681    px 665px;
+        background-repeat: no-repeat;
+        background-position: -57px -650px;
+        display: inline-block;
+        font-size: 0;
+        background-color: transparent;
+        border-radius: 50%;
+
+        
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="TopBox">
+        <div id="top">
+            <div id="BlueTop" class="sb frame">
+                <div id="TopLeft" class="flex">
+                    <h1>
+                        <a href="" class="TopLogo">
+                            <span class="blind">Naver</span>
+                        </a>
+                        
+                        <a href="" class="NewsName">
+                            
+                            <span class="blind">뉴스</span>
+                        </a>
+                    </h1>
+                    <ul>
+                        <li ><span class="bar">|</span class=""><a href="" class="TopMenuName">연예</a></li>
+                        <li ><span class="bar">|</span class=""><a href="" class="TopMenuName">스포츠</a></li>
+                        <li ><span class="bar">|</span class=""><a href="" class="TopMenuName">날씨</a></li>
+                        <li ><span class="bar">|</span class=""><a href="" class="TopMenuName">프리미엄</a></li>
+                    </ul>
+                </div>
+                <div id="TopRight" class="flex">
+                   <ul>
+                    <li><a href="" class="TopProfile"><img class="dog"src="https://phinf.pstatic.net/contact/20221208_179/1670460781241bhfBv_JPEG/0910_005518_M6CAN06K3O_2.jpg?type=s80" alt=""></a></li>
+                    <li><a href="">이선로🔻</a></li>
+                    <li><a href="" class="Bell"><span class="blind">벨모양</span></a></li>
+                    <li><a href="" class="letter"><span class="blind">편지지</span></a></li>
+                    <li><a href="" class="dial"><span class="blind">다이얼</span></a></li>
+                    <li><a href="" class="dotbogi"><span class="blind">돋보기</span></a></li>
+                   </ul>
+                </div>
+            </div>
+            <div id="Menubar" >
+                <div id="MenuBox" class="frame">
+                    
+                    <ul>
+                        <li>언론사별</li>
+                        <li>정치</li>
+                        <li>경제</li>
+                        <li>사회</li>
+                        <li>생활/문화</li>
+                        <li>IT/과학</li>
+                        <li>세계</li>
+                        <li>랭킹</li>
+                        <li>신문보기</li>
+                        <li>오피니언</li>
+                        <li>TV</li>
+                        <li>팩트체크</li>
+                        <li>알고리즘 안내</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</header>
+<div id="void">내용없음</div>
+<main>
+    <div id="overMain" class="sb frame">
+            <div id="overLeft" >
+                07.26(수)
+            </div>
+            <div id="overRight">
+                <ul>
+                    <li>전체 언론사<span>|</span></li>
+                    <li>뉴스스탠드<span>|</span></li>
+                    <li>라이브러리</li>  
+                </ul>
+            </div>
+    </div>
+        <div id="MainBox" class="flex">
+            <div id="Mainleft">
+                <h2>
+                    <a href="">IT/과학</a>
+                </h2>
+                <ol>
+                    <li><a href="">모바일</a></a></li>
+                    <li><a href="">인터넷/SNS</a></li>
+                    <li><a href="">통신/뉴미디어</a></li>
+                    <li><a href="">IT 일반a></a></li>
+                    <li><a href="">보안/해킹</a></li>
+                    <li><a href="">컴퓨터</a></li>
+                    <li><a href="">게임/리뷰</a></li>
+                    <li><a href="">과학 일반</a></li>
+                </ol>
+                <div id="sideImg">
+                    <img class="ad" src="https://imgnews.pstatic.net/image/upload/item/2023/07/10/184436024_banner_left.png" alt="">
+                    <img class="ad" src="https://imgnews.pstatic.net/image/upload/item/2021/05/28/233112515_DA%2540PC%25B4%25BA%25BD%25BA%25C1%25C2%25C3%25F8.png" alt="">
+                </div>
+            </div>
+            <div id="Main">
+                <div id="title">헤드라인 뉴스<span><img class="info" src="https://ssl.pstatic.net/static.news/image/news/2023/06/20/sp_news.png" alt=""></span></div>
+                <div id="content">
+                    <div class="item flex" >
+                        <div class="itemLeft"><img src="https://imgnews.pstatic.net/image/origin/629/2023/07/26/229668.jpg?type=nf132_90" alt=""></div>
+                        <div class="itemRight">
+                            <div class="line1"><a href="">	한국서 펼쳐지는 '갤럭시 언팩'…BTS 슈가 등판 소식에 분위기 '후끈'</a></div>
+                            <div class="line2"><a href="">삼성전자, 최초 '한국 언팩'…'폴더블폰 종주국' 이미지 각인 갤럭시Z폴드5·플립5 등 신제품</a></div>
+                            <div class="line3"><a href="">더팩트 <span>|</span> 🟰</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content">
+                    <div class="item flex" >
+                        <div class="itemLeft"><img src="https://imgnews.pstatic.net/image/origin/031/2023/07/26/761642.jpg?type=nf132_90" alt=""></div>
+                        <div class="itemRight">
+                            <div class="line1"><a href="">K-콘텐츠 육성 위해 모태펀드·세액공제 개선 필수" [IT돋보기]</a></div>
+                            <div class="line2"><a href="">국내 콘텐츠 산업 활성화를 위해 현행 모태펀드 제도 개선과 세액공제 범위 확대 등 대</a></div>
+                            <div class="line3"><a href="">아이뉴스24 <span>|</span> 🟰</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content">
+                    <div class="item flex" >
+                        <div class="itemLeft"><img src="https://imgnews.pstatic.net/image/origin/003/2023/07/26/11997609.jpg?type=nf132_90" alt=""></div>
+                        <div class="itemRight">
+                            <div class="line1"><a href="">해킹당한 내 코인 지킨다…거래소 위탁토큰 '주석공시' 의무화</a></div>
+                            <div class="line2"><a href="">가상자산 거래소 해킹으로 탈취된 코인에 대한 보호 조치가 강화될 전망이다. 금융당국이 </a></div>
+                            <div class="line3"><a href="">뉴시스 <span>|</span> 🟰</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content">
+                    <div class="item flex" >
+                        <div class="itemLeft"><img src="https://imgnews.pstatic.net/image/origin/030/2023/07/26/3120824.jpg?type=nf132_90" alt=""></div>
+                        <div class="itemRight">
+                            <div class="line1"><a href="">	
+                                카카오 노조 집회...“고용안정 책임져라” 항의</a></div>
+                            <div class="line2"><a href="">민주노총 전국화학섬유식품산업노동조합 카카오 지회는 26일 집회를 열어 고용 불안 </a></div>
+                            <div class="line3"><a href="">전자신문  <span>|</span> 🟰</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content">
+                    <div class="item flex" >
+                        <div class="itemLeft"><img src="https://imgnews.pstatic.net/image/origin/030/2023/07/26/3120791.jpg?type=nf132_90" alt=""></div>
+                        <div class="itemRight">
+                            <div class="line1"><a href="">	
+                                SKT, AI 기반 '티플로'로 차량통행시간 13% 단축</a></div>
+                            <div class="line2"><a href="">SK텔레콤은 교통 신호 최적화 솔루션 '티플로'를 경기 화성시 상습 정체 교차로 15곳에 3</a></div>
+                            <div class="line3"><a href="">전자신문 <span>|</span> 🟰</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Mainright">
+                <div id="infoTop" class="flex">
+                    <div id="infoTopLeft">
+                        <p><a href="">언론사별 가장 많이 본 뉴스<span><img class="info" src="https://ssl.pstatic.net/static.news/image/news/2023/06/20/sp_news.png" alt=""></span></a></p>
+                        <p><a href="">오후3시`4시까지 집계한 결과입니다.</a></p>
+                    </div>
+                    <div id="infoTopRight">더보기<a href="" class="rotate">
+                        <span class=" blind">이</span></a>
+                    </div>
+                </div>
+                <div id="infoBottom">
+
+                    <div class="infoItem flex">
+                        <div id="infoLeft">
+                            <p><a href="">'153만원→113만원' 한순간에 40만원 '뚝'…에코프로</a></p>
+                            <p><a href=""><span><img class="company"src="https://mimgnews.pstatic.net/image/upload/office_logo/421/2021/02/09/logo_421_56_20210209173713.jpg" alt=""></span>뉴스1</a></p>
+                        </div>
+                        <div id="infoRight"><img src="https://mimgnews.pstatic.net/image/origin/421/2023/07/26/6953081.jpg?type=nf88_60" alt=""></div>
+                    </div>
+                    <div class="infoItem flex">
+                        <div id="infoLeft">
+                            <p><a href="">'수해 골프' 홍준표 시장 당원권 정지 10개월(종합)</a></p>
+                            <p><a href=""><span ><img class="company"src="https://mimgnews.pstatic.net/image/upload/office_logo/055/2020/10/07/logo_055_56_20201007141807.jpg" alt=""></span>JTBC</a></p>
+                        </div>
+                        <div id="infoRight"><img src="https://mimgnews.pstatic.net/image/origin/437/2023/07/26/352877.jpg?type=nf88_60" alt=""></div>
+                    </div>
+                    <div class="infoItem flex">
+                        <div id="infoLeft">
+                            <p><a href="">소방관·간호사 부부, 휴가지서 물에 빠진 남성 구했다</a></p>
+                            <p><a href=""><span ><img class="company" src="https://mimgnews.pstatic.net/image/upload/office_logo/056/2021/10/28/logo_056_56_20211028103053.png" alt=""></span>국민일보</a></p>
+                        </div>
+                        <div id="infoRight"><img src="https://mimgnews.pstatic.net/image/origin/005/2023/07/26/1626417.jpg?type=nf88_60" alt=""></div>
+                    </div>
+                    <div class="infoItem flex">
+                        <div id="infoLeft">
+                            <p><a href="">신림 흉기난동범은 33세 조선…신상공개(종합)</a></p>
+                            <p><a href=""><span ><img class="company" src="https://mimgnews.pstatic.net/image/upload/office_logo/214/2020/06/30/logo_214_56_20200630111130.png" alt=""></span>연합뉴스</a></p>
+                        </div>
+                        <div id="infoRight"><img src="https://mimgnews.pstatic.net/image/origin/001/2023/07/26/14093529.jpg?type=nf88_60" alt=""></div>
+                    </div>
+                    <div class="infoItem flex">
+                        <div id="infoLeft">
+                            <p><a href="">'신림동 흉기난동' 신상공개…33세 조선</a></p>
+                            <p><a href=""><span ><img class="company" src="https://mimgnews.pstatic.net/image/upload/office_logo/020/2020/09/17/logo_020_56_20200917112548.jpg" alt=""></span>연합뉴스TV</a></p>
+                        </div>
+                        <div id="infoRight"><img src="https://mimgnews.pstatic.net/image/origin/422/2023/07/26/611057.jpg?type=nf88_60" alt=""></div>
+                        
+                    </div>
+                    <div><img src="Snipaste_2023-07-26_20-18-57.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
