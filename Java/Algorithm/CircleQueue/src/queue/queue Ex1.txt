@@ -1,0 +1,35 @@
+public class Queue {
+	private int[] queueArray = new int[10];   배열 크기 지정
+	private int qSize = 10;
+	private int front = 0;
+	private int rear = 0;
+
+	public void inqueue(int num) {
+		if (isFull()) {
+			System.out.println("full");
+			return;
+		}
+		queueArray[rear] = num;
+		rear++;
+		rear %= qSize;
+	}
+
+	public boolean isFull() {
+		return (rear + 1) % qSize == front;
+	}
+
+	public boolean isEmpty() {
+		return rear == front;
+	}
+
+	public int dequeue() {
+		if (isEmpty()) {
+			System.out.println("empty");
+			throw new ArrayIndexOutOfBoundsException();
+		}
+
+		int tmp = queueArray[front];
+		front++;
+		front %= qSize;
+		return tmp;
+	}
