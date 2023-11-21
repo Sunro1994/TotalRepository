@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        url = 'https://apis.data.go.kr/B551011/KorService1/detailCommon1?serviceKey=v8z2gnVvlHgshJSRT3ay2Cjw5w83oxS2ZzFlrQfkUSuboKQPdA6hUY5hfeOMzwPzYAk3H301kUPWwtWUKclmhA%3D%3D&MobileOS=ETC&MobileApp=AppTest&_type=json&contentId=1806376&contentTypeId=15&defaultYN=Y&firstImageYN=Y&areacodeYN=Y&catcodeYN=Y&addrinfoYN=Y&mapinfoYN=Y&overviewYN=Y&numOfRows=10&pageNo=1'
+        
+        const resp = 
+        fetch(url)
+        .then(resp => {
+            resp.json()
+            console.log(resp)
+        })
+        .then(data => {
+            console.log(data)
+        });
+   
+    </script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+html{
+    
+    overflow-x: hidden;
+ 
+}
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+a{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255,255,255,0.9);
+    
+    
+}
+.Lodge-header-left-LogoImg{
+    border: 1px solid rebeccapurple;
+    width: 90px;
+    height: 70px;
+    background-image: url('./TravelMakerlogo\ -\ 복사본.png');
+    background-size: 90px 70px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+
+}
+.Lodge-header-right-user{
+    width: 500px;
+    height: 70px;
+    padding-right: 40px;
+    padding: 0 20px;
+    display: flex;
+}
+.Lodge-header-right-user a{
+    display: inline-block;
+    width: 140px;
+    height: 70px;
+    text-align: center;
+}
+
+.join, .myInfo, .locker{
+    width: 80px;
+    height: 70px;
+    line-height: 70px;
+}
+.login{
+    width: 120px;
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+    padding-left: 10px;
+}
+.profileImg{
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    color: transparent;
+    background-image: url('https://phinf.pstatic.net/contact/20231025_285/1698220415149X7mz5_PNG/image.png?type=f130_130');
+    background-size: 50px;
+}
+aside{
+    position: fixed;
+    width: 300px;
+    top: 70px;
+    left: 0;
+    border: 1px solid red;
+    height: 1000px;
+    background-color: black;
+    color: rgba(255,255,255,0.7);
+}
+main{
+    width: 100%;
+    border: 3px solid green;
+    background-color: black;
+    
+    
+}
+.Lodge-Filter-Result{
+    width: 100%;
+    height: 300px;
+    border: 2px solid purple;
+    box-sizing: border-box;
+}
+
+.LocationFilterName,.TypeFilterName, .ApplyFilterName{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1.7em;
+    margin: 20px ;    
+}
+.LocationFilter, .TypeFilter .ApplyFilter {
+    box-sizing: border-box;
+    width: 100%;
+    border: 3px solid rgba(255,255,255,0.2);
+    padding: 2px 30px;
+    display: flex;
+    margin-top: 30px;
+}
+.ApplyBox{
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px dashed green;        
+    display: flex;
+    height: 50px;
+
+}
+
+.ResetBtn, .ApplyBtn{
+    all: unset;
+    width: 150px;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+}
+.ResetBtn{
+   background-color: white;
+   color: black;
+}
+.ApplyBtn{
+    background-color: red;
+    color: white;
+}
+
+.Lodge-Result-List{
+    width: 1350px;
+    border: 2px solid blue;
+    display: flex;
+    flex-flow: wrap;
+    margin: auto;
+    margin-left: 450px;
+}
+.Lodge-List-InfoBox{
+    width: 560px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 20px auto;
+    background-image: url('https://image.goodchoice.kr/resize_1000X500x0/affiliate/2022/03/02/621f44656de6a.jpg');
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 70%,rgba(0,0,0,0.75) 90%),url('https://image.goodchoice.kr/resize_1000X500x0/affiliate/2022/03/02/621f44656de6a.jpg');
+    background-repeat: no-repeat;
+    background-size: 560px 300px;
+    position: relative;
+}
+.Lodge-Info-Name{
+    position: absolute;
+    bottom: 60px;
+    left: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+
+}
+.Lodge-Info-Rate{
+    position: absolute;
+    bottom: 45px;
+    left: 20px;
+    color: white;
+    
+
+}
+.Lodge-Info-Address{
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    color: white;
+    
+
+}
+.Lodge-Info-Count{
+    position: absolute;
+    bottom: 45px;
+    right: 20px;
+    color: white;
+   font-weight: 600;
+
+}
+.Lodge-Info-Price{
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+    color: white;
+    font-weight: bold;
+
+
+}
+
+input[class="form-check-input"]{ 
+  border: 1px solid white;
+  width: 20px;
+  height: 20px;
+  margin: 0 20px;
+    
+}
+.TypeForm{
+    margin-left: 30px;
+}
+input[class="form-check-input"]:checked { 
+  
+  border: 1px solid white;
+  width: 20px;
+  height: 20px;
+}
+
+
+
+  

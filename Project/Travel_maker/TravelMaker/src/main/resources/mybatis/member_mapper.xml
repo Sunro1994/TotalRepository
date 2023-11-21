@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC
+            "-//mybatis.org//DTO Mapper 3.0//EN"
+            "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.TravelMaker.repository.member.MemberDAO">
+
+    <insert id="insertMember" parameterType="member">
+        insert into travelmaker_member
+            (travelMaker_Member_UserId, travelMaker_Member_UserPw, travelMaker_Member_Salt, travelMaker_Member_UserName,
+        travelMaker_Member_UserNickName, travelMaker_Member_Email, travelMaker_Member_Birth, travelMaker_Member_Gender,
+        <if test="travelMaker_Member_EncodingProfileImg != null">travelMaker_Member_EncodingProfileImg,</if>
+        travelMaker_Member_Pnum)
+        values
+            (#{travelMaker_Member_UserId}, #{travelMaker_Member_UserPw}, #{travelMaker_Member_Salt}, #{travelMaker_Member_UserName},
+        #{travelMaker_Member_UserNickName}, #{travelMaker_Member_Email}, #{travelMaker_Member_Birth}, #{travelMaker_Member_Gender},
+        <if test="travelMaker_Member_EncodingProfileImg != null">#{travelMaker_Member_EncodingProfileImg},</if>
+        #{travelMaker_Member_Pnum})
+    </insert>
+
+    <select id="selectOneById" resultType="member" parameterType="string">
+        select * from travelmaker_member
+            where travelmaker_member_userid = #{travelMaker_Member_UserId}
+    </select>
+
+    <select id="selectOneByNickname" resultType="member" parameterType="string">
+        SELECT * FROM TRAVELMAKER_MEMBER
+            WHERE TRAVELMAKER_MEMBER_USERNICKNAME = #{nickname}
+    </select>
+
+</mapper>

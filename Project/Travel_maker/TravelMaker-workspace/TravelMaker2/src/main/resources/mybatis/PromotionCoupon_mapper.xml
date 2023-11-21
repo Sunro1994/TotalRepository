@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.TravelMaker.repository.promotion.PromotionDAO">
+	<update id="insertuserCoupon" parameterType="map" >
+		update TRAVELMAKER_MEMBER 
+			set TRAVELMAKER_MEMBER_COUPON = #{1}
+			where TRAVELMAKER_MEMBER_IDX = #{2}
+	</update>
+
+</mapper>

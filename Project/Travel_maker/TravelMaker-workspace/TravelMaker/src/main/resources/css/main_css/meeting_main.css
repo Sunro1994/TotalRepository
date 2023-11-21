@@ -1,0 +1,311 @@
+@charset "UTF-8";
+.frame {
+	width: 1100px;
+	margin: auto;
+	margin-top: 150px;
+}
+.flex {
+	display: flex;
+}
+#meeting_main > #meeting_main_top {
+	border-bottom: 1px solid #003458;
+	justify-content: space-between;
+	color: #003458;
+}
+#meeting_main > #meeting_main_top > h1 {
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+#meeting_main > #meeting_main_top > p {
+	font-weight: bold;
+}
+#meeting_board > .meeting_board_content {
+	width: 1100px;
+	border: 1px solid black;
+	border-radius: 20px;
+	background: rgb(255, 255, 255);
+    border: 1px solid #003458;
+    box-shadow: #003458 3px 3px 5px;
+	margin: 20px 0;
+	color: #003458;
+}
+.board_img {
+	padding: 20px;
+}
+.board_img > img {
+	width: 36px;
+	height: 36px;
+	border-radius: 18px;
+}
+.board_content {
+	width: 300px;
+}
+.meeting_writer {
+	padding-top: 15px;
+	font-weight: bold;
+	width: 150px;
+	height: 40px;
+}
+.meeting_date {
+	color: #ccc;
+	font-size: 14px;
+}
+.meeting_content {
+	width: 800px;
+	padding: 20px 0;
+}
+.meeting_location {
+	font-size: 12px;
+	color: gray;
+	font-weight: bold;
+}
+#meeting_write_btn {
+	text-align: right;
+	margin: 30px 0;
+}
+#meeting_write_btn > button {
+	width: 100px;
+	height: 30px;
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: all 0.5s ease-out;	
+}
+#meeting_write_btn > button:hover {
+	background-color: white;
+	color: black;
+	font-weight: bold;
+	transition: all 0.5s ease-out;	
+}
+#meeting_btn {
+	margin-top: 10px;
+	margin-left: 630px;
+}
+#meeting_btn > div {
+	padding: 0 5px;
+	font-size: 14px;
+	color: #ccc;
+	width: 55px;
+	height: 25px;
+}
+.deleteBtn {
+	cursor: pointer;
+}
+.modifyBtn {
+	cursor: pointer;
+}
+.board_idx {
+	opacity: 1;
+	font-size: 1px;
+}
+.modal_btn {
+	width: 700px;
+	margin: 50px auto;
+	text-align: center;
+}
+.modal_btn > button {
+	padding: 10px;
+	width: 100px;
+	height: 50px;
+	border: none;
+	background: #1AAB8A;
+  	color: white;
+  	font-size: 14px;
+  	font-weight: bold;
+  	transition: all 0.5s ease-out;	
+}
+.modal_btn > button:hover {
+	background: white;
+	border-top: 1px solid #1AAB8A;
+	border-bottom: 1px solid #1AAB8A;
+  	color: #1AAB8A;
+  	transition: all 0.5s ease-out;	
+}
+#meeting_write > dialog {
+	width: 700px;
+	margin: auto;
+	overflow-x: hidden; 
+}
+#meeting_write > dialog > h2 {
+	text-align: center;
+	padding: 10px;
+	color: #ccc;
+}
+.write_content > form {
+	width: 700px;
+	margin: auto;
+}
+.write_content > form > p {
+	width: 500px;
+	margin: auto;
+}
+.write_content > form > p:nth-child(2) {
+	width: 500px;
+	margin: 20px auto;
+}
+.write_content > form > p:nth-child(2) > input {
+	width: 500px;
+	border: none;
+	border-bottom: 2px solid #ccc;
+	padding: 10px;
+}
+.write_content > form > p:nth-child(3) {
+	text-align: center;
+}
+.write_content > form > p:nth-child(3) > input {
+	width: 100px;
+	height: 50px;
+	padding: 10px;
+	background: #FF9696;
+	color: white;
+	transition: all 0.5s ease-out;
+	border: none;
+	border-top: 1px solid #FF9696;
+	border-bottom: 1px solid #FF9696;
+}
+.write_content > form > p:nth-child(3) > input:hover {
+	background: white;
+	color: #FF9696;
+	transition: all 0.5s ease-out;
+}
+.write_content > form > p > textarea {
+	width: 500px;
+	height: 300px;
+	margin: 20px auto;
+	border: none;
+	border-top: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+	padding: 10px;
+	margin-top: 50px; 
+}
+#meeting_modify > dialog {
+	width: 700px;
+	margin: auto;
+	overflow-x: hidden; 
+}
+#meeting_modify > dialog > h2 {
+	text-align: center;
+	padding: 10px;
+	color: #ccc;
+}
+.modify_content > form {
+	width: 700px;
+	margin: auto;
+}
+.modify_content > form > p {
+	width: 500px;
+	margin: auto;
+}
+.modify_content > form > p:nth-child(2) {
+	width: 500px;
+	margin: 20px auto;
+}
+.modify_content > form > p:nth-child(2) > input {
+	width: 500px;
+	border: none;
+	border-bottom: 2px solid #ccc;
+	padding: 10px;
+}
+.modify_content > form > p:nth-child(3) {
+	text-align: center;
+}
+.modify_content > form > p:nth-child(3) > input {
+	width: 100px;
+	height: 50px;
+	padding: 10px;
+	background: #FF9696;
+	color: white;
+	transition: all 0.5s ease-out;
+	border: none;
+	border-top: 1px solid #FF9696;
+	border-bottom: 1px solid #FF9696;
+}
+.modify_content > form > p:nth-child(3) > input:hover {
+	background: white;
+	color: #FF9696;
+	transition: all 0.5s ease-out;
+}
+.modify_content > form > p > textarea {
+	width: 500px;
+	height: 300px;
+	margin: 20px auto;
+	border: none;
+	border-top: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+	padding: 10px;
+	margin-top: 50px; 
+}
+
+/* 채팅css */
+
+#meeting_chat {
+	width: 400px;
+}
+#meeting_chat > dialog {
+	border : 5px solid #003458;
+	margin-bottom: 103px;
+}
+#meeting_chat > dialog > .chat_top > h2 {
+	padding: 10px;
+}
+#meeting_chat > dialog > .chat_top > h2:nth-child(2):hover {
+	color: blue;
+	cursor: pointer;
+}
+#meeting_chat > dialog > .chat_top {
+	justify-content: space-between;
+	border-bottom : 4px solid #003458;
+}
+.chat_input {
+	position: fixed;
+	bottom: -4px;
+	left:752px;
+}
+.chat_input > textarea {
+	border: none;
+	border : 5px solid #003458;
+	width: 400px;
+	height: 100px;
+}
+.chat_input > button {
+	opacity: 0;
+}
+#messageArea > div > p:first-child {
+	font-weight: bold;
+}
+.chat_room {
+	margin-top: 15px;
+}
+.chat_room > button {
+	border: none;
+	background: white;
+}
+.chat_room > button:hover {
+	color: #003458;
+	font-weight: bold;
+}
+#status {
+	text-align: center;
+}
+
+/* 그룹채팅 css*/
+
+#meeting_groupChat {
+	width: 500px;
+	height: 800px;
+}
+#groupMessageArea {
+	height: fit-content;
+}
+#groupMessageArea > div > p:first-child {
+	font-weight: bold;
+}
+#meeting_groupChat > input {
+	width: 500px;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	padding: 10px;
+	margin: auto;
+}

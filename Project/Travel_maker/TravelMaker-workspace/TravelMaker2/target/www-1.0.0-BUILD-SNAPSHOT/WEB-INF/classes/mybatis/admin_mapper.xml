@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC
+		"-//mybatis.org//DTD Mapper 3.0//EN" 
+		"https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+		
+<mapper namespace="com.TravelMaker.repository.admin.AdminDAO">
+	<insert id="insertLodge" parameterType="lodge">
+		insert into lodge 
+			(
+			 lodge_name,
+			 lodge_type,
+		     lodge_address,
+			 lodge_tel, lodge_content,
+			 lodge_Sellerinfo_businessnum,
+		 	 lodge_realimgname
+			)
+				values
+					(
+			 #{lodge_name},
+			 #{lodge_type},
+			 #{lodge_address},
+			 #{lodge_tel},
+			 #{lodge_content},
+			 #{lodge_Sellerinfo_businessnum},
+			 #{lodge_realimgname}
+		 )
+	</insert>
+
+	<insert id="insertRecommend" parameterType="recommend">
+		INSERT INTO RECOMMEND_TRAVEL
+		(
+			recommend_travel_address,
+			recommend_travel_eventstartdate,
+			recommend_travel_eventenddate,
+				<if test="recommend_travel_img != null">
+					recommend_travel_img,
+				</if>
+			recommend_travel_mapx,
+			recommend_travel_mapy,
+			recommend_travel_maplevel,
+			recommend_travel_tel,
+			recommend_travel_title,
+			recommend_travel_contentid,
+			recommend_travel_content
+		)
+		VALUES
+		(
+			#{recommend_travel_address},
+			#{recommend_travel_eventstartdate},
+			#{recommend_travel_eventenddate},
+			<if test="recommend_travel_img != null">
+				#{recommend_travel_img},
+			</if>
+			#{recommend_travel_mapx},
+			#{recommend_travel_mapy},
+			#{recommend_travel_maplevel},
+			#{recommend_travel_tel},
+			#{recommend_travel_title},
+			#{recommend_travel_contentid},
+			#{recommend_travel_content}
+		)
+	</insert>
+
+	<delete id="deleteOneByIdx" parameterType="int">
+		DELETE FROM RECOMMEND_TRAVEL
+			WHERE RECOMMEND_TRAVEL_IDX
+				= #{recommend_travel_idx}
+	</delete>
+
+	<update id="updateRecommend" parameterType="recommend">
+		UPDATE RECOMMEND_TRAVEL
+			SET
+				recommend_travel_title = #{recommend_travel_title} ,
+				recommend_travel_address = #{recommend_travel_address} ,
+				recommend_travel_content = #{recommend_travel_content},
+				<if test="recommend_travel_img != null">
+					recommend_travel_img
+					=
+					#{recommend_travel_img},
+				</if>
+				recommend_travel_eventstartdate = #{recommend_travel_eventstartdate},
+				recommend_travel_eventenddate = #{recommend_travel_eventenddate},
+				recommend_travel_mapx = #{recommend_travel_mapx},
+				recommend_travel_mapy = #{recommend_travel_mapy},
+				recommend_travel_maplevel = #{recommend_travel_maplevel},
+				recommend_travel_tel = #{recommend_travel_tel},
+				recommend_travel_contentid = #{recommend_travel_contentid}
+			WHERE
+				recommend_travel_idx = #{recommend_travel_idx}
+	</update>
+	
+	<update id="roomUpdate" parameterType="room">
+		UPDATE LODGE_ROOM_TYPE
+		SET LODGE_ROOM_TYPE_ISDELETED = 'Y'
+		WHERE lodge_Idx = #{lodge_Idx}
+	</update>
+	
+	
+	<update id="lodgeUpdate" parameterType="lodge">
+		UPDATE LODGE
+		SET LODGE_ISDELETED = 'Y'
+		WHERE LODGE_IDX = #{LODGE_IDX}
+	</update>
+
+	<update id="modifyLodge" parameterType="lodge">
+		UPDATE lodge
+			SET
+				lodge_name = #{lodge_name},
+				lodge_rate= #{lodge_rate},
+				<if test="lodge_realimgname != null">
+					lodge_realimgname= #{lodge_realimgname},
+				</if>
+				lodge_address= #{lodge_address},
+				lodge_type= #{lodge_type},
+				lodge_tel= #{lodge_tel},
+				lodge_content= #{lodge_content},
+				lodge_Sellerinfo_businessnum= #{lodge_Sellerinfo_businessnum}
+			WHERE lodge_idx = #{lodge_idx}
+	</update>
+	
+	<update id="roomcorrection" parameterType="room">
+		UPDATE LODGE_ROOM_TYPE
+		SET
+			lodge_Room_Type_Idx = #{lodge_Room_Type_Idx},
+			lodge_Room_Type_Name= #{lodge_Room_Type_Name},
+			lodge_Room_Type_MinCapacity= #{lodge_Room_Type_MinCapacity},
+			lodge_Room_Type_MaxCapacity= #{lodge_Room_Type_MaxCapacity},
+			lodge_Room_Type_Count= #{lodge_Room_Type_Count},
+			lodge_Room_Type_price= #{lodge_Room_Type_price}
+		WHERE lodge_Room_Type_Idx = #{lodge_Room_Type_Idx}
+	</update>
+	
+	<insert id="insertLodgeRoom" parameterType="room">
+		insert into LODGE_ROOM_TYPE
+			(
+			 lodge_Room_Type_Name,
+			 lodge_Room_Type_Count,
+		     lodge_Room_Type_price,
+		     <if test="lodge_Room_Type_Img != null">
+		 	 	lodge_Room_Type_Img,
+		 	 </if>
+		 	 lodge_Room_Type_MinCapacity,
+		 	 lodge_Room_Type_MaxCapacity,
+		 	 lodge_Idx
+		 	 
+			)
+			values
+			(
+			 #{lodge_Room_Type_Name},
+			 #{lodge_Room_Type_Count},
+			 #{lodge_Room_Type_price},
+			 <if test="lodge_Room_Type_Img != null">
+			 	#{lodge_Room_Type_Img},
+			 </if>
+			 #{lodge_Room_Type_MinCapacity},
+			 #{lodge_Room_Type_MaxCapacity},
+			 #{lodge_Idx}
+		 )
+	</insert>
+</mapper>

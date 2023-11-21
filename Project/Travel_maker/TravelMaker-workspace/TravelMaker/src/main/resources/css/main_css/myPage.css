@@ -1,0 +1,234 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    padding: 0;
+}
+.profile_top {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.profile_top > div > h2 {
+	margin-top: 27px;
+}
+.profile_top > img {
+    position: relative;
+    top: 15px;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+#profile_modify{
+	z-index : -1;
+}
+#profile_modify_btn {
+    position: relative;
+    left: 85px;
+    top: 95px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: #003458;
+    cursor: pointer;
+}
+#profile_modify_btn > img {
+    width: 20px;
+    height: 20px;
+}
+.flex_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#profile_img{
+    width: 250px;
+    height: 250px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    background-size: cover;
+}
+#profile_img_modify {
+    width: 250px;
+    height: 250px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    background-size: cover;
+}
+.info {
+    width: 600px;
+    border: 1px solid #003458;
+    border-radius: 10px;
+}
+.info_top {
+    width: 100%;
+    border: 1px solid #003458;
+    border-radius: 10px 10px 0 0;
+    background-color: #003458;
+    color: white;
+}
+.info_item {
+    width: 100%;
+}
+.info_item > div {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.border_bottom {
+    border-bottom: 1px solid #003458;
+}
+
+
+.info_item > div > img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+
+}
+.info_top > h2 {
+    margin-left: 15px;
+}
+
+#membership_quit {
+    all: unset;
+    margin-top: 50px;
+    position: relative;
+    right: 250px;
+    color: #003458;
+    cursor: pointer;
+}
+dialog {
+    width: 400px;
+    height: 800px;
+}
+.join_item {
+    border: 2px solid #003458;
+    border-radius: 7px;
+    width: 340px;
+    height: 40px;
+}
+.join_items {
+    margin-top: 10px;
+}
+.join_input {
+    border: 2px solid #003458;
+    border-radius: 7px;
+    width: 280px;
+    height: 44px;
+}
+#input_file {
+    display: none;
+}
+.file_label {
+    display: inline-block;
+    border: 2px solid #003458;
+    border-radius: 7px;
+    width: 54px;
+    height: 44px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 40px;
+}
+.unset {
+    all: unset;
+    width: 280px;
+    height: 44px;
+}
+.btn {
+    all: unset;
+    border: 2px solid #003458;
+    border-radius: 7px;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+#profile_modify_complete {
+    all: unset;
+    border: 2px solid #003458;
+    border-radius: 7px;
+    width: 168px;
+    height: 40px;
+    text-align: center;
+    position: relative;
+    top: 17px;
+    right: 87px;    
+    cursor: pointer;
+}
+#profile_modify_close {
+    all: unset;
+    border: 2px solid #003458;
+    border-radius: 7px;
+    width: 165px;
+    height: 40px;
+    text-align: center;
+    position: relative;
+    top: -27px;
+    left: 206px;
+    cursor: pointer;
+}
+#profile_modify_check_btn {
+    all: unset;
+    position: relative;
+    top: 17px;
+    left: 28px;    
+    border: 2px solid #003458;
+    border-radius: 7px;
+    width: 168px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+#membership_quit_complete {
+    all: unset;
+    border: 2px solid #003458;
+    border-radius: 7px;
+    width: 168px;
+    height: 40px;
+    text-align: center;
+    position: relative;
+    top: 17px;
+    cursor: pointer;
+}
+#membership_quit_close {
+    all: unset;
+    border: 2px solid #003458;
+    border-radius: 7px;
+    width: 165px;
+    height: 40px;
+    text-align: center;
+    position: relative;
+    top: -25px;
+    left: 206px;
+    cursor: pointer;
+}
+#ApiUser_quit_check_close{
+	all: unset;
+	margin-top: 20px;
+	border: 2px solid #003458;
+    border-radius: 7px;
+    width: 337px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.ApiUser_quit_check_top {
+	margin-bottom: 30px;
+
+/* 관리자 페이지 css */
+.adminPage {
+	width: 1200px;
+	height: 600px;
+	margin: 100px auto;
+	border: 1px solid black;
+}
+.adminLodge {
+	display: flex;
+	justify-content: space-between;
+}

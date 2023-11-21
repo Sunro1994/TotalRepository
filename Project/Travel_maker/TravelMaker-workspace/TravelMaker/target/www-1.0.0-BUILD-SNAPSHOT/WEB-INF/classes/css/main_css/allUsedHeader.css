@@ -1,0 +1,337 @@
+@charset "UTF-8";
+body > #header-top {
+			top: 0;
+            border: 1px solid #dedede;
+	        height: 85px;
+	        width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0 3px 16px -5px #99C;
+            position: fixed;
+    		background-color: white;
+    		z-index: 9999;
+           
+        }
+        body > #header-top > #left{
+            width: 140px;
+            height: 120px;
+			margin-left: -15px;
+            
+        }
+        body > #header-top > #left > a > img {
+            width:100%;
+            height:90%;
+        }
+        body > #header-top > #center {
+            display: flex;
+            width: 80%;
+        }
+        body > #header-top > #center {
+            width: 800px;
+        }
+        body > #header-top > #center > ul {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            padding-left: 0;
+            justify-content: space-evenly;
+        }
+        body > #header-top > #center > ul > li {
+            list-style: none;
+            font-size: x-large;
+            font-weight: bold;
+        }
+        body > #header-top > #right { 
+            width: 420px;
+            height: 82px;
+            margin-right: -100px;
+            display: inline-block;
+            align-items:center;
+            line-height : 82px;   
+            display:flex;         
+        }
+        body > #header-top > #right > a > img {
+            width:50px;
+            height:50px;
+            margin-left: 250px;
+            
+        }
+        .headerLoginBtn{
+        	width: 300px;
+        }
+        a {
+        	text-decoration: none;
+        	color: inherit;
+        	cursor: pointer;
+        }
+        .LoginUser{
+        	width: 231px;
+        	font-size: 1.2em;
+        	text-align: right;
+        	
+	
+        }
+        .UserProfileImg{
+        	border-radius: 50%;
+        }
+    	.UserProfileImg img{
+    		width: 50px;
+    		height : 50px;
+    		border-radius: 50%;
+    		margin-right:10px;
+    	}
+    	.userName{
+    	margin-right: 10px;}
+    	* {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    margin:0 !important;
+}
+ul{
+    padding:0 !important;
+}
+.my_locker_dropDown_btn {
+    all: unset;
+    width: 100%;
+    height: 100%;
+    margin: 10px 0px;
+}
+#my_locker {
+    margin: 0 auto;
+    text-align: center;
+    width: 116px;
+    position : absolute;
+    top : 4px;
+    right: 0px;
+
+}
+#my_locker > ul > li > * {
+margin: auto;
+text-align: center;
+}
+#my_locker_dropDown {
+    display: none;
+    border: 2px solid #003458;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 15px;
+   
+}
+.my_locker_dropDown_option {
+    font-size: 20px;
+    background-color:white;
+    border : 1px solid rgba(0,0,0,0.7);
+    
+}
+.my_locker_dropDown_option:hover {
+    border : 1px solid rgba(0,0,0,0.7);
+     background-color:white;
+   
+}
+#my_locker_img_box {
+    width: 60px;
+    height: 60px;
+    line-height: 70px;
+    cursor: pointer;
+}
+#my_locker_img {
+    width: 35px;
+    height: 35px;
+}
+.mylocker_top {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.mylocker_top > img {
+    position: relative;
+    top: 15px;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+dialog {
+    width: 400px;
+    height: 800px;
+}
+.my_coupon_img_box {
+    margin-top: 10px;
+}
+.my_coupon_img {
+    width: 340px;
+    height: 150px;
+    border-radius: 0 0 7px 7px;
+}
+.flex_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.my_coupon_name {
+    background-color: #003458;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 7px 7px 0 0;
+}
+.my_coupon_close_btn {
+    all: unset;
+    text-align: center;
+    border: 2px solid #003458;
+    border-radius: 7px;
+    margin: 20px 0;
+    width: 340px;
+    height: 40px;
+    cursor: pointer;
+}
+.my_reserved_item_top {
+    display: flex;
+    flex-flow: wrap;
+}
+.my_reserved_item_mid {
+    border-bottom: 1px solid #ccc;
+}
+.my_reserved_item_box {
+    width: 340px;
+    border: 2px solid #003458;
+    border-radius: 7px;
+    padding: 15px;
+    margin-bottom: 20px;    
+}
+.my_reserved_item_img {
+    width: 70px;
+    height: 70px;
+    border-radius: 7px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.my_reserved_item_lodge_name {
+    margin: 3px 0;
+    font-weight: bold;
+    line-height: 70px;
+    color:#003458;
+}
+.my_reserved_item_chek {
+    display: flex; 
+    margin-top: 10px;
+}
+.my_reserved_item_room_name, .my_reserved_item_room_name {
+    color: #003458;
+}
+.my_reserved_item_inout {
+    width: 155px;
+}
+.my_reserved_item_bottom {
+    margin-top: 10px;
+    display: flex;
+}
+.my_reserved_cancel_btn {
+    all: unset;
+    width: 149px;
+    height: 60px;
+    background-color: #003458;
+    border-radius: 7px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+    color:white;
+}
+.my_reserved_unCancel_btn {
+    all: unset;
+    display: none;
+    width: 149px;
+    height: 60px;
+    background-color: #003458;
+    border-radius: 7px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 10px;
+    line-height: 60px;
+    cursor: default;
+    color:white;
+	opacity : 0.3;
+}
+.my_reserved_review_btn {
+    all: unset;
+    width: 149px;
+    height: 60px;
+    background-color: #003458;
+    border-radius: 7px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    color:white;
+}
+.my_reserved_unReview_btn {
+    all: unset;
+    display: none;
+    width: 149px;
+    height: 60px;
+    background-color: #003458;
+    border-radius: 7px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+    cursor: default;
+    color:white;
+    opacity : 0.3;
+    
+}   
+.KaKaoLoginBtn{
+	display : inline-block;
+	width:317px;
+}
+.KaKaoLoginBtn img{
+	width: 319px;
+}
+.NaverLoginBtn{
+	display : inline-block;
+	width:317px;
+}
+.NaverLoginBtn img{
+	text-align: left;
+}
+.swal2-container {
+    z-index: 999999999; /* 원하는 값으로 조절하세요 */
+}
+
+/* 찜 숙소 css */
+.my_favorite_item_box {
+	width: 344px;
+	margin: 20px auto;
+}
+.my_favorite_items {
+	width: 340px;
+	height: 100px;
+	border: 1px solid black;
+	display: flex;
+	margin: 15px auto;
+}
+.my_favorite_img > img {
+	width: 100px;
+	height: 98px;	
+}
+.my_favorite_title {
+	width: 190px;
+	padding: 10px;
+	font-weight: bold;
+}
+.my_favorite_title > a:hover {
+	text-decoration: underline !important;
+}
+.my_favorite_delete {
+	width: 50px;
+	text-align: right;
+	padding: 8px;
+}
+.favoriteDeleteBtn {
+	border: none;
+	background-color: white;
+}

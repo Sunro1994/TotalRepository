@@ -1,0 +1,335 @@
+@charset "UTF-8";
+html{
+    
+   
+ 
+}
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+a{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit !important;
+}
+ul{
+	padding:0;
+	margin:0;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255,255,255,0.9);
+    z-index: 9999;
+    
+    
+}
+.Lodge-header-left-LogoImg{
+    width: 90px;
+    height: 70px;
+    cursor: pointer;
+}
+.lodge-header-logoImg{
+	width : 90px;
+	height: 70px;
+}
+.Lodge-header-right-user{
+    width: 500px;
+    height: 70px;
+    padding-right: 40px;
+    padding: 0 20px;
+    display: flex;
+}
+.Lodge-header-right-user a{
+    display: inline-block;
+    width: 140px;
+    height: 70px;
+    text-align: center;
+}
+
+.join, .myInfo, .locker{
+    width: 80px;
+    height: 70px;
+    line-height: 70px;
+}
+.login{
+    width: 120px;
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+    padding-left: 10px;
+}
+.profileImg{
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    color: transparent;
+    background-image: url('https://phinf.pstatic.net/contact/20231025_285/1698220415149X7mz5_PNG/image.png?type=f130_130');
+    background-size: 50px;
+}
+aside {
+    position: fixed;
+    width: 300px;
+    top: 50%; /* 화면 상단에서 50% 위치로 이동 */
+    left: 0;
+    transform: translate(0, -50%); /* 수직으로 50% 이동하여 중앙 정렬 */
+    height: 100%;
+    color: #003458;
+    border: 5px solid #003458;
+    border-left: none;
+    box-sizing: border-box;
+    margin-top : 100px;
+    z-index:100;
+}
+
+
+
+main{
+    width: 100%;
+    
+ 
+    
+}
+
+.LocationFilterName,.TypeFilterName, .ApplyFilterName{
+	width : fit-content;
+    padding: 10px 20px 0 20px;
+    text-align: center;
+    font-size: 1.7em;
+    margin: 10px auto ;    
+}
+.LocationFilterName, .TypeFilterName{
+	border-bottom : 1px solid #003458;
+	
+}
+
+.ApplyFilterName{
+	margin-top: -20px;
+}
+.LocationFilter, .TypeFilter .ApplyFilter {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2px 30px;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+    
+}
+.ApplyBox{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    height: 50px;
+
+}
+
+.ResetBtn, .ApplyBtn{
+    all: unset;
+    width: 150px;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #003458;
+}
+.ResetBtn{
+   background-color: white;
+   color: black;
+}
+.ApplyBtn{
+    background-color: #003458;
+    color: white;
+}
+
+.Lodge-Result-List{
+     width: 1500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 한 줄에 두 개의 열 */
+    gap: 10px; /* 열 사이의 간격 */
+    margin: auto;
+    margin-left: 360px;
+}
+.Lodge-Result-List div:last-child{
+	
+} 
+
+.Lodge-List-InfoBox{
+    width: 560px;
+    height: 300px;
+    margin: 20px auto;
+    
+    
+/*     background-image: url('https://image.goodchoice.kr/resize_1000X500x0/affiliate/2022/03/02/621f44656de6a.jpg'); */
+/*     background: linear-gradient(to bottom, rgba(255,255,255,0) 70%,rgba(0,0,0,0.75) 90%); */
+/*     background-repeat: no-repeat; */
+/*     background-size: 560px 300px; */
+/*     position: relative; */
+}
+.TextWrapper {
+    z-index: 10; /* 원하는 z-index 값 설정 */
+}
+.Lodge-Info-Name{
+    position: absolute;
+    bottom: 60px;
+    left: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+
+}
+.Lodge-Info-Rate{
+    position: absolute;
+    bottom: 45px;
+    left: 20px;
+    color: white;
+    
+
+}
+.Lodge-Info-Address{
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    color: white;
+    
+
+}
+.Lodge-Info-Count{
+    position: absolute;
+    bottom: 45px;
+    right: 20px;
+    color: white;
+   font-weight: 600;
+
+}
+.Lodge-Info-Price{
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+    color: white;
+    font-weight: bold;
+
+
+}
+
+input[class="form-check-input"]{ 
+  width: 20px;
+  height: 20px;
+  margin: 0 20px;
+    
+}
+.TypeForm{
+    display: flex;
+    justify-content: space-around;
+}
+input[class="form-check-input"]:checked { 
+  
+  width: 20px;
+  height: 20px;
+}
+.Lodge-Filter-Result{
+	width : 1500px;
+	height : 300px;
+	margin-top: 100px;
+	margin-left: 358px;
+	border: 10px solid #003458;
+	background-color : #003458;
+	color: white;
+	
+	
+}
+
+.form-check-input:checked {
+	background-color: #003458;
+}
+
+  input[type='date'] {
+  border: none; 
+  position: relative; 
+  width: 100%;
+  padding: 10px;
+
+  background-color: #003458;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  text-align: center;
+  font-size: 100%;
+  margin-bottom: 20px;
+  color:white;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent; 
+  color: transparent; 
+  cursor: pointer;
+}
+
+input[type="date"]::before {
+  content: attr(placeholder); 
+  width: 100%;
+  height: 100%;
+}
+
+input[type="date"]:valid::before {
+  display: none; 
+}
+
+.Result-Info-Box{
+	width : 100%;
+	height : 274px;
+	border : 1px solid white;
+	margin: auto;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	border : 1px solid white;
+	margin: auto;
+}
+.searchText{
+	all:unset;
+	width: 900px;
+	height: 60px;
+	padding: 10px 100px; 
+	background-color: white;
+	color:#003458;
+	margin: auto 0;
+	font-size: 1.5em;
+	border-radius: 20px 0 0 20px;
+}
+.searchBtn{
+all: unset;
+width : 60px;
+height: 60px;
+padding: 10px;
+	margin: auto 0;
+	background-color: white;
+	color:#003458;
+	font-size: 1.2em;
+	border-radius: 0 20px 20px 0;
+}
+.searchText::placeholder{
+	font-size: 1.5em;
+	font-weight: bold;
+	color:#003458;
+}
+.SearchBtn:hover{
+	font-weight: bold;
+	font-size: 1.3em;
+	
+}

@@ -1,0 +1,345 @@
+Lodge_Roome_Price, Lodge_Room_Type_Name, Lodge_Room_Type_MinCapacity, Lodge_Room_Type_MaxCapacity, Lodge_Room_Type_Img, Lodge_Room_Type_Price,Lodge_idx,Lodge_Room_Type_Count
+90000,[반나절 호캉스숙박불가] [당일 6시간 이용]...,2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/14/64d9f2789ff4a.jpg,90000,441,4
+ 70000,[반나절 호캉스숙박불가] [당일 6시간 이용]...,2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/14/64d9f27f372e6.jpg,70000,441,1
+ 100000,[단독! 룸UP] 스탠다드→디럭스 트윈,2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/02/10/63e59eaa28a19.jpg,100000,441,3
+ 60000,스탠다드,2,7, //image.goodchoice.kr/resize_370x220/affiliate/2023/02/10/63e59e6a9ccc3.jpg,60000,441,1
+ 90000,디럭스 트윈,2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/02/10/63e59eaa28a19.jpg,90000,441,1
+ 90000,디럭스 할리우드,2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/09/13/650176c05916b.jpg,90000,441,2
+ 50000,디럭스 온돌,2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/04/18/643e17cb3b421.jpg,50000,441,2
+ 60000,스위트,2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/04/04/642b986cbf806.jpg,60000,441,2
+ 100000,[펫 프렌들리] 스탠다드,2,7, //image.goodchoice.kr/resize_370x220/affiliate/2023/09/13/6501781a07b86.jpg,100000,441,3
+ 70000,스위트 패밀리,2,6, //image.goodchoice.kr/resize_370x220/affiliate/2023/04/04/642b986cbf806.jpg,70000,441,3
+ 100000,본관 스탠다드 더블,2,7, //image.goodchoice.kr/resize_370x220/affiliate/2023/05/18/64656be16d97e.jpg,100000,442,3
+ 90000,신관 스탠다드 더블,2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/05/18/64657790dcd09.jpg,90000,442,1
+ 60000,신관 스탠다드 트윈,2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/07/10/64abc100c38ea.jpg,60000,442,2
+ 90000,본관 슈페리어 더블,2,6, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/22/6493f3ffcc58c.jpg,90000,442,2
+ 50000,신관 슈페리어 트윈,2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/22/6493f3c480628.jpg,50000,442,2
+ 80000,[조식 2인 패키지] 본관 스탠다드 더블,2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/05/18/64656be16d97e.jpg,80000,442,3
+ 100000,[조식 2인 패키지] 신관 스탠다드 더블,2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/05/18/64657790dcd09.jpg,100000,442,4
+ 70000,[조식 2인 패키지] 신관 스탠다드 트윈,2,7, //image.goodchoice.kr/resize_370x220/affiliate/2023/07/10/64abc100c38ea.jpg,70000,442,4
+ 100000,신관 슈페리어 오션뷰 체크인 시 배정,2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/22/6493f48feeea3.jpg,100000,442,3
+ 70000,[조식 2인 패키지] 본관 슈페리어 더블,2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/22/6493f3ffcc58c.jpg,70000,442,3
+ 50000,[조식 2인 패키지] 신관 슈페리어 트윈,2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/22/6493f3c480628.jpg,50000,442,2
+ 100000,본관 프리미엄 더블,2,5, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/22/6493f3dca0abf.jpg,100000,442,2
+ 80000,[단독! 특전 패키지] 본관 프리미엄 더블,2,5, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/22/6493f3dca0abf.jpg,80000,442,1
+ 70000,[조식 2인 패키지] 신관 슈페리어 오션뷰 체...,2,7, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/22/6493f48feeea3.jpg,70000,442,3
+ 80000,본관 프리미엄 트윈,2,6, //image.goodchoice.kr/resize_370x220/affiliate/2023/10/20/65323a212dd1b.jpg,80000,442,1
+ 50000,[단독! 특전 패키지] 본관 프리미엄 트윈,2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/10/20/65323a212dd1b.jpg,50000,442,4
+ 90000,본관 프리미엄 스위트,2,5, //image.goodchoice.kr/resize_370x220/affiliate/2023/10/20/65323b63a90ef.jpg,90000,442,1
+ 80000,[단독! 특전 패키지] 본관 프리미엄 스위트,2,5, //image.goodchoice.kr/resize_370x220/affiliate/2023/10/20/65323b63a90ef.jpg,80000,442,1
+ 90000,[조식 2인 패키지] 본관 프리미엄 더블,2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/22/6493f3dca0abf.jpg,90000,442,4
+ 50000,[조식 2인 패키지] 본관 프리미엄 트윈,2,6, //image.goodchoice.kr/resize_370x220/affiliate/2023/10/20/65323a212dd1b.jpg,50000,442,3
+ 50000,본관 VIP,2,6, //image.goodchoice.kr/resize_370x220/affiliate/2023/09/13/65016bc641908.jpg,50000,442,2
+ 100000,[단독! 특전 패키지] 본관 VIP,2,7, //image.goodchoice.kr/resize_370x220/affiliate/2023/09/13/65016bc641908.jpg,100000,442,3
+ 60000,[조식 2인 패키지] 본관 프리미엄 스위트,2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/10/20/65323b63a90ef.jpg,60000,442,1
+ 100000,본관 스위트,2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/22/6493f463b79c0.jpg,100000,442,1
+ 80000,신관 VIP,2,5, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/22/6493f49e33810.jpg,80000,442,3
+ 80000,[조식 2인 패키지] 본관 VIP,2,6, //image.goodchoice.kr/resize_370x220/affiliate/2023/09/13/65016bc641908.jpg,80000,442,2
+ 50000,[조식 2인 패키지] 본관 스위트,2,6, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/22/6493f463b79c0.jpg,50000,442,2
+ 50000,[조식 2인 패키지] 신관 VIP,2,5, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/22/6493f49e33810.jpg,50000,442,4
+ 70000,스탠다드 (공기청정기 넷플릭스),2,8, //image.goodchoice.kr/resize_370x220/adimg_new/75859/536549/72ea598f2a545cc1a493335a3e0a615b.jpg,70000,443,3
+ 100000,온돌 (공기청정기 넷플릭스),2,6, //image.goodchoice.kr/resize_370x220/adimg_new/75859/536551/f95c89339528a80bbbb83ecf781f27e2.jpg,100000,443,1
+ 80000,트윈 (슈퍼싱글+슈퍼싱글/공기청정기 넷플릭스),2,7, //image.goodchoice.kr/resize_370x220/adimg_new/75859/536550/d7889683cc5420352ea55bd485ab9a1a.jpg,80000,443,2
+ 80000,★스탠다드  도보특가 ★ (주차문의  넷플릭스...,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/73258/490841/d9eb60cfd9d6a2743f23bccc8b8eb0a3.jpeg,80000,444,1
+ 100000,스탠다드(넷플릭스 시청가능 금연룸),2,8, //image.goodchoice.kr/resize_370x220/adimg_new/73258/490292/34638fa07d2d5e61ba811f4112d2bc42.jpg,100000,444,1
+ 90000,스탠다드  트윈B (싱글+싱글베드  넷플릭스 ...,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/73258/490294/7482c76e29ade8ca29657f63c317e640.jpg,90000,444,3
+ 100000,스탠다드  트윈A (퀸+싱글베드  넷플릭스 시...,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/73258/490293/d9afb9b5923db3dc6771f8ee2701683f.jpg,100000,444,3
+ 70000,패밀리룸(넷플릭스 시청가능 금연룸),2,7, //image.goodchoice.kr/resize_370x220/adimg_new/73258/490295/d408fc96c67ec1f766425e444d295686.jpg,70000,444,4
+ 90000,무한대실(웨이브+넷플릭스),2,6, //image.goodchoice.kr/resize_370x220/adimg_new/73006/486472/da795fe1876e0669c6881db00b0c4290.jpg,90000,445,2
+ 80000,도보특가(주차불가 웨이브+넷플릭스),2,7, //image.goodchoice.kr/resize_370x220/adimg_new/73006/486470/76bae59b4351585ae4bc3b98d0570119.jpg,80000,445,4
+ 60000,늦은입실(연박불가 웨이브+넷플릭스),2,8, //image.goodchoice.kr/resize_370x220/adimg_new/73006/486471/a0ca38c854530f6fb73f832264040f83.jpg,60000,445,2
+ 80000,스탠다드 (웨이브+넷플릭스),2,8, //image.goodchoice.kr/resize_370x220/adimg_new/73006/486130/729b4300aece797afceb3131b72955ff.jpg,80000,445,1
+ 80000,프리미엄 (웨이브+넷플릭스),2,5, //image.goodchoice.kr/resize_370x220/adimg_new/73006/486131/ee12d78a3a3ddbd6f64ba2cb1ddabea6.jpg,80000,445,1
+ 80000,333이벤트(3시입실 3시퇴실 3만원),2,7, //image.goodchoice.kr/resize_370x220/adimg_new/73006/486475/b34d81f3477783a9d12e509785b0914f.jpg,80000,445,3
+ 50000,VIP  (2인월풀욕조 웨이브+넷플릭스),2,4, //image.goodchoice.kr/resize_370x220/adimg_new/73006/484767/fad9f42c150f82232d093e235af2bbda.jpg,50000,445,1
+ 50000,고사양2PC  (웨이브+넷플릭스),2,7, //image.goodchoice.kr/resize_370x220/adimg_new/73006/486133/9a12406395760550705ef8be10850b2a.jpg,50000,445,4
+ 70000,TWIN (퀸+싱글 웨이브+넷플릭스),2,7, //image.goodchoice.kr/resize_370x220/adimg_new/73006/486134/4e8cd626941fb8ef4e3e69b7b93c3082.jpg,70000,445,2
+ 100000,디럭스 패밀리 D04,2,5, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/10/15/16916472526224S0ukVTammOH2RFyB8p.jpg,100000,446,4
+ 50000,프리미엄스파 S02,2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/10/15/1691647147626SzCWNHXE6TwyjV2Yxwk.jpg,50000,446,4
+ 70000,디럭스 커플 D05,2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/10/15/1691647481679sbmy3ccbEyqQvX7G4mq.jpg,70000,446,1
+ 60000,디럭스 커플 D06,2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/10/15/1691647481679sbmy3ccbEyqQvX7G4mq.jpg,60000,446,2
+ 70000,디럭스 패밀리 D01,2,6, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/10/15/16916472526224S0ukVTammOH2RFyB8p.jpg,70000,446,4
+ 90000,디럭스 패밀리 D02,2,7, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/10/15/16916472526224S0ukVTammOH2RFyB8p.jpg,90000,446,4
+ 50000,디럭스 패밀리 D03,2,5, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/10/15/16916472526224S0ukVTammOH2RFyB8p.jpg,50000,446,3
+ 80000,로얄스위트 R01,2,5, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/10/15/16916470590207V1QRM57OWNDmLnrBbO.jpg,80000,446,4
+ 100000,로얄스위트 R02,2,6, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/10/15/16916470590207V1QRM57OWNDmLnrBbO.jpg,100000,446,3
+ 100000,로얄스위트 R03,2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/10/15/16916470590207V1QRM57OWNDmLnrBbO.jpg,100000,446,1
+ 100000,로얄스위트 R04,2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/10/15/16916470590207V1QRM57OWNDmLnrBbO.jpg,100000,446,3
+ 100000,로얄스위트 R05,2,5, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/10/15/16916470590207V1QRM57OWNDmLnrBbO.jpg,100000,446,2
+ 60000,로얄스위트 R06,2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/10/15/16916470590207V1QRM57OWNDmLnrBbO.jpg,60000,446,4
+ 100000,로얄스위트 R07,2,7, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/10/15/16916470590207V1QRM57OWNDmLnrBbO.jpg,100000,446,2
+ 100000,스탠다드 더블,2,7, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/08/64d1d96c482dd.jpg,100000,447,3
+ 90000,슈페리어 더블,2,7, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/08/64d1d9a553448.jpg,90000,447,1
+ 100000,[조식 2인 포함] 스탠다드 더블,2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/08/64d1d96c482dd.jpg,100000,447,3
+ 60000,디럭스 트윈,2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/08/64d1da174b6c2.jpg,60000,447,2
+ 70000,디럭스 더블,2,5, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/08/64d1d9e2240ea.jpg,70000,447,2
+ 60000,[조식 2인 포함] 슈페리어 더블,2,6, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/08/64d1d9a553448.jpg,60000,447,2
+ 90000,[조식 2인 포함] 디럭스 더블,2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/08/64d1d9e2240ea.jpg,90000,447,3
+ 90000,[조식 2인 포함] 디럭스 트윈,2,7, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/08/64d1da174b6c2.jpg,90000,447,2
+ 50000,희망,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/75570/531940/c66a2291044b022ad3a2cdebb340fde3.jpg,50000,448,2
+ 80000,행복,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/75570/531890/47dd639c267c4c44f2f0ce81d51e2f32.jpg,80000,448,4
+ 90000,미소,2,6, //image.goodchoice.kr/resize_370x220/adimg_new/75570/531938/4b48717ba603d0c759b5cd966556ffcc.jpg,90000,448,1
+ 80000,믿음,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/75570/531939/40cdb1e0ecd8fcf9a8bd628a5ed7f329.jpg,80000,448,2
+ 50000,소망,2,6, //image.goodchoice.kr/resize_370x220/adimg_new/75570/531941/b1c77b225ea305123e358641fad3f932.jpg,50000,448,2
+ 50000,청명,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/75570/531891/793f3699adc4f5202566de09574115e2.jpg,50000,448,3
+ 90000,하지,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/75570/531942/781484852d16cd5d7c2263e318f5daed.jpg,90000,448,4
+ 90000,백로,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/75570/531943/edb4da79c468fe3d0d6e2b158ec6beb7.jpg,90000,448,2
+ 50000,사랑,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/75570/531892/bb5450754bfed5631224488e35dcdaff.jpg,50000,448,2
+ 60000,기쁨,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/75570/531894/e37f588888057f52f14d1accfb8dfe35.jpg,60000,448,3
+ 50000,우수,2,6, //image.goodchoice.kr/resize_370x220/adimg_new/75570/531893/740c7c23fe5c2ef83b113195dd932839.jpg,50000,448,2
+ 50000,고을,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/75570/531895/d77e74c5626ec333e1e788c90e2bf1de.jpg,50000,448,1
+ 100000,신관_오픈특가 랜덤객실(노키즈 금연),2,8, //image.goodchoice.kr/resize_370x220/adimg_new/67125/361330/959201d843e7f7675dd16fb96d05cc78.jpg,100000,449,2
+ 70000,별관_스탠다드(노키즈 금연 스타일러 부분리...,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/67125/386676/9cce97df9f0608703cab303132861a12.jpg,70000,449,1
+ 100000,별관_슈페리어(노키즈 금연 스타일러 공청기 ...,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/67125/466380/1359961e138ad2a2fef394369e2998b8.jpg,100000,449,1
+ 50000,별관_스탠다드(2인조식포함 노키즈 금연 스타...,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/67125/541636/e179c4fae0e676a5a6c241c4561e342f.jpg,50000,449,2
+ 70000,신관_디럭스 (노키즈 금연 스타일러 공청기 5...,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/67125/361202/ef0b78f96933a02b01ddd58b46037eb8.jpg,70000,449,3
+ 50000,별관_슈페리어(2인조식포함 노키즈 금연 스타...,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/67125/541637/630f154c6a1bf958d107b0e8df4d046f.jpg,50000,449,3
+ 50000,신관_디럭스 트윈(노키즈 금연 스타일러 공청...,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/67125/361203/91a078937863077c72709671d2cef573.jpg,50000,449,4
+ 70000,신관_프리미엄 (노키즈 금연 스타일러 공청기...,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/67125/361194/740fbe3eb7aefb25066c8790a9481d7d.jpg,70000,449,3
+ 60000,신관_리버뷰(노키즈 금연 스타일러 공청기 55...,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/67125/361566/c3e9292d3023cc98e772f42eda260edc.jpg,60000,449,4
+ 60000,신관_디럭스(2인조식포함 노키즈 금연 스타일...,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/67125/541629/58ff86ae35b7a258d43bdc891969dc3c.jpg,60000,449,3
+ 90000,신관_프리미엄 리버뷰(노키즈 금연 스타일러 ...,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/67125/352808/2b7607e4bc3edb90b55f280979e3d63e.jpg,90000,449,2
+ 50000,신관_디럭스 트윈(2인조식포함 노키즈 금연 ...,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/67125/541630/5375bcebe72691bf4809fc2081c8f33d.jpg,50000,449,3
+ 100000,신관_프리미엄(2인조식포함 노키즈 금연 스타...,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/67125/541631/481d195e2b8260b3aba79d177367abb9.jpg,100000,449,1
+ 90000,신관_리버뷰(2인조식포함 노키즈 금연 스타일...,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/67125/541635/0f7095bad9f85e472ca3ece68f08cadf.jpg,90000,449,3
+ 100000,신관_프리미엄 리버뷰(2인조식포함 노키즈 금...,2,6, //image.goodchoice.kr/resize_370x220/adimg_new/67125/541632/cb71eb53f38ef901eb0e05025b52776b.jpg,100000,449,2
+ 60000,신관_파노라마 리버뷰(노키즈 금연 스타일러 ...,2,6, //image.goodchoice.kr/resize_370x220/adimg_new/67125/361204/0954fcaa454fc9cc35d2d4239bfcd98f.jpg,60000,449,1
+ 80000,신관_파노라마 리버뷰(2인조식포함 노키즈 금...,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/67125/541633/b3c5c86d983da942584e0047e6a53da5.jpeg,80000,449,2
+ 90000,야간대실(3시간 이용/17:00~22:00/더블+더블),2,7, //image.goodchoice.kr/resize_370x220/adimg_new/74044/510780/0f01d617947c0c88c353c16918f8c92a.jpg,90000,450,2
+ 60000,Standard Room(스탠다드 55인치TV 넷플릭스 ...,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/74044/532231/726cbc469121a7ff497231f5b474849e.jpg,60000,450,1
+ 90000,펜션형 스위트(슈퍼킹 싱크대 아일랜드 식탁 ...,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/74044/532223/168a21d18b57c2f7b78f02d2a2304fcd.jpg,90000,450,2
+ 90000,시티뷰 스위트(슈퍼킹 55인치TV 넷플릭스 유...,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/74044/532225/67577e5e16404fa3975ba8811ebb73b9.jpg,90000,450,3
+ 50000,Suite Room(스위트 55인치TV 넷플릭스 유튜브...,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/74044/532229/e877f8aff397b4cc724781786da3e35b.jpg,50000,450,1
+ 60000,Royal Room(로얄/더블+더블 55인치TV 넷플릭...,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/74044/532226/7d4a41ddda172f3d3535d8833ce8a483.jpg,60000,450,3
+ 90000,프리미엄 패밀리 트리플(슈퍼킹+더블+더블 싱...,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/74044/532222/8c4b1c82667d9fc825b02e7bce894b14.jpg,90000,450,1
+ 60000,VIP Room(브이아이피/슈퍼킹+더블+싱글/ 75인...,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/74044/532228/2bb7bb0086db9073bd984ded5ad24690.jpg,60000,450,2
+ 100000,2호실,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/74711/515054/50dd564cb11e1db87c3b581dc0cb47f6.jpeg,100000,451,1
+ 70000,5호실,2,6, //image.goodchoice.kr/resize_370x220/adimg_new/74711/515057/1204d597b9406ec90770e5e42f2eec97.jpeg,70000,451,3
+ 60000,6호실,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/74711/515058/3c9552bb812948d4d86f4bffaf8f5f3f.jpeg,60000,451,3
+ 50000,7호실,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/74711/515059/c7da19cf01e208784d3d216df58e3858.jpg,50000,451,4
+ 70000,3호실,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/74711/515055/1928898587b025e601657c137aabd912.jpeg,70000,451,3
+ 70000,4호실,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/74711/515056/c3cef7cb1e3756ae5582a0099e460171.jpeg,70000,451,4
+ 70000,1호실(별채),2,5, //image.goodchoice.kr/resize_370x220/adimg_new/74711/515053/f598da332a87eb9eac0a536cae307659.jpeg,70000,451,4
+ 90000,전체대관,2,6, //image.goodchoice.kr/resize_370x220/adimg_new/74711/515060/6420218e555da43a891d6a37e7b7c35a.jpeg,90000,451,4
+ 100000,스탠다드 (65  TV  포켓라텍스침대  OTT박스 ...,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/71984/466491/10b7fd1e251c9a372708446fc86f703f.jpg,100000,452,1
+ 70000,디럭스 (65  TV  포켓라텍스침대  욕조  공기...,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/71984/466492/35b9f112990eff582b3a2ef9753d6074.jpg,70000,452,3
+ 50000,프리미엄 (65  TV  포켓라텍스침대  노하드 게...,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/71984/466493/a8e612d6dd77583c846b7d5ceb9c81a1.jpg,50000,452,2
+ 80000,VIP (75  TV 포켓라텍스침대 노하드 고사양 게...,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/71984/466494/f2c5ec9303373299ab20ced2dcc92233.jpg,80000,452,3
+ 70000,스위트 트윈 (75  TV  포켓라텍스 침대  노하...,2,6, //image.goodchoice.kr/resize_370x220/adimg_new/71984/466495/8f453db9625358ba535ce7ecd36894e7.jpg,70000,452,2
+ 60000,[모닝뷔페 2인] 트리플 룸 한옥뷰,2,7, //image.goodchoice.kr/resize_370x220/affiliate/2023/03/20/64184ecd27230.jpg,60000,453,1
+ 90000,스탠다드넓은 객실/욕조 이용가능/도보 차량...,2,6, //image.goodchoice.kr/resize_370x220/adimg_new/74977/521090/d8726bbebb33f1a24b19bd9fdf3139ca.jpg,90000,454,1
+ 90000,VIP스타일러/안마의자/65인치 TV/넓은 객실/...,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/74977/521091/643e887e04f751e0775421c62790a4dd.jpg,90000,454,1
+ 70000,스탠다드 더블,2,8, //image.goodchoice.kr/resize_370x220/affiliate/2020/09/14/5f5ec72c40e9e.jpg,70000,455,4
+ 80000,[전북투어패스 2매&12시 체크아웃] 스탠다드 ...,2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/01/64c8891f6d67a.jpg,80000,455,3
+ 70000,[딜라이트 패키지] 스탠다드 더블,2,6, //image.goodchoice.kr/resize_370x220/affiliate/2023/03/22/641ac63561c78.jpg,70000,455,1
+ 60000,[조식 2인 패키지] 스탠다드 더블,2,4, //image.goodchoice.kr/resize_370x220/affiliate/2020/09/14/5f5ec72c40e9e.jpg,60000,455,4
+ 60000,[룸콕 패키지] 스탠다드 더블,2,6, //image.goodchoice.kr/resize_370x220/affiliate/2022/06/27/62b94495f0e9c.jpg,60000,455,2
+ 50000,[S컬렉션] 프리미어 더블,2,7, //image.goodchoice.kr/resize_370x220/affiliate/2021/05/31/60b47f68cf871.jpg,50000,455,2
+ 90000,[S컬렉션] 프리미어 스위트,2,6, //image.goodchoice.kr/resize_370x220/affiliate/2021/05/31/60b47f6e16e30.jpg,90000,455,3
+ 80000,도보고객특가(주차장이용불가 랜덤),2,7, //image.goodchoice.kr/resize_370x220/adimg_new/49629/138138/44349ccce12d35aa5404f465f0403370.jpg,80000,456,2
+ 70000,스탠다드(스타일러  금연  넷플릭스  디즈니...,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/49629/291415/92dacbaa35a923745f97b45364bda5a6.jpg,70000,456,4
+ 70000,디럭스(스타일러  안마의자  금연  넷플릭스 ...,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/49629/380226/75f59c80c64b0cf45d14ce006908c97c.jpg,70000,456,4
+ 100000,싱글트윈(스타일러  금연  넷플릭스  디즈니...,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/49629/138135/8530712d75690fd3ebca70415628451d.jpg,100000,456,3
+ 60000,스탠다드 1인 조식 패키지(2인패키지 희망시 ...,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/49629/544558/462d976d9b4df3acb21804c0411a841c.jpg,60000,456,1
+ 80000,디럭스 1인 조식 패키지(2인패키지 희망시 추...,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/49629/544559/0b1b847f85d2e71ab907f4c6d84eee61.jpg,80000,456,3
+ 50000,킹트윈(2인 기준  스타일러  욕조  금연  넷...,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/49629/137364/e4494f86e856b077e19979c302c24f1d.jpg,50000,456,1
+ 50000,프레스티지 (스타일러  안마의자  욕조  금연...,2,6, //image.goodchoice.kr/resize_370x220/adimg_new/49629/138133/9d8ab9d691c12fb6a64f4d0d58c9d471.jpg,50000,456,1
+ 90000,프레스티지 1인 조식 패키지(2인패키지 희망...,2,6, //image.goodchoice.kr/resize_370x220/adimg_new/49629/544560/6b631226dd5b0c61550af483dbeefb49.jpg,90000,456,4
+ 60000,미니멀 디럭스(탬퍼매트리스/55인치TV/넷플릭...,2,6, //image.goodchoice.kr/resize_370x220/adimg_new/45946/100062/e30b06972d42d91da873246cbe2acbb3.jpg,60000,457,4
+ 60000,디럭스(탬퍼매트리스/55인치TV/넷플릭스&티빙...,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/45946/437840/a3590b1ab33c0d05373fc1950ba004a8.jpg,60000,457,2
+ 100000,프리미엄(탬퍼매트리스/70인치TV/넷플릭스&티...,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/45946/100061/6258c04a8a820115c52be122c8cc119a.jpg,100000,457,1
+ 50000,빠른  체크인 (랜덤배정/탬퍼매트리스/55인치...,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/45946/457081/608e0eb58deb609f02712dd77d886ed8.jpg,50000,457,1
+ 90000,스위트 스테이(탬퍼매트리스/70인치TV/넷플릭...,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/45946/486704/e15c8804627d355ef9e9088832207654.jpg,90000,457,3
+ 60000,스위트 게임룸(탬퍼매트리스/70인치TV/게이밍...,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/45946/434559/30dee3b8ddf7f3193b43979e5379a9be.jpg,60000,457,1
+ 60000,GAME TABLE(30가지 보드게임/탬퍼매트리스/70...,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/45946/486699/eee0835fde8c5608c43158b51f72cdcf.jpg,60000,457,4
+ 90000,페밀리 트윈A(탬퍼싱글+더블베드/70인치TV/넷...,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/45946/454100/3ceaecc289e4a465c129d9112fe0c6fb.jpg,90000,457,3
+ 70000,스위트 스크린(탬퍼매트리스/100인치TV/음파...,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/45946/486703/b88d5a017cc452ff06d1083286d904e9.jpg,70000,457,2
+ 50000,페밀리 트윈B(탬퍼싱글+ 더블베드/75인치TV/...,2,6, //image.goodchoice.kr/resize_370x220/adimg_new/45946/454097/136d160dd9a52d728e9f67a784d60ff4.jpg,50000,457,1
+ 70000,EVENT ROOM(랜덤배정),2,6, //image.goodchoice.kr/resize_370x220/adimg_new/69067/414921/7d672ce64e3b44506af9e2f73f5e1d34.png,70000,458,4
+ 90000,스탠다드 더블(65인치 스마트TV),2,4, //image.goodchoice.kr/resize_370x220/adimg_new/69067/414908/82766edacff0540bdcc2c9ee88c1277a.jpg,90000,458,3
+ 100000,디럭스 더블(65인치 스마트TV),2,4, //image.goodchoice.kr/resize_370x220/adimg_new/69067/414906/fa7dd4585c1dd9c97111a1e8d49d1c69.jpg,100000,458,4
+ 100000,커플PC 슈페리얼(65인치 스마트TV),2,8, //image.goodchoice.kr/resize_370x220/adimg_new/69067/414907/af306971ba8eb6041902d5109a26fe03.jpg,100000,458,3
+ 70000,프리미엄 더블(65인치 스마트TV  공기청정기 ...,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/69067/414909/a98e822a85211dde7082618afbbfee15.jpg,70000,458,3
+ 60000,커플PC 프리미엄(65인치 스마트TV),2,5, //image.goodchoice.kr/resize_370x220/adimg_new/69067/414910/641ac2dc1962d3785589db8b27973d38.jpg,60000,458,3
+ 100000,패밀리 트윈(싱글+더블 65인치 스마트TV  공...,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/69067/414911/800102000e2b65098ffde7cfebd53aa4.jpg,100000,458,4
+ 60000,패밀리 한옥트윈(싱글+더블  65인치 스마트TV...,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/69067/418594/830907f5302c29b3e62711df954c8186.jpg,60000,458,4
+ 60000,패밀리 한옥트윈(더블+더블  65인치 스마트TV...,2,6, //image.goodchoice.kr/resize_370x220/adimg_new/69067/414912/6d87c2f941d83a844c6c8ee1eb08cf06.jpg,60000,458,2
+ 60000,디럭스 (금연 스타일러 공청기 55스마트TV),2,7, //image.goodchoice.kr/resize_370x220/affiliate/2023/01/18/63c74e896aa30.jpg,60000,459,3
+ 90000,디럭스 트윈 (금연 스타일러 공청기 55스마트TV),2,5, //image.goodchoice.kr/resize_370x220/affiliate/2023/01/18/63c74eaed8005.jpg,90000,459,4
+ 100000,프리미엄 (금연 스타일러 공청기 65스마트TV ...,2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/01/18/63c74ec8ddf62.jpg,100000,459,3
+ 80000,프리미엄 트윈 (금연 스타일러 공청기 65스마...,2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/01/18/63c74f3e1b98f.jpg,80000,459,3
+ 70000,스위트 (금연 스타일러 공청기 75스마트TV 욕...,2,7, //image.goodchoice.kr/resize_370x220/affiliate/2023/01/18/63c74f62a8642.jpg,70000,459,4
+ 60000,로얄 스위트 (금연 스타일러 공청기 75스마트...,2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/01/18/63c74fc6356ed.jpg,60000,459,2
+ 80000,5월의 방,2,6, //image.goodchoice.kr/resize_370x220/adimg_new/73277/489313/be2c717901305586bdea23fa0be8ba6a.JPG,80000,460,1
+ 70000,6월의 방,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/73277/496927/5c25e25a8189cdcf93a998ee96cd0f33.jpg,70000,460,4
+ 80000,10월의 방,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/73277/489314/3fa81373a273a119e61c9f1d320599f2.jpg,80000,460,2
+ 90000,3월의 방,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/73277/489312/544d61414b95fa8a407ce786cd9ac21f.JPG,90000,460,4
+ 100000,2월의 방(별채),2,6, //image.goodchoice.kr/resize_370x220/adimg_new/73277/489311/4fabb83093d1043537068be25f089987.jpg,100000,460,2
+ 100000,12월의 방,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/73277/489315/28cc31924597cfef40458b794202d0fe.JPG,100000,460,2
+ 70000,오픈특가 (랜덤배정)  넷플릭스 디즈니플러...,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/3199/506881/af540277350f084b51f5fac878922d1f.JPG,70000,461,4
+ 70000,디럭스코지  스마트 tv 65인치 에어드레서/...,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/3199/506883/1b5a0a905b439e5b43fc8b6a5e5de686.jpg,70000,461,2
+ 80000,디럭스 킹  스마트 tv 75인치 에어드레서/넷...,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/3199/506885/ddbbf28fa40b4808ef8d44c03f1f5a35.jpg,80000,461,2
+ 70000,디럭스 트윈  스마트 tv 65인치 에어드레서/...,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/3199/506886/026f72a9f05af5e9b6047ba74d1fb93b.jpg,70000,461,1
+ 70000,슈페리어  스마트 tv 75인치 에어드레서  욕...,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/3199/506887/17d45be9a5210b01b6a417e0b8218293.jpg,70000,461,3
+ 60000,슈페리어 1인 조식패키지(딜리버리),2,6, //image.goodchoice.kr/resize_370x220/adimg_new/3199/517728/5366181a41b6c5b7537a599ac65c5bf0.jpg,60000,461,4
+ 60000,프리미엄 테라스  스마트 tv 75인치 에어드...,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/3199/508908/979fb7476b199e2301a80b63469c8b3c.jpg,60000,461,1
+ 50000,디럭스 1인 조식 패키지 (2인 패키지 희망시 ...,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/3199/544555/fd4a07e53d9abceb9af0eede3d640faf.jpg,50000,461,3
+ 60000,슈페리어 1인 조식 패키지 (2인 패키지 희망...,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/3199/544556/05a718f81186635feb08f2a54bf2380d.jpg,60000,461,3
+ 100000,프리미엄테라스 1인 조식 패키지(2인 패키지 ...,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/3199/544557/45ba889becdbdd61949dab343660c71a.jpg,100000,461,4
+ 80000,1층 나팔꽃,2,5, //image.goodchoice.kr/resize_370x220/affiliate/2023/03/29/64239f401219b.jpg,80000,462,3
+ 70000,2층 매화,2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/03/29/64239f88a97e2.jpg,70000,462,2
+ 80000,2층 국화,2,6, //image.goodchoice.kr/resize_370x220/affiliate/2023/03/29/6423a1079ea98.jpg,80000,462,2
+ 90000,2층 난초,2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/03/29/64239fc82a8a1.jpg,90000,462,3
+ 100000,1층 금낭화,2,7, //image.goodchoice.kr/resize_370x220/affiliate/2023/03/29/64239e61e5bf3.jpg,100000,462,4
+ 100000,2층 대나무,2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/03/29/6423a11af21d0.jpg,100000,462,1
+ 90000,1층 라일락,2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/03/29/64239eed6db48.jpg,90000,462,2
+ 70000,2층 목단,2,6, //image.goodchoice.kr/resize_370x220/affiliate/2023/03/29/64239f57c1d72.jpg,70000,462,4
+ 80000,1층 백일홍,2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/03/29/64239d481aef1.jpg,80000,462,2
+ 50000,스탠다드,2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/26/649947eb1aa52.jpg,50000,463,1
+ 50000,디럭스,2,5, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/26/6499487739b2b.jpg,50000,463,1
+ 60000,트윈,2,5, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/26/6499485010479.jpg,60000,463,2
+ 80000,스위트 패밀리,2,6, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/26/6499488a2f878.jpg,80000,463,3
+ 80000,스탠다드,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/76167/541838/cb265b3dc699d739eb7debe288ffee65.jpg,80000,464,3
+ 100000,온돌,2,6, //image.goodchoice.kr/resize_370x220/adimg_new/76167/541840/942c3763fa632768b09922760677e2af.jpg,100000,464,3
+ 50000,트윈,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/76167/541839/c91aba2eb3e9892f49a2163da19c1d16.jpg,50000,464,2
+ 100000,싱글(넷플릭스 조식포함 비즈니스센터 이용가...,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/75281/533527/6d674c37f269300086170b2bd47e2781.JPG,100000,465,1
+ 80000,스탠다드 더블(넷플릭스 조식포함  비즈니스...,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/75281/526722/ccbc48262df73d672ae4a30c73943fc8.jpg,80000,465,2
+ 100000,스탠다드 트윈(넷플릭스 조식포함  비즈니스...,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/75281/526723/bb42b75ad5d1f20e9b99c705b129365b.jpg,100000,465,3
+ 100000,패밀리 트윈(넷플릭스 조식포함  비즈니스센...,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/75281/526724/d54b90cdd50e28fcc9850b23fb4ae561.jpg,100000,465,4
+ 50000,디럭스 패밀리 펫(애견동반 넷플릭스 조식포...,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/75281/526725/ba541aa2614741763e3b52cd16503ff1.jpg,50000,465,3
+ 60000,스위트 패밀리 트리플(넷플릭스 조식포함 비...,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/75281/539845/517511890d94bb9b1cd1678714740ee1.jpg,60000,465,1
+ 70000,패밀리 트윈 펫(애견동반 넷플릭스 조식포함 ...,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/75281/526726/6fd4fa6f46fa56beed6eadff69f2e101.jpg,70000,465,1
+ 100000,오픈특가  스탠다드 더블 (넷플릭스 디즈니+...,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/67662/368154/fddd766c60abc9760f8086a22dc9dbf0.jpg,100000,466,3
+ 70000,오픈특가   디럭스 더블 (넷플릭스 디즈니+ ...,2,6, //image.goodchoice.kr/resize_370x220/adimg_new/67662/368155/929045af86498bf2456eae7db1675bb2.jpg,70000,466,4
+ 70000,오픈특가  디럭스 트윈 (넷플릭스 디즈니+ ...,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/67662/417000/b52e9dbddf656f45d5adc47d60d23fd8.jpg,70000,466,3
+ 90000,일반실(금연객실),2,6, //image.goodchoice.kr/resize_370x220/adimg_new/75798/536828/78e39f712a0bbf410047b206d42cd926.jpg,90000,467,3
+ 60000,준특실(금연객실),2,5, //image.goodchoice.kr/resize_370x220/adimg_new/75798/536829/9a128fc7324130db245ff40d2b006a7f.jpg,60000,467,2
+ 80000,온돌(금연객실),2,8, //image.goodchoice.kr/resize_370x220/adimg_new/75798/536831/37fc91ca5b963ed666506fd93edb0fc0.jpg,80000,467,4
+ 100000,특실(금연객실),2,8, //image.goodchoice.kr/resize_370x220/adimg_new/75798/536830/5c1f3bb28a5d7972348a327e938dc38b.jpg,100000,467,2
+ 90000,신관_디럭스 (노키즈 금연 스타일러 공청기 5...,2,5, //image.goodchoice.kr/resize_370x220/affiliate/2023/01/18/63c73968b350c.jpg,90000,468,2
+ 80000,신관_디럭스 트윈 (노키즈 금연 스타일러 공...,2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/01/18/63c739888d970.jpg,80000,468,2
+ 60000,신관_프리미엄 (노키즈 금연 스타일러 공청기...,2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/01/18/63c739fd39ba5.jpg,60000,468,2
+ 70000,신관_리버뷰 (노키즈 금연 스타일러 공청기 5...,2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/01/18/63c73a1362249.jpg,70000,468,2
+ 60000,[2인 조식 포함] 신관_디럭스,2,5, //image.goodchoice.kr/resize_370x220/affiliate/2023/01/18/63c73968b350c.jpg,60000,468,3
+ 90000,신관_프리미엄 리버뷰 (노키즈 금연 스타일러...,2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/01/18/63c73a324c4fa.jpg,90000,468,2
+ 80000,[2인 조식 포함] 신관_디럭스 트윈,2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/01/18/63c739888d970.jpg,80000,468,4
+ 50000,[2인 조식 포함] 신관_프리미엄,2,5, //image.goodchoice.kr/resize_370x220/affiliate/2023/01/18/63c739fd39ba5.jpg,50000,468,3
+ 80000,[2인 조식 포함] 신관_리버뷰,2,5, //image.goodchoice.kr/resize_370x220/affiliate/2023/01/18/63c73a1362249.jpg,80000,468,2
+ 90000,[2인 조식 포함] 신관_프리미엄 리버뷰,2,5, //image.goodchoice.kr/resize_370x220/affiliate/2023/01/18/63c73a324c4fa.jpg,90000,468,3
+ 80000,신관_파노라마 리버뷰 (노키즈 금연 스타일러...,2,6, //image.goodchoice.kr/resize_370x220/affiliate/2023/01/18/63c73a5de3355.jpg,80000,468,1
+ 70000,[2인 조식 포함] 신관_파노라마 리버뷰,2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/01/18/63c73a5de3355.jpg,70000,468,3
+ 70000,디럭스+ (템퍼 매트리스 /55 QLED TV / 넷플...,2,6, //image.goodchoice.kr/resize_370x220/adimg_new/4751/402660/c6c9309a5057c662eda87cb4ffdf1c7f.jpg,70000,469,3
+ 100000,디럭스 Play 2 (템퍼 매트리스/55 QLED TV/36...,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/4751/491097/34529c6653289c72fd299b9b5f5e09fe.jpg,100000,469,2
+ 80000,디럭스 Play 1 (템퍼 매트리스/55 QLED TV/닌...,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/4751/462324/d6121ff9108f17bb1459e96217157047.jpg,80000,469,4
+ 60000,얼리체크인 (템퍼 매트리스/55 QLED TV/넷플...,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/4751/398764/3d2d6132466b1c630d54cf3568c40c77.jpg,60000,469,2
+ 80000,위드 마이 펫 (House/Snack/Cusion/Bowl/배변...,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/4751/402668/d1a0efb2ff2c93493f3fe37e43d932d5.jpg,80000,469,2
+ 90000,프리미엄 릴렉스 (템퍼 매트리스/55 QLED TV/...,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/4751/463896/22ddae3c205500736e9fa70c1ad23f73.jpg,90000,469,4
+ 70000,프리미엄 2PC (템퍼 매트리스 /55 QLED TV/게...,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/4751/463897/ac54ccea2f083df02065cd04dd26075f.jpg,70000,469,3
+ 50000,스위트 스타일 (템퍼 매트리스 /55 QLED TV/...,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/4751/402661/3325818e0ee001c3e1a43b3d44a60490.jpg,50000,469,1
+ 50000,패밀리 트윈  (템퍼 싱글+더블 매트리스/80 Q...,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/4751/402663/034fdd21814285f008d10ab2c6951774.jpg,50000,469,3
+ 90000,스위트 홈  (템퍼 매트리스_라지 킹/ 100 QLE...,2,6, //image.goodchoice.kr/resize_370x220/adimg_new/4751/402662/84397610cfb01684d3fb5dd36aaec0c7.jpg,90000,469,3
+ 100000,스탠다드 오션 (랜덤배정),2,7, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/12/12/16861169794582GcWDPNvxw0DQLQtOkA.jpg,100000,470,2
+ 90000,스탠다드 오션 (랜덤배정),2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/12/12/16861169794582GcWDPNvxw0DQLQtOkA.jpg,90000,470,2
+ 60000,스탠다드 오션 (랜덤배정),2,7, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/12/12/16861169794582GcWDPNvxw0DQLQtOkA.jpg,60000,470,4
+ 80000,스탠다드 오션 (랜덤배정),2,5, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/12/12/16861169794582GcWDPNvxw0DQLQtOkA.jpg,80000,470,3
+ 80000,스탠다드 오션 (랜덤배정),2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/12/12/16861169794582GcWDPNvxw0DQLQtOkA.jpg,80000,470,1
+ 60000,스탠다드 오션 (랜덤배정),2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/12/12/16861169794582GcWDPNvxw0DQLQtOkA.jpg,60000,470,1
+ 60000,스탠다드 오션 (랜덤배정),2,6, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/31/11/16861169794582GcWDPNvxw0DQLQtOkA.jpg,60000,470,1
+ 90000,스탠다드 오션 (랜덤배정),2,7, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/31/11/16861169794582GcWDPNvxw0DQLQtOkA.jpg,90000,470,3
+ 90000,스탠다드 오션(장애인겸용),2,5, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/30/14/16861169794582GcWDPNvxw0DQLQtOkA.jpg,90000,470,2
+ 100000,슈페리어 오션 (랜덤배정),2,7, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/31/11/1686117019494nZldbBCJidb1aLjAajB.jpg,100000,470,2
+ 50000,슈페리어 오션 (랜덤배정),2,7, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/12/12/1686117019494nZldbBCJidb1aLjAajB.jpg,50000,470,1
+ 80000,슈페리어 오션 (랜덤배정),2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/31/11/1686117019494nZldbBCJidb1aLjAajB.jpg,80000,470,1
+ 80000,슈페리어 오션 (랜덤배정),2,5, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/31/11/1686117019494nZldbBCJidb1aLjAajB.jpg,80000,470,1
+ 100000,슈페리어 오션 (랜덤배정),2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/12/12/1686117019494nZldbBCJidb1aLjAajB.jpg,100000,470,3
+ 100000,슈페리어 오션 (랜덤배정),2,7, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/12/12/1686117019494nZldbBCJidb1aLjAajB.jpg,100000,470,1
+ 90000,슈페리어 오션 (랜덤배정),2,6, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/12/12/1686117019494nZldbBCJidb1aLjAajB.jpg,90000,470,2
+ 80000,슈페리어 오션 (랜덤배정),2,7, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/12/12/1686117019494nZldbBCJidb1aLjAajB.jpg,80000,470,1
+ 90000,슈페리어 오션 (랜덤배정),2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/12/12/1686117019494nZldbBCJidb1aLjAajB.jpg,90000,470,1
+ 70000,프리미엄 슈페리어 오션 (랜덤배정),2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/07/17/18/1689582690991BNCNv8B38iPxIh2PJd5.jpg,70000,470,1
+ 50000,프리미엄 슈페리어 오션 (랜덤배정),2,6, //image.goodchoice.kr/resize_370x220/affiliate/2023/07/17/18/1689582690991BNCNv8B38iPxIh2PJd5.jpg,50000,470,2
+ 80000,프리미엄 슈페리어 오션 (랜덤배정),2,6, //image.goodchoice.kr/resize_370x220/affiliate/2023/07/17/18/1689582690991BNCNv8B38iPxIh2PJd5.jpg,80000,470,1
+ 70000,프리미엄 슈페리어 오션 (랜덤배정),2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/07/17/18/1689582690991BNCNv8B38iPxIh2PJd5.jpg,70000,470,1
+ 100000,프리미엄 슈페리어 오션 (랜덤배정),2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/31/11/1689582690991BNCNv8B38iPxIh2PJd5.jpg,100000,470,4
+ 50000,프리미엄 슈페리어 오션 (랜덤배정),2,5, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/31/11/1689582690991BNCNv8B38iPxIh2PJd5.jpg,50000,470,2
+ 70000,프리미엄 스탠다드 오션 (랜덤배정),2,5, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/12/12/1686117196899PM8bAOeZOIOozzE8xwe.jpg,70000,470,3
+ 50000,프리미엄 스탠다드 오션 (랜덤배정),2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/12/12/1686117196899PM8bAOeZOIOozzE8xwe.jpg,50000,470,3
+ 50000,프리미엄 스탠다드 오션 (랜덤배정),2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/12/12/1686117196899PM8bAOeZOIOozzE8xwe.jpg,50000,470,3
+ 100000,프리미엄 스탠다드 오션 (랜덤배정),2,7, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/12/12/1686117196899PM8bAOeZOIOozzE8xwe.jpg,100000,470,1
+ 80000,프리미엄 스탠다드 오션 (랜덤배정),2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/12/12/1686117196899PM8bAOeZOIOozzE8xwe.jpg,80000,470,1
+ 90000,프리미엄 스탠다드 오션 (랜덤배정),2,6, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/31/11/1686117196899PM8bAOeZOIOozzE8xwe.jpg,90000,470,3
+ 80000,디럭스 오션 (랜덤배정),2,6, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/12/12/1686117082023aK3mxW2CXPujgip524g.jpg,80000,470,3
+ 70000,디럭스 오션 (랜덤배정),2,6, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/12/12/1686117082023aK3mxW2CXPujgip524g.jpg,70000,470,2
+ 80000,디럭스 오션 (랜덤배정),2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/12/12/1686117082023aK3mxW2CXPujgip524g.jpg,80000,470,2
+ 50000,디럭스 오션 (랜덤배정),2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/12/12/1686117082023aK3mxW2CXPujgip524g.jpg,50000,470,1
+ 50000,스위트 오션 (랜덤배정),2,6, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/12/12/1686117135020BC0wrwhbfzB2zBa1ol5.jpg,50000,470,2
+ 80000,스위트 오션 (랜덤배정),2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/12/12/1686117135020BC0wrwhbfzB2zBa1ol5.jpg,80000,470,1
+ 100000,스위트 오션 (랜덤배정),2,5, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/12/12/1686117135020BC0wrwhbfzB2zBa1ol5.jpg,100000,470,4
+ 50000,스위트 오션 (랜덤배정),2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/06/12/12/1686117135020BC0wrwhbfzB2zBa1ol5.jpg,50000,470,4
+ 60000,스위트 오션 (랜덤배정),2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/31/11/1686117135020BC0wrwhbfzB2zBa1ol5.jpg,60000,470,4
+ 100000,도보고객전용/랜덤객실(주차불가 금연 넷플 ...,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/54353/427273/50fa5f6bcb2bded240ff4d59218bf8de.jpg,100000,471,2
+ 80000,오픈특가(랜덤객실) (금연 넷플 스타일러 스...,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/54353/427222/82c53717574bf8c6ae8d05128f04f258.jpg,80000,471,1
+ 80000,도보고객전용/디럭스(주차불가 금연 넷플 스...,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/54353/444326/6cf021b30312e97bd56a999cbf46e036.jpg,80000,471,3
+ 60000,도보고객전용/디럭스 트윈(주차불가 금연 넷...,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/54353/444327/e8281719d45b3de68295ce92a28273a4.jpg,60000,471,3
+ 80000,도보고객전용/프리미엄 (주차불가 금연 넷플 ...,2,6, //image.goodchoice.kr/resize_370x220/adimg_new/54353/444328/a589ec0068105c85e5c89b45f54a9662.jpg,80000,471,1
+ 50000,도보고객전용/프리미엄 트윈(주차불가 금연 ...,2,6, //image.goodchoice.kr/resize_370x220/adimg_new/54353/444329/ad2e1f4b4930bf5116a3527864132226.jpg,50000,471,2
+ 60000,도보고객전용/스위트(주차불가 금연 넷플 스...,2,6, //image.goodchoice.kr/resize_370x220/adimg_new/54353/444330/96ec2635675419f13d0455a6ca348ed6.jpg,60000,471,4
+ 90000,디럭스 (금연 넷플 스타일러 55스마트TV 공청기),2,8, //image.goodchoice.kr/resize_370x220/adimg_new/54353/427199/78cbdd2cd0543b06049814fc35fea958.jpg,90000,471,3
+ 80000,디럭스 트윈 (금연 넷플 스타일러 55스마트TV...,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/54353/427200/771cdf9eb76ce231d38c95818764674f.jpg,80000,471,3
+ 60000,프리미엄 (금연 넷플 스타일러 65스마트TV 욕...,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/54353/427201/2628ec030cf6b66e78975ac801682663.jpg,60000,471,3
+ 70000,프리미엄 트윈 (금연 넷플 스타일러 65스마트...,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/54353/427203/f7df1951b302f85885176db9aa9c320b.jpg,70000,471,1
+ 100000,스위트 (금연 넷플 스타일러 75스마트TV 욕조...,2,6, //image.goodchoice.kr/resize_370x220/adimg_new/54353/427204/7ff9332becf7c0d62c5836a3ad035184.jpg,100000,471,1
+ 70000,로얄 스위트 (금연 넷플 20평풀옵션 레지던스),2,8, //image.goodchoice.kr/resize_370x220/adimg_new/54353/427206/7603d6d06c9ffa965bbdb5d6d143402e.jpg,70000,471,1
+ 80000,8시간 STAY (체크인시 포인트 현장적립 진행 ...,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/67734/449713/ace09905c7eda7d3361440fd091dad79.jpg,80000,472,4
+ 70000,스탠다드(체크인시 포인트 현장적립 진행 숙...,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/67734/369257/7a38d0a863bd2a4bdd022e984e4c7a44.jpg,70000,472,4
+ 90000,슈페리얼(체크인시 포인트 현장적립 진행 숙...,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/67734/369256/b983659eb0c5d03202a6368bda9018a8.jpg,90000,472,4
+ 100000,늦은 체크아웃(체크인시 포인트 현장적립 진...,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/67734/416548/21d2a0afb8bd20ba58e0767a876f4380.jpg,100000,472,4
+ 70000,프리미엄(체크인시 포인트 현장적립 진행 숙...,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/67734/369258/909870da6ef7826323cc2c74748373e8.jpg,70000,472,4
+ 100000,디럭스 커플PC(체크인시 포인트 현장적립 진...,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/67734/369254/355d9b324519c787b98281df032e7c03.jpg,100000,472,4
+ 70000,디럭스트윈(체크인시 포인트 현장적립 진행 ...,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/67734/369255/ad341a7e01c75e60af258593a4bdf2bb.jpg,70000,472,2
+ 70000,디럭스,2,6, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/03/64cb0d873e8ba.jpg,70000,473,1
+ 100000,[단독특가! 무료 룸UP] 디럭스→프리미엄,2,7, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/03/64cb0dfc72369.jpg,100000,473,2
+ 90000,디럭스 트윈,2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/03/64cb0f07d4b17.jpg,90000,473,2
+ 100000,프리미엄,2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/03/64cb0dfc72369.jpg,100000,473,2
+ 60000,스위트 테라스,2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/03/64cb0e79e1152.jpg,60000,473,1
+ 80000,패밀리 트윈,2,7, //image.goodchoice.kr/resize_370x220/affiliate/2023/08/03/64cb0f719258a.jpg,80000,473,1
+ 80000,[오픈특가]스탠다드(65  TV 넷플릭스),2,8, //image.goodchoice.kr/resize_370x220/adimg_new/72002/466479/3f4f017ccab132c208f3eaf0689d3ab7.jpg,80000,474,4
+ 60000,[오픈특가]디럭스 (스타일러  65  TV 넷플릭스),2,5, //image.goodchoice.kr/resize_370x220/adimg_new/72002/466480/dc90f6a1538ef42060f8ff51e1cd4357.jpg,60000,474,3
+ 50000,[오픈특가]프리미엄 (안마의자  65  TV 넷플릭스),2,5, //image.goodchoice.kr/resize_370x220/adimg_new/72002/473633/9acaf6a6c514ea8467c89169638538f5.jpg,50000,474,3
+ 80000,[오픈특가]트윈 (65  TV 넷플릭스),2,6, //image.goodchoice.kr/resize_370x220/adimg_new/72002/466482/426cba8a79d1bdea7d1a1134610018a5.jpg,80000,474,4
+ 80000,[오픈특가]VIP 특실 (안마  스타일러  욕조  ...,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/72002/466483/e2ac3ec758fcb932788c82d4ea58bf52.jpg,80000,474,3
+ 80000,사랑방,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/75542/531581/5a577370ad2380ef7b1c628348600d4b.jpg,80000,475,1
+ 90000,꽃님방,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/75542/541312/d03178e2dc604af295d9de7e24df8a87.jpg,90000,475,2
+ 80000,하늘방,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/75542/531583/b3295c3d41ad85b1540b8acff237013a.jpg,80000,475,1
+ 50000,구름방,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/75542/531584/3aba1be89064d063bc7e0455a8801f60.jpg,50000,475,3
+ 90000,별님방,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/75542/531585/9cf45f9b2431fb83b4621bacec4663ce.jpg,90000,475,1
+ 100000,햇님방,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/75542/531586/36d42700ff560f8302da756b3a6fa3e2.jpg,100000,475,4
+ 100000,해금,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/75094/523043/c4dd53a80cffcd8887938de8b5c5528d.jpg,100000,476,4
+ 100000,비파,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/75094/523044/e076d3200b1db62a30f3c4634aee5669.jpg,100000,476,2
+ 80000,아쟁,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/75094/523040/58897a8a8379866f15bbcbee1edf460f.jpg,80000,476,4
+ 80000,거문고,2,8, //image.goodchoice.kr/resize_370x220/adimg_new/75094/523041/4bc744cf6698fc92902bba4c938b6c6c.jpg,80000,476,3
+ 90000,가야금,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/75094/523042/41b0898a24d158c566b38774741af0ff.jpg,90000,476,1
+ 100000,A201,2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/05/09/645a05acc48e6.jpg,100000,477,3
+ 80000,B101,2,7, //image.goodchoice.kr/resize_370x220/affiliate/2023/05/09/645a0865454c3.jpg,80000,477,4
+ 90000,다람쥐(아름다운정원뷰),2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/02/22/63f5c8673f3cb.jpg,90000,478,1
+ 50000,깊은산속(야생화뷰),2,5, //image.goodchoice.kr/resize_370x220/affiliate/2023/02/22/63f5c8b99c959.jpg,50000,478,1
+ 80000,산야초(예쁜정원전망),2,4, //image.goodchoice.kr/resize_370x220/affiliate/2023/02/22/63f5c91d6634f.jpg,80000,478,3
+ 60000,옹달샘(예쁜정원뷰),2,7, //image.goodchoice.kr/resize_370x220/affiliate/2023/02/22/63f5c8d7c3674.jpg,60000,478,1
+ 60000,산꼴짜기(야생화정원뷰최고),2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/02/22/63f5c7ebafa89.jpg,60000,478,1
+ 100000,소쩍새(2층독채계곡전망),2,8, //image.goodchoice.kr/resize_370x220/affiliate/2023/02/22/63f5c93eb95a8.jpg,100000,478,4
+ 70000,디럭스 (넷플릭스  디즈니+  티빙 시청 가능),2,4, //image.goodchoice.kr/resize_370x220/adimg_new/75049/522449/d6f2569884ce0e29db3cf02006e78420.jpg,70000,479,1
+ 60000,디럭스 온돌 (넷플릭스  디즈니+  티빙 시청 ...,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/75049/522450/7e76a251b3b1360773f67a86372a68a3.jpg,60000,479,1
+ 60000,디럭스 트리플 (넷플릭스  디즈니+  티빙 시...,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/75049/522451/2338e554d50614966d5ee08bbf32499b.jpg,60000,479,2
+ 70000,디럭스 트윈(더블 싱글)  (넷플릭스  디즈니+...,2,6, //image.goodchoice.kr/resize_370x220/adimg_new/75049/533678/1b4d0e6a0c2de0fd245bf912450ad7ce.jpg,70000,479,4
+ 60000,디럭스 패밀리(더블2) (넷플릭스  디즈니+  ...,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/75049/522466/7db6cc95d20cdf43b41e80bdd9e7d41b.jpg,60000,479,1
+ 90000,디럭스 패밀리(더블+싱글2) (넷플릭스  디즈...,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/75049/522452/6d1a42659fea0df85630ae1a5ce66f16.jpg,90000,479,4
+ 50000,일반(1PC/넷플릭스/대형욕조/킹사이즈 베드),2,4, //image.goodchoice.kr/resize_370x220/adimg_new/1190/6636/bd7c85835972eed1708977298d937f92.jpg,50000,480,1
+ 80000,보드게임룸(1PC/보드게임/넷플릭스/대형욕조/...,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/1190/309817/c1254368ec0fcc2c669c9382292e7ba4.jpg,80000,480,2
+ 90000,스터디룸(1PC/스터디테이블/넷플릭스/대형욕...,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/1190/369949/3b97125c8651db0534c64a30f3b7c13e.jpg,90000,480,2
+ 80000,스타일러룸 (LG 스타일러/1PC/넷플릭스/대형...,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/1190/500438/49f1c36882df586259bebf706a93fe53.jpg,80000,480,3
+ 70000,배틀그라운드 1PC룸 (게이밍1pc/넷플릭스/대...,2,6, //image.goodchoice.kr/resize_370x220/adimg_new/1190/500439/8eed9aae8248115e7a2ed6c83b782df7.jpg,70000,480,3
+ 50000,멀티 OTT룸 (넷플릭스/디즈니+/티빙/왓챠/웨...,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/1190/501668/64c5a45f8e45239c40850342a271be15.jpg,50000,480,3
+ 80000,세라젬룸(1PC/세라젬+넷플릭스+대형욕조/킹사...,2,5, //image.goodchoice.kr/resize_370x220/adimg_new/1190/506056/9a9bcd0afa2c62980ed737b05571b95d.jpg,80000,480,1
+ 100000,배틀그라운드 2PC룸(게이밍2pc/넷플릭스/대형...,2,4, //image.goodchoice.kr/resize_370x220/adimg_new/1190/241540/4deef63a0341c288610f9618e70cecc1.jpg,100000,480,2
+ 100000,안심재택룸(1PC/넷플릭스/특수청소/연박가능/...,2,7, //image.goodchoice.kr/resize_370x220/adimg_new/1190/437743/1f7a83f33906611e54025d776e38c1a2.JPG,100000,480,1
+ 90000,VIP룸(2PC/2BED/넷플릭스/대형욕조/킹사이즈 ...,2,6, //image.goodchoice.kr/resize_370x220/adimg_new/1190/6634/3a5ba9e6c820d78b36ef4d846f5983cf.jpg,90000,480,3

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+		"-//mybatis.org//DTD Mapper 3.0//EN" 
+		"https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.TravelMaker.repository.lodge.LodgeDAO">
+	<select id="selectedList" resultType="lodge" parameterType="map">
+		
+		select DISTINCT A.LODGE_IDX ,  A.LODGE_NAME , A.LODGE_RATE, A.LODGE_TYPE, A.LODGE_REALIMGNAME, A.LODGE_ADDRESS 
+			from lodge A
+		<where>
+		A.lodge_isdeleted = 'N'
+		<if test="Arealist != null and Arealist.size() > 0">
+			and
+			(
+			<foreach collection="Arealist" item="item" separator=" or ">
+				lodge_address like '%' || #{item} || '%'
+			</foreach>
+			)
+			</if>
+			<if test="Typelist != null and Typelist.size() > 0">
+				and (
+				<foreach collection="Typelist" item="item2" separator=" or ">
+					lodge_type like '%' || #{item2} || '%'
+				</foreach>
+				)
+			</if>
+		</where>
+	</select>
+	
+	<select id="getCount" parameterType="room" resultType="int">
+  
+          		select count(*) 
+  		from reserved_lodge_current_state
+  		<![CDATA[
+  			where reserved_lodge_current_state_roomidx=${lodge_Room_Type_Idx}
+  				AND reserved_lodge_current_state_startdate <= #{endDate}
+                 AND reserved_lodge_current_state_enddate >= #{startDate}
+            ]]>
+
+     </select>
+	
+	
+	<select id="randomList" resultType="lodge">
+		SELECT *
+     	FROM (
+		    SELECT * 
+		    FROM lodge
+		    where lodge_isdeleted ='N'
+		    ORDER BY dbms_random.value
+		)
+		FETCH FIRST 20 ROWS ONLY
+			
+	</select>
+	
+	
+	
+	<select id="getRoomList" parameterType="int" resultType="room">
+	
+		select * from lodge_room_type where lodge_idx=${idx} and lodge_room_type_isdeleted='N'
+	</select>
+	
+	<select id="getOneRoom" parameterType="int" resultType="room">
+		select * from lodge_room_type where lodge_room_type_idx=${idx}
+	
+	</select>
+	
+	<select id="getLodge" parameterType="int" resultType="lodge">
+		select 
+		B.lodge_idx, 
+		B.lodge_name,  
+		B.lodge_rate, 
+		B.lodge_type, 
+		B.lodge_realimgname, 
+		B.lodge_address, 
+		B.lodge_tel, 
+		B.lodge_Content
+		 from 
+		 	lodge_room_type A
+		        join 
+            lodge B
+                on  B.lodge_isdeleted='N'
+                    where B.lodge_idx=#{idx}
+                  	  fetch first 1 row only
+	 </select>
+	
+	<insert id="insertReserved" parameterType="reserved">
+		insert into 
+		RESERVED_LODGE_CURRENT_STATE (
+			RESERVED_LODGE_CURRENT_STATE_STARTDATE,
+			RESERVED_LODGE_CURRENT_STATE_ENDDATE,
+			RESERVED_LODGE_CURRENT_STATE_USERID,
+			RESERVED_LODGE_CURRENT_STATE_ROOMIDX
+		)
+		values (
+			#{reserved_Lodge_Current_State_StartDate}, 
+			#{reserved_Lodge_Current_State_EndDate}, 
+			#{reserved_Lodge_Current_State_UserId},
+			#{reserved_Lodge_Current_State_RoomIdx}
+		)
+	</insert>
+	
+	<select id="selectedRoomList" parameterType="room" resultType="room">
+
+	select *
+		from lodge_room_type
+			where
+                   lodge_idx=#{lodge_Idx} and lodge_room_type_isdeleted='N'
+                  
+     </select>
+     
+        <select id="ReviewList" parameterType="int" resultType="review">
+     	 select 
+       *
+    		from 
+	    		(select a.*
+                    from 
+                LODGE_ROOM_TYPE  a
+	       			join
+	       		lodge b
+                    on a.lodge_idx  = b.lodge_idx) c
+	       			join
+	       		LODGE_REVIEW  d
+	     	 		on 
+   	 			d.lodge_review_roomtypeidx = c.lodge_Room_Type_Idx 
+                where d.lodge_review_isdeleted = 'N' and lodge_idx = ${lodge_idx}
+     	
+     </select>
+     
+      <select id="selectKeywordList" parameterType="string" resultType="lodge">
+     	select * from lodge where lodge_name like '%${keyword}%'or lodge_address like '%${keyword}%' and lodge_isDeleted = 'N'
+     </select>
+     
+     <select id="roomSelctOne" parameterType="int" resultType="room">
+     	select * from lodge_room_type where lodge_Room_Type_Idx= #{lodge_Room_Type_Idx}
+     </select>
+     
+     <select id="reviewSelectOne" parameterType="int" resultType="review">
+     	select * from LODGE_REVIEW where lodge_Review_Idx= #{lodge_Review_Idx}
+     </select>
+     
+     <insert id="insertReview" parameterType="review" >
+     	insert into LODGE_REVIEW
+     		(
+     		lodge_Review_RoomTypeIdx,
+     		lodge_Review_Rate,
+     		lodge_Review_Writer,
+     		lodge_Review_Content,
+     		iswrite
+     		)
+     		values
+     		(
+     		#{lodge_Review_RoomTypeIdx},
+     		#{lodge_Review_Rate},
+     		#{lodge_Review_Writer},
+     		#{lodge_Review_Content},
+     		'Y'
+     		)
+     </insert>
+     
+     <!-- 찜 -->
+     <insert id="saveInsert" parameterType="save">
+     	insert into lodge_savelist values (#{saveList_UserId}, #{saveList_Lodge_Idx})
+     </insert>
+     
+     <select id="selectSaveList" parameterType="save" resultType="lodge">
+     	select distinct
+    		c.lodge_name,
+    		c.lodge_realimgname,
+    		c.lodge_idx
+    			from lodge_savelist a
+	        join travelmaker_member b
+	    on a.savelist_userid = b.travelmaker_member_userid
+	        join lodge c
+	    on a.savelist_lodge_idx = c.lodge_idx
+        	where b.travelmaker_member_userid = #{saveList_UserId}
+            	
+     </select>
+     
+     <select id="selectDuplicationList" parameterType="save" resultType="save">
+     	select 
+     		* 
+     			from lodge_savelist 
+     				where saveList_UserId = #{saveList_UserId} and saveList_Lodge_Idx = #{saveList_Lodge_Idx}
+     </select>
+     
+     <delete id="deleteFavorite" parameterType="int">
+     	delete lodge_savelist where saveList_Lodge_Idx = #{saveList_Lodge_Idx}
+     </delete>
+     
+     
+     
+     
+     
+     
+     
+</mapper>
+

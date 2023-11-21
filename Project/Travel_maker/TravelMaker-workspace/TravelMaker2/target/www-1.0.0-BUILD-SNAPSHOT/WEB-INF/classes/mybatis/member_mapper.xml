@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC
+            "-//mybatis.org//DTO Mapper 3.0//EN"
+            "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.TravelMaker.repository.member.MemberDAO">
+
+    <insert id="insertMember" parameterType="member">
+        insert into travelmaker_member
+            (travelMaker_Member_UserId, travelMaker_Member_UserPw, travelMaker_Member_Salt, travelMaker_Member_UserName,
+        travelMaker_Member_UserNickName, travelMaker_Member_Email, travelMaker_Member_Birth, travelMaker_Member_Gender,
+        <if test="travelMaker_Member_EncodingProfileImg != null">travelMaker_Member_EncodingProfileImg,</if>
+        travelMaker_Member_Pnum)
+        values
+            (#{travelMaker_Member_UserId}, #{travelMaker_Member_UserPw}, #{travelMaker_Member_Salt}, #{travelMaker_Member_UserName},
+        #{travelMaker_Member_UserNickName}, #{travelMaker_Member_Email}, #{travelMaker_Member_Birth}, #{travelMaker_Member_Gender},
+        <if test="travelMaker_Member_EncodingProfileImg != null">#{travelMaker_Member_EncodingProfileImg},</if>
+        #{travelMaker_Member_Pnum})
+    </insert>
+
+    <select id="selectOneById" resultType="member" parameterType="string">
+        select * from travelmaker_member
+            where travelmaker_member_userid = #{travelMaker_Member_UserId}
+    </select>
+
+    <select id="selectOneByNickname" resultType="member" parameterType="string">
+        SELECT * FROM TRAVELMAKER_MEMBER
+            WHERE TRAVELMAKER_MEMBER_USERNICKNAME = #{nickname}
+    </select>
+    
+    <select id="selectOneByEmail" resultType="member" parameterType="String">
+        SELECT * FROM TRAVELMAKER_MEMBER
+            WHERE TRAVELMAKER_MEMBER_EMAIL = #{email}
+    </select>
+    
+    <update id="secessionAll" parameterType="member">
+    	UPDATE TRAVELMAKER_MEMBER
+		SET travelMaker_Member_IsExist = 'N'
+		WHERE travelMaker_Member_Idx = #{travelMaker_Member_Idx}
+    </update>
+    
+    <select id="isWithDrawl" parameterType="member" resultType="member">
+    	 SELECT * FROM TRAVELMAKER_MEMBER
+    	 	where travelmaker_member_userid = #{travelMaker_Member_UserId} and travelMaker_Member_IsExist = 'N'
+    </select>
+
+	
+    <update id="updatePw" parameterType="member">
+        UPDATE TRAVELMAKER_MEMBER
+        SET TRAVELMAKER_MEMBER_USERPW = #{travelMaker_Member_UserPw} , TRAVELMAKER_MEMBER_SALT = #{travelMaker_Member_Salt}
+        WHERE TRAVELMAKER_MEMBER_USERID = #{travelMaker_Member_UserId}
+    </update>
+    
+     <update id="MemberUpDate" parameterType="member">
+    update TRAVELMAKER_MEMBER
+    	<set>
+		    travelMaker_Member_UserNickName= #{travelMaker_Member_UserNickName},
+		    travelMaker_Member_Salt = #{travelMaker_Member_Salt}, 
+		    travelMaker_Member_UserPw= #{travelMaker_Member_UserPw},
+		    travelMaker_Member_Pnum= #{travelMaker_Member_Pnum},
+		   	<if test="travelMaker_Member_EncodingProfileImg != null">
+		   		travelMaker_Member_EncodingProfileImg=#{travelMaker_Member_EncodingProfileImg}
+		   	</if>
+    	</set> 
+    WHERE travelMaker_Member_Idx = #{travelMaker_Member_Idx} 
+    </update>
+    
+       <select id="getSelectedLodge" parameterType="String" resultType="lodgeAndRoom">
+    select  distinct
+            A.reserved_Lodge_current_state_idx                  as reserved_Lodge_current_state_idx, 
+            A.reserved_Lodge_current_state_StartDate          as reserved_Lodge_current_state_StartDate,
+            A.reserved_Lodge_current_state_EndDate              as reserved_Lodge_current_state_EndDate,
+            D.lodge_idx                                       as lodge_idx,
+            D.lodge_room_type_idx                                as lodge_room_type_idx,
+            D.lodge_room_type_name                              as lodge_room_type_name,
+            D.lodge_room_type_img                             as lodge_room_type_img,
+            D.lodge_realimgname                               as lodge_realimgname,
+            D.lodge_name                                      as lodge_name,
+            CASE WHEN EXISTS (
+                select lodge_review_writer 
+                from LODGE_REVIEW 
+                where lodge_review_roomtypeidx = D.lodge_room_type_idx
+                ) THEN 'Y' END isReview
+        from
+            reserved_lodge_current_state A
+        join ( 
+            select 
+                C.lodge_idx                                       as lodge_idx,
+                B.lodge_room_type_idx                                as lodge_room_type_idx,
+                B.lodge_room_type_name                              as lodge_room_type_name,
+                b.lodge_room_type_img                             as lodge_room_type_img,
+                C.lodge_realimgname                               as lodge_realimgname,
+                C.lodge_name                                      as lodge_name 
+                from 
+                lodge_room_type B join lodge C on b.lodge_idx = c.lodge_idx 
+                ) D 
+                    on
+                        A.reserved_lodge_current_state_roomidx =D.lodge_room_type_idx
+                     where A.reserved_lodge_current_state_userid = #{userid}
+    </select>
+    
+     <select id="getSelectCoupon" parameterType="String" resultType="coupon">
+    	select * from Coupon where Coupon_idx = #{getCoupon}
+    </select>
+    
+    <delete id="cancleReservation" parameterType="int">
+    	delete RESERVED_LODGE_CURRENT_STATE where RESERVED_LODGE_CURRENT_STATE_idx =${idx}
+    </delete>
+    
+    
+    <update id="updateCouponStatus" parameterType="member">
+    	update travelmaker_member
+    		set
+    			useCoupon = ${useCoupon}
+			where travelMaker_member_idx = #{travelMaker_Member_Idx}
+    </update>
+</mapper>

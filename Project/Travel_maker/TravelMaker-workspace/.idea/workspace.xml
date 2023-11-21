@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c1e259d8-4090-45c3-9fc0-1c157f284307" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/src/main/java/com/itbank/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/src/main/java/com/itbank/handler/CustomAuthenticationFailureHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/src/main/java/com/itbank/model/OrderDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/src/main/java/com/itbank/model/OrderList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/src/main/java/com/itbank/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/src/main/java/com/itbank/model/ProductCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/src/main/java/com/itbank/repository/ProductCategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/src/main/java/com/itbank/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/src/main/webapp/WEB-INF/views/auth/loginSuccess.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyStudyFile/About REST API/day10/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../MyStudyFile/About REST API/day10/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyStudyFile/About REST API/day10/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../MyStudyFile/About REST API/day10/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyStudyFile/About REST API/day10/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../MyStudyFile/About REST API/day10/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyStudyFile/About REST API/day10/target/classes/com/itbank/controller/Ajax2Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MyStudyFile/About REST API/day10/target/classes/com/itbank/controller/Ajax2Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyStudyFile/About REST API/day10/target/classes/com/itbank/controller/AjaxController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MyStudyFile/About REST API/day10/target/classes/com/itbank/controller/AjaxController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecurityTest/.project" beforeDir="false" afterPath="$PROJECT_DIR$/SecurityTest/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecurityTest/NetroomManager" beforeDir="false" afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecurityTest/NetroomManager/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecurityTest/NetroomManager/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecurityTest/NetroomManager/.project" beforeDir="false" afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecurityTest/NetroomManager/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecurityTest/NetroomManager/src/main/java/com/itbank/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/src/main/java/com/itbank/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecurityTest/NetroomManager/src/main/java/com/itbank/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/src/main/java/com/itbank/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecurityTest/NetroomManager/src/main/java/com/itbank/handler/OAuth2LoginSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/src/main/java/com/itbank/handler/OAuth2LoginSuccessHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecurityTest/NetroomManager/src/main/java/com/itbank/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/src/main/java/com/itbank/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecurityTest/NetroomManager/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecurityTest/NetroomManager/src/main/webapp/WEB-INF/views/auth/loginForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/src/main/webapp/WEB-INF/views/auth/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecurityTest/NetroomManager/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecurityTest/NetroomManager/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecurityTest/NetroomManager/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecurityTest/NetroomManager/target/jpa-1.0.0-BUILD-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/target/jpa-1.0.0-BUILD-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecurityTest/NetroomManager/target/jpa-1.0.0-BUILD-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/target/jpa-1.0.0-BUILD-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecurityTest/NetroomManager/target/jpa-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/target/jpa-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecurityTest/NetroomManager/target/jpa-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/itbank/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/target/jpa-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/itbank/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecurityTest/NetroomManager/target/jpa-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/itbank/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/target/jpa-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/itbank/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecurityTest/NetroomManager/target/jpa-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/itbank/handler/OAuth2LoginSuccessHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/target/jpa-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/itbank/handler/OAuth2LoginSuccessHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecurityTest/NetroomManager/target/jpa-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/itbank/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/target/jpa-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/itbank/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecurityTest/NetroomManager/target/jpa-1.0.0-BUILD-SNAPSHOT/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/target/jpa-1.0.0-BUILD-SNAPSHOT/WEB-INF/views/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecurityTest/NetroomManager/target/jpa-1.0.0-BUILD-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/target/jpa-1.0.0-BUILD-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecurityTest/NetroomManager/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecurityTest/NetroomManager/target/m2e-wtp/web-resources/META-INF/maven/com.itbank/jpa/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/target/m2e-wtp/web-resources/META-INF/maven/com.itbank/jpa/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecurityTest/NetroomManager/target/m2e-wtp/web-resources/META-INF/maven/com.itbank/jpa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SecurityTest/NetroomManager/target/m2e-wtp/web-resources/META-INF/maven/com.itbank/jpa/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전).zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/.project" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker(10.31 오전)/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/com/TravelMaker/component/FileComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/com/TravelMaker/component/FileComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/com/TravelMaker/component/MailComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/com/TravelMaker/component/MailComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/com/TravelMaker/controller/member/MemberAjaxController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/com/TravelMaker/controller/member/MemberAjaxController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/com/TravelMaker/interceptor/LoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/com/TravelMaker/interceptor/LoginInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/com/TravelMaker/service/GoogleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/com/TravelMaker/service/GoogleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/com/TravelMaker/service/KaKaoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/com/TravelMaker/service/KaKaoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/css/main_css/allUsedHeader.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/css/main_css/join.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/css/main_css/lodge.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/css/main_css/lodge_main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/css/main_css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/css/main_css/myPage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/css/main_css/recommend_travel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/css/main_css/recommend_travel_view.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/img/TravelMakerlogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/img/coupon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/img/dtProfile.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/img/googleIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/img/id.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/img/kakaoIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/img/kakao_login_medium_wide.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/img/locker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/img/lodge.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/img/mail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/img/main_img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/img/modify.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/img/name.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/img/naverIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/img/openLoker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/img/promotion.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/img/promotion_event1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/img/promotion_event2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/img/promotion_event3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/img/promotion_event4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/img/promotion_event5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/img/promotion_img1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/img/promotion_img2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/img/pun.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/img/pw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/img/tm330.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/img/tm400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/img/다운로드.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/log4j.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/mailForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/mybatis/PromotionCoupon_mapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/mybatis/config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/mybatis/lodge_mapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/mybatis/member_mapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/classes/mybatis/recommend_travel_mapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(10.31 오전)/target/test-classes/log4j.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(11.01 새벽).zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(11.01 오후).zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(중간 과 최종의 사이).zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker(중간 수정본).zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/.project" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/component/FileComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/component/FileComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/component/HashComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/component/HashComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/component/MailComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/component/MailComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/controller/InterceptorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/controller/InterceptorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/controller/RecommendTravel/Recommend_TravelAjaxController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/controller/RecommendTravel/Recommend_TravelAjaxController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/controller/RecommendTravel/Recommend_TravelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/controller/RecommendTravel/Recommend_TravelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/controller/RecommendTravel/Recommend_Travel_ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/controller/RecommendTravel/Recommend_Travel_ViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/controller/lodge/LodgeAjaxController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/controller/lodge/LodgeAjaxController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/controller/lodge/LodgeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/controller/lodge/LodgeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/controller/meeting/MeetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/controller/meeting/MeetingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/controller/member/MemberAjaxController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/controller/member/MemberAjaxController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/controller/member/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/controller/member/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/controller/promotion/PromotionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/controller/promotion/PromotionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/controller/promotion/PromotionRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/controller/promotion/PromotionRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/interceptor/LoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/interceptor/ValidUserInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/interceptor/ValidUserInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/model/CouponDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/model/CouponDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/model/LodgeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/model/LodgeDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/model/Lodge_ReviewDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/model/Lodge_ReviewDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/model/Lodge_Room_TypeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/model/Lodge_Room_TypeDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/model/Meeting_BoardDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/model/Meeting_BoardDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/model/Recommend_TravelDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/model/Recommend_TravelDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/model/Reserved_Lodge_Current_StateDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/model/Reserved_Lodge_Current_StateDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/model/TravelMaker_MemberDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/model/TravelMaker_MemberDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/repository/lodge/LodgeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/repository/lodge/LodgeDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/repository/member/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/repository/member/MemberDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/repository/recommendTravel/Recommend_TravelDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/repository/recommendTravel/Recommend_TravelDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/service/GoogleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/service/GoogleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/service/KaKaoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/service/KaKaoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/service/lodge/LodgeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/service/lodge/LodgeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/service/member/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/service/member/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/service/recommendTravel/Recommend_TravelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/service/recommendTravel/Recommend_TravelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/service/recommendTravel/Recommend_Travel_ViewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/java/com/TravelMaker/service/recommendTravel/Recommend_Travel_ViewService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/resources/css/main_css/allUsedHeader.css" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/resources/css/main_css/allUsedHeader.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/resources/css/main_css/lodge.css" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/resources/css/main_css/lodge.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/resources/css/main_css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/resources/css/main_css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/resources/css/main_css/meeting_main.css" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/resources/css/main_css/meeting_main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/resources/css/main_css/myPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/resources/css/main_css/myPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/resources/css/main_css/recommend_travel.css" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/resources/css/main_css/recommend_travel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/resources/css/main_css/recommend_travel_view.css" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/resources/css/main_css/recommend_travel_view.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/resources/img/promotion.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/resources/mybatis/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/resources/mybatis/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/resources/mybatis/lodge_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/resources/mybatis/lodge_mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/resources/mybatis/meeting_board_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/resources/mybatis/meeting_board_mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/resources/mybatis/member_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/resources/mybatis/member_mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/resources/mybatis/recommend_travel_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/resources/mybatis/recommend_travel_mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/spring/root-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/spring/root-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/Lodge/lodge.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/Lodge/lodge.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/Lodge/lodgeRoom.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/Lodge/lodgeRoom.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/Lodge/payment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/Lodge/payment.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/Meeting/meeting_chat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/Meeting/meeting_chat.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/Meeting/meeting_main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/Meeting/meeting_main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/Member/join.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/Member/join.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/Member/myPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/Member/myPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/Promotion/travel_promotion_main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/Promotion/travel_promotion_main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/Welcome-Login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/Welcome-Login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/Welcome-LoginAPI.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/allUsedHeader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/allUsedHeader.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/headerDialog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/headerDialog.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/recommend_travel/recommend_travel_header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/recommend_travel/recommend_travel_header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/recommend_travel/recommend_travel_main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/recommend_travel/recommend_travel_main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/recommend_travel/recommend_travel_view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/views/recommend_travel/recommend_travel_view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/component/FileComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/component/FileComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/component/HashComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/component/HashComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/component/MailComponent$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/component/MailComponent$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/component/MailComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/component/MailComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/controller/InterceptorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/controller/InterceptorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/controller/RecommendTravel/Recommend_TravelAjaxController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/controller/RecommendTravel/Recommend_TravelAjaxController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/controller/RecommendTravel/Recommend_TravelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/controller/RecommendTravel/Recommend_TravelController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/controller/RecommendTravel/Recommend_Travel_ViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/controller/RecommendTravel/Recommend_Travel_ViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/controller/lodge/LodgeAjaxController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/controller/lodge/LodgeAjaxController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/controller/lodge/LodgeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/controller/lodge/LodgeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/controller/meeting/MeetingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/controller/meeting/MeetingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/controller/member/MemberAjaxController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/controller/member/MemberAjaxController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/controller/member/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/controller/member/MemberController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/controller/promotion/PromotionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/controller/promotion/PromotionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/controller/promotion/PromotionRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/controller/promotion/PromotionRestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/interceptor/LoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/interceptor/LoginInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/interceptor/ValidUserInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/interceptor/ValidUserInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/model/CouponDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/model/CouponDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/model/LodgeDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/model/LodgeDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/model/Lodge_ReviewDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/model/Lodge_ReviewDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/model/Lodge_Room_TypeDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/model/Lodge_Room_TypeDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/model/Meeting_BoardDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/model/Meeting_BoardDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/model/Recommend_TravelDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/model/Recommend_TravelDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/model/Reserved_Lodge_Current_StateDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/model/Reserved_Lodge_Current_StateDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/model/TravelMaker_MemberDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/model/TravelMaker_MemberDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/repository/lodge/LodgeDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/repository/lodge/LodgeDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/repository/member/MemberDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/repository/member/MemberDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/repository/recommendTravel/Recommend_TravelDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/repository/recommendTravel/Recommend_TravelDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/service/GoogleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/service/GoogleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/service/KaKaoService$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/service/KaKaoService$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/service/KaKaoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/service/KaKaoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/service/lodge/LodgeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/service/lodge/LodgeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/service/member/MemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/service/member/MemberService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/service/recommendTravel/Recommend_TravelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/service/recommendTravel/Recommend_TravelService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/service/recommendTravel/Recommend_Travel_ViewService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/com/TravelMaker/service/recommendTravel/Recommend_Travel_ViewService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/css/main_css/allUsedHeader.css" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/css/main_css/allUsedHeader.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/css/main_css/lodge.css" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/css/main_css/lodge.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/css/main_css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/css/main_css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/css/main_css/meeting_main.css" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/css/main_css/meeting_main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/css/main_css/myPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/css/main_css/myPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/css/main_css/recommend_travel.css" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/css/main_css/recommend_travel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/css/main_css/recommend_travel_view.css" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/css/main_css/recommend_travel_view.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/img/promotion.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/mybatis/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/mybatis/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/mybatis/lodge_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/mybatis/lodge_mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/mybatis/meeting_board_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/mybatis/meeting_board_mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/mybatis/member_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/mybatis/member_mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/classes/mybatis/recommend_travel_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/classes/mybatis/recommend_travel_mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker/target/m2e-wtp/web-resources/META-INF/maven/com.TravelMaker/www/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/TravelMaker/target/m2e-wtp/web-resources/META-INF/maven/com.TravelMaker/www/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker10.27.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker10.28.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker10.29.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelMaker10.30.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test1/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/test1/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test1/.project" beforeDir="false" afterPath="$PROJECT_DIR$/test1/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test1/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/test1/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test1/target/m2e-wtp/web-resources/META-INF/maven/com.itbank/test1/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/test1/target/m2e-wtp/web-resources/META-INF/maven/com.itbank/test1/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TravelMaker/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../TravelMaker/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TravelMaker/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../TravelMaker/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TravelMaker/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../TravelMaker/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TravelMaker/target/classes/com/TravelMaker/component/FileComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TravelMaker/target/classes/com/TravelMaker/component/FileComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TravelMaker/target/classes/com/TravelMaker/component/MailComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TravelMaker/target/classes/com/TravelMaker/component/MailComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TravelMaker/target/classes/com/TravelMaker/controller/member/MemberAjaxController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TravelMaker/target/classes/com/TravelMaker/controller/member/MemberAjaxController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TravelMaker/target/classes/com/TravelMaker/interceptor/LoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TravelMaker/target/classes/com/TravelMaker/interceptor/LoginInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TravelMaker/target/classes/com/TravelMaker/service/KaKaoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TravelMaker/target/classes/com/TravelMaker/service/KaKaoService.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2Xybcdvk2wvO7PZu6gpoU7MmGvc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Sunro",
+    "last_opened_file_path": "C:/Users/이선로/Documents/GitHub/Travel_maker/TravelMaker",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="TravelMaker-workspace" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="TravelMaker-workspace" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c1e259d8-4090-45c3-9fc0-1c157f284307" name="Changes" comment="" />
+      <created>1699604347107</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699604347107</updated>
+      <workItem from="1699604348117" duration="197000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

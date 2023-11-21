@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+        "-//mybatis.org//DTD Mapper 3.0//EN" 
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.TravelMaker.repository.meeting.Meeting_BoardDAO">
+    <select id="selectList" resultType="meeting">
+        select * from meeting_board order by meeting_Board_Idx desc
+    </select>
+
+    <update id="deleteBoard" parameterType="int">
+        update meeting_board set meeting_board_isdeleted = 'Y' where meeting_Board_Idx = #{meeting_Board_Idx}
+    </update>
+
+    <insert id="writeBoard" parameterType="meeting">
+        insert into meeting_board (meeting_Board_Content, meeting_Board_Writer, meeting_Board_Location, meeting_Board_Nickname)
+                values (#{meeting_Board_Content}, #{meeting_Board_Writer}, #{meeting_Board_Location}, #{meeting_Board_Nickname})
+    </insert>
+
+    <update id="modifyBoard" parameterType="meeting">
+        update meeting_board set 
+            meeting_board_content = #{meeting_Board_Content}, meeting_board_location = #{meeting_Board_Location}
+            where meeting_board_idx = #{meeting_Board_Idx}
+    </update>
+</mapper>

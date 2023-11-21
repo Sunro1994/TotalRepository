@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
+	xsi:schemaLocation="http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring-1.2.xsd
+		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+		<property name="jdbcUrl" value="jdbc:oracle:thin:@travelmaker_high?TNS_ADMIN=C:/Wallet_TravelMaker" /> 
+		<property name="username" value="ADMIN" />
+		<property name="password" value="1Q2w3e4r5t1!" />
+	</bean>
+	
+	<bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource">
+		<constructor-arg ref="hikariConfig" />
+	</bean>
+	
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="configLocation" value="classpath:mybatis/config.xml" />
+		<property name="mapperLocations">
+			<list>
+				<value>classpath:mybatis/recommend_travel_mapper.xml</value>
+				<value>classpath:mybatis/lodge_mapper.xml</value>
+				<value>classpath:mybatis/member_mapper.xml</value> 
+				<value>classpath:mybatis/PromotionCoupon_mapper.xml</value> 
+				<value>classpath:mybatis/meeting_board_mapper.xml</value>
+					<value>classpath:mybatis/admin_mapper.xml</value>
+			</list>
+		</property>
+		
+	</bean>
+	
+	<bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg ref="sqlSessionFactory" />
+	</bean>
+	
+	<!-- 
+		지정한 패키지 내부의 interface를 찾아서 실제 SQL을 수행할 수 있는 프록시(proxy, 대리자)
+		객체를 생성한 후, 스프링 빈으로 등록하는 과정을 수행하게 한다
+	 -->
+	<mybatis-spring:scan base-package="com.TravelMaker.repository" />
+	<context:component-scan base-package="com.TravelMaker.component" />
+	<!-- component : 용도 불분명
+	보통은 요청을 받아서 처리하고, 부과 기능들이 필요한데, 안들어간 기능들 중에
+	등록해서 사용하고 싶을때 component를 사용한다
+	필요한 곳에서  오토와이어드로 선언만 해주면 어디서든 호출만 하면 사용할 수 있다 -->
+	<context:component-scan base-package="com.TravelMaker.service" />
+		
+</beans>

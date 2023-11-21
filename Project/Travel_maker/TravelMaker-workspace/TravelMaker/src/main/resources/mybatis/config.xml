@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC 
+		"-//mybatis.org//DTD Config 3.0//EN" 
+		"https://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<typeAliases>
+		<typeAlias type="com.TravelMaker.model.Recommend_TravelDTO" alias="recommend"/>
+		<typeAlias type="com.TravelMaker.model.LodgeDTO" alias="lodge"/>
+		<typeAlias type="com.TravelMaker.model.Lodge_Room_TypeDTO" alias="room"/>
+		<typeAlias type="com.TravelMaker.model.TravelMaker_MemberDTO" alias="member" />
+		<typeAlias type="com.TravelMaker.model.CouponDTO" alias="coupon" />
+		<typeAlias type="com.TravelMaker.model.Meeting_BoardDTO" alias="meeting"/>
+		<typeAlias type="com.TravelMaker.model.Reserved_Lodge_Current_StateDTO" alias="reserved"/>
+        <typeAlias type="com.TravelMaker.model.Lodge_ReviewDTO" alias="review" />
+        <typeAlias type="com.TravelMaker.model.LodgeAndRoomDTO" alias="lodgeAndRoom"/>
+        <typeAlias type="com.TravelMaker.model.SaveListDTO" alias="save"/>
+        
+		
+	</typeAliases>
+</configuration>

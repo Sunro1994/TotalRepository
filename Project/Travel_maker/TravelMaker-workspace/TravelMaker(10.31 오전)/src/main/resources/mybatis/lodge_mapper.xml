@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+		"-//mybatis.org//DTD Mapper 3.0//EN" 
+		"https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.TravelMaker.repository.lodge.LodgeDAO">
+	<select id="selectedList" resultType="lodge">
+		select * from lodge
+		<where>
+			(
+			<foreach collection="Arealist" item="item" separator=" or ">
+				lodge_address like '%' || #{item} || '%'
+			</foreach>
+			)
+			<if test="Typelist != null and Typelist.size() > 0">
+				and (
+				<foreach collection="Typelist" item="item2" separator=" or ">
+					lodge_type like '%' || #{item2} || '%'
+				</foreach>
+				)
+			</if>
+		</where>
+	</select>
+	
+	
+	<select id="randomList" resultType="lodge">
+		SELECT *
+     	FROM (
+		    SELECT * 
+		    FROM lodge
+		    ORDER BY dbms_random.value
+		)
+		FETCH FIRST 20 ROWS ONLY
+			
+	</select>
+	
+	<select id="getRoomList" parameterType="int" resultType="room">
+	
+		select * from lodge_room_type where lodge_idx=${idx}
+	</select>
+	
+	<select id="getOneRoom" parameterType="int" resultType="room">
+		select * from lodge_room_type where lodge_room_type_idx=${idx}
+	
+	</select>
+</mapper>
+
