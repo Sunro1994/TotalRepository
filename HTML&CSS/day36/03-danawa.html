@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03-danawa.html</title>
+    <style>
+        .frame {
+            width: 1260px;
+            margin: 0 auto;
+        }
+        header {
+            padding: 20px;
+            border-bottom: 2px solid #dadada;
+        }
+        aside {
+            background-color: blue;
+            color: white;
+        }
+        #main1 {
+            display: flex;
+        }
+        #main1 > aside {
+            flex: 1;
+        }
+        #main1 > article {
+            flex: 4;
+            padding: 20px;
+        }
+        #main1 nav > ul > li {
+            padding: 8px;
+        }
+        #main1 nav > ul > li:hover {
+            color: blue;
+            background-color: white;
+            cursor: pointer;
+        }
+        #main1 nav > ul {       /* 기준 */
+            position: relative;
+        }
+        #main1 nav > ul > li > section {    /* 위치 적용 요소 */
+            position: absolute;
+            top: -16px;
+            left: 244px;
+            width: 500px;
+            height: 439px;
+            background-color: white;
+            display: none;
+            border: 2px solid red;
+            box-sizing: border-box;
+        }
+        #main1 nav > ul > li:hover > section {
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!--
+        danawa.com의 주요 레이아웃을 간단히 구성하고
+        왼쪽 측면의 드랍다운 메뉴부분만 상세히 구현한다
+    -->
+
+    <header>
+        <h1 class="frame">danawa.com</h1>
+    </header>
+
+    <main class="frame">
+        <div id="main1">
+            <aside>
+                <nav>
+                    <ul>
+                        <li>
+                            가전·TV
+                            <section>
+                                <h3>가전·TV</h3>
+                            </section>
+                        </li>
+
+                        <li>
+                            컴퓨터·노트북·조립PC
+                            <section>
+                                <h3>컴퓨터·노트북·조립PC</h3>
+                            </section>
+                        </li>
+                        <li>
+                            태블릿·모바일·디카
+                            <section>
+                                <h3>태블릿·모바일·디카</h3>
+                            </section>
+                        </li>
+                        <li>
+                            아웃도어·스포츠·골프
+                            <section>
+                                <h3>아웃도어·스포츠·골프</h3>
+                            </section>
+                        </li>
+                        <li>자동차·용품·공구</li>
+                        <li>가구·조명</li>
+                        <li>식품·유아·완구</li>
+                        <li>생활·주방·건강</li>
+                        <li>패션·잡화·뷰티</li>
+                        <li>사무·취미·반려동물</li>
+                        <li>여행·항공·호텔</li>
+                    </ul>
+                </nav>
+            </aside>
+            <article>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quis quia laboriosam cumque, voluptas minima mollitia in tempore facilis labore excepturi deserunt, neque, laborum rem quidem numquam. Recusandae, quia laudantium!
+            </article>
+        </div>
+        <div id="main2">
+            <h3>메인 하단</h3>
+        </div>
+    </main>
+    
+</body>
+</html>

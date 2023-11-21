@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+                }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #nav{
+            background-color: pink;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+        }
+        #nav>ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            width: 800px;
+            margin: auto;
+        }
+        #main > img{
+            height: 500px;
+            display: block;
+            margin: auto; /*그림은 글자취급 하기 때문에 margin적용이 안되지만
+                            display : block을 걸면 내부 컨텐츠크기만큼이 아닌 block영역으로 취급
+                            in-line의 특징 : 내부 컨텐츠만큼의 크기를 갖고 있다, 자신만의 영역의 크기가 없다.
+                            */
+                            opacity: 0.6;
+                            transition-duration: 0.5s;
+                            width: 50%;
+        }
+        #main> img:hover{
+            opacity: 1;
+            transition-duration: 3s;
+            width: 60%;
+        }
+        #remocon{
+            font-size: 40px;
+            display: flex;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            background-color: dodgerblue;
+            border: 2px solid black;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        #nav a:hover{
+            text-decoration: underline;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>position.html</h1>
+    <hr>
+
+    <div id="header">
+        <h1>position.html</h1>
+    </div>
+
+    <div id="nav">
+        <ul>
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu2</a></li>
+            <li><a href="#">menu3</a></li>
+            <li><a href="#">menu4</a></li>
+            <li><a href="#">menu5</a></li>
+        </ul>
+    </div>
+
+    <div id="main">
+        <img src="image/calmdownman.jpg"><br><br>
+        <img src="image/danbi.jpg"><br><br>
+        <img src="image/dora.png"><br><br>
+        <img src="image/head_body.jpg"><br><br>
+        <img src="image/iu.jpg"><br><br>
+        <img src="image/jisoo.png"><br><br>
+        <img src="image/11.jpg"><br><br>
+    </div>
+
+    <div id="remocon">
+        <div><a href="#header">🔺</a></div>
+        <div><a href="#footer">🔻</a></div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>

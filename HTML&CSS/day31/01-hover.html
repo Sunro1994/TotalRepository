@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            display: flex;
+        }
+        ul > li {
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            background-color: #dadada;
+            color: black;
+            border-radius: 5px;        /*테두리를 둥글게 깎는다.*/
+            border: 1px solid black;
+            text-align: center;
+            margin: 10px;
+
+        }
+        ul > li:hover{
+                        /*우, 좌 , 그라데이션(대각) */
+            box-shadow: 5px 5px 5px rgb(32, 13, 195);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>hober.html</h1>
+    <hr>
+
+    <h3>선택자에 특수상황이나 조건을 지정할 수 있다<br>
+        hover는 요소에 마우스를 올렸을 때 반응하는 선택자이다.
+    </h3>
+
+    <ul>
+        <li>버튼1</li>
+        <li>버튼2</li>
+        <li>버튼3</li>
+        <li>버튼4</li>
+        <li>버튼5</li>
+    </ul>
+</body>
+</html>

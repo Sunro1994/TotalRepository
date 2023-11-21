@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05-map.html</title>
+    <style>
+        #root {
+            width: 300px;
+            border: 2px solid black;
+        }
+        .item {
+            display: flex;
+        }
+        .item:first-child {
+            background-color: black;
+            color: white;
+        }
+        .item > div {
+            flex: 1;
+            border: 1px solid grey;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>05-map.html</h1>
+    <hr>
+
+    <div id="root"></div>
+
+    <script>
+        const arr = [
+            {name: '원빈', score: 95},
+            {name: '현빈', score: 52},
+            {name: '박현빈', score: 67},
+            {name: '김우빈', score: 50},
+            {name: '임성빈', score: 80},
+        ]
+        // 점수가 60이상이면 '합격', 60미만이면 '불합격' 을 추가하여
+        // 화면에 나타내주세요. div를 사용하거나 table을 사용하면 됩니다
+
+        const arr2 = arr.map(ob => {
+            return {
+                name: ob.name,
+                score: ob.score,
+                result: ob.score >= 60 ? '합격' : '불합격'
+            }
+        })
+
+        const root = document.getElementById('root')
+        root.innerHTML += '<div class="item"><div>이름</div><div>점수</div><div>결과</div></div>'
+
+        arr2.forEach(ob => {
+            let tag = '<div class="item">'
+            tag += '<div>' + ob.name + '</div>'
+            tag += '<div>' + ob.score + '</div>'
+            tag += '<div>' + ob.result + '</div>'
+            tag += '</div>'
+
+            let tag2 = `<div class="item">`
+            tag2 += `<div>${ob.name}</div>`
+            tag2 += `<div>${ob.score}</div>`
+            tag2 += `<div>${ob.result}</div>`
+            tag2 += `</div>`
+            root.innerHTML += tag2
+        })
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07-operator.html</title>
+</head>
+<body>
+
+    <h1>07-operator.html</h1>
+    <hr>
+
+    <script>
+        const s1 = ''       // 빈 문자열
+        const s2 = 0        // 숫자 0
+        const s3 = []       // 빈 배열
+        const s4 = '0'      // 문자열 0
+
+        console.log(s1 == s2)   // 빈 문자열 == 숫자 0 (값이 없다)
+        console.log(s2 == s3)   // 숫자 0 == 빈 배열 (값이 없다)
+        console.log(s1 == s3)   // 빈 문자열 == 빈 배열 (값이 없다)
+        console.log('=============')
+        console.log(s2 == s3)   // 숫자 0 == 빈 배열 (값이 없다)
+        console.log(s2 == s4)   // 숫자 0 == 문자열 0 (모양이 같다)
+        console.log(s3 == s4)   // 빈 배열 == 문자열 0 (같지 않다)
+
+        console.log('')
+        console.log(s2 === s3)  // 타입을 포함하여 같은 값이다
+        console.log(s2 !== s3)  // 타입을 포함하여 같지 않은 값이다
+    </script>
+    
+</body>
+</html>

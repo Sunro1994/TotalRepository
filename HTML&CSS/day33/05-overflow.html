@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05-overflow.html</title>
+</head>
+<body>
+
+    <h1>05-overflow.html</h1>
+    <hr>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <td>overflow: auto</td>
+            <td>내용에 따라서 스크롤바가 생길수도 있고 없을 수도 있다</td>
+        </tr>
+        <tr>
+            <td>overflow: hidden</td>
+            <td>범위를 벗어나는 내용은 숨긴다. 스크롤바는 강제로 사라진다</td>
+        </tr>
+        <tr>
+            <td>overflow: scroll</td>
+            <td>내용에 상관없이 항상 스크롤바를 표시한다</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                overflow: 내용이 영역을 벗어날 경우의 처리방식을 결정<br>
+                overflow-x: 내용이 가로영역을 벗어날 경우의 처리방식을 결정<br>
+                overflow-y: 내용이 세로영역을 벗어날 경우의 처리방식을 결정
+            </td>
+        </tr>
+    </table>
+    <br>
+
+    <fieldset style="overflow: hidden; width: 300px; height: 120px;">
+        <legend><b>overflow: hidden</b></legend>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab itaque sit dolore deserunt dolor optio provident, at expedita quisquam accusamus vel natus, officiis fugiat maiores velit obcaecati impedit. Nulla, maxime?
+    </fieldset>
+    <br>
+
+    <fieldset style="overflow: auto; width: 300px; height: 120px;">
+        <legend><b>overflow: auto</b></legend>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab itaque sit dolore deserunt dolor optio provident, at expedita quisquam accusamus vel natus, officiis fugiat maiores velit obcaecati impedit. Nulla, maxime?
+    </fieldset>
+    <br>
+
+    <fieldset style="overflow: scroll; width: 300px; height: 120px;">
+        <legend><b>overflow: scroll</b></legend>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab itaque sit dolore deserunt dolor optio provident, at expedita quisquam accusamus vel natus, officiis fugiat maiores velit obcaecati impedit. Nulla, maxime?
+    </fieldset>
+    <br>
+    
+</body>
+</html>

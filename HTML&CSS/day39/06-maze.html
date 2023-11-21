@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06-maze.html</title>
+    <style>
+        #root {
+            width: 500px;
+            height: 500px;
+            border: 3px solid black;
+            position: relative;
+        }
+        .item {
+            box-sizing: border-box;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url('image/짱아.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition-duration: 0.5s;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>06-maze.html</h1>
+    <hr>
+
+    <div id="root">
+        <div class="item" style="top: 0; left: 0;"></div>
+    </div>
+
+    <script>
+        const item = document.querySelector('.item')
+
+        function keyHandler(event) {
+            let nextLeft = +item.style.left.replace('px', '')
+            let nextTop = +item.style.top.replace('px', '')
+            switch(event.key) {
+                case 'ArrowRight':
+                    nextLeft += 100
+                    break;
+                case 'ArrowLeft':
+                    nextLeft -= 100
+                    break;
+                case 'ArrowDown':
+                    nextTop += 100
+                    break
+                case 'ArrowUp':
+                    nextTop -= 100
+                    break;
+            }
+            console.log({
+                top: nextTop,
+                left: nextLeft
+            })
+            if(nextLeft < 0 || 400 < nextLeft || nextTop < 0 || 400 < nextTop){
+                return
+            }
+            item.style.left = nextLeft + 'px'
+            item.style.top = nextTop + 'px'
+        }
+        document.onkeydown = keyHandler
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04-font-style.html</title>
+</head>
+<body>
+
+    <h1>04-font-style.html</h1>
+    <hr>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <td>font-size</td>
+            <td>글자 크기 지정, px, pt, em, rem</td>
+        </tr>
+        <tr>
+            <td>font-family</td>
+            <td>글꼴, 클라이언트 컴퓨터에 설치되어 있어야 한다</td>
+        </tr>
+        <tr>
+            <td>font-weight</td>
+            <td>글자 두께</td>
+        </tr>
+        <tr>
+            <td>line-height</td>
+            <td>문장 한 줄의 높이 지정</td>
+        </tr>
+        <tr>
+            <td>text-align</td>
+            <td>글자의 (좌우)정렬을 지정</td>
+        </tr>
+        <tr>
+            <td>text-decoration</td>
+            <td>글자의 꾸밈 요소(주로 a태그의 밑줄)</td>
+        </tr>
+    </table>
+    
+    <fieldset>
+        <legend>font-size</legend>
+        <ul>
+            <li>Hello, world (initial)</li>
+            <li style="font-size: 2em;">Hello, world (2em)</li>
+            <li style="font-size: 1.5rem;">Hello, world (1.5rem)</li>
+            <li style="font-size: 20px;">Hello, world (20px)</li>
+            <li style="font-size: 20pt;">Hello, world (20pt)</li>
+        </ul>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>font-family</legend>
+        <h4>C:\windows\fonts\</h4>
+        <ul>
+            <li style="font-family: 'Consolas';">Hello, world</li>
+            <li style="font-family: 'Comic Sans MS';">Hello, world</li>
+            <li style="font-family: 'Impact';">Hello, world</li>
+            <li style="font-family: 'Times New Roman';">Hello, world</li>
+            <li style="font-family: 'sans-serif';">Hello, world</li>
+            <li style="font-family: '필기', 'Lucida Handwriting';">Hello, world</li>
+        </ul>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>font-weight</legend>
+        <ul>
+            <li style="font-weight: 100;">Hello, world</li>
+            <li style="font-weight: 200;">Hello, world</li>
+            <li style="font-weight: 300;">Hello, world</li>
+            <li style="font-weight: 400;">Hello, world</li>
+            <li style="font-weight: 500;">Hello, world</li>
+            <li style="font-weight: bold;">Hello, world</li>
+            <li style="font-weight: bolder;">Hello, world</li>
+        </ul>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>line-height</legend>
+        <ul>
+            <li style="line-height: 16px;">line-height: 16px;</li>
+            <li style="line-height: 20px;">line-height: 20px;</li>
+            <li style="line-height: 30px;">line-height: 30px;</li>
+            <li style="line-height: 40px;">line-height: 40px;</li>
+        </ul>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>text-align</legend>
+        <ul>
+            <li style="text-align: left;">text-align: left;</li>
+            <li style="text-align: center;">text-align: center;</li>
+            <li style="text-align: right;">text-align: right;</li>
+        </ul>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>text-decoration</legend>
+        <ul>
+            <li style="text-decoration: underline;">text-decoration: underline;</li>
+            <br>
+            <li style="text-decoration: overline;">text-decoration: overline;</li>
+            <br>
+            <li style="text-decoration: line-through;">text-decoration: line-through;</li>
+        </ul>
+        <br>
+        <a href="https://www.naver.com">네이버</a>
+        <br>
+        <a style="text-decoration: none;" href="https://www.naver.com">네이버</a>
+    </fieldset>
+    <br>
+
+    <div class="test">
+        <p>Hello, world !!</p>
+        <input type="number" min="1" max="400" step="1">
+    </div>
+
+    <script>
+        const p = document.querySelector('.test > p')
+        const size = document.querySelector('.test > input')
+
+        size.onchange = function() {
+            p.style.fontSize = size.value + 'px'
+        }
+    </script>
+
+</body>
+</html>

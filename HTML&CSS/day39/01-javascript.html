@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-javascript.html</title>
+</head>
+<body>
+    
+    <h1>01-javascript.html</h1>
+    <hr>
+
+    <ol>
+        <li>boolean : 참/거짓</li>
+        <li>number : 숫자 (정수, 실수)</li>
+        <li>string : 문자열</li>
+        <li>function : 함수</li>
+        <li>array : 배열</li>
+        <li>object : 객체</li>
+    </ol>
+
+    <script>
+        // 변수 선언 키워드 : var, let, const
+        // var : 변수 재할당 가능, 재선언 가능 <- 이미 선언한 변수를 덮어쓸 수 있다
+
+        var a = 10;     // a변수를 선언하고, 그 값을 10으로 지정한다
+        a = 20;         // 이미 선언된 변수 a의 값을 20으로 재할당한다
+
+        var a = 30;     // 기존에 선언된 변수가 있지만, 선언 키워드로 다시 재선언한다
+        console.log('a :', a);
+
+        // let : 값의 재할당은 가능하지만, 변수의 재선언은 불가능하다
+        let b = 10;
+        b = 20;
+        // let b = 30;  // 재선언은 불가능
+        console.log('b :', b);
+
+        // const : 값의 재할당이 불가능하다 (상수)
+        const c = 10;
+        // c = 20;
+        console.log('c :', c);
+
+        // 자료형
+        const t1 = true;
+        const t2 = 1234;
+        const t3 = 'Hello';
+        const t4 = () => alert('function~!!')
+        const t5 = ['짱구', '유리', '수지', '철수', '훈이']
+        const t6 = {
+            name: '단비',       // 객체에는 속성을 저장할 변수를 생성할 수 있다
+            age: 5,
+            show: () => alert('단비꺼야 !!')
+                                // 객체의 속성에 함수를 지정할 수 있다
+        }
+        console.log(typeof(t1))
+        console.log(typeof(t2))
+        console.log(typeof(t3))
+        console.log(typeof(t4))
+        console.log(typeof(t5), t5)
+        console.log(typeof(t6))
+
+        // t6.show()
+
+        console.log({body: document.body})
+    </script>
+
+</body>
+</html>

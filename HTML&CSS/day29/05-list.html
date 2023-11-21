@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05-list.html</title>
+</head>
+<body>
+
+    <h1>05-list.html</h1>
+    <hr>
+
+    <h3>unordered list : 순번을 매기지 않는 목록 나열</h3>
+    <ul type="disc"><!-- circle, square-->
+        <li>network</li>
+        <li>windows</li>
+        <li>linux</li>
+        <li>python</li>
+        <li>c</li>
+        <li>
+            java
+            <ul>
+                <li>data type</li>
+                <li>variable</li>
+                <li>operator</li>
+                <li>control statements</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>ordered list : 순번을 자동으로 매겨주는 리스트</h3>
+    <ol type="1"><!-- a, A, i, I, 1-->
+        <li>객체지향 프로그래밍</li>
+        <li>데이터베이스 시스템</li>
+        <li>화면 설계 / 구현</li>
+        <li>서버 프로그램 구현</li>
+        <li>
+            프레임워크 개발
+            <ol type="a">
+                <li>스프링 프레임워크 개요</li>
+                <li>IoC (Inversion Of Control)</li>
+                <li>DI (Dependency Injection)</li>
+                <li>AOP (Aspect Oriented Programming)</li>
+            </ol>
+        </li>
+        <li>배포 및 테스트</li>
+    </ol>
+    
+</body>
+</html>

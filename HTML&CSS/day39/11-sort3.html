@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11-sort3.html</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 2px solid black;
+            margin: 20px 0;
+        }
+        td, th {
+            padding: 10px;
+            border: 1px solid grey;
+        }
+        img {
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>11-sort3.html</h1>
+    <hr>
+
+    <div id="sort">
+        <button>상품명 오름차순 정렬</button>
+        <button>상품명 내림차순 정렬</button>
+        <button>가격 오름차순 정렬</button>
+        <button>가격 내림차순 정렬</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>이미지</th>
+                <th>상품명</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="homeplus/사과1.jpeg"></td>
+                <td>초록사과 5-8입(봉)</td>
+                <td>9,990원</td>
+            </tr>
+            <tr>
+                <td><img src="homeplus/사과2.jpeg"></td>
+                <td>유명산지 사과(충주,문경,거창,영주) 4-6입</td>
+                <td>12,990원</td>
+            </tr>
+            <tr>
+                <td><img src="homeplus/사과3.jpeg"></td>
+                <td>맛이 예쁜 사과 1.8KG (봉)</td>
+                <td>14,990원</td>
+            </tr>
+            <tr>
+                <td><img src="homeplus/사과4.jpeg"></td>
+                <td>[착한식탁]바른 세척 아오리 사과 2kg 꼬마소과</td>
+                <td>12,500원</td>
+            </tr>
+            <tr>
+                <td><img src="homeplus/사과5.jpeg"></td>
+                <td>[산지직송][착한식탁]가정용 아오리 사과 5kg 꼬마소과</td>
+                <td>15,100원</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <script>
+        const tbody = document.querySelector('tbody')   // 정렬할 내부 요소가 포함된 영역
+        const trArray = Array.from(document.querySelectorAll('tbody > tr')) // 정렬할 요소의 배열
+
+        const nameAsc = document.querySelector('#sort > button:nth-child(1)')
+        const nameDesc = document.querySelector('#sort > button:nth-child(2)')
+        const priceAsc = document.querySelector('#sort > button:nth-child(3)')
+        const priceDesc = document.querySelector('#sort > button:nth-child(4)')
+
+        nameAsc.onclick = function() {
+            trArray.sort((trA, trB) => {
+                const titleA = trA.querySelector('td:nth-child(2)')
+                const titleB = trB.querySelector('td:nth-child(2)')
+                return titleA > titleB ? 1 : -1
+            })
+            trArray.forEach(tr => tbody.appendChild(tr))
+        }
+
+
+    </script>
+</body>
+</html>

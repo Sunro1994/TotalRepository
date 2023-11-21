@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03-search.html</title>
+    <style>
+        input, select {
+            padding: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>03-search.html</h1>
+    <hr>
+
+    <form action="https://search.naver.com/search.naver">
+        <select name="where">
+            <option value="nexearch">통합검색</option>
+            <option value="image">이미지</option>
+            <option value="news">뉴스</option>
+            <option value="video">동영상</option>
+        </select>
+        <input type="search" name="query" placeholder="네이버 검색" required autofocus>
+        <input type="submit" value="검색">
+    </form>
+
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05-input-css.html</title>
+    <style>
+        td {
+            border: 2px solid black;
+            padding: 5px 10px;
+        }
+        input {
+            all: unset;
+        }
+        input:focus {
+            background-color: lightpink;
+        }
+        input:active {
+            background-color: skyblue;
+        }
+        input:hover {
+            background-color: lightgreen;
+        }
+        input[name="test2"] {
+            all: unset;
+            border-bottom: 2px solid grey;
+            padding: 5px;
+            transition-duration: 0.5s;
+            width: 50px;
+        }
+        input[name="test2"]:focus {
+            width: 180px;
+            border-bottom: 2px solid black;
+            transition-duration: 0.5s;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>05-input-css.html</h1>
+    <hr>
+
+    <table>
+        <tr>
+            <td>
+                🆗<input type="text" name="test1">
+            </td>
+            <td>
+                input을 선택하여 포커스를 받고있는 중이면 적용되는 스타일
+            </td>
+        </tr>
+        <tr>
+            <td><input type="text" name="test2" placeholder="검색"></td>
+            <td>focus중일때만 커지는 input</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

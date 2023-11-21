@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #frame{
+            border: 2px solid grey;
+            width: 80%;
+            margin: 50px auto;
+        }
+        #header{
+            background-color: #eee;
+            padding: 40px;
+        }
+        h1{
+            background-color: cornflowerblue;
+            margin: auto;
+            width: fit-content;
+            color: white;
+            padding: 10px; 
+        }
+        #main{
+            display: flex;
+        }
+        #nav{
+            background-color: #333;
+            margin-top: 20px;
+            width: 30px;
+            content-visibility: hidden;
+            
+        }
+        #nav:hover{
+            width: 150px;
+            content-visibility: visible;
+        }
+        #nav > ul > li {
+            padding: 10px;
+        }
+        #nav > ul > li:hover{
+            background-color: blue;
+        }
+        #nav > ul{
+                list-style: none;
+                padding-left: 5px;
+                width: 150px;
+                color: white;
+        }
+        #content{
+            padding: 20px;
+        }
+        #footer{
+            margin: auto;
+            margin-top: 20px;
+            padding: 10px;
+            border-top: 2px solid grey;
+            width: 90%;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div id="frame">
+        <div id="header">
+            <h1>LOGO</h1>
+        </div>
+        <div id="main">
+            <div id="nav">
+                <ul>
+                    <li>Menu-1</li>
+                    <li>Menu-2</li>
+                    <li>Menu-3</li>
+                </ul>
+            </div>
+            <div id="content">
+                <h2>Hello World</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae praesentium, odio labore deserunt et ullam deleniti distinctio dolorem magnam repudiandae? Tempore a reiciendis, vero illo quisquam sint reprehenderit molestias inventore!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nobis, vel corrupti veritatis atque quaerat expedita temporibus enim natus nulla repudiandae id repellat iusto fuga mollitia pariatur explicabo distinctio architecto.</p>
+            </div>
+        </div>
+        <div id="footer">㉾Copy</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            color: white;
+            margin: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>display.html</h1>
+    <hr>
+
+    <table border="1" cellpadding="10" cellspaing="0" align="center">
+        <tr>
+            <th>display 값</th>
+            <th>특징</th>
+        </tr>
+        <tr>    <!-- a, span이 이에 해당됨 요소의 크기가 중요하지 않을때 쓰인다.-->
+            <td>inline</td>
+            <td>content만큼의 크기를 차지한다. width, height 적용 불가</td>
+        </tr>
+        <tr>    <!-- div, p 등이 이에 해당됨-->
+            <td>block</td>
+            <td>한 줄을 혼자서 차지한다. width, height를 적용할 수 있다.</td>
+        </tr>
+        <tr> <!-- 사실상 거의 사용하지 않는다. flex나 다른걸 사용하기 애매할때 사용-->
+            <td>inline-block</td>
+            <td>inline처럼 한줄에 여러요소를 배치할 수 있고, 크기 지정이 가능하다.</td>
+        </tr>
+        <tr>
+            <td>flex</td>
+            <td>내부 요소를 일정한 기준에 따라 정렬한다.</td>
+        </tr>
+        <tr>
+            <td>none</td>
+            <td>요소가 문서에서 사라진다.자리차지도 없다.</td>
+        </tr>
+
+        
+        
+    </table>
+    <br>
+    <fieldset >
+        <div style="display: inline;" class="item">inline</div>
+        <div style="display: inline;" class="item">inline</div>
+        <div style="display: inline;" class="item">inline</div>
+    </fieldset>
+    <br>
+</body>
+    <br>
+    <fieldset >
+        <div style="display: block;" class="item">block</div>
+        <div style="display: block;" class="item">block</div>
+        <div style="display: block;" class="item">block</div>
+    </fieldset>
+    <br>
+    <br>
+    <fieldset >
+        <div style="display: inline-block;" class="item">inline-block</div>
+        <div style="display: inline-block;" class="item">inline-block</div>
+        <div style="display: inline-block;" class="item">inline-block</div>
+    </fieldset>
+    <br>
+    <br>
+    <fieldset >
+        <legend>display:non</legend>
+        <div style="display: block;" class="item">1</div>
+        <div style="display: none;" class="item">inline-block</div>
+        <div style="display: block;" class="item">2</div>
+    </fieldset>
+    <br>
+    <br>
+    <fieldset >
+        <legend>visibility:hidden</legend>
+        <div style="visibility: visible;" class="item">1</div>
+        <div style="visibility: hidden;" class="item">inline-block</div>
+        <div style="visibility: visible;" class="item">2</div>
+    </fieldset>
+    <br>
+    <br>
+    <fieldset >
+        <legend>opacity:0</legend>
+        <div style="opacity: 1;" class="item">1</div>
+        <div style="opacity: 0.25" class="item">2</div>
+        <div style="opacity: 1;" class="item">3</div>
+    </fieldset>
+    <br>
+
+
+</body>
+</html>

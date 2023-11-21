@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04-overwrap.html</title>
+    <style>
+        #root {
+            border: 2px solid black;
+            margin: 50px auto;
+            width: 800px;
+            display: flex;
+        }
+        .left {
+            border: 2px dashed red;
+            flex: 1;
+        }
+        .right {
+            border: 2px dashed blue;
+            flex: 4;
+            position: relative;
+        }
+        .menu {
+            height: 40px;
+            line-height: 40px;
+            padding-left: 10px;
+            border: 2px dashed green;
+        }
+        .content {
+            width: 620px;
+            height: inherit;
+            position: absolute;
+            top: 20px;
+            padding-left: 20px;
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .menu:hover {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>04-overwrap.html</h1>
+    <hr>
+
+    <div id="root">
+        <div class="left">
+            <div class="menu">짱구</div>
+            <div class="menu">수지</div>
+            <div class="menu">유리</div>
+            <div class="menu">철수</div>
+        </div>
+        <div class="right">
+            <div class="content"><img src="image/짱구.png" height="150"></div>
+            <div class="content"><img src="image/수지.png" height="150"></div>
+            <div class="content"><img src="image/유리.png" height="150"></div>
+            <div class="content"><img src="image/철수.png" height="150"></div>
+        </div>
+    </div>
+    
+    <script>
+        // css 선택자를 이용하여 class="menu", class="content" 들을 각각 불러온다
+        const menuList = document.querySelectorAll('.menu')
+        const contentList = document.querySelectorAll('.content')
+
+        // 모든 menu에 대하여 mouseover 시 수행할 작동을 함수로 정의한다
+        for(let i = 0; i < menuList.length; i++) {
+            const menu = menuList[i]
+
+            // menu.onmouseover
+            menu.onclick = function() {
+                // 모든 content는 opacity를 0으로 지정하고
+                for(let j = 0; j < contentList.length; j++) {
+                    contentList[j].style.opacity = 0
+                }
+                // 현재 마우스가 올라간 순번의 content는 opacity를 1로 지정한다
+                contentList[i].style.opacity = 1
+            }
+        }
+    </script>
+
+</body>
+</html>

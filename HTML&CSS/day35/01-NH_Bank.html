@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-NH_Bank.html</title>
+    <style>
+        .sb {
+            display: flex;
+            justify-content: space-between;
+        }
+        .frame {
+            width: 1280px;
+            margin: auto;
+        }
+        .flex {
+            display: flex;
+        }
+        .dropdown-menu > div {
+            padding: 0 10px;
+        }
+        #top {
+            margin-top: 20px;
+        }
+        #nav {
+            border-bottom: 1px solid #dadada;
+        }
+        #nav > ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        #nav > ul > li {
+            display: flex;
+            align-items: center;
+        }
+        ul > li > a {
+            text-decoration: none;
+            color: inherit;
+            font-size: 1.2em;
+            font-weight: 550;
+            padding: 10px;
+            display: inline-block;
+        }
+        ul > li:last-child > a {
+            font-size: 3em;
+        }
+        #main {
+            background-image: url('https://www.nhbank.com/KO/images/main/back1.png'),
+                              url('https://www.nhbank.com/KO/images/main/back2.png');
+            background-repeat: repeat-x;
+            background-position: -500px -250px, 750px -250px;
+            background-size: 100% auto;
+            padding: 20px;
+        }
+        #main > .section:first-child {
+            text-align: center;
+        }
+        .blue {
+            color: #0055a5;
+        }
+        #main > .section:nth-child(2) {
+            background-color: #0055a5;
+            padding: 3px;
+            border-radius: 20px;
+        }
+        #main > .section:nth-child(2) > div {
+            padding: 10px;
+        }
+        #main > .section:nth-child(2) > div:first-child {
+            background-color: white;
+            color: #0055a5;
+            flex: 2;
+            border-radius: 20px;
+            padding-bottom: 80px;
+        }
+        #main > .section:nth-child(2) > div:last-child {
+            flex: 1;
+            color: white;
+            background-color: #0055a5;
+            border-radius: 20px;
+        }
+        #main > .section:nth-child(2) > div:last-child > h3 {
+            text-align: right;
+        }
+        h2 {
+            font-size: 4em;
+            font-weight: 100;
+            margin-bottom: 5px;
+        }
+        h2 > span {
+            font-weight: bold;
+        }
+        h4 {
+            margin-top: 5px;
+            color: #8b8b8b;
+            font-size: 1.5em;
+            font-weight: 400;
+        }
+        .image > img {
+            width: 90%;
+            border-radius: 20px;
+        }
+        .image {
+            margin: 10px;
+            flex: 5;
+        }
+        .news {
+            flex: 4;
+        }
+        p.category {
+            background-color: #0055a5;
+            color: white;
+            width: fit-content;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+        }
+        p.title {
+            font-size: 2em;
+            color: #555;
+        }
+        .newsItem {
+            width: 65%;
+            margin: auto;
+        }
+        h3 + .newsItem {
+            border-bottom: 1.5px dashed white;
+            padding-bottom: 20px;
+        }
+        .newsItem > p:first-child {
+            font-size: 1.4em;
+        }
+        .card {
+            box-sizing: border-box;
+            width: 48%;
+            border: 3px solid #bbcbd9;
+            border-radius: 30px;
+            margin-top: 20px;
+            padding: 20px;
+            background-image: url('https://www.nhbank.com/KO/images/main/green.png');
+            background-size: 90%;
+            background-position: 70px -35px;
+            background-repeat: no-repeat;
+        }
+        .card:last-child {
+            background-image: url('https://www.nhbank.com/KO/images/main/yellow.png');
+        }
+        .card > h3 {
+            color: #0055a5;
+            font-size: 1.7em;
+            margin-top: 5px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <div id="top" class="sb frame">
+        <div class="logo">
+            <a href="#"><img src="https://www.nhbank.com/KO/images/common/logo.png"></a>
+        </div>
+        <div class="dropdown-menu sb">
+            <div class="lang">Language</div>
+            <div class="banking">Banking</div>
+        </div>
+    </div>
+
+    <div id="nav">
+        <ul class="sb frame">
+            <li><a href="#">은행안내</a></li>
+            <li><a href="#">윤리경영</a></li>
+            <li><a href="#">금융소비자보호</a></li>
+            <li><a href="#">기업지배구조</a></li>
+            <li><a href="#">경영정보</a></li>
+            <li><a href="#">ESG 경영</a></li>
+            <li><a href="#">채용정보</a></li>
+            <li><a href="#">홍보센터</a></li>
+            <li><a href="#">≡</a></li>
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="section frame">
+            <h2>사랑받는 <span class="blue">일등 민족은행</span></h2>
+            <h4>농업인과 고객 모두가 행복한 금융을 만들어 갑니다</h4>
+        </div>
+        <div class="section frame flex">
+            <div>
+                <h3>NH뉴스</h3>
+                <div class="flex">
+                    <div class="image">
+                        <img src="https://www.nhbank.com/upload/nhnews/5948/imgpc_1.jpg">
+                    </div>
+                    <div class="news">
+                        <p class="category">NH뉴스</p>
+                        <p class="title">NH농협은행, 50년 만기 주택담보대출 상품 출시</p>
+                        <p class="content">NH농협은행, 50년 만기 주택담보대출 상품 출시</p>
+                        <p class="date">2023-07-11</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>더보기 > </h3>
+                <div class="newsItem">
+                    <p>NH농협카드, (사)서민금융연구원에 카드공익기⋯</p>
+                    <p>2023-07-07</p>
+                </div>
+                <div class="newsItem">
+                    <p>NH농협카드, 『NH모바일 지자체협약대출』출시</p>
+                    <p>2023-07-06</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section frame sb">
+            <div class="card">
+                <h3>NH농협은행 소개</h3>                    
+                <p>대한민국의 행복파트너!</p>
+                <p>자세히 보기></p>
+            </div>
+            <div class="card">
+                <h3>경영정보</h3>
+                <p>경영·재무현황 및 공시자료</p>
+                <p>자세히 보기></p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

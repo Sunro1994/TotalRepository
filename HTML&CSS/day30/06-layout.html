@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout.html</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #eee;
+
+        }
+        .frame{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        h3 {
+            text-align: center;
+            margin: 0;
+        }
+        
+        #header,#footer{
+            height: 150px;
+        }
+        #header {
+            background-color: lightcoral;
+        }
+        #main{
+            background-color: lightgoldenrodyellow;
+            height: 700px;/*내용을 적으면 알아서 늘어나기 때문에 실제로는 높이 지정 안한다.*/
+            display: flex;/* 가장 큰 틀에 display:flex를 걸어준다. */
+        }
+        #main > #aside{
+            flex: 2;
+            background-color: lightgreen;
+        }
+        #main> #section{
+            flex: 7;
+            background-color: burlywood;
+        }
+        #footer{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<!-- 1. 층부터 나눈다. div는 하나씩 쌓이기 때문-->
+<!-- 2. 가로,세로를 구분-->
+<body>
+    <div id="header" class="frame">
+        <h3>상단</h3>
+    </div>
+
+    <div id="main" class="frame">
+        <div id="aside">
+            <h3>왼쪽 메뉴</h3>
+        </div>
+        <div id="section">
+           <h3>가운데 중심 내용</h3> 
+        </div>
+    </div>
+
+    <div id="footer" class="frame">
+        <h3>하단</h3>
+    </div>
+</body>
+</html>

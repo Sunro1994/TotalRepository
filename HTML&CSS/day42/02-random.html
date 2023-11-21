@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-random.html</title>
+</head>
+<body>
+
+    <h1>02-random.html</h1>
+    <hr>
+
+    <script>
+        // Math.random() : 0에서 1사이의 난수를 생성한다
+        const ran1 = Math.random()
+        const ran2 = Math.random() * 100                // 자릿수 확장
+        const ran3 = Math.floor(Math.random() * 100)    // 소수점 버리기
+        const ran4 = Math.floor(Math.random() * (30 - 20)) + 20 // 범위 지정하기
+
+        console.log('ran1 : ' + ran1)
+        console.log('ran2 : ' + ran2)
+        console.log('ran3 : ' + ran3)
+        console.log('ran4 : ' + ran4)
+    </script>
+    
+</body>
+</html>

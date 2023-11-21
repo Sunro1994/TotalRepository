@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red, .blue{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+            margin: 20px;
+            position: relative;
+        }
+        .red{
+            background-color: red;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+        .blue{
+            background-color: blue;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1>z-index.html</h1>
+    <hr>
+
+    <div class="box">
+        <div style="z-index: 1;" class="red"></div>
+        <div style="z-index: 0;" class="blue"></div>
+    </div>
+    <!-- z축(3차원 축)이 어떤게 우선인지 정함
+        창중 어떤 창이 앞에 있을지 정하는 것도 가능-->
+    <div class="box">
+        <div style="z-index: 2;" class="red"></div>
+        <div style="z-index: 3;" class="blue"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04-for.html</title>
+</head>
+<body>
+
+    <h1>04-for.html</h1>
+    <hr>
+
+    <ul id="list"></ul>
+
+    <script>
+        const arr = ['짱구', '유리', '맹구', '훈이', '철수', '수지']
+        const list = document.getElementById('list')
+
+        for(let i = 0; i < arr.length; i++) {
+            const li = document.createElement('li')
+            li.innerText = arr[i]
+            list.appendChild(li)
+        }
+    </script>
+    
+</body>
+</html>

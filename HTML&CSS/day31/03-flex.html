@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header{
+            display: flex; /*flex는 내부요소를 정렬한다.*/
+            justify-content: center;
+            border: 1px dashed red;
+        }
+        #main{
+            display: flex;
+            border: 1px dashed orange;
+        }
+        #nav{
+            flex: 1;
+            border: 1px dashed rgb(90, 228, 90);
+        }
+        #content{
+            flex:4;
+            border: 1px dashed blue;
+        }
+        #nav > ul{
+            width: 200px;
+            height: 200px;
+            
+            display: flex;
+            flex-direction: row; /* 기본값 : row flexbox의 중심축이 돌아간다*/
+            list-style: none;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <h1>flex.html</h1>
+    <hr>
+
+    <div id="header">
+        <h2>TITLE</h2>
+    </div>
+    <div id="main">
+        <div id="nav">
+            <ul>
+                <li>menu1</li>
+                <li>menu2</li>
+                <li>menu3</li>
+            </ul>
+        </div>
+        <div id="content">
+            <h3>Hello World</h3>
+        </div>
+    </div>
+</body>
+</html>

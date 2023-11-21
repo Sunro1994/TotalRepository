@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-ikea.html</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR">
+    <link rel="stylesheet" href="01-style.css">
+</head>
+<body>
+
+    <div id="top1">
+        <div class="">쉽고 편한 전화 주문, 헤이오더</div>
+        <div class="">베스트셀러</div>
+    </div>
+
+    <div id="openSideBtn">
+        <div class="hamburger">≡</div>
+        <div class="">메뉴</div>
+    </div>
+
+    <header class="frame">
+        <div id="logo">
+            <img src="ikea/logo.svg">
+        </div>
+        <div class="search">
+            🔍
+            <input type="search" placeholder="검색어 입력" autocomplete="off">
+            📷
+        </div>
+        <button class="icon">
+            🙍‍♂️ Hej! 로그인 또는 가입하기
+        </button>
+        <div class="icon">❤</div>
+        <div class="icon">⛵</div>
+    </header>
+
+    <nav class="frame">
+        <ul>
+            <li>모든 제품</li>
+            <li>공간별 쇼핑하기</li>
+            <li>특별한 가격</li>
+            <li>홈 액세서리</li>
+            <li>서비스</li>
+        </ul>
+        <ul>
+            <li>우편 번호 입력</li>
+            <li>매장 선택</li>
+        </ul>
+    </nav>
+
+    <main class="frame">
+        <section class="video">
+            <article>
+                <video class="pub__simple-video fzfne4m" aria-describedby="E36BB181-73CF-4472-979CC8B82429BFBF" muted="" loop="" src="https://www.ikea.com/ext/ingkadam/m/390ada4babcb3163/original/Nytillverkad_launch_30s_16x9.mp4" playsinline="" autoplay="true">Sorry, your browser doesn’t support embedded videos.</video>
+            </article>
+            <article>
+                <h4>미래를 담은 클래식한 디자인</h4>
+                <p>
+                    IKEA가 창립 80주년을 맞이하며 과거의 아이코닉한 디자인을 엄선해 다시 출시합니다. 다채로운 컬러와 새로운 소재로 재탄생한 Nytillverkad 뉘틸베르카드 컬렉션을 만나보세요.
+                </p>
+                <button>
+                    Nytillverkad 뉘틸베르카드 컬렉션 보러 가기
+                </button>
+            </article>
+        </section>
+
+        <section class="best-category">
+            <h3>베스트 카테고리 쇼핑하기</h3>
+            <div class="flex">
+                <div class="item">
+                    <h4>IKEA 신제품 보러 가기</h4>
+                    <button>→</button>
+                </div>
+                <div class="item">
+                    <img src="ikea/침실.webp">
+                    <button>침실</button>
+                </div>
+                <div class="item">
+                    <img src="ikea/수납.webp">
+                    <button>수납/정리</button>
+                </div>
+                <div class="item">
+                    <img src="ikea/홈오피스.webp">
+                    <button>홈오피스</button>
+                </div>
+                <div class="item">
+                    <img src="ikea/다이닝.webp">
+                    <button>다이닝</button>
+                </div>
+                <div class="item">
+                    <img src="ikea/거실.webp">
+                    <button>거실</button>
+                </div>
+                <div class="item">
+                    <img src="ikea/주방.webp">
+                    <button>주방</button>
+                </div>
+                <div class="item">
+                    <img src="ikea/홈데코.webp">
+                    <button>홈데코/장식품</button>
+                </div>
+            </div>
+        </section>
+
+        <aside>
+            <div id="sidemenu" class="sidemenu hidden">
+                <div class="fixed">
+                    <span id="closeBtn">X</span>
+                    <img src="ikea/logo.svg">
+                </div>
+                <ul>
+                    <li>모든 제품</li>
+                    <li>공간별 쇼핑하기</li>
+                    <li>특별한 가격</li>
+                    <li>홈 액세서리</li>
+                    <li>서비스</li>
+                </ul>
+                <ul>
+                    <li>신제품</li>
+                    <li>아이디어</li>
+                    <li>새로운 소식</li>
+                </ul>
+                <ul>
+                    <li>매장안내</li>
+                    <li>쉽고 편한 전화 주문, 헤이오더</li>
+                    <li>IKEA Live</li>
+                    <li>IKEA Family</li>
+                    <li>IKEA for Business</li>
+                    <li>고객지원</li>
+                    <li>배송조회</li>
+                    <li>내 프로필</li>
+                </ul>
+                <div class="bottom-menu">
+                    <select name="" id="">
+                        <option value="">한국어</option>
+                        <option value="">English</option>
+                    </select>
+                    <button>국가 변경</button>
+                </div>
+            </div>
+            <div id="overlay" class="overlay hidden"></div>
+        </aside>
+        
+    </main>
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <script>
+        const openSideBtn = document.getElementById('openSideBtn')
+        const sidemenu = document.getElementById('sidemenu')
+        const overlay = document.getElementById('overlay')
+        const closeBtn = document.getElementById('closeBtn')
+
+        // openSideBtn을 click하면 sidemenu와 overlay의 클래스에서 hidden 을 제거한다
+        openSideBtn.onclick = function() {
+            //alert('클릭 !!')
+            sidemenu.classList.remove('hidden')
+            overlay.classList.remove('hidden')
+            document.body.style.overflow = 'hidden'
+        }
+
+        // closeBtn을 click하면 sidemenu와 overlay의 클래스 목록에 hidden을 추가한다
+        closeBtn.onclick = function() {
+            sidemenu.classList.add('hidden')
+            overlay.classList.add('hidden')
+            document.body.style.overflow = 'auto'
+        }
+
+        // overlay를 click하면 동일한 코드로 닫기가 수행된다
+        overlay.onclick = function() {
+            sidemenu.classList.add('hidden')
+            overlay.classList.add('hidden')
+            document.body.style.overflow = 'auto'
+        }
+    </script>
+
+</body>
+</html>

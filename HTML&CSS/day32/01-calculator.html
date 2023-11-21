@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-calculator.html</title>
+    <style>
+        #root {
+            display: flex;
+            justify-content: space-between;
+        }
+        #calc {
+            cursor: context-menu;
+            user-select: none;
+            background-color: #f3f3f3;
+            width: 320px;
+            height: 540px;
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+       
+        .flex {
+            display: flex;
+        }
+        .top {
+            padding: 5px 10px;
+        }
+        .top > .flex > div {
+            margin: 0 15px;
+        }
+        .sb {
+            display: flex;
+            justify-content: space-between;
+        }
+        .mode {
+            padding: 20px 5px;
+        }
+        .input {
+            font-size: 45px;
+            font-weight: bold;
+            text-align: right;
+            padding: 20px 10px;
+        }
+        .mbtns > div {
+            padding: 10px 10px;
+            font-size: 14px;
+        }
+        .btns {
+            display: flex;
+            flex-flow: wrap;
+        }
+        .btns > div {
+            background-color: white;
+            box-sizing: border-box;
+            width: 24%;
+            height: 3em;
+            line-height: 3em;
+            text-align: center;
+            border: 0.5px solid #e4e4e4;
+            border-radius: 5px;
+            margin: 1px auto;
+            box-shadow: 1px 1px 1px #cccccc;
+        }
+        .btns > div:last-child {
+            background-color: #005ca2;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>01-calculator.html</h1>
+    <hr>
+
+    <div id="root">
+        <div id="sample">
+            <img src="계산기.jpg">
+        </div>
+        <div id="calc">
+            <div class="top sb">
+                <div class="">📱계산기</div>
+                <div class="flex">
+                    <div>_</div>
+                    <div>ㅁ</div>
+                    <div>⨉</div>
+                </div>
+            </div>
+
+            <div class="mode sb">
+                <div class="">≡ 표준 ♐</div>
+                <div class="">🔄</div>
+            </div>
+
+            <div class="input">0</div>
+
+            <div class="mbtns sb">
+                <div>MC</div>
+                <div>MR</div>
+                <div>M+</div>
+                <div>M-</div>
+                <div>MS</div>
+                <div>M∨</div>
+            </div>
+
+            <div class="btns">
+                <div>%</div>
+                <div>CE</div>
+                <div>C</div>
+                <div>←</div>
+                <div>1/x</div>
+                <div>x<sup>2</sup></div>
+                <div><sup>2</sup>√x</div>
+                <div>÷</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>×</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>-</div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>+</div>
+                <div>+/-</div>
+                <div>0</div>
+                <div>.</div>
+                <div>=</div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+    
+</body>
+</html>

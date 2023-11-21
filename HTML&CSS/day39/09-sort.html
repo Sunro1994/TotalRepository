@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09-sort.html</title>
+</head>
+<body>
+
+    <h1>09-sort.html</h1>
+    <hr>
+
+    <ul>
+        <li>짱구</li>
+        <li>유리</li>
+        <li>수지</li>
+        <li>철수</li>
+        <li>맹구</li>
+    </ul>
+
+    <script>
+        // ul 내부 요소의 순서를 바꾸기 위해 불러와야 한다
+        const ul = document.querySelector('ul')
+
+        // ul 안에 있는 자손 li 요소들을 모두 불러온다 (nodeList)
+        const nameList = document.querySelectorAll('ul > li')
+
+        // nodeList는 배열이 아니고, sort() 를 지원하지 않아서 배열로 변환한다
+        const nameArray = Array.from(nameList)
+        
+        // 배열의 각 요소를 a, b라고 할 때, a의 내부 글자와 b의 내부글자를 비교
+        // 비교하여 정렬한다 (화면에는 반영이 되지 않은 상태)
+        nameArray.sort((a, b) => a.innerText > b.innerText ? 1 : -1)
+
+        // 정렬된 요소들을 ul에 순서대로 appendChild한다
+        // appendChild할때 기존에 없으면 아래에 추가하고
+        // 기존에 있는 요소라면 기존 요소를 빼서 맨 아래에 넣어준다
+        // nameArray.forEach(ob => ul.appendChild(ob))
+
+        for(let i = 0; i < nameArray.length; i++) {
+            const ob = nameArray[i]
+            ul.appendChild(ob)
+        }
+    </script>
+    
+</body>
+</html>

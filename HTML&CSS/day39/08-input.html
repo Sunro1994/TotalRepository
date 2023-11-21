@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08-input.html</title>
+</head>
+<body>
+
+    <h1>08-input.html</h1>
+    <hr>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <td>text</td>
+            <td><input type="text" name="t1" value="Hello"></td>
+        </tr>
+        <tr>
+            <td>password</td>
+            <td><input type="password" name="t2" value="world"></td>
+        </tr>
+        <tr>
+            <td>date</td>
+            <td><input type="date" name="t3" value="1998-12-18"></td>
+        </tr>
+        <tr>
+            <td>number</td>
+            <td><input type="number" name="t4" value="123.4"></td>
+        </tr>
+    </table>
+
+    <script>
+        const t1 = document.querySelector('input[name="t1"]')
+        const t2 = document.querySelector('input[name="t2"]')
+        const t3 = document.querySelector('input[name="t3"]')
+        const t4 = document.querySelector('input[name="t4"]')
+
+        console.log(t1.value, typeof(t1.value), t1.type)
+        console.log(t2.value, typeof(t2.value), t2.type)
+        console.log(t3.value, typeof(t3.value), t3.type)
+        console.log(t4.value, typeof(t4.value), t4.type)
+        console.log('')
+        console.log(t4.value == 123.4)    // 자료형 변환 없이도 일치여부를 손쉽게 판단할 수 있다
+        console.log(t4.value === 123.4)   // 자료형이 다르기 때문에 === 의 결과는 false 이다
+
+        console.log('')
+        console.log('Hello' > 'World')    // "Hello".compareTo("World")
+        console.log('Hello' < 'World')    // "World".compareTo("Hello")
+        // 문자열의 일치여부 뿐 아니라, 크기비교도 연산자로 수행할 수 있다
+    </script>
+
+    
+</body>
+</html>

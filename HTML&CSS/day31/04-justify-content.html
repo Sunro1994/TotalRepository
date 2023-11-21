@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04-justify-content.html</title>
+    <style>
+        .box {
+            display: flex;
+            /* flex-direction: column; */
+            width: 500px;
+            height: 200px;
+            padding: 10px;
+            border: 2px dashed orange;
+            align-items: center;
+        }
+        .item {
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            background-position: center;
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+        .item1 { background-image: url('image/철수.png');}
+        .item2 { background-image: url('image/훈이.png');}
+        .item3 { background-image: url('image/맹구.png');}
+    </style>
+</head>
+<body>
+
+    <h1>04-justify-content.html</h1>
+    <hr>
+
+    <div class="box" style="justify-content: flex-start;">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+    </div>
+
+    <div class="box" style="justify-content: center;">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+    </div>
+
+    <div class="box" style="justify-content: flex-end;">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+    </div>
+
+    <div class="box" style="justify-content: space-between;">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+    </div>
+
+    <div class="box" style="justify-content: space-around;">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+    </div>
+
+    <div class="box" style="justify-content: space-evenly;">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+    </div>
+
+
+    <div class="box" style="flex-flow: wrap;
+                            justify-content: center;">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+    </div>
+    
+</body>
+</html>

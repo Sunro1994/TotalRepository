@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+        td, th {
+            padding: 10px;
+            border: 1px solid grey;
+        }
+        #button {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>03-filter.html</h1>
+    <hr>
+
+    <div id="button">
+        <button id="allFilter">전체</button>
+        <button id="menFilter">남성</button>
+        <button id="womenFilter">여성</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>성별</th>
+                <th>나이</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>브라운</td>
+                <td>M</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>크롱</td>
+                <td>M</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>뽀뽀</td>
+                <td>W</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>한나</td>
+                <td>W</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>뿡뿡이</td>
+                <td>M</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>크리스</td>
+                <td>M</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>토프</td>
+                <td>W</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>안나</td>
+                <td>W</td>
+                <td>11</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        const tbody = document.querySelector('tbody')
+        const trArray = Array.from(tbody.querySelectorAll('tr'))
+        const menFilter = document.getElementById('menFilter')
+        menFilter.onclick = function() {
+            const menArray = trArray.filter(tr => {
+                return tr.querySelector('td:nth-child(2)').innerText == 'M'
+            })
+            tbody.innerHTML = ''    // tbody 내부의 모든 태그를 없앤다
+            menArray.forEach(tr => tbody.appendChild(tr))
+        }
+
+        const womenFilter = document.getElementById('womenFilter')
+        womenFilter.onclick = function() {
+            const womenArray = trArray.filter(tr => {
+                return tr.querySelector('td:nth-child(2)').innerText == 'W'
+            })
+            tbody.innerHTML = ''    // tbody 내부의 모든 태그를 없앤다
+            womenArray.forEach(tr => tbody.appendChild(tr))
+        }
+
+        const allFilter = document.getElementById('allFilter')
+        allFilter.onclick = function() {
+            trArray.forEach(tr => tbody.appendChild(tr))
+        }
+
+    </script>
+    
+</body>
+</html>

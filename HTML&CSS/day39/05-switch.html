@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05-switch.html</title>
+    <style>
+        #root {
+            border: 3px solid black;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            flex-flow: wrap;
+        }
+        .item {
+            box-sizing: border-box;
+            border: 1px dashed green;
+            width: 100px;
+            height: 100px;
+        }
+        .cursor {
+            background-image: url('image/짱구.png');
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>05-switch.html</h1>
+    <hr>
+
+    <div id="root">
+        <div class="item cursor"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
+    <script>
+        // 문서에서 방향키를 입력하면 실행되는 함수
+        function keyHandler(event) {
+            console.log(event.key)
+            const cursor = document.querySelector('.cursor')
+            const right = cursor.nextElementSibling
+            const left = cursor.previousElementSibling
+
+            switch(event.key) {
+                case 'ArrowRight':
+                    right.classList.add('cursor')
+                    cursor.classList.remove('cursor')
+                    break;
+                case 'ArrowLeft':
+                    left.classList.add('cursor')
+                    cursor.classList.remove('cursor')
+                    break;
+            }
+        }
+
+        document.onkeydown = keyHandler
+    </script>
+    
+</body>
+</html>

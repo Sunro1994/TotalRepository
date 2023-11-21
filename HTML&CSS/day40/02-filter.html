@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-filter.html</title>
+</head>
+<body>
+
+    <h1>02-filter.html</h1>
+    <hr>
+
+    <script>
+        const arr = [
+            {name: '이지은', age: 31},
+            {name: '카리나', age: 23},
+            {name: '김지수', age: 28},
+            {name: '김희철', age: 40},
+            {name: '민경훈', age: 39},
+        ]
+
+        // const arr2 = arr.filter((ob) => { return ob.age >= 30})
+        // const arr2 = arr.filter(ob => ob.age >= 30)
+        const arr2 = arr.filter(function(ob) {
+            return ob.age >= 30
+        })
+
+        // filter 함수에 전달하는 매개변수가
+        // boolean 타입을 반환하는 함수여야 한다
+        // 조건을 만족하면(true) 새로운 배열에 포함시키고
+        // 조건을 만족하지 않으면(false) 새로운 배열에 포함시키지 않는다
+
+        console.log(arr)
+        console.log(arr2)
+
+    </script>
+    
+</body>
+</html>

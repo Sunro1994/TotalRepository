@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06-naver-login.html</title>
+    <style>
+        #header, #main, #banner, #footer {
+            width: 500px;
+            margin: 50px auto;
+            box-sizing: border-box;
+        }
+        #main {
+            /* border: 1px dashed orange; */
+            border: 1px solid grey;
+            border-top: 0;
+            padding-bottom: 40px;
+        }
+        #banner {
+            /* border: 1px dashed green; */
+        }
+        #footer {
+            /* border: 1px dashed blue; */
+        }
+        #header {
+            position: relative;
+            /* border: 1px dashed red; */
+        }
+        select#lang {
+            position: absolute;
+            right: -100px;
+            top: -20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        #main > ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+        }
+        #main > ul > li {
+            flex: 1;
+            text-align: center;
+            border: 1px solid grey;
+            padding: 10px;
+        }
+        /*
+        #content {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        */
+        #content {
+            width: 500px;
+        }
+        #content > div.input {
+            width: 400px;
+            margin: 5px auto;
+            border: 1px solid grey;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #content > div.input > input {
+            all: unset;
+        }
+        #content > button {
+            display: block;
+            width: 420px;
+            padding: 10px;
+            margin: auto;
+        }
+        .sb {
+            display: flex;
+            justify-content: space-between;
+            width: 420px;
+            margin: 20px auto;
+        }
+        .ipsec > input {
+            width: 30px;
+        }
+        #footer > ul {
+            display: flex;
+            list-style: none;
+            margin: auto;
+            padding: 0;
+            font-size: 13px;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <h1>NAVER</h1>
+        <select id="lang" name="lang">
+            <option value="ko">한국어</option>
+            <option value="en">English</option>
+            <option value="cn">中文</option>
+        </select>
+    </div>
+
+    <div id="main">
+        <ul>
+            <li class="menu-id">ID로그인</li>
+            <li class="menu-num">일회용번호</li>
+            <li class="menu-qr">QR코드</li>
+        </ul>
+        <div id="content">
+            <div class="input">
+                👨‍💼
+                <input type="text" name="id" placeholder="아이디"
+                       autocomplete="off">
+            </div>
+            <div class="input">
+                🔒
+                <input type="password" name="pw" placeholder="비밀번호">
+            </div>
+            <div class="sb">
+                <div>
+                    <input type="checkbox">로그인 상태 유지
+                </div>
+                <div class="ipsec">
+                    IP보안<input type="range" min="0" max="1">
+                </div>
+            </div>
+            <button>로그인</button>
+        </div>
+    </div>
+
+    <div id="banner">
+        <img src="https://ssl.pstatic.net/melona/libs/1378/1378592/8882ffe2fdce5d0414fb_20230705161628363.jpg"
+             width="100%">
+    </div>
+
+    <div id="footer">
+        <ul>
+            <li>이용약관</li>
+            <li>개인정보처리방침</li>
+            <li>책임의 한계와 법적고지</li>
+            <li>회원정보 고객센터</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

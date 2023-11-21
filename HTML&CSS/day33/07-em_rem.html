@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07-em_rem.html</title>
+</head>
+<body>
+
+    <h1>07-em_rem.html</h1>
+    <hr>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <td>em</td>
+            <td>현재 element의 font-size 속성값을 기준으로 하는 배수</td>
+        </tr>
+        <tr>
+            <td>rem (root em)</td>
+            <td>최상위 요소(html)의 font-size 속성값을 기준으로 하는 배수</td>
+        </tr>
+    </table>
+
+    <style>
+        .box {
+            width: 10em;
+            height: 10em;
+            background-color: lightskyblue;
+        }
+        .flex {
+            display: flex;
+        }
+    </style>
+
+    <fieldset style="font-size: 16px;">
+        <legend><b>font-size: 16px, width, height: 10em</b></legend>
+        <div class="flex">
+            <div class="box"></div>
+            <div style="width: 160px; height: 160px; background-color: red;"></div>
+        </div>
+    </fieldset>
+
+    <fieldset style="font-size: 20px;">
+        <legend>font-size: 20px</legend>
+        <div class="flex">
+            <div class="box"></div>
+            <div style="width: 200px; height: 200px; background-color: red;"></div>
+        </div>
+    </fieldset>
+
+    <hr>
+    <style>
+        .box2 {
+            width: 10rem;
+            height: 10rem;
+            background-color: salmon;
+        }
+    </style>
+    
+    <fieldset style="font-size: 20px;">
+        <legend><b>font-size: 20px, width, height: 10rem;</b></legend>
+        <div class="flex">
+            <div class="box2"></div>
+            <div style="width: 160px; height: 160px; background-color: red;"></div>
+        </div>
+    </fieldset>
+
+    <hr>
+
+    <style>
+        html {
+            font-size: 14px;
+        }
+        .box3 {
+            width: 10rem;
+            height: 10rem;
+            background-color: lightgreen;
+        }
+    </style>
+    <fieldset style="font-size: 20px;">
+        <legend><b>font-size: 20px, width, height: 10rem;</b></legend>
+        <div class="flex">
+            <div class="box3"></div>
+            <div style="width: 140px; height: 140px; background-color: red;"></div>
+        </div>
+    </fieldset>
+
+
+    
+</body>
+</html>
+
+
+
+

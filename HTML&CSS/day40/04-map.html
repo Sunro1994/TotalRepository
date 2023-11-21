@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04-map.html</title>
+</head>
+<body>
+
+    <h1>04-map.html</h1>
+    <hr>
+
+    <script>
+        const arr = [
+            {name: '이지은', age: 31},
+            {name: '유지민', age: 23},
+            {name: '김지수', age: 28},
+            {name: '김희철', age: 40},
+            {name: '신짱구', age: 5},
+            {name: '민경훈', age: 39},
+            {name: '신짱아', age: 2},
+        ]
+        console.log(arr)
+
+        const arr2 = arr.map(ob => {
+            // ob.generation = Math.floor(ob.age / 10) + '0대'
+            return {
+                name: ob.name,
+                age: ob.age,
+                generation: Math.floor(ob.age / 10) + '0대'
+            }
+            
+        })
+        console.log(arr2)
+
+        const arr3 = arr.map(ob => ob.name.charAt(0))
+        console.log(arr3)
+
+        const arr4 = arr.map(ob => ob.name) // ob.name으로만 구성된 새로운 배열
+        console.log(arr4)
+
+        const arr5 = arr.map(ob => {
+            return {name: ob.name, adult: ob.age >= 20 ? '성인' : '미성년자'}
+        })
+        console.log(arr5)
+    </script>
+    
+</body>
+</html>

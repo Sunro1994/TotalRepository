@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09-table.html</title>
+</head>
+<body>
+
+    <h1>테이블 가로 세로 합치기 연습</h1>
+    <hr>
+
+    <fieldset>
+        5칸, 5줄
+    </fieldset>
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th {
+            padding: 5px 10px;
+            background-color: lightpink;
+            border: 2px solid black;
+        }
+        th.hidden {
+            background-color: white;
+            border: 0;
+        }
+    </style>
+
+    <br>
+    <table>
+        <tr>
+            <th rowspan="3">돼지머리</th>
+            <th>목살</th>
+            <th rowspan="2">가브리살</th>
+            <th rowspan="2">등심</th>
+            <th rowspan="4">뒷다리살</th>
+        </tr>
+        <tr>
+            <th>항정살</th>
+        </tr>
+        <tr>
+            <th>갈비</th>
+            <th>갈매기살</th>
+            <th>안심</th>
+        </tr>
+        <tr>
+            <th class="hidden"></th>
+            <th>앞다리살</th>
+            <th colspan="2">삼겹살</th>
+        </tr>
+        <tr>
+            <th class="hidden"></th>
+            <th>돈족</th>
+            <th class="hidden"></th>
+            <th class="hidden"></th>
+            <th>돈족</th>
+        </tr>
+    </table>
+
+</body>
+</html>

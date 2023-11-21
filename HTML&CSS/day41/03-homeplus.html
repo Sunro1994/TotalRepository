@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03-homeplus.html</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+        td, th {
+            padding: 10px;
+            border: 1px solid grey;
+        }
+        th {
+            background-color: lightskyblue;
+        }
+        th:hover {
+            cursor: pointer;
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>03-homeplus.html</h1>
+    <hr>
+
+    <table>
+        <thead>
+            <tr>
+                <th order="1" class="name">
+                    상품이름<span></span>
+                </th>
+                <th order="1" class="price">
+                    가격<span></span>
+                </th>
+                <th order="1" class="salesCount">
+                    판매건수<span></span>
+                </th>
+                <th order="1" class="grade">
+                    점수<span></span>
+                </th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="homeplus(berry).js"></script>
+
+    <script>
+        const tbody = document.querySelector('tbody')
+
+        // 문자열이 숫자로 구성되었는지 확인하는 함수
+        function isNumeric(str) {
+            return !isNaN(str)  // NaN (Not A Number)
+        }
+
+        // console.log(isNumeric('1234'))
+        // console.log(isNumeric('123a'))
+        
+        // arr의 내용을 문서에 반영하기
+        function loadHandler() {
+            let tag = ''
+            arr.forEach(ob => {
+                tag += `<tr>`
+                tag += `    <td class="name">${ob.name}</td>`
+                tag += `    <td class="price">${ob.price}</td>`
+                tag += `    <td class="salesCount">${ob.salesCount}</td>`
+                tag += `    <td class="grade">${ob.grade}</td>`
+                tag += `</tr>`
+            })
+            tbody.innerHTML += tag
+        }
+        window.onload = loadHandler
+
+        // th를 클릭하면 각 클래스의 이름을 기준으로 정렬하기
+        const thList = document.querySelectorAll('th')
+        function sortHandler(event) {
+            // 클릭당한 th의 className을 불러온다
+            const className = event.target.className    
+
+            // 클릭당한 th의 order 속성값을 정수로 불러온다
+            const order = +event.target.getAttribute('order')
+
+            // 클릭당한 th 내부의 span을 불러온다 (모든 span에 대해서 글자를 지우고 수행한다)
+            document.querySelectorAll('thead span').forEach(span => span.innerText = '')
+            const span = event.target.querySelector('span')
+            span.innerText = order > 0 ? ' ▲' : ' ▼'
+
+            const trArray = Array.from(document.querySelectorAll('tbody > tr'))
+
+            trArray.sort((a, b) => {
+                let valueA = a.querySelector('.' + className).innerText
+                let valueB = b.querySelector('.' + className).innerText
+                // if(className != 'name') {
+                if(isNumeric(valueA) && isNumeric(valueB)) {
+                    valueA = +valueA
+                    valueB = +valueB
+                }
+                let result = valueA > valueB ? 1 : -1
+                event.target.setAttribute('order', order * -1)
+                return result * order
+            })
+            trArray.forEach(tr => tbody.appendChild(tr))
+        }
+        thList.forEach(th => th.onclick = sortHandler)
+    </script>
+    
+</body>
+</html>

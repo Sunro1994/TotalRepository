@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06-layout.html</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #eee;
+        }
+        .frame {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        h3 {
+            text-align: center;
+            margin: 0;
+        }
+        #header, #footer {
+            height: 150px;
+        }
+        #header {
+            background-color: lightcoral;
+        }
+        #main {
+            background-color: lightgoldenrodyellow;
+            display: flex;
+            height: 700px;
+        }
+        #main > #aside {
+            flex: 2;
+            background-color: lightgreen;
+        }
+        #main > #section {
+            flex: 7;
+            background-color: burlywood;
+        }
+        #footer {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header" class="frame">
+        <h3>상단</h3>
+    </div>
+
+    <div id="main" class="frame">
+        <div id="aside">
+            <h3>왼쪽 메뉴</h3>
+        </div>
+        <div id="section">
+            <h3>가운데 중심 내용</h3>
+        </div>
+    </div>
+
+    <div id="footer" class="frame">
+        <h3>하단</h3>
+    </div>
+    
+</body>
+</html>

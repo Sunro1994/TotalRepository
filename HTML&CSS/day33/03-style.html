@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03-style.html</title>
+</head>
+<body>
+
+    <h1>03-style.html</h1>
+    <hr>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>종류</th>
+            <th>설명</th>
+        </tr>
+        <tr>
+            <td>background-image</td>
+            <td>배경에 넣을 그림 지정, url() 로 입력</td>
+        </tr>
+        <tr>
+            <td>background-size</td>
+            <td>배경 그림 크기 지정</td>
+        </tr>
+        <tr>
+            <td>background-repeat</td>
+            <td>그림 반복 여부 지정</td>
+        </tr>
+        <tr>
+            <td>background-position</td>
+            <td>그림의 위치 지정</td>
+        </tr>
+    </table>
+
+    <fieldset style="display: flex;">
+        <div style="background-image: url('image/danbi.jpg');
+                    width: 100px;
+                    height: 100px;"></div>
+        <div>
+            배경그림만 지정함. 크기 및 위치, 반복 지정 안함
+        </div>
+    </fieldset>
+    <br>
+
+    <fieldset style="display: flex;">
+        <div style="background-image: url('image/짱구.png')
+                                    , url('image/heos.gif');
+                    background-repeat: repeat-x;
+                    background-size: 100px;
+                    background-position: top, bottom;
+                    width: 300px;
+                    height: 300px;"></div>
+        <div>
+            배경 그림 2개 지정하기<br>
+            반복 옵션 : 가로로만 반복<br>
+            각 그림의 위치 : 첫번째 그림이 top, 두번째 그림이 bottom
+        </div>
+    </fieldset>
+    <br>
+
+    <fieldset style="display: flex;">
+        <div style="background-image: url('image/짱구.png')
+                                    , url('image/heos.gif');
+                    background-repeat: repeat-x;
+                    background-size: 100px;
+                    width: 300px;
+                    height: 300px;"></div>
+        <div>
+            배경 그림 2개 지정하기<br>
+            반복 옵션 : 가로로만 반복<br>
+        </div>
+    </fieldset>
+    <br>
+
+    <fieldset style="display: flex;">
+        <div style="background-image: url('image/짱구.png')
+                                    , url('image/heos.gif');
+                    background-repeat: no-repeat;
+                    background-size: 100px, 100%;
+                    background-position: center;
+                    width: 300px;
+                    height: 300px;"></div>
+        <div>
+            배경 그림 2개 지정하기<br>
+            반복 옵션 : 반복 안함<br>
+            그림 크기 : 첫번째는 100px, 두번째는 100%<br>
+            그림 위치 : 가운데
+        </div>
+    </fieldset>
+    <br>
+    
+</body>
+</html>
+
+

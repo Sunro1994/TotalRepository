@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-control.html</title>
+</head>
+<body>
+
+    <h1>02-control.html</h1>
+    <hr>
+
+    <script>
+        // if, switch ~ case, while, for
+        // 값이 바뀌어야 한다면 let, 값이 고정이라면 const (기본형식)
+
+        // 정수를 다른 변수에 담아서 거꾸로 만들어서 alert으로 출력하세요
+        let num = 1234;
+        let answer = 0;
+
+        while(num != 0) {
+            answer *= 10;
+            answer += num % 10;
+            num = Math.floor(num / 10);
+            // javascript의 나눗셈은 실수형식으로 결과가 나와서
+            // 소수점 이하를 버리는 함수가 필요하다
+        }
+        console.log(answer)
+    </script>
+    
+</body>
+</html>

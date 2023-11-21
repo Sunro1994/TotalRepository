@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-sort4.html</title>
+</head>
+<body>
+
+    <h1>12-sort4.html</h1>
+    <hr>
+
+    <div id="sort">
+        <button id="nameAsc">이름 오름차순</button>
+        <button id="nameDesc">이름 내림차순</button>
+        <button id="ageAsc">나이 오름차순</button>
+        <button id="ageDesc">나이 내림차순</button>
+    </div>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <td class="name">이지은</td>
+            <td class="age">31</td>
+        </tr>
+        <tr>
+            <td class="name">카리나</td>
+            <td class="age">23</td>
+        </tr>
+        <tr>
+            <td class="name">김지수</td>
+            <td class="age">28</td>
+        </tr>
+    </table>
+
+    <script>
+        const table = document.querySelector('table')
+        const trArray = Array.from(document.querySelectorAll('tr'))
+
+        const nameAsc = document.getElementById('nameAsc')
+        const nameDesc = document.getElementById('nameDesc')
+        const ageAsc = document.getElementById('ageAsc')
+        const ageDesc = document.getElementById('ageDesc')
+
+        nameAsc.onclick = function() {
+            trArray.sort((trA, trB) => {
+                const nameA = trA.querySelector('.name').innerText
+                const nameB = trB.querySelector('.name').innerText
+                return nameA > nameB ? 1 : -1
+            })
+            trArray.forEach(tr => table.appendChild(tr))
+        }
+
+        ageAsc.onclick = function() {
+            trArray.sort((trA, trB) => {
+                const ageA = +trA.querySelector('.age').innerText
+                const ageB = +trB.querySelector('.age').innerText
+                return ageA - ageB
+            })
+            trArray.forEach(tr => table.appendChild(tr))
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>position.html</h1>
+    <hr>
+    
+    <table border="1" cellpadding="10" cellspacing="0" align="center">
+            <tr>
+                <th>속성</th>
+                <th>기능</th>
+            </tr>
+            <tr>
+                <td>static</td>
+                <td>기본값 </td>
+            </tr>
+            <tr>
+                <td>relative</td>
+                <td>다른 요소의 위치 기준이 될 수 있다. 흐름에 맞게 배치</td>
+            </tr>
+            <tr>
+                <td>absolute</td>
+                <td>기준을 중심으로 자신만의 위치를 가진다. 스크롤의 영향을 받는다.</td>
+            </tr>
+            <tr>
+                <td>fixed</td>
+                <td>기준을 중심으로 자신만의 위치를 가진다. 스크롤의 영향을 받지 않는다.</td>
+            </tr>
+            <tr>
+                <td>sticky</td>
+                <td>평소에는 static처럼 배치되지만, 기준점에 도달하면 fixed와 같다</td>
+            </tr>
+    </table>
+
+    <fieldset>
+        <legend>static</legend>
+        <img src="image/danbi.jpg"
+        style="top :20px;
+                left: 20px;
+                position: static;
+                height:100px;">
+                포지션을 지정하지 않으면 원래 static
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fuga explicabo quisquam similique nesciunt alias porro consectetur unde deserunt omnis. Earum impedit excepturi cumque tenetur dolore, debitis quisquam enim? Magnam!       
+    </fieldset>
+
+    <fieldset>
+        <legend>relative</legend>
+        <img src="image/danbi.jpg"
+        style="top :20px;
+                left: 20px;
+                position: relative;
+                height:100px;">
+                지정된 위치에서 이동함
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fuga explicabo quisquam similique nesciunt alias porro consectetur unde deserunt omnis. Earum impedit excepturi cumque tenetur dolore, debitis quisquam enim? Magnam!       
+    </fieldset>
+    <fieldset style="position: relative;">
+        <legend>absolute</legend>
+        <img src="image/danbi.jpg"
+        style="top :20px;
+                left: 20px;
+                position: absolute;
+                height:100px;">
+                absolute는 절대적인 위치를 가진다.
+                부모요소에 static이 아닌 요소가 있으면 부모요소를 기준으로 삼고, 없으면 최상위 부모 body의 기준으로 위치한다.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fuga explicabo quisquam similique nesciunt alias porro consectetur unde deserunt omnis. Earum impedit excepturi cumque tenetur dolore, debitis quisquam enim? Magnam!       
+    </fieldset>
+    <fieldset style="position: relative;">
+        <legend>fixed</legend>
+        <img src="image/danbi.jpg"
+        style="top :20px;
+                left: 200px;
+                position: fixed;
+                height:100px;">
+                스크롤의 영향을 받지 않는다.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fuga explicabo quisquam similique nesciunt alias porro consectetur unde deserunt omnis. Earum impedit excepturi cumque tenetur dolore, debitis quisquam enim? Magnam!       
+    </fieldset>
+    <img src="image/calmdownman.jpg"
+    style="top :200px;
+            left: 300px;
+            position: sticky;
+            height:100px;">
+    <fieldset >
+        <legend>sticky</legend>
+                어느시점에 도달하기 전까지는 자신의 위치가 있다.
+                예시 : 구매버튼 (일정 스크롤내린 후부터 구매 버튼이 보인다.)
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fuga explicabo quisquam similique nesciunt alias porro consectetur unde deserunt omnis. Earum impedit excepturi cumque tenetur dolore, debitis quisquam enim? Magnam!       
+    </fieldset>
+    <div style="width: 90%;
+                height:95vh;"></div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-semantic_layout.html</title>
+    <style>
+        .frame {
+            width: 1000px;
+            margin: auto;
+        }
+        .flex {
+            display: flex;
+        }
+        aside {
+            flex: 1;
+        }
+        main {
+            flex: 3;
+        }
+        aside, main {
+            margin-right: 20px;
+        }
+        aside:last-child {
+            margin-right: 0;
+            height: fit-content;
+        }
+        header, aside, main, footer {
+            box-sizing: border-box;
+            border: 2px solid #dadada;
+            margin-bottom: 20px !important;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="frame">
+        <h1>사이트 제목</h1>
+    </header>
+
+    <div id="content" class="flex frame">
+        <aside class="left">
+            <h2>사이드바</h2>
+            <nav>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <h2>본문</h2>
+            <article>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet obcaecati nobis minima! Blanditiis illum rem autem perferendis? Nam eius excepturi, deserunt, deleniti odio non voluptas placeat, sapiente debitis voluptatem dignissimos.
+                </p>
+            </article>
+            <article>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In ipsa expedita hic vitae quasi provident. Ipsam odio, ipsum, dolore dolorum quidem labore pariatur tempora repellat autem explicabo soluta reprehenderit ea!
+                </p>
+            </article>
+            <article>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt natus illum neque quis. Et aperiam eius, laboriosam placeat minima sapiente necessitatibus molestiae velit adipisci! Dolores eum quo laborum obcaecati in.
+                </p>
+            </article>
+        </main>
+
+        <aside class="right">
+            <h2>사이드바</h2>
+            <ul>
+                <li>항목1</li>
+                <li>항목2</li>
+                <li>항목3</li>
+                <li>항목4</li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer class="frame">
+        <h2>푸터</h2>
+        <p>저작권 정보</p>
+        <p>연락처 등</p>
+    </footer>
+    
+</body>
+</html>

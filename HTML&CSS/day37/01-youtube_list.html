@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-youtube_list.html</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR">
+    <style>
+        /* 대부분 요소에 적용할 공통 속성을 지정하는 부분 */
+        div {
+            font-family: 'Noto Sans KR';
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* 여기는 각 요소의 윤곽을 잡는 부분 */
+        #root {
+            width: 1530px;
+            margin: auto;
+        }
+        .wrap {
+            display: flex;
+            flex-flow: wrap;
+        }
+        .item {
+            /* border: 1px dashed red; */
+            margin: 30px 10px;
+            width: 360px;
+            height: 320px;
+            cursor: pointer;
+        }
+        /* 내부 상세 요소의 배치 + 디테일 외형 */
+        .item > .image {
+            /* border: 1px dashed blue; */
+            height: 200px;
+            margin-bottom: 10px;
+        }
+        .item > .image > img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .item > .content {
+            /* border: 1px dashed green; */
+            /* height: max-content; */
+            display: flex;
+        }
+        .content > .left {
+            /* border: 1px dashed skyblue; */
+            flex: 1;
+            padding-right: 10px;
+        }
+        .content > .left > img {
+            border-radius: 50%;
+            width: 100%;
+        }
+        .content > .right {
+            /* border: 1px dashed hotpink; */
+            flex: 7;
+        }
+        .content > .right > .title {
+            font-size: 1.09em;
+            font-weight: 500;
+        }
+        .content > .right > div:not(.title) {
+            color: grey;
+        }
+        .content > .right > .channel > span {
+            background-color: grey;
+            color: white;
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            line-height: 16px;
+            font-size: 12px;
+            text-align: center;
+            border-radius: 50%;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>youtube_list</h1>
+    <hr>
+
+    <div id="root">
+        <div class="wrap">
+
+            <div class="item">
+                <div class="image">
+                    <img src="thumbnail/1.webp">
+                </div>
+                <div class="content">
+                    <div class="left icon">
+                        <img src="icons/ytn.jpg">
+                    </div>
+                    <div class="right">
+                        <div class="title">
+                            주말 중부지방 위험하다..."폭우 강도 훨씬 셀 것"[Y녹취록]/YTN
+                        </div>
+                        <div class="channel">
+                            YTN<span>✔</span>
+                        </div>
+                        <div class="etc">
+                            <span class="viewCount">조회수 3.5만회</span>
+                            ·
+                            <span class="uploadTime">1시간 전</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="image">
+                    <img src="thumbnail/2.webp">
+                </div>
+                <div class="content">
+                    <div class="left icon">
+                        <img src="icons/exia.jpg">
+                    </div>
+                    <div class="right">
+                        <div class="title">
+                            배우 이시아와 함께하는 민속놀이 1:1 투혼 #스타크래프트 #배틀넷 #starcraft
+                        </div>
+                        <div class="channel">
+                            이시아exia
+                        </div>
+                        <div class="etc">
+                            <span class="viewCount">조회수 35만회</span>
+                            ·
+                            <span class="uploadTime">3주 전</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="image">
+                    <img src="thumbnail/3.webp">
+                </div>
+                <div class="content">
+                    <div class="left icon">
+                        <img src="icons/kbs_news.jpg">
+                    </div>
+                    <div class="right">
+                        <div class="title">
+                            🔴LIVE - 충청·남부 최대 350mm 이상 또 폭우.."오늘이 최대 고비"/이시각 호우·...
+                        </div>
+                        <div class="channel">
+                            KBS News
+                        </div>
+                        <div class="etc">
+                            <span class="uploadTime">2.3천명 시청 중</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="image">
+                    <img src="thumbnail/4.webp">
+                </div>
+                <div class="content">
+                    <div class="left icon">
+                        <img src="icons/wico.jpg">
+                    </div>
+                    <div class="right">
+                        <div class="title">
+                            Wico 1,S1티어 종족최강전 4Week 4세트 네오실피드 Disco안철환 P 1K vs Vivid...
+                        </div>
+                        <div class="channel">
+                            StarCraft Korea Server Wico Clan
+                        </div>
+                        <div class="etc">
+                            <span class="viewCount">조회수 34회</span>
+                            ·
+                            <span class="uploadTime">2일 전</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="image">
+                    <img src="thumbnail/5.webp">
+                </div>
+                <div class="content">
+                    <div class="left icon">
+                        <img src="icons/sbs_news.jpg">
+                    </div>
+                    <div class="right">
+                        <div class="title">
+                            3년 전 부산과 '판박이'...당시 담당 공무원 11명 전원 유죄/SBS 8뉴스
+                        </div>
+                        <div class="channel">
+                            SBS 뉴스<span>✔</span>
+                        </div>
+                        <div class="etc">
+                            <span class="viewCount">조회수 4.1만회</span>
+                            ·
+                            <span class="uploadTime">18시간 전</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="image">
+                    <img src="thumbnail/6.webp">
+                </div>
+                <div class="content">
+                    <div class="left icon">
+                        <img src="icons/mbc_gangwon.jpg">
+                    </div>
+                    <div class="right">
+                        <div class="title">
+                            '와르르' 벌써 네 번째 산사태...복구도 어려워 주민 불안(2)
+                        </div>
+                        <div class="channel">
+                            MBC강원영동NEWS
+                        </div>
+                        <div class="etc">
+                            <span class="viewCount">조회수 2.7천회</span>
+                            ·
+                            <span class="uploadTime">4일 전</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="image">
+                    <img src="thumbnail/7.webp">
+                </div>
+                <div class="content">
+                    <div class="left icon">
+                        <img src="icons/musongsong.jpg">
+                    </div>
+                    <div class="right">
+                        <div class="title">
+                            소울리스좌 이전에 아마존 씹어먹던 근무자들 ㅋㅋㅋㅋ
+                        </div>
+                        <div class="channel">
+                            무송송계란탁
+                        </div>
+                        <div class="etc">
+                            <span class="viewCount">조회수 765만회</span>
+                            ·
+                            <span class="uploadTime">1년 전</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="image">
+                    <img src="thumbnail/8.webp">
+                </div>
+                <div class="content">
+                    <div class="left icon">
+                        <img src="icons/netflix_korea.jpg">
+                    </div>
+                    <div class="right">
+                        <div class="title">
+                            D.P.2 | 공식 예고편 | 넷플릭스
+                        </div>
+                        <div class="channel">
+                            Netflix Korea 넷플릭스 코리아
+                        </div>
+                        <div class="etc">
+                            <span class="viewCount">조회수 141만회</span>
+                            ·
+                            <span class="uploadTime">5일 전</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #flex {
+        width: 300px;
+        height: 300px;
+        border: 2px solid black;
+        display: flex;
+
+        position: relative;
+      }
+      .item {
+        background-image: url("image/danbi.jpg");
+        width: 100px;
+        height: 100px;
+        background-size: 100%;
+        z-index: 1;
+      }
+      .main {
+        border-top: 2px dashed red;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+      }
+      .cross {
+        border-left: 2px dashed blue;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+      }
+      #control {
+        display: flex;
+      }
+      #control > ul {
+        list-style: none;
+      }
+      #control > ul:first-child h3{
+        color: red;
+      }
+      #control > ul:last-child h3{
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>02-flex.html</h1>
+    <hr />
+
+    <div id="flex">
+      <div class="item"></div>
+      <div class="main"></div>
+      <div class="cross"></div>
+    </div>
+
+    <div id="control">
+      <ul>
+        <h3>justify-content(main-zxis)</h3>
+        <li>
+          <label>
+            <input type="radio" name="main" value="flex-start" checked />
+            flex-start
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="main" value="center" />
+            center
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="main" value="flex-end" />
+            flex-end
+          </label>
+        </li>
+      </ul>
+
+      <ul>
+        <h3>align-items(cross-axis)</h3>
+        <li>
+          <label>
+            <input type="radio" name="cross" value="flex-start" checked />
+            flex-start
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="cross" value="center" />
+            center
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="cross" value="flex-end" />
+            flex-end
+          </label>
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      //쿼리 설렉터로 요소를 선택
+      const mainList = document.querySelectorAll('#control > ul:first-child input');
+      const crossList = document.querySelectorAll('#control > ul:last-child input');
+      const flex = document.getElementById('flex');
+
+      //클릭 이벤트가 발생할때 해당 요소가 갖고 있는 value로 flex의 스타일을 변경(선택한 라디오 박스의 value = v)
+      //ul의 첫번째 요소
+      mainList.forEach(radio => {
+        radio.addEventListener('click', function(event) {
+          const v = event.target.value;
+          flex.style.justifyContent = v;
+        });
+      });
+
+      //ul의 마지막 요소
+      crossList.forEach(radio => {
+        radio.addEventListener('click', function(event) {
+          const v = event.target.value;
+          flex.style.alignItems = v;
+        });
+      });
+    </script>
+  </body>
+</html>
+
+
+<!--
+  flex-justify 설정시 main축(가로 , 왼쪽에서 오른쪽)
+  flex-align 설정시 cross축(세로, 위 에서 아래)
+
+  space-between 양쪽으로 최대한 떨어트림
+  space-allowd  적절히 양쪽으로 벌림
+
+  main축과 cross축을 서로 반전해서 세로로 정렬도 가능하다.
+  원래 main축이 cross축이 되어 세로로 위아래로 정렬
+-->

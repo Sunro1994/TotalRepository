@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .frame{
+            border: 1px solid rgb(218, 218, 218);
+            margin: auto;
+            background-color: rgba(245, 245, 245,0.9);
+            width: 40%;
+            height: 90%;
+            border-radius: 10px;
+            opacity: 0.8;
+            box-shadow: 10px 10px 10px rgba(133, 133, 133, 0.667);
+
+        }
+        .top{
+            display: flex;
+            justify-content: space-between;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 5px;
+            padding-top: 5px;
+        }
+        .top > .left{
+            font-size: 13px;
+            
+        }
+        .top > .right{
+            display: flex;
+           
+            
+        }
+        .view > .upper{
+            
+            display: flex;
+            justify-content: space-between;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 0;
+        }
+        .view > .upper p{
+            margin-top: 0;
+            font-weight: bold;
+         
+            
+        }
+        .main{
+            text-align: right;
+            font-size: 50px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            padding-right: 15px;
+            padding-top: 30px;
+            padding-bottom: 35px;
+            margin-bottom: 20px;
+            
+
+        }
+        .bottom{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .bottom > .M{
+           margin: 0    auto;
+           padding: 10px;
+           font-size: 13px;
+        }
+        .bottom > .M1{
+            margin: 0    auto;
+            padding: 10px;
+            font-size: 13px;
+            opacity: 0.2;
+         }
+        .M:hover{
+            background-color: #ebebeb;
+        }
+       
+        .top >.right > p{
+            font-size: 13px;
+            padding-left: 20px;
+            margin-top: 0;
+        }
+        .pad{
+            display: flex;
+            width: 100%;
+            height: 72px;
+            
+        }
+        .line1{
+            padding: 10px 30px;
+            background-color: white;
+            border: 0.5px solid rgb(174, 174, 174);
+            margin: 1px 1px;
+            justify-content: space-between;
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            line-height: 50px;
+            border-radius: 4px;
+            
+        
+        }
+        .line2{
+            padding: 10px 30px;
+            border: 0.5px solid rgb(174, 174, 174);
+            margin: 1px 1px;
+            justify-content: space-between;
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            line-height: 50px;
+            border-radius: 4px;
+            opacity: 0.8;
+            
+        
+        }
+        .line1:hover,.line2:hover{
+            opacity: 0.4;
+        }
+        .lineEqual:hover{
+            opacity: 0.9;
+        }
+        .lineEqual{
+            padding: 10px 30px;
+            border: 1px solid grey;
+            margin: 1px 1px;
+            justify-content: space-between;
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            line-height: 50px;
+            background-color: rgb(41, 89, 220);
+            border-radius: 4px;
+
+        }
+       
+       ul{
+      
+        display: flex;
+        list-style: none;
+       }
+        
+    </style>
+</head>
+<body>
+    <div class="frame">
+
+        <div class="top">
+            <div class="left">
+                📱계산기
+            </div>
+            <div class="right">
+                <p>―</p>
+                <p>□</p>
+                <p>Ｘ</p>
+            </div>
+        </div>
+        <div class="view">
+            <div class="upper">
+                <p>🟰 표준</p>
+                <p>🕐</p>
+            </div>
+            
+            <div class="main">0</div>
+        </div>
+        
+        <div class="bottom">
+            <div class="M1">MC</div>
+            <div class="M1">MR</div>
+            <div class="M">M+</div>
+            <div class="M">M-</div>
+            <div class="M">MS</div>
+            <div class="M1">M🔻</div>
+        </div>
+            <div class="pad">
+                <div class="line2">%</div>
+                <div class="line2">CE</div>
+                <div class="line2">C</div>
+                <div class="line2">◀️</div>
+            </div>
+            <div class="pad">
+                <div class="line2">1/x</div>
+                <div class="line2">x²</div>
+                <div class="line2">2√x</div>
+                <div class="line2">/</div>
+            </div>
+            <div class="pad">
+                <div class="line1">7</div>
+                <div class="line1">8</div>
+                <div class="line1">9</div>
+                <div class="line2">*</div>
+            </div>
+            <div class="pad">
+                <div class="line1">4</div>
+                <div class="line1">5</div>
+                <div class="line1">6</div>
+                <div class="line2">-</div>
+            </div>
+            <div class="pad">
+                <div class="line1">1</div>
+                <div class="line1">2</div>
+                <div class="line1">3</div>
+                <div class="line2">+</div>
+            </div>
+            <div class="pad">
+                <div class="line1">+/-</div>
+                <div class="line1">0</div>
+                <div class="line1">.</div>
+                <div class="lineEqual">=</div>
+            </div>
+        </div>
+</body>
+</html>

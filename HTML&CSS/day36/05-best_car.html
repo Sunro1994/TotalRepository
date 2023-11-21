@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05-best_car.html</title>
+    <style>
+        div {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        #root {
+            margin: 20px auto;
+            width: 900px;
+        }
+        .flex {
+            display: flex;
+            flex-flow: wrap;
+            width: 606px;
+            margin: auto;
+        }
+        .item {
+            width: 200px;
+            height: 180px;
+            margin: 1px;
+            border: 2px solid red;
+
+            position: relative;
+            overflow: hidden;
+        }
+        .image {
+            position: absolute;
+            text-align: center;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 180px;
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            /* transition-duration: 0.5s; */
+        }
+        .content {
+            position: absolute;
+            width: 200px;
+            height: 80px;
+            bottom: 0;
+            left: 0;
+            font-size: 1.5em;
+            color: white;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+            display: flex;
+            align-items: flex-end;
+        }
+        .item:hover > .image {
+            transform: scale(130%);     
+            transition-duration: 0.5s;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>05-best_car.html</h1>
+    <hr>
+
+    <div id="root">
+        <div class="flex">
+            <div class="item">
+                <div class="image" style="background-image: url('image/짱구.png');"></div>
+                <div class="content">
+                    짱구
+                </div>
+            </div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

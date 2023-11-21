@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03-flex.html</title>
+</head>
+<body>
+
+    <h1>03-flex.html</h1>
+    <hr>
+
+    <fieldset>
+        <style>
+            .box {
+                display: flex;
+                justify-content: space-between;
+            }
+            .item {
+                width: 100px;
+                height: 100px;
+                background-image: url('image/danbi.jpg');
+                background-size: 100%;
+            }
+        </style>
+        <legend><b>space-between</b></legend>
+        <div class="box">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <style>
+            .box2 {
+                display: flex;
+                justify-content: space-between;
+                border: 3px dashed red;
+            }
+            .left, .right {
+                display: flex;
+                border: 3px dashed green;
+            }
+            .left > .item {
+                margin-right: 10px;
+            }
+            .right > .item {
+                margin-left: 10px;
+            }
+        </style>        
+        <div class="box2">
+            <div class="left">
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+            <div class="right">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+        </div>
+    </fieldset>
+    <br>
+
+
+    <fieldset>
+        <legend><b>wrap</b></legend>
+        <style>
+            #frame {
+                width: 600px;
+                display: flex;
+                flex-flow: wrap;
+                margin: auto;
+                /* justify-content: center; */
+            }
+            #frame > .item {
+                margin: 10px;
+                background-repeat: no-repeat;
+            }
+        </style>
+        <div id="root">
+            <div id="frame">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+        </div>
+
+    </fieldset>
+
+
+</body>
+</html>

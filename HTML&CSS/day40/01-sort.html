@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-sort.html</title>
+</head>
+<body>
+
+    <h1>01-sort.html</h1>
+    <hr>
+
+    <script>
+        const arr = [4, 8, 2, 7, 6]
+        console.log(arr)
+
+        arr.sort((a, b) => a > b ? 1 : -1)
+        console.log(arr)
+
+        arr.sort((a, b) => a < b ? 1 : -1)
+        console.log(arr)
+
+        console.log('=============================')
+
+        const arr2 = [
+            {name: '이지은', age: 31},
+            {name: '카리나', age: 23},
+            {name: '김지수', age: 28},
+            {name: '김희철', age: 40},
+            {name: '민경훈', age: 39},
+        ]
+        console.log(arr2)
+        
+        arr2.sort((a, b) => {return a.age > b.age ? 1 : -1})
+        console.log(arr2)
+
+        arr2.sort((a, b) => {return a.name > b.name ? 1 : -1})
+        console.log(arr2)
+
+        const table = document.createElement('table')
+        document.body.appendChild(table)
+        
+        for(let i = 0; i < arr2.length; i++) {
+            const tr = document.createElement('tr')
+            const td1 = document.createElement('td')
+            const td2 = document.createElement('td')
+            td1.innerText = arr2[i].name
+            td2.innerText = arr2[i].age
+            tr.appendChild(td1)
+            tr.appendChild(td2)
+            table.appendChild(tr)
+        }
+        
+    </script>
+    
+</body>
+</html>

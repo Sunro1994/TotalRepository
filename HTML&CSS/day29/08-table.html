@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08-table.html</title>
+</head>
+<body>
+
+    <h1>08-table.html</h1>
+    <hr>
+
+    <h3>테이블 : 가로와 세로로 데이터의 관계를 표현할 수 있는 표</h3>
+
+    <ul>
+        <li>table : 표의 시작과 끝을 나타내는 태그</li>
+        <li>thead : 표의 상단 부분을 표현하는 태그</li>
+        <li>tbody : 표의 중심 내용을 표현하는 태그</li>
+        <li>tfoot : 표의 하단 부분을 표현하는 태그</li>
+        <li>tr : table row, 표의 한 줄을 표현하는 태그</li>
+        <li>td : table data, 줄 내부의 한 칸을 표현하는 태그</li>
+        <li>th : table head, td와 같으나 가운데정렬 + 굵게 처리하는 태그</li>
+    </ul>
+
+    <table border="1" width="500" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr bgcolor="darkgrey">
+                <th colspan="5">
+                    <h3>짱구 등장인물</h3>
+                </th>
+            </tr>
+            <tr bgcolor="darkgrey">
+                <th></th>
+                <th></th>
+                <th>이름</th>
+                <th>나이</th>
+                <th>그림</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">짱구 친구들</td>
+                <td>1</td>
+                <td>짱구</td>
+                <td>5</td>
+                <td><img src="image/짱구.png" height="100" alt="짱구"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>훈이</td>
+                <td>5</td>
+                <td><img src="image/훈이.png" height="100" alt="훈이"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>수지</td>
+                <td>5</td>
+                <td><img src="image/수지.png" height="100" alt="수지"></td>
+            </tr>
+            <tr>
+                <td rowspan="2">짱구 가족</td>
+                <td>4</td>
+                <td>짱아</td>
+                <td>2</td>
+                <td><img src="image/짱아.png" height="100" alt="짱아"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>흰둥이</td>
+                <td>3</td>
+                <td><img src="image/흰둥이.png" height="100" alt="흰둥이"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+</body>
+</html>

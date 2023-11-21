@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08-quiz.html</title>
+    <style>
+        @keyframes test {
+            from{background-color: white;}
+            to {background-color: paleturquoise;}
+        }
+       
+        .title{
+            border: 1px solid black;
+            margin: 0 200px;
+            height: auto;
+            
+        }
+        .head{
+            margin: 20px;
+            background-color: white;
+            border: 1px solid black;
+            padding: 20px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            animation-name: test;
+            animation-duration: 2s;
+        }
+        .main{
+            display: flex;
+            margin: 10px;
+            height: 500px;
+        }
+        .left_side{
+            margin: 10px;
+            flex: 2;
+            padding: 20px;
+            border: 1px solid black;
+            background-color: white;
+        }
+
+        
+        .center{
+            margin: 10px;
+            flex: 6;
+            padding: 20px;
+            border: 1px solid black;
+            background-color: white;
+            box-sizing: border-box;
+        }
+        .right_side{
+            margin: 10px;
+            flex: 2;
+            padding: 20px;
+            border: 1px solid black;
+            background-color: white;
+            height: fit-content;
+        }
+        .footer{
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid black;
+            background-color: white;
+        }
+        .tooltip{
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+        .tooltip .tooltiptest{
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            text-align: center;
+        }
+        .tooltip:hover .tooltiptest{
+            visibility: visible;
+            counter-reset: #fff;
+            
+        }
+       textarea{
+        border: none;
+        box-sizing: border-box;
+        resize: none;
+        
+       }
+    </style>
+</head>
+<body>
+    <div class="title">
+
+        <div class="head"><h1>예비비</h1></div>
+        <div class="main">
+            <div class="left_side">
+                <p><h2>사이드바</h2></p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                </ul>
+            </div>
+            <div class="center">
+                <h2>본문</h2>
+                <div id="text">
+                    <textarea style="border: 0; font-size:20px; width:100%; height:350px;">
+예비비는 초액으로 국회의 의결을 얻어야 한다. 예비비의 지출은 차기국회의 승인을 얻어야 한다. 이 헌법시행 당시의 법령과조약은 이 헌법에 위배되지 아니하는 한 그 효력을 지속한다.
+                        
+국가의 세입·세출의 결산, 국가 및 법률이 정한 단체의 회계검사외 행정기관 및 공무원의 직무에 관한 검찰을 하기 위하여 대통령 소속하에 감사원을 둔다.
+                        
+모든 국민의 재산권은 보장된다. 그 내용과 한계는 법률로 정한다. 대한민국의 국민이 되는 요건은 법률로 정한다. 법률이 헌법에 위반되는 여부가 재판의 전제가 된 경우에는 법원은 헌법재판소에 제정하여 그 심판에 의하여 재판한다.
+                        
+                    </textarea>
+                </div>
+                </div>
+            <div class="right_side">
+                    <p><h2>사이드바</h2></p>
+                <ul>
+                    <li>항목1</li>
+                    <li>항목2</li>
+                    <li>항목3</li>
+                    <li>항목4</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <p><h2>푸터</h2></p>
+            <div class="tooltip">
+                저작권 정보
+                <span class="tooltiptest">
+                    <a href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%98%88%EB%B9%84%EB%B9%84" target="_blank">저작권 정보</a>
+                </span>
+            </div>
+            <p>연락처 등</p>
+        </div>
+    </div>
+
+</body>
+</html>

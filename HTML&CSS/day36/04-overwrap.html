@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04-overwrap.html</title>
+    <style>
+        #item {
+            position: relative;
+            width: 250px;
+            height: 250px;
+        }
+        #item > div {
+            position: absolute;
+        }
+        .title {
+            top: 10px;
+            right: 10px;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+        .content {
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>04-overwrap.html</h1>
+    <hr>
+
+    <div id="item">
+        <div class="image">
+            <img src="image/danbi.jpg" alt="단비">
+        </div>
+        <div class="title">단비꺼야</div>
+        <div class="content">단비 지금 테레비 보고 있으니까 엄마가 이리루 와</div>
+    </div>
+
+
+    
+</body>
+</html>

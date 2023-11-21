@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04-homeplus.html</title>
+    <style>
+        table {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        td, th {
+            padding: 10px;
+            border: 1px solid grey;
+        }
+        .wrap {
+            display: flex;
+            width: 100%;
+        }
+        .left {
+            width: 300px;
+            position: sticky;
+            top: 0;
+            height: fit-content;
+        }
+        fieldset {
+            width: 200px;
+        }
+        ul {
+            padding-left: 0;
+            list-style: none;
+        }
+        tr.hidden, tr.hidden2 {
+            display: none;
+        }
+        tr.blueberry {
+            background-color: skyblue;
+        }
+        tr.cherry {
+            background-color: plum;
+        }
+        tr.strawberry {
+            background-color: pink;
+        }
+        tr.etc {
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>04-homeplus.html</h1>
+    <hr>
+
+    <div class="wrap">
+        <div class="left">
+            <fieldset id="categoryFilter">
+                <legend>카테고리</legend>
+                <ul>
+                    <li><label><input type="checkbox" id="strawberry">딸기</label></li>
+                    <li><label><input type="checkbox" id="blueberry">블루베리</label></li>
+                    <li><label><input type="checkbox" id="cherry">체리</label></li>
+                    <li><label><input type="checkbox" id="etc">기타</label></li>
+                </ul>
+            </fieldset>
+
+            <fieldset id="priceFilter">
+                <legend>금액</legend>
+                <ul>
+                    <li><label><input type="checkbox" start="0">0 ~ 10000</label></li>
+                    <li><label><input type="checkbox" start="10000">10000 ~</label></li>
+                    <li><label><input type="checkbox" start="20000">20000 ~</label></li>
+                    <li><label><input type="checkbox" start="30000">30000 ~</label></li>
+                    <li><label><input type="checkbox" start="40000">40000 ~</label></li>
+                    <li><label><input type="checkbox" start="50000">50000 ~</label></li>
+                </ul>
+            </fieldset>
+        </div>
+        <div class="right">
+            <table>
+                <thead>
+                    <tr>
+                        <th>상품이름</th>
+                        <th>카테고리</th>
+                        <th>가격</th>
+                        <th>평점</th>
+                        <th>판매 횟수</th>
+                        <th>리뷰 횟수</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+   
+
+    <script src="homeplus(berry).js"></script>
+    <script>
+        // 전체 데이터를 준비하기 위한 코드
+        const dataList = arr.map(ob => {
+            // JSON.stringify(ob) : ob 객체를 JSON형식 문자열로 변환한다
+            // JSON.parse(str) : str을 JSON형식 기준으로 객체로 변환한다
+            const ob2 = JSON.parse(JSON.stringify(ob))
+            if(ob.name.includes('블루베리'))    ob2.category = '블루베리'
+            else if(ob.name.includes('딸기'))   ob2.category = '딸기'
+            else if(ob.name.includes('체리'))   ob2.category = '체리'
+            else                                ob2.category = '기타'
+            return ob2
+        })
+        
+        // 문서 로드 시 수행하는 최초 작동
+        function loadHandler() {
+            let tag = ''
+            const categoryMap = {
+                '딸기' : 'strawberry',
+                '블루베리' : 'blueberry',
+                '체리' : 'cherry',
+                '기타' : 'etc'
+            }
+            dataList.forEach(ob => {
+                tag += `<tr class="${categoryMap[ob.category]}">`
+                tag += `    <td>${ob.name}</td>`
+                tag += `    <td>${ob.category}</td>`
+                tag += `    <td>${ob.price}</td>`
+                tag += `    <td>${ob.grade}</td>`
+                tag += `    <td>${ob.salesCount}</td>`
+                tag += `    <td>${ob.reviewCount}</td>`
+                tag += `</tr>`
+            })
+            document.querySelector('tbody').innerHTML += tag
+        }
+        window.onload = loadHandler
+
+        // 카테고리를 이용한 필터링
+        const categoryBoxArray = Array.from(document.querySelectorAll('#categoryFilter input[type="checkbox"]'))
+        function filterHandler(event) {
+            const checkedBoxs = categoryBoxArray.filter(box => box.checked).map(box => box.id)
+            console.log(checkedBoxs)
+
+            document.querySelectorAll('tbody > tr').forEach(tr => {
+                const flag = checkedBoxs.includes(tr.classList[0])
+                if(checkedBoxs.length == 0) tr.classList.remove('hidden')
+                else if(flag)               tr.classList.remove('hidden')
+                else                        tr.classList.add('hidden')
+            })
+        }
+        categoryBoxArray.forEach(box => box.onclick = filterHandler)
+        
+        // 가격을 이용한 필터링
+        const priceBoxArray = Array.from(document.querySelectorAll('#priceFilter input[type="checkbox"]'))
+
+        function priceFilterHandler(event) {
+            const startBoxes = priceBoxArray.filter(box => box.checked).map(box => +box.getAttribute('start'))
+            console.log(startBoxes)
+
+            document.querySelectorAll('tbody > tr').forEach(tr => {
+               const price = +tr.querySelector('td:nth-child(3)').innerText
+               
+               const flag = startBoxes.map(st => st <= price && price < st + (st == 50000 ? st * 5 : 10000))
+                                     .filter(bo => bo).length != 0
+               
+               if(startBoxes.length == 0)    tr.classList.remove('hidden2')
+               else if(flag)                tr.classList.remove('hidden2')
+               else                         tr.classList.add('hidden2')
+            })
+            
+        }
+        priceBoxArray.forEach(box => box.onclick = priceFilterHandler)
+    </script>
+    
+</body>
+</html>

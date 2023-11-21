@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09-script.html</title>
+</head>
+<body>
+
+    <h1>09-script.html</h1>
+    <hr>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>나이</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="09-sample.js"></script>
+    <script>
+        console.log(arr)
+
+        const tbody = document.querySelector('tbody')
+
+        arr.forEach(ob => {
+            let tag = ``
+            tag += `<tr>`
+            tag += `    <td>${ob.name}</td>`
+            tag += `    <td>${ob.age}살</td>`
+            tag += `</tr>`
+            tbody.innerHTML += tag
+        })
+    </script>
+    
+</body>
+</html>

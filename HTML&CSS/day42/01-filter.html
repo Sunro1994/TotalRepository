@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-filter.html</title>
+    <style>
+        #root {
+            width: 800px;
+            margin: 50px auto;
+        }
+        .wrap {
+            width: 800px;
+            display: flex;
+            flex-flow: wrap;
+        }
+        .item {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            border: 1px solid grey;
+            margin: 5px;
+            padding: 10px;
+        }
+        #filter {
+            width: 800px;
+            margin: 20px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>01-filter.html</h1>
+    <hr>
+    <div id="filter">
+        <label><input type="checkbox" id="plus">양수</label>
+        <label><input type="checkbox" id="minus">음수</label>
+        <label><input type="checkbox" id="odd">홀수</label>
+        <label><input type="checkbox" id="even">짝수</label>
+    </div>
+
+    <div id="root">
+        <div class="wrap"></div>
+    </div>
+
+    <script>
+        // min과 max사이에서 랜덤한 정수를 하나 반환하는 함수
+        function getRandomInt(min, max) {
+            const v1 = Math.ceil(min)
+            const v2 = Math.floor(max)
+            return Math.floor(Math.random() * (v2 - v1 + 1)) + v1
+        }
+        const arr = []
+
+        // 랜덤 정수 27개를 뽑아서 div.item 형식으로 화면에 추가하는 함수
+        function loadHandler() {
+            let tag = ''
+            for(let i = 0; i < 27; i++) {
+                const num = getRandomInt(-50, 50)
+                arr.push(num)   // num을 배열에 추가한다 (list.add(num))
+                tag += `<div class="item">${num}</div>`
+            }
+            document.querySelector('.wrap').innerHTML += tag
+            console.log(arr)
+        }
+
+        // 체크박스를 체크하면 실행되는 이벤트 함수
+        const plus = document.getElementById('plus')
+        const minus = document.getElementById('minus')
+
+        plus.onclick = function(event) {
+            console.log('plus : ' + event.target.checked)
+            const flag = event.target.checked
+            const result = arr.filter(num => num > 0)
+            let tag = ''
+            const target = flag ? result : arr
+            target.forEach(num => tag += `<div class="item">${num}</div>`)
+            document.querySelector('.wrap').innerHTML = ''
+            document.querySelector('.wrap').innerHTML += tag
+        }
+
+        minus.onclick = function(event) {
+            const flag = event.target.checked
+            const result = arr.filter(num => num < 0)
+            let tag = ''
+            const target = flag ? result : arr
+            target.forEach(num => tag += `<div class="item">${num}</div>`)
+            document.querySelector('.wrap').innerHTML = ''
+            document.querySelector('.wrap').innerHTML += tag
+        }
+
+        window.onload = loadHandler
+        
+    </script>
+    
+</body>
+</html>
