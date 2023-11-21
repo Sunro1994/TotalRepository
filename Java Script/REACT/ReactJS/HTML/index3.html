@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day03</title>
+</head>
+<body>
+    <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <div id="root"></div>
+</body>
+
+
+<script type="text/babel">
+    const root = document.getElementById("root");
+    //JSX가 변수를 전달하는 방법
+    let counter =10;
+    function countUp() {
+        counter = counter+1;
+        //바뀔때마다 렌더링을 해줘야하는 번거로움이 발생
+       render();
+    }
+    function render() {
+        ReactDOM.render(<App/>, root);
+    }
+    //단 한번만 렌더링을 해서 증가하는게 화면에 곧바로 나타나지 않는다.
+    // 또한 React.js에서는 바뀐 UI(증가하는 카운트)만 보여준다.
+    function App() {
+        return (<div>
+        
+            <h3>Total Clicks : {counter}</h3>
+            <button onClick={countUp}>Click me!</button>
+        </div>  
+        );
+    }
+    render();    
+
+    
+    //countup을 할때마다 새로 렌더링이 필요하다.
+    
+    
+</script>
+</html>

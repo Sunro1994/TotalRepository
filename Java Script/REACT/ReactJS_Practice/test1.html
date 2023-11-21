@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <div id="root"></div>
+</body>
+<script type="text/babel">
+  function App(){
+    const [minutes,setMinutes] = React.useState();
+    const onChange = (event)=>{
+        setMinutes(event.target.value);
+    };
+    return(<div>
+
+        <h1>Super Convertor!</h1>
+        <div>
+            <label htmlFor="minute">Minute</label>
+            <input
+                value={minutes}
+                id="minute"
+                type="number"
+                onChange={onChange}
+            />
+        </div>
+        <div>
+            <label htmlFor="hour">Hours</label>
+            <input
+                type="number"
+                value={Math.round(minutes/60)}
+            />
+        </div>
+    </div>);
+  }
+  ReactDOM.render(<App/>,root);
+</script>
+</html>

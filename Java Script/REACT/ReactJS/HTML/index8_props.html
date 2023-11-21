@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day05</title>
+</head>
+<body>
+    <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <div id="root"></div>
+</body>
+
+<script type="text/babel">
+    //React 규칙2 . 컴포넌트의 상태가 바뀌면 re-render를 수행한다.
+
+    //ChangeValue라는 함수도 전달 가능
+   function Btn({text, ChangeValue}){
+    return <button  
+    onClick={ChangeValue}
+    style={{
+        backgroundColor : "tomato",
+        color:"white",
+        padding:"10px 20px",
+        borderRadius : 10,
+        border : 0,
+        //fontSize에서 big인자를 활용하여 폰트를 다르게 할 수도 있다.
+        
+    }}>{text}</button>
+   }
+   //React.memo()는 Btn re-rendering할때 변한 요소만 체크해서 변경시킬수 있도록 한다. 자원낭비를 막기 위해 사용
+   const MemorizedBtn = React.memo(Btn);
+  //  <Btn text ="Save Change"/> 이렇게 쓰는것은 결국 Btn({banana:"save changes"})이렇게 쓰는것과 같다.
+  // Btn의 매개변수(인자)로 넣어주는것
+    function App() {
+       
+        const [value, setValue] = React.useState("Save Changes")
+        const ChangeValue = ()=> setValue("Revert Changes");
+        
+        return (<div>
+
+            <MemorizedBtn text ={value} ChangeValue={ChangeValue}/>
+            <MemorizedBtn text ="Continue"  />
+        </div>  
+        );
+    }
+    const root = document.getElementById('root');
+    ReactDOM.render(<App/>, root);  
+
+    
+    //countup을 할때마다 새로 렌더링이 필요하다.
+    
+    
+</script>
+</html>

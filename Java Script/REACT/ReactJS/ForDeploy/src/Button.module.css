@@ -1,0 +1,8 @@
+.btn {
+    color: white;
+    background-color: tomato;
+}
+/*css파일을 button으로 만들어서 import하면 모든 button이 동일하게 바뀐다. 그러므로 Button안에서 prop을 변경해주는 것이 더 올바른 방법
+ css파일도 모듈화가 가능해서 import로도 넣어줄 수 있따.
+ 크랠스이름은 자동으로 랜덤한 아이디를 만들어준다.
+*/

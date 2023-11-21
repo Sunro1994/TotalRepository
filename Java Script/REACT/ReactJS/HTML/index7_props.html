@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day05</title>
+</head>
+<body>
+    <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <div id="root"></div>
+</body>
+
+<script type="text/babel">
+    //SaveBtn, ConfirmBtn, App 등은 component라 부르며 <SaveBtn/>, <ConfirmBtn/>은 함수형 Component라고한다.
+    //Btn(props)는 내가 만든 인자들을 꺼낼 수 있다. 이를 더 편하게 쓰려면 다음과 같이 사용한다.
+    //props는 Object이고 {text}는 프로퍼티이다. 첫번쨰 인자인 text를 곧바로 꺼내사용하는것
+    // 하나가 아닌 여러개의 프로퍼티(인자)를 꺼낼 수 있다.
+   function Btn({text, big}){
+    console.log({})
+    return <button  style={{
+        backgroundColor : "tomato",
+        color:"white",
+        padding:"10px 20px",
+        borderRadius : 10,
+        border : 0,
+        //fontSize에서 big인자를 활용하여 폰트를 다르게 할 수도 있다.
+        fontSize: big? 18:16,
+    }}>{text}</button>
+   }
+  //  <Btn text ="Save Change"/> 이렇게 쓰는것은 결국 Btn({banana:"save changes"})이렇게 쓰는것과 같다.
+  // Btn의 매개변수(인자)로 넣어주는것
+    function App() {
+       
+        return (<div>
+            
+            <Btn text ="Save Change" x={false} big={true}/>
+            <Btn text ="Continue" y={7} big={false} />
+        </div>  
+        );
+    }
+    const root = document.getElementById('root');
+    ReactDOM.render(<App/>, root);  
+
+    
+    
+    
+</script>
+</html>

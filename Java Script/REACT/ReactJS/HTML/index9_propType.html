@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day05</title>
+</head>
+<body>
+    <script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/prop-types@15.7.2/prop-types.js"></script>
+    <div id="root"></div>
+</body>
+
+<script type="text/babel">
+    //매개변수에서 정의되지 않은 속성에 대한 기본값을 지정할 수 있다.
+    function Btn({text, ChangeValue, fontSize=16}){
+        return <button  
+        onClick={ChangeValue}
+        style={{
+            backgroundColor : "tomato",
+            color:"white",
+            padding:"10px 20px",
+            borderRadius : 10,
+            border : 0,
+            fontSize,
+            //fontSize에서 big인자를 활용하여 폰트를 다르게 할 수도 있다.
+            
+        }}>{text}</button>
+    }
+    //React.memo()는 Btn re-rendering할때 변한 요소만 체크해서 변경시킬수 있도록 한다. 자원낭비를 막기 위해 사용
+    const MemorizedBtn = React.memo(Btn);
+    //prop-types.js 를 가져와서 타입의 검사를 할 수 있다.
+    Btn.propTypes ={
+        //isrequired는 해당 속성이 반드시 존재한다고 알고 있을때 사용할 수 있다.
+    text : PropTypes.string.isRequired,
+    fontSize : PropTypes.number,
+   };
+
+    function App() {
+       
+        const [value, setValue] = React.useState("Save Changes")
+        const ChangeValue = ()=> setValue("Revert Changes");
+        
+        return (<div>
+
+            <Btn text ={value} ChangeValue={ChangeValue} fontSize={18}/>
+            <Btn  text={18} fontSize={value}  />
+        </div>  
+        );
+    }
+    const root = document.getElementById('root');
+    ReactDOM.render(<App/>, root);  
+
+    
+    //countup을 할때마다 새로 렌더링이 필요하다.
+    
+    
+</script>
+</html>

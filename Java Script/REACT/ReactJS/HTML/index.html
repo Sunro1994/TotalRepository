@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day01</title>
+</head>
+<body>
+    <!-- interactive power를 만들어준다.-->
+    <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+    <!-- library로 모든 React element들을 HTML body에 둘 수 있도록 해준다.-->
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+    <div id="root"></div>
+</body>
+<script>
+    //React JS 규칙 1. 절대 HTML코드를 직접 작성하지 않는다.
+    //그 대신 직접 태그를 코드로 생성한다.
+    // 먼저 React JS의 어려운 element 생성방식을 배운다.
+    const root = document.getElementById("root");
+    //span의 property들을 두번째 요소에  넣을 수 있다. 또한 eventListner대신 이벤트를 등록 가능
+    // 사용자에게 보여준다.
+    // root안에 span을 넣어서 보여준다.
+    const h3 = React.createElement("h3",{
+        onMouseEnter : () => {
+            console.log("mouse enter")
+        }
+    },"hello , i'm span");
+        const btn = React.createElement(
+            "button",
+            {
+                onClick: () => console.log("i'm clicked"),
+                style:{
+                    backgroundColor : "tomato",
+                },
+            },
+            "Click me");
+        const container = React.createElement("div",null,[h3,btn]);
+    ReactDOM.render(container, root);
+
+
+    //React를 사용하는 이유 : 자바스크립트를 이용해 element를 생성하고 보여줄 내용을 업데이트한다.
+    // js로 html을 업데이트 한다.
+</script>
+</html>

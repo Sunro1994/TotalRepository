@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day02</title>
+</head>
+<body>
+    <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <div id="root"></div>
+</body>
+
+<!-- 오늘 배울것은 JSX : HTML이랑 비슷해서 JSX로 만드는게 편할 수 있다. -->
+<script type="text/babel">
+    const root = document.getElementById("root");
+  
+    // JS Extension 의 강점 : 태그 안에서 이벤트 처리가 가능하다.
+    // 하지만 아래 내용을 그대로 적용하면 브라우저가 인식하지 못하는데 이때 필요한 것이 barbel이다.
+    function Title(){
+
+        return(<h3 id="title" onMouseEnter={() => console.log("mouse enter")}>"hello , i'm span"</h3>);
+    } 
+    function Button(){
+
+        return(<button id="button" onClick={()=>console.log("onClick!")} style={{backgroundColor : "tomato"}}>Click me!</button>);
+    }
+    /*컴포넌트의 첫 글자는 대문자여야 한다. 만약 소문자면 이게 html 태그라고 생각한다. 
+        Title, Button 처럼
+    */
+    const Container =  ()=> (<div>
+            <Title/>
+            <Button />
+    </div>);
+    ReactDOM.render(<Container/>, root);
+    
+    
+    /*
+    const h3 = React.createElement("h3",{
+        onMouseEnter : () => {
+            console.log("mouse enter")
+        }
+    },"hello , i'm span");
+    
+        const btn = React.createElement(
+            "button",
+            {
+                onClick: () => console.log("i'm clicked"),
+                style:{
+                    backgroundColor : "tomato",
+                },
+            },
+            "Click me");*/
+</script>
+</html>
