@@ -1,0 +1,8 @@
+h1 {
+    color : cornflowerblue;
+}
+
+/** class이름을 active로 해주면 tomato 색이 된다. */
+.active {
+    color: tomato;
+}
