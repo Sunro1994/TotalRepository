@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>Ex01</display-name>
+  
+  <!-- 클라이언트의 요청을 처리하는 클래스 servlet -->
+	<servlet>
+		<servlet-name>loginServlet</servlet-name>
+		<servlet-class>servletEx.ServletEx01</servlet-class>
+	</servlet>
+	
+	<!-- 경로를 매핑한다  브라우저가 뭐라고 요청했을 때 동작을 한 것인가?-->
+	<servlet-mapping>
+		<servlet-name>loginServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+</web-app>

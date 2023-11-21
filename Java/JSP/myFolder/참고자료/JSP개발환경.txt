@@ -1,0 +1,77 @@
+JSP 개발환경 준비
+
+
+1) 자바 (1.8)
+C:\> java -version
+C:\> javac -version
+
+[환경변수 (sysdm.cpl)]
+추가
+변수 이름	: JAVA_HOME
+변수 값 	: C:\Program Files\java\jdk1.8.0_361
+
+편집
+변수 이름 : Path
+항목	: %JAVA_HOME%\bin
+
+
+2) 아파치 톰캣 (8.5.xx)
+
+https://tomcat.apache.org/
+download - Tomcat 8 - Core - zip
+다운받은 압축파일을 해제하고
+톰캣 경로를 환경변수에 등록
+추가
+변수 이름	: CATALINA_HOME
+변수 값	: D:\취업반\apache-tomcat-8.5.xx
+
+편집
+변수 이름	: Path
+항목	: %CATALINA_HOME%\bin
+
+
+
+
+3) 이클립스 J2EE (2019-06R)
+
+google - eclipse 2019-06r - Enterprise
+압축 해제
+옆에 workspace 로 사용할 새 폴더 생성
+실행 파일의 단축 아이콘을 바탕화면에 생성(alt + 드래그)
+최초 실행 시 워크스페이스의 경로를 위에서 생성한 폴더로 지정
+항상 이 위치를 기본값으로 실행합니다에 체크하기
+
+[환경설정]
+Menu - Window - Preferences
+
+General - Web Browser - use external web browser (chrome)
+General - Workspace - Text file encoding(Other:UTF-8)
+
+Server - Runtime Environments - Add
+	Apache Tomcat 8.5
+	톰캣 설치 경로를 폴더로 지정
+
+Web - 	CSS Files	- UTF-8
+	HTML Files	- UTF-8
+	JSP Files	- UTF-8
+
+
+
+4) Oracle Database 21c & SQLDeveloper
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

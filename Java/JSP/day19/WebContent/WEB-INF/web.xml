@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+	<display-name>day19</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<resource-ref>
+		<description>ConnectionPool</description>
+		<res-ref-name>jdbc/oracle</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref>
+	
+	<!-- 
+		1) 서블릿 클래스를 지정하고, 적절한 이름을 붙여준다
+		2) 1번에서 지정한 이름으로 서블릿을 지정하고, 작동할 주소를 연결시켜준다
+	 -->
+	 
+	 <servlet>
+	 	<servlet-name>ex01</servlet-name>
+	 	<servlet-class>ex01.Ex01Servlet</servlet-class>
+	 </servlet>
+	 
+	 <servlet-mapping>
+	 	<servlet-name>ex01</servlet-name>
+	 	<url-pattern>/ex01</url-pattern>
+	 </servlet-mapping>
+	 
+	 
+	 <!-- Ex02Servlet 등록 -->
+	 <servlet>
+	 	<servlet-name>ex02</servlet-name>
+	 	<servlet-class>ex02.Ex02Servlet</servlet-class>
+	 </servlet>
+	 
+	 <servlet-mapping>
+	 	<servlet-name>ex02</servlet-name>
+	 	<url-pattern>/ex02</url-pattern>
+	 </servlet-mapping>
+	 
+	 <!-- Ex03Servlet 등록 -->
+	 <servlet>
+	 	<servlet-name>ex03</servlet-name>
+	 	<servlet-class>ex03.Ex03Servlet</servlet-class>
+	 </servlet>
+	 
+	 <servlet-mapping>
+	 	<servlet-name>ex03</servlet-name>
+	 	<url-pattern>/ex03</url-pattern>
+	 </servlet-mapping>
+	 
+	 <!-- Ex04Servlet 등록 -->
+	 <servlet>
+	 	<servlet-name>phonebook</servlet-name>
+	 	<servlet-class>ex04.Ex04Servlet</servlet-class>
+	 </servlet>
+	 
+	 <servlet-mapping>
+	 	<servlet-name>phonebook</servlet-name>
+	 	<url-pattern>/ex04</url-pattern>
+	 </servlet-mapping>
+	 
+	 
+		
+</web-app>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
