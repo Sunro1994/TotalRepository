@@ -1,8 +1,8 @@
 package com.TravelMaker.controller.member;
 
 import com.TravelMaker.model.TravelMaker_MemberDTO;
+import com.TravelMaker.service.APIInteface.LoginAPIInteface;
 import com.TravelMaker.service.GoogleService;
-import com.TravelMaker.service.KaKaoService;
 import com.TravelMaker.service.NaverService;
 import com.TravelMaker.service.member.MemberService;
 
@@ -14,7 +14,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -31,13 +30,13 @@ public class MemberController {
     private MemberService memberService;
     
     @Autowired 
-    private KaKaoService kaKaoService;
+    private LoginAPIInteface kaKaoService;
     
     @Autowired
     private GoogleService googleService;
    
     @Autowired
-    private NaverService naverService;
+    private LoginAPIInteface naverService;
     
     /* 토근 저장 변수 */
     private String kakaoToken = null;
@@ -158,7 +157,7 @@ public class MemberController {
     	String token = "";
     	token = kaKaoService.getTokenForJoin(code);
     	
-		HashMap<String, String> userInfo = kaKaoService.getUserInfo(token);
+		HashMap<String, String> userInfo = kaKaoService.getInfoForJoin(token);
 		mav.addObject("code",code);
 		mav.addObject("userInfo",userInfo);
 		
@@ -185,9 +184,9 @@ public class MemberController {
     	ModelAndView mav = new ModelAndView();
     	mav.setViewName("redirect:/");
     	String token = "";
-    	token = kaKaoService.getToken(code);
+    	token = kaKaoService.getTokenForLogin(code);
     	kakaoToken = token;
-    	HashMap<String, String> userInfo = kaKaoService.getUserInfo(token);
+    	HashMap<String, String> userInfo = kaKaoService.getInfoForLogin(token);
     	TravelMaker_MemberDTO dto = memberService.selectOneById(userInfo.get("id"));
     	
     	if(dto != null) {
@@ -221,7 +220,7 @@ public class MemberController {
     	}
     	else {
     		mav.setViewName("Member/join");
-    	HashMap<String, String> userInfo = googleService.getToken2(code);
+    	HashMap<String, String> userInfo = googleService.getInfoForLogin(code);
     	mav.addObject("userInfo",userInfo);
     	
     	TravelMaker_MemberDTO dto = new TravelMaker_MemberDTO();
@@ -242,7 +241,7 @@ public class MemberController {
     @GetMapping("/GoogleLogin")
     public ModelAndView GoogleLogin(@RequestParam(value="code",required=false) String code, HttpSession session) {
     	ModelAndView mav = new ModelAndView("index"); /* 회원이 없는 경우 에러 페이지로 이동하게 하기 */
-    	HashMap<String, String> userInfo = googleService.getToken(code);
+    	HashMap<String, String> userInfo = googleService.getTokenForJoin(code);
     	mav.addObject("userInfo",userInfo);
     	TravelMaker_MemberDTO dto = new TravelMaker_MemberDTO();
     	dto.setTravelMaker_Member_UserId(userInfo.get("id"));
@@ -279,7 +278,7 @@ public class MemberController {
 		ModelAndView mav=  new ModelAndView();
 		String token = naverService.getTokenForJoin(code);
 		
-		HashMap<String, String> map = naverService.getUserInfoForJoin(token);
+		HashMap<String, String> map = naverService.getInfoForJoin(token);
 		
 		TravelMaker_MemberDTO dto = new TravelMaker_MemberDTO();
 
@@ -304,7 +303,7 @@ public class MemberController {
     	String token = naverService.getTokenForLogin(code);
 		NaverToken = token;
 		
-		HashMap<String, String> map = naverService.getUserInfoForLogin(token);
+		HashMap<String, String> map = naverService.getInfoForLogin(token);
 		TravelMaker_MemberDTO dto = new TravelMaker_MemberDTO();
 		dto.setTravelMaker_Member_UserId(map.get("id"));
     	dto.setTravelMaker_Member_UserPw(map.get("id"));
