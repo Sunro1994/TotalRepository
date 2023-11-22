@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/hello-spring/hello-spring" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/ex01-hello-jpa/pom.xml" />
+        <option value="$PROJECT_DIR$/ex02-hello-jpa/pom.xml" />
+        <option value="$PROJECT_DIR$/Ex03-hello-jpa/pom.xml" />
+        <option value="$PROJECT_DIR$/section6-OneToMany/pom.xml" />
+        <option value="$PROJECT_DIR$/Section6-ManyToMany/pom.xml" />
+        <option value="$PROJECT_DIR$/ex04-Practice-Mapping/pom.xml" />
+        <option value="$PROJECT_DIR$/section06-practiceEx01/pom.xml" />
+        <option value="$PROJECT_DIR$/ex04-relationship-Mapping/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

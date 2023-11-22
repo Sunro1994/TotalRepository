@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31d374a5-7aab-425a-99c6-f84adcdb5068" name="Changes" comment="">
+    <list default="true" id="91046f5d-d823-4ebc-9324-b50b21563cfe" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../Programmers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
@@ -12,17 +15,23 @@
       <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/JpaMain.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/MemberProduct.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Product.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../section6-OneToMany/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../section6-OneToMany/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../section6-OneToMany/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../section6-OneToMany/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../section6-OneToMany/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../section6-OneToMany/src/main/java/org/example/JpaMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../section6-OneToMany/src/main/java/org/example/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../section6-OneToMany/src/main/java/org/example/Team.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../section6-OneToMany/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Section7-Hieractionmapping/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Section7-Hieractionmapping/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Section7-Hieractionmapping/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Section7-Hieractionmapping/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Section7-Hieractionmapping/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Section7-Hieractionmapping/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Section7-Hieractionmapping/src/main/java/org/example/Album.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Section7-Hieractionmapping/src/main/java/org/example/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Section7-Hieractionmapping/src/main/java/org/example/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Section7-Hieractionmapping/src/main/java/org/example/JPAMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Section7-Hieractionmapping/src/main/java/org/example/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Section7-Hieractionmapping/src/main/java/org/example/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Section7-Hieractionmapping/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-OneToOne/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../section6-OneToOne/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../section6-OneToOne/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../section6-OneToOne/.idea/misc.xml" afterDir="false" />
@@ -34,6 +43,26 @@
       <change afterPath="$PROJECT_DIR$/../section6-OneToOne/src/main/java/org/example/Member.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../section6-OneToOne/src/main/java/org/example/Team.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../section6-OneToOne/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-Practice/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-Practice/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-Practice/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-Practice/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-Practice/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-Practice/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-Practice/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-Practice/src/main/java/org/example/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-Practice/src/main/java/org/example/Delivery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-Practice/src/main/java/org/example/DeliveryStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-Practice/src/main/java/org/example/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-Practice/src/main/java/org/example/JPAMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-Practice/src/main/java/org/example/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-Practice/src/main/java/org/example/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-Practice/src/main/java/org/example/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-Practice/src/main/java/org/example/OrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-Practice/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TotalRepository" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Travel_maker/TravelMaker-workspace/TravelMaker/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Travel_maker/TravelMaker-workspace/TravelMaker/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Collection_Class/ch11/ArrayLIstEx1.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Collection_Class/ch11/ArrayListEx2.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Collection_Class/ch11/ArrayListLinkedListTest.java" beforeDir="false" />
@@ -121,9 +150,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
+  &quot;associatedIndex&quot;: 0
 }</component>
-  <component name="ProjectId" id="2YW0MVKBgjwbk7SBml4DdYryVkY" />
+  <component name="ProjectId" id="2YWIfRgLTKzi1Ph56OW0wh8CmWK" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -132,9 +161,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/이선로/Documents/GitHub/SpringFramework/Spring Boot/section6-OneToMany",
@@ -147,24 +176,47 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\이선로\Documents\GitHub\SpringFramework\Spring Boot\Section6-ManyToMany\src\main\java\org\example" />
-      <recent name="C:\Users\이선로\Documents\GitHub\SpringFramework\Spring Boot\Section6-ManyToMany\src\main\resources" />
+      <recent name="C:\Users\이선로\Documents\GitHub\SpringFramework\Spring Boot\section6-ManyToMany\src\main\java\org\example" />
+      <recent name="C:\Users\이선로\Documents\GitHub\SpringFramework\Spring Boot\section6-ManyToMany\src\main\resources" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="JpaMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.JpaMain" />
+      <module name="section6-ManyToMany" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.JpaMain" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="31d374a5-7aab-425a-99c6-f84adcdb5068" name="Changes" comment="" />
-      <created>1700625982757</created>
+      <changelist id="91046f5d-d823-4ebc-9324-b50b21563cfe" name="Changes" comment="" />
+      <created>1700635013597</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1700625982757</updated>
-      <workItem from="1700625983847" duration="459000" />
-      <workItem from="1700630324900" duration="15000" />
+      <updated>1700635013597</updated>
+      <workItem from="1700635014668" duration="1458000" />
+      <workItem from="1700636483238" duration="1768000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Section6-ManyToMany" />
+        <module name="ex04-Practice-Mapping" />
+        <module name="section6-OneToMany" />
+        <module name="ex02-hello-jpa (2)" />
+        <module name="section06-practiceEx01" />
+        <module name="ex02-hello-jpa (1)" />
+        <module name="ex01-hello-jpa" />
+        <module name="ex04-relationship-Mapping" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ex02-hello-jpa" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
