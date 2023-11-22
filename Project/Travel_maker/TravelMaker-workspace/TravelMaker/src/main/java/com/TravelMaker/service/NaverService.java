@@ -88,7 +88,7 @@ public class NaverService {
 		return access_token;
 	}
 	
-	public HashMap<String, String> getUserInfoForJoin(String token) throws IOException {
+	public HashMap<String, String> getInfoForJoin(String token) throws IOException {
 
 		HashMap<String, String> userInfo = new HashMap<String, String>();
 		String reqURL = "https://openapi.naver.com/v1/nid/me";
@@ -261,7 +261,7 @@ public class NaverService {
 	 * &client_secret=527300A0_COq1_XV33cf
 	 * &access_token=c8ceMEJisO4Se7uGCEYKK1p52L93bHXLnaoETis9YzjfnorlQwEisqemfpKHUq2gY
 	 * &service_provider=NAVER
-	 * @param access_token
+	 *
 	 */
 	public void logout(String token) {
 	    String reqURL = "https://nid.naver.com/oauth2.0/token?";

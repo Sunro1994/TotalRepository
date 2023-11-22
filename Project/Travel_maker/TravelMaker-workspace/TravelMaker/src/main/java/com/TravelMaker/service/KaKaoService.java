@@ -12,6 +12,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.TravelMaker.service.APIInteface.LoginAPIInteface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,12 +22,12 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Service
-public class KaKaoService {
+public class KaKaoService implements LoginAPIInteface {
 
 	@Autowired private HashComponent hashComponent;
 	@Autowired private FileComponent fileComponent;
 	
-	public String getToken(String code) {
+	public String getTokenForLogin(String code) {
 		String access_Token = "";
 		String reqURL = "https://kauth.kakao.com/oauth/token";
 
@@ -126,31 +127,32 @@ public class KaKaoService {
 		return access_Token;
 		
 	}
-	public HashMap<String, String> getUserInfo(String token) throws IOException {
+	public HashMap<String, String> getInfoForJoin(String token) {
 
 		HashMap<String, String> userInfo = new HashMap<String, String>();
 		String reqURL = "https://kapi.kakao.com/v2/user/me";
 
-		URL url = new URL(reqURL);
-		HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-		conn.setRequestMethod("GET");
 
-		// 요청에 필요한 Header에 포함될 내용
-		conn.setRequestProperty("Authorization", "Bearer " + token);
-
-		int responseCode = conn.getResponseCode();
-		System.out.println("responseCode : " + responseCode);
-
-		BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-
-		String line = "";
-		String result = "";
-
-		while ((line = br.readLine()) != null) {
-			result += line;
-		}
 
 		try {
+			URL url = new URL(reqURL);
+			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+			conn.setRequestMethod("GET");
+
+			// 요청에 필요한 Header에 포함될 내용
+			conn.setRequestProperty("Authorization", "Bearer " + token);
+
+			int responseCode = conn.getResponseCode();
+			System.out.println("responseCode : " + responseCode);
+
+			BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+
+			String line = "";
+			String result = "";
+
+			while ((line = br.readLine()) != null) {
+				result += line;
+			}
 		ObjectMapper objectMapper = new ObjectMapper();
 		Map<String, Object> jsonMap = objectMapper.readValue(result, new TypeReference<Map<String, Object>>() {
 		});
@@ -193,6 +195,74 @@ public class KaKaoService {
 	return userInfo;
 
 }
+
+	public HashMap<String, String> getInfoForLogin(String token) {
+
+			HashMap<String, String> userInfo = new HashMap<String, String>();
+		try {
+
+			String reqURL = "https://kapi.kakao.com/v2/user/me";
+
+			URL url = new URL(reqURL);
+			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+			conn.setRequestMethod("GET");
+
+			// 요청에 필요한 Header에 포함될 내용
+			conn.setRequestProperty("Authorization", "Bearer " + token);
+
+			int responseCode = conn.getResponseCode();
+			System.out.println("responseCode : " + responseCode);
+
+			BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+
+			String line = "";
+			String result = "";
+
+			while ((line = br.readLine()) != null) {
+				result += line;
+			}
+
+			ObjectMapper objectMapper = new ObjectMapper();
+			Map<String, Object> jsonMap = objectMapper.readValue(result, new TypeReference<Map<String, Object>>() {
+			});
+
+			System.out.println(jsonMap.get("properties"));
+			@SuppressWarnings("unchecked")
+			Map<String, Object> properties = (Map<String, Object>) jsonMap.get("properties");
+			@SuppressWarnings("unchecked")
+			Map<String, Object> kakao_account = (Map<String, Object>) jsonMap.get("kakao_account");
+
+
+			String nickname = properties.get("nickname").toString();
+			String birthday = kakao_account.get("birthday").toString();
+			String gender = kakao_account.get("gender").toString();
+			String profile_image = properties.get("profile_image").toString();
+			String thumbnail_image = properties.get("thumbnail_image").toString();
+			String id = jsonMap.get("id").toString();
+			String isKaKao = "yes";
+
+
+			userInfo.put("nickname", nickname);
+			userInfo.put("birthday", birthday);
+			userInfo.put("gender", gender);
+			userInfo.put("profile_image", profile_image);
+			userInfo.put("thumbnail_image", thumbnail_image);
+			userInfo.put("id", id);
+			userInfo.put("isKaKao", isKaKao);
+
+
+			//해쉬,파일컴포넌트 변경해서 넘겨주기
+
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+
+
+		return userInfo;
+
+
+	}
 //	public void logout(String access_token) {
 //	    String reqURL = "https://kapi.kakao.com/v1/user/logout";
 //	    

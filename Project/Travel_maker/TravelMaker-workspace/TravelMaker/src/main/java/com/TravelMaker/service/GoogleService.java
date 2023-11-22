@@ -3,6 +3,7 @@ package com.TravelMaker.service;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.TravelMaker.service.APIInteface.LoginAPIInteface;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
@@ -15,8 +16,11 @@ import org.springframework.web.client.RestTemplate;
 
 
 @Service
+@Deprecated
 public class GoogleService {
-	public HashMap<String, String> getToken(String code) {
+
+
+	public HashMap<String, String> getTokenForJoin(String code) {
 		
 		
 		/* 필요 Data */
@@ -95,7 +99,7 @@ public class GoogleService {
 	    return resultMap ;
 	}
 
-	public HashMap<String, String> getToken2(String code) {
+	public HashMap<String, String> getInfoForLogin(String code) {
 
 		String client_id = "1051611122531-fpva2ogee41oq126prt05gnvfa2uc6it.apps.googleusercontent.com";
 		String client_secret = "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";
