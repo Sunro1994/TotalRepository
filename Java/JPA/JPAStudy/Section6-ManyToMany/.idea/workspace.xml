@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="31d374a5-7aab-425a-99c6-f84adcdb5068" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/JpaMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-OneToMany/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-OneToMany/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-OneToMany/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-OneToMany/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-OneToMany/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-OneToMany/src/main/java/org/example/JpaMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-OneToMany/src/main/java/org/example/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-OneToMany/src/main/java/org/example/Team.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-OneToMany/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-OneToOne/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-OneToOne/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-OneToOne/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-OneToOne/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-OneToOne/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-OneToOne/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-OneToOne/src/main/java/org/example/JpaMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-OneToOne/src/main/java/org/example/Locker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-OneToOne/src/main/java/org/example/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-OneToOne/src/main/java/org/example/Team.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../section6-OneToOne/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Collection_Class/ch11/ArrayLIstEx1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Collection_Class/ch11/ArrayListEx2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Collection_Class/ch11/ArrayListLinkedListTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Collection_Class/ch11/ArrayListLinkedListTest2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Collection_Class/ch11/ArraysEx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Collection_Class/ch11/ComparatorEx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Collection_Class/ch11/ExpValidCheck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Collection_Class/ch11/HashMapEx1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Collection_Class/ch11/HashMapEx2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Collection_Class/ch11/IteratorEx1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Collection_Class/ch11/IteratorEx2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Collection_Class/ch11/ListIetratorEx1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Collection_Class/ch11/MyStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Collection_Class/ch11/MyVector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Collection_Class/ch11/MyVector2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Collection_Class/ch11/PriorityQueueEx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Collection_Class/ch11/QueueEx1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Collection_Class/ch11/StackEx1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Collection_Class/ch11/StackQueueEx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Collection_Class/ch11/TreeSetEx1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Collection_Class/ch11/TreeSetEx2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Collection_Class/ch11/TreeSetLotto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Collection_Class/ch11/asList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../HashMapEx3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../HashMapEx4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../HashMapEx5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Math Class/MathClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Object Class/Clone(Array).java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Object Class/CloneMethod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Object Class/Java.lang패키지.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Object Class/equalsMethod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Object Class/equlas(Object obj).java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Object Class/langPackage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Object Class/swallow and deep copy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Object Class/toStringMethod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RegularExpression/bin/RegularExpression/RegularEx01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RegularExpression/bin/RegularExpression/RegularEx02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RegularExpression/bin/RegularExpression/RegularEx03.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RegularExpression/bin/RegularExpression/RegularEx04.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RegularExpression/bin/RegularExpression/regularExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RegularExpression/src/RegularExpression/RegularEx01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RegularExpression/src/RegularExpression/RegularEx02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RegularExpression/src/RegularExpression/RegularEx03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RegularExpression/src/RegularExpression/RegularEx04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RegularExpression/src/RegularExpression/regularExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ScannerClass/bin/scanner/AboutScanner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ScannerClass/bin/scanner/SCannerEx03.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ScannerClass/bin/scanner/ScannerEx02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ScannerClass/src/scanner/AboutScanner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ScannerClass/src/scanner/SCannerEx03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ScannerClass/src/scanner/ScannerEx02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ScannerClass/src/scanner/data2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../String Class/StringBufferAndStringBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../String Class/StringBufferMethod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../String Class/StringBuiler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../String Class/StringClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../String Class/foramtMethod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../String Class/indexOfMethod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../String Class/join_and_StringJoiner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../String Class/유니코드의보충문자.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../StringTokenizer/bin/stringtokenizer/StringTokenizerEx02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../StringTokenizer/bin/stringtokenizer/StringTokenizerEx03.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../StringTokenizer/bin/stringtokenizer/StringTokenizerEx04.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../StringTokenizer/bin/stringtokenizer/StringTokenizerEx05.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../StringTokenizer/bin/stringtokenizer/aboutStringTokenizer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../StringTokenizer/src/stringtokenizer/StringTokenizerEx02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../StringTokenizer/src/stringtokenizer/StringTokenizerEx03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../StringTokenizer/src/stringtokenizer/StringTokenizerEx04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../StringTokenizer/src/stringtokenizer/StringTokenizerEx05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../StringTokenizer/src/stringtokenizer/aboutStringTokenizer.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2YW0MVKBgjwbk7SBml4DdYryVkY" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/이선로/Documents/GitHub/SpringFramework/Spring Boot/section6-OneToMany",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\이선로\Documents\GitHub\SpringFramework\Spring Boot\Section6-ManyToMany\src\main\java\org\example" />
+      <recent name="C:\Users\이선로\Documents\GitHub\SpringFramework\Spring Boot\Section6-ManyToMany\src\main\resources" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="31d374a5-7aab-425a-99c6-f84adcdb5068" name="Changes" comment="" />
+      <created>1700625982757</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700625982757</updated>
+      <workItem from="1700625983847" duration="459000" />
+      <workItem from="1700630324900" duration="15000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
