@@ -1,2 +1,10 @@
-package jpabook.jpashop;public class Hello {
+package jpabook.jpashop;
+
+import lombok.Data;
+
+import javax.persistence.Entity;
+
+@Data
+public class Hello {
+    private String data;
 }
