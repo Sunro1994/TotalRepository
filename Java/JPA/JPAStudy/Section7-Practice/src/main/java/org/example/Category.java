@@ -13,11 +13,11 @@ public class Category {
 
     private String name;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "PARENT_ID")
     private Category parent;
 
-    @OneToMany(mappedBy = "parent")
+    @OneToMany(mappedBy = "parent", fetch = FetchType.LAZY)
     private List<Category> child = new ArrayList<>();
 
     @ManyToMany
