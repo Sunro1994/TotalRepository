@@ -3,7 +3,6 @@ package org.example;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
 
 @Entity
 @Data
@@ -22,26 +21,6 @@ public class Member extends BaseEntity{
     @JoinColumn(name = "TEAM_ID")
     private Team team;
 
-    //기간 Peroid
-    @Embedded
-    private Period workPeroid;
-
-
-    //주소
-    @Embedded
-    private Address workAddress;
-
-    //주소
-    @Embedded
-    @AttributeOverrides({ //Embedded하는 객체가 중복될경우 이와 같은 어노테이션을 사용해준다.
-            @AttributeOverride(name = "city",
-                    column = @Column(name = "WORK_CITY")),
-            @AttributeOverride(name = "street",
-                    column = @Column(name = "WORK_STREET")),
-            @AttributeOverride(name = "zipcode",
-                    column = @Column(name = "WORK_ZIPCODE"))
-    })
-    private Address homeAddress;
 
 //    @Column(name = "TEAM_ID")
 //    private Long teamId;
