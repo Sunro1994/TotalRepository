@@ -6,7 +6,7 @@ import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 import java.util.List;
 
-public class JpaMainJoin {
+public class JpaMainSubQuery {
     public static void main(String[] args) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("hello");
 
@@ -31,19 +31,14 @@ public class JpaMainJoin {
             em.flush();
             em.clear();
 
-            //inner, outer는 생략 가능
-            String query = "select m from Member  m  join m.team t where m.username = t.name";
-            List<Member> resultList = em.createQuery(query, Member.class)
+
+            //서브쿼리
+            //from 절의 서브쿼리는 Hibernate5에서는 지원하지 않으므로 쿼리를 두번 날리거나, 따로 코드로 풀어도 되며, 조인을 풀어서 사용하는 방법도 있다.
+            String query = "select (select avg(m1.age) from Member m1) from Member  m";
+            List<Member> resultList1 = em.createQuery(query)
                     .getResultList();
-            System.out.println("resultList.size() = " + resultList.size());
+            System.out.println("resultList.size() = " + resultList1.size());
 
-
-            System.out.println("====start=====");
-            String query2 = "select m from Member  m  left join m.team t on t.name = temaA";
-            List<Member> resultList2 = em.createQuery(query, Member.class)
-                    .getResultList();
-
-            System.out.println("resultList2 = " + resultList2.size());
 
 
 
