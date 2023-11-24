@@ -3,7 +3,7 @@ package org.example;
 import javax.persistence.*;
 import java.util.List;
 
-public class JpaMain {
+public class JpaMainProjection {
     public static void main(String[] args) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("hello");
 
@@ -19,24 +19,38 @@ public class JpaMain {
             member.setAge(10);
             em.persist(member);
 
-            // :username을 통해 일치하는 컬럼을 가져올 수 있다.
-            // 이름 기반만 쓰고 ?1 처럼 숫자 기반으로는 사용하지 않는다.
-            TypedQuery<Member> query = em.createQuery("select m from Member m where m.username = :username", Member.class);//타입 정보에 기본적으로 엔티티를 넣는다.
-            query.setParameter("username", "member1");
-//            TypedQuery<Member> queryUsinNumber = em.createQuery("select m from Member m where m.username = ?1", Member.class);//타입 정보에 기본적으로 엔티티를 넣는다.
-//            query.setParameter(1, "member1");
-            Member singleResult1 = query.getSingleResult();
-            System.out.println("singleResult1 = " + singleResult1);
-            List<Member> resultList = query.getResultList(); //결과가 하나 이상일때
-
-            TypedQuery<Member> query2  = em.createQuery("select m from Member m where m.age>100", Member.class);//타입 정보에 기본적으로 엔티티를 넣는다.
-            //결과가 하나인게 확정일때 , 결과가 없거나 둘 이상이면 예외가 생긴다.
-            //Spring DataJPA 에서는 Optional이나 null로 알아서 처리해준다.
-            Member singleResult = query.getSingleResult();
+            em.flush();
+            em.clear();
 
 
-            TypedQuery<String> query3 = em.createQuery("select m.username from Member m", String.class);//타입 정보가 운시형이면 그에 맞춰준다.
-            Query query1 = em.createQuery("select m.username, m.age from Member m");//타입 정보를 받을 수 없을 떄  Query를 사용한다.
+
+            //Join을 해서 가져와줘야 한다 왜냐하면 그냥 멤버만 출력하면 예측이 되지 않는다.
+            //직접적으로 명시해주는것이 좋다.
+            List<Team> result =  em.createQuery("select t from Member m join m.team t", Team.class)//타입 정보에 기본적으로 엔티티를 넣는다.
+                    .getResultList();
+
+            //임베디드 프로젝션
+            //address는 어디든 소속되어 있기 때문에 어디 소속인지 명시해줘야 함
+            em.createQuery("select o.address from Order  o", Address.class)//타입 정보에 기본적으로 엔티티를 넣는다.
+                    .getResultList();
+
+            //스칼라 프로젝션
+            List resultList = em.createQuery("select m.username ,m.age from Member m")//타입 정보에 기본적으로 엔티티를 넣는다.
+                    .getResultList();
+
+            //타입이 명시되어 있지 않으니 Object로 사용하는것
+            //LIst<Obejct[]> 로 resultList를 명시하면 아래의 과정이 필요없다.
+            Object o = resultList.get(0);
+            Object[] returning = (Object[]) o;
+            System.out.println("username = " + returning[0]);
+
+            //new 명령어로 조회하기
+            List<MemberDTO> resultList2 = em.createQuery("select new org.example.MemberDTO(m.username ,m.age) from Member m", MemberDTO.class)
+                    .getResultList();//타입 정보에 기본적으로 엔티티를 넣는다.
+
+
+
+
             tx.commit();
         }catch (Exception e){
             e.printStackTrace();
