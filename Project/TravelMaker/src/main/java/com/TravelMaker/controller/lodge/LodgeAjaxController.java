@@ -69,7 +69,8 @@ public class LodgeAjaxController {
 	public List<Lodge_Room_TypeDTO> getselectedRoom(@RequestBody Lodge_Room_TypeDTO roomFilter ){
 		
 		List<Lodge_Room_TypeDTO> list = lodgeService.selectedRoomList(roomFilter);
-		
+
+		//예약이 된 방은 차감
 		list.forEach(e-> {
 			roomFilter.setLodge_Room_Type_Idx(e.getLodge_Room_Type_Idx());
 			e.setLodge_Room_Type_Count(e.getLodge_Room_Type_Count() - lodgeService.getCount(roomFilter));
