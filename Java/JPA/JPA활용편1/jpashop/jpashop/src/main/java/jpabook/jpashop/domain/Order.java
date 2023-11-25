@@ -18,14 +18,14 @@ public class Order {
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "member") //해당 테이블에대해 맵핑될 뿐, 검색 전용
+    @JoinColumn(name = "member_id") //해당 테이블에대해 맵핑될 뿐, 검색 전용
     private Member member;
 
     @OneToMany(mappedBy = "order")
     private List<OrderItem> orderItems = new ArrayList<>();
 
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "delivery_id")
     private Delivery delivery;
 
