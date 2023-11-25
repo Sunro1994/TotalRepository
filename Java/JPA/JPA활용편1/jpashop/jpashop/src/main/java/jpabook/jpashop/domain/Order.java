@@ -26,11 +26,12 @@ public class Order {
 
 
     @OneToOne
+    @JoinColumn(name = "delivery_id")
     private Delivery delivery;
 
 
     private LocalDateTime orderDate; //hibernate가 알아서 @Temporal 타입을 맞춰준다.
 
-
+    @Enumerated(EnumType.STRING)
     private OrderStatus status; //주문 상태 [Order,Cancle]
 }

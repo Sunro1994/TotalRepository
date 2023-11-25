@@ -12,11 +12,12 @@ public class Delivery {
     @Column(name = "delivery_id")
     private Long id;
 
-    @OneToOne(mappedBy = "order")
+    @OneToOne(mappedBy = "Delivery")
     private Order order;
 
     @Embedded
     private Address address;
 
+    @Enumerated(EnumType.STRING)
     private DeliveryStatus status;
 }
