@@ -7,6 +7,7 @@ import javax.persistence.*;
 @Entity
 @Data
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "dtype")
 public abstract class Item {
 
     @Id
