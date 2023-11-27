@@ -106,14 +106,11 @@ KG IT BANK에서 약 6개월간의 단과과정과 6개월의 국비훈련과정
 
 **프로젝트**
 
-- Minishop (쇼핑몰 웹 사이트)
-
 [Travel Maker](http://ec2-3-34-52-179.ap-northeast-2.compute.amazonaws.com/)
 
 [](https://github.com/Sunro1994/TotalRepository/tree/main/Project/Travel_maker/TravelMaker-workspace/TravelMaker)
 
 - TravelMaker (숙박 및 여행 웹사이트)
-- #프로젝트 내용 상세 보기
 
 # 🌐 ETC Experience
 
@@ -127,15 +124,7 @@ KG IT BANK에서 약 6개월간의 단과과정과 6개월의 국비훈련과정
 
 ---
 
-# 🛠 Skill
 
-> 현재 업무에 사용중이거나 사용했던 기술들입니다.
-> 
-
----
-
-[🛠 Skills afcd23d7db5945c8980a107bdfffacad.csv](https://github.com/Sunro1994/TotalRepository/files/13446249/Skills.afcd23d7db5945c8980a107bdfffacad.csv)
-[🛠 Skills afcd23d7db5945c8980a107bdfffacad_all.csv](https://github.com/Sunro1994/TotalRepository/files/13446250/Skills.afcd23d7db5945c8980a107bdfffacad_all.csv)
 
 # 📚 Education
 
