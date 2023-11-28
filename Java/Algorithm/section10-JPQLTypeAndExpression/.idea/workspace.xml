@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="972ad51a-eb19-4778-a756-16a52f757837" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Section09-JPQLExpression/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Section09-JPQLExpression/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Section09-JPQLExpression/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Section09-JPQLExpression/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Section09-JPQLExpression/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Section09-JPQLExpression/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Section09-JPQLExpression/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Section09-JPQLExpression/src/main/java/org/example/domain/JPAMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Section09-JPQLExpression/src/main/java/org/example/domain/JPAMainBulk.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Section09-JPQLExpression/src/main/java/org/example/domain/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Section09-JPQLExpression/src/main/java/org/example/domain/Team.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Section09-JPQLExpression/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaForTest/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaForTest/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaForTest/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaForTest/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaForTest/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaForTest/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaForTest/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaForTest/src/main/java/org/example/p01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaForTest/src/main/java/org/example/p02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaForTest/src/main/java/org/example/p03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaForTest/src/main/java/org/example/p04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaForTest/src/main/java/org/example/p05.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2YlDgUfaL4uyULrb3zU1d3HTAHU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/이선로/Documents/GitHub/TotalRepository/Java/JPA/JPAStudy/section10-JPQLTypeAndExpression",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\이선로\Documents\GitHub\TotalRepository\Java\Algorithm\section10-JPQLTypeAndExpression\src\main\resources" />
+      <recent name="C:\Users\이선로\Documents\GitHub\TotalRepository\Java\Algorithm\section10-JPQLTypeAndExpression\src\main\java\org\example" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="972ad51a-eb19-4778-a756-16a52f757837" name="Changes" comment="" />
+      <created>1701091385457</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701091385457</updated>
+      <workItem from="1701091386515" duration="318000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
