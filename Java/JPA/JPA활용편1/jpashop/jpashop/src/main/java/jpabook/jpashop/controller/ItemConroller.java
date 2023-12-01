@@ -64,17 +64,24 @@ public class ItemConroller {
 
 
     @PostMapping("items/{itemId}/edit")
-    public String updateItemForm(@ModelAttribute("form") BookForm form,@PathVariable("itemId")Long itemId) {
-        Book book = new Book();
-        //누군가가 id값을 악의적으로 수정해서 입력할 수 있기 떄문에 이러한 취약점을 주의해야 한다.
-        book.setId(form.getId());
-        book.setName(form.getName());
-        book.setPrice(form.getPrice());
-        book.setStockQuantity(form.getStockQuantity());
-        book.setAuthor(form.getAuthor());
-        book.setIsbn(form.getIsbn());
+    public String updateItem(@ModelAttribute("form") BookForm form,@PathVariable("itemId")Long itemId) {
 
-        itemService.saveItem(book);
+//        Book book = new Book();
+//        //누군가가 id값을 악의적으로 수정해서 입력할 수 있기 떄문에 이러한 취약점을 주의해야 한다.
+//        book.setId(form.getId());
+//        book.setName(form.getName());
+//        book.setPrice(form.getPrice());
+//        book.setStockQuantity(form.getStockQuantity());
+//        book.setAuthor(form.getAuthor());
+//        book.setIsbn(form.getIsbn());
+//
+//        itemService.saveItem(book);
+
+        //어설프게 엔티티를 만들기 보다는 확실히 로직을 만들자.
+        // 트랜잭션이 있는 서비스계층에서 식별자와 변경할 데이터를 확실히 제공하자.
+        // 서비스 곛으에서 엔티티의 데이터를 직접 변경하자.
+        // 트랜잭션 커밋 시점에 변경 감지가 실행되어 알아서 업데이트 구문이 날아간다.
+        itemService.updateItem(itemId, form.getPrice(), form.getName(), form.getStockQuantity());
 
         return "redirect:/items";
     }
