@@ -8,9 +8,12 @@ import jpabook.jpashop.domain.item.Item;
 import jpabook.jpashop.repository.ItemRepository;
 import jpabook.jpashop.repository.MemberRepository;
 import jpabook.jpashop.repository.OrderRepository;
+import jpabook.jpashop.repository.OrderSearch;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 
 @Service
@@ -62,8 +65,13 @@ public class OrderService {
         //Dirty Checking 변경내역 감지를 통해 JPA가 알아서 업데이트 쿼리를 날려준다.
     }
 
-    //검색
-//    public List<Order> findOrders(OrderSearch orderSearch) {
-//        return orderRepository.
-//    }
+
+    public List<Order> findOrders(OrderSearch orderSearch) {
+
+
+    }
+
+    public void cancelOrder(Long orderId) {
+    }
+
 }
