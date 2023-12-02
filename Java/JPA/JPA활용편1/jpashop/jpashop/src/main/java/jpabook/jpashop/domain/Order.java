@@ -75,7 +75,7 @@ public class Order {
         for (OrderItem orderItem : orderItems) {
             order.addOrderItem(orderItem);
         }
-        order.setStatus(OrderStatus.Order);
+        order.setStatus(OrderStatus.ORDER);
         order.setOrderDate(LocalDateTime.now());
         return order;
     }
@@ -88,7 +88,7 @@ public class Order {
         if (delivery.getStatus() == DeliveryStatus.Complete) {
             throw new IllegalStateException("이미 배송완료된 상품은 취소가 불가능합니다.");
         }
-        this.setStatus(OrderStatus.Cancle);
+        this.setStatus(OrderStatus.CANCLE);
         for (OrderItem orderItem : orderItems) {
             orderItem.cancel();
         }
