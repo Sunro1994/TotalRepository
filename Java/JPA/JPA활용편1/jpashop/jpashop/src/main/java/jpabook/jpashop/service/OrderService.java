@@ -67,11 +67,16 @@ public class OrderService {
 
 
     public List<Order> findOrders(OrderSearch orderSearch) {
-
-
+        return orderRepository.findAllByString(orderSearch);
     }
 
+
+    @Transactional
     public void cancelOrder(Long orderId) {
+
+        Order order = orderRepository.findOne(orderId);
+
+        order.cancel();
     }
 
 }
