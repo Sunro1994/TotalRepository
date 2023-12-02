@@ -81,7 +81,7 @@ public class ItemConroller {
         // 트랜잭션이 있는 서비스계층에서 식별자와 변경할 데이터를 확실히 제공하자.
         // 서비스 곛으에서 엔티티의 데이터를 직접 변경하자.
         // 트랜잭션 커밋 시점에 변경 감지가 실행되어 알아서 업데이트 구문이 날아간다.
-        itemService.updateItem(itemId, form.getPrice(), form.getName(), form.getStockQuantity());
+        Item item = itemService.updateItem(itemId, form.getPrice(), form.getName(), form.getStockQuantity());
 
         return "redirect:/items";
     }
