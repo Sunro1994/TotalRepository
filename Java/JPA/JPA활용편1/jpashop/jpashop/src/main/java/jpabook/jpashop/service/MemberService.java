@@ -63,6 +63,13 @@ public class MemberService {
         return  memberRepository.find(memberId);
     }
 
+    @Transactional
+    public void update(Long id, String name) {
+        Member member = memberRepository.find(id);
+        member.setName(name);
+
+    }
+
 
     //회원 전체 조회
 }
