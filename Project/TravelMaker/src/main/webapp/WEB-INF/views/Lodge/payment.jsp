@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
 <c:if test="${empty user }">
-	<c:redirect  url="/Member/Welcome-Login" />
+	<c:redirect  url="/Welcome-Login" />
 </c:if>
  <div class="flex_center">
         <div id="paymentTop" class="flex_center">
