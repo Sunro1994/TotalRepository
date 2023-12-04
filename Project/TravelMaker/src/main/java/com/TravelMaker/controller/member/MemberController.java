@@ -3,6 +3,7 @@ package com.TravelMaker.controller.member;
 import com.TravelMaker.model.TravelMaker_MemberDTO;
 import com.TravelMaker.service.APIInteface.LoginAPIInteface;
 import com.TravelMaker.service.GoogleService;
+import com.TravelMaker.service.KaKaoService;
 import com.TravelMaker.service.NaverService;
 import com.TravelMaker.service.member.MemberService;
 
@@ -34,9 +35,9 @@ public class MemberController {
     
     @Autowired
     private GoogleService googleService;
-   
-    @Autowired
-    private LoginAPIInteface naverService;
+
+	@Autowired
+	private NaverService naverService;
     
     /* 토근 저장 변수 */
     private String kakaoToken = null;
@@ -275,8 +276,9 @@ public class MemberController {
 	public ModelAndView naverJoin(
 			@RequestParam
 			(value="code", required=false) String code) throws IOException {
+
 		ModelAndView mav=  new ModelAndView();
-		String token = naverService.getTokenForJoin(code);
+        String token = naverService.getTokenForJoin(code);
 		
 		HashMap<String, String> map = naverService.getInfoForJoin(token);
 		
@@ -303,7 +305,7 @@ public class MemberController {
     	String token = naverService.getTokenForLogin(code);
 		NaverToken = token;
 		
-		HashMap<String, String> map = naverService.getInfoForLogin(token);
+		HashMap<String, String> map = naverService.getUserInfoForLogin(token);
 		TravelMaker_MemberDTO dto = new TravelMaker_MemberDTO();
 		dto.setTravelMaker_Member_UserId(map.get("id"));
     	dto.setTravelMaker_Member_UserPw(map.get("id"));

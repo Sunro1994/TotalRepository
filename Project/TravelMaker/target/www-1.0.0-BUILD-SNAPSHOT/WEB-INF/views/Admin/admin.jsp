@@ -99,12 +99,6 @@ color: #003458;
 	
 </style>
 
-<div class="adminPage">
-	<div class="adminLodge">
-		<button class="button" onclick="location.href='${cpath}/Admin/lodgeWrite'">숙소 등록</button>
-		<button class="button" onclick="location.href='${cpath}/Admin/recommendWrite'">추천지 등록</button>
-	</div>
-</div>
 
 <div class="navigation">
   <span style="--i:0;--x:-1;--y:0;">
