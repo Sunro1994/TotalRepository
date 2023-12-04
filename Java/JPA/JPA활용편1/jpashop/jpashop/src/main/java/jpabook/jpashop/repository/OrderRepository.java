@@ -1,5 +1,6 @@
 package jpabook.jpashop.repository;
 
+import jpabook.jpashop.api.OrderSimpleAPIController;
 import jpabook.jpashop.domain.Order;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
@@ -111,6 +112,59 @@ public class OrderRepository {
                         "select o from Order o" +
                                 " join fetch o.member m" +
                                 " join fetch o.delivery d", Order.class)
+                .getResultList();
+    }
+
+    //되도록 로직은 한방향으로 향해야한다.
+    public List<SimpleOrderQueryDTO> findOrderDTOs() {
+        List<SimpleOrderQueryDTO> resultList = em.createQuery("select new jpabook.jpashop.repository.SimpleOrderQueryDTO(o.id, m.name, o.orderDate, o.status, d.address)" +
+                        " from Order o " +
+                        "join o.member m " +
+                        "join o.delivery d", SimpleOrderQueryDTO.class)
+                .getResultList();
+
+        return resultList;
+
+    }
+
+    public List<Order> findAllWIthItem() {
+        return em.createQuery(
+                //JPA의 distinct는 DB의 distinct와 비슷하지만 한가지를 더 해준다.
+                //Entity가 중복인 경우에 중복을 걸러서 컬렉션에 담아 준다.
+                "select distinct o from Order  o " +
+                        "join fetch  o.member " +
+                        "join fetch  o.delivery " +
+                        "join fetch  o.orderItems oi" +
+                        " join fetch  oi.item i", Order.class)
+                .setFirstResult(1)      //2023-12-05 02:02:34.105  WARN 9304 --- [nio-8080-exec-2] o.h.h.internal.ast.QueryTranslatorImpl   : HHH000104: firstResult/maxResults specified with collection fetch; applying in memory!
+                .setMaxResults(100)    //메모리에서 페이징 처리를 한다는 뜻, 데이터에 있는 모든 데이터를 메모리에 올린다는 뜻. 만개면 만개를 다 올린다.
+                .getResultList();       //1대 다에서 컬렉션 페치조인에서는 페이징을 함부로 사용해선 안된다.
+                                        //또한 컬렉션 2개 이상에서 페치 조인을 하면 데이터가 부정합하게 조회된다.
+    }
+
+    public List<Order> findAllWIthMemberDelivery() {
+        return em.createQuery(
+                        //JPA의 distinct는 DB의 distinct와 비슷하지만 한가지를 더 해준다.
+                        //Entity가 중복인 경우에 중복을 걸러서 컬렉션에 담아 준다.
+                        "select distinct o from Order  o " +
+                                "join fetch  o.member " +
+                                "join fetch  o.delivery "
+                               , Order.class)
+                .setFirstResult(1)
+                .setMaxResults(100)
+                .getResultList();
+    }
+
+    public List<Order> findAllWIthMemberDelivery(int offset, int limit) {
+        return em.createQuery(
+                        //JPA의 distinct는 DB의 distinct와 비슷하지만 한가지를 더 해준다.
+                        //Entity가 중복인 경우에 중복을 걸러서 컬렉션에 담아 준다.
+                        "select distinct o from Order  o " +
+                                "join fetch  o.member " +
+                                "join fetch  o.delivery "
+                        , Order.class)
+                .setFirstResult(offset)
+                .setMaxResults(limit)
                 .getResultList();
     }
 }
