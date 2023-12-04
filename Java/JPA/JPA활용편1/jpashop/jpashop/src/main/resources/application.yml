@@ -10,6 +10,8 @@ spring:
     properties:
       hibernate:
         format_sql: true
+        default_batch_fetch_size: 100
+#        show_sql: true
 
 #      Systemout을 통해 출력하기 때문에 log를 통해서 찍어야 한다.
 #      show_sql: true
