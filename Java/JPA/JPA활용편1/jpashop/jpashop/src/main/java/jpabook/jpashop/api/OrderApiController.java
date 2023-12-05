@@ -22,6 +22,7 @@ import java.util.List;
 
 import static java.util.stream.Collectors.*;
 
+
 @RestController
 @RequiredArgsConstructor
 public class OrderApiController {
@@ -36,8 +37,8 @@ public class OrderApiController {
     public List<Order> ordersV1() {
         List<Order> all = orderRepository.findAllByString(new OrderSearch());
         for (Order order : all) {
-            order.getMember().getName();
-            order.getDelivery().getAddress();
+            order.getMember().getName();            //지연 로딩 발생 - 프록시 객체 생성
+            order.getDelivery().getAddress();       //자연 로딩 발생
             List<OrderItem> orderItems = order.getOrderItems();
             orderItems.stream().forEach(o -> o.getItem().getName());
         }

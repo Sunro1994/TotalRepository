@@ -1,11 +1,8 @@
 package jpabook.jpashop.service;
 
 import jpabook.jpashop.domain.Member;
-import jpabook.jpashop.repository.MemberRepository;
-import lombok.AllArgsConstructor;
+import jpabook.jpashop.repository.MemberRepositoryOld;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Required;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -17,7 +14,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class MemberService {
 
-    private final MemberRepository memberRepository; //final로 해두면 컴파일 시점에 체크도 가능하다.
+    private final MemberRepositoryOld memberRepository; //final로 해두면 컴파일 시점에 체크도 가능하다.
 
 
 //    @Autowired //메서드를 통해 주입을 하므로 교체가 가능하다. 단점 : 런타임 시점에 누군가가 이걸 바꿀수 있다. 그러므로 생성자 인젝션을 추천
@@ -60,12 +57,12 @@ public class MemberService {
 
     //한건만 조회
     public Member findOne(Long memberId){
-        return  memberRepository.find(memberId);
+        return  memberRepository.findOne(memberId);
     }
 
     @Transactional
     public void update(Long id, String name) {
-        Member member = memberRepository.find(id);
+        Member member = memberRepository.findOne(id);
         member.setName(name);
 
     }
