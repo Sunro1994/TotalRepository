@@ -118,7 +118,6 @@ KG IT BANK에서 약 6개월간의 단과과정과 6개월의 국비훈련과정
 
 ### 개인 스터디 운영중
 
-[[인프런을 사용하는 사람들] 수강평의 주인공을 찾아라 #3 - 인프런 | 스토리](https://www.inflearn.com/pages/interview_20211029)
 
 [Join the Study-Java Discord Server!](https://discord.gg/seTmHd8D)
 
