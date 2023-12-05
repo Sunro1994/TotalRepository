@@ -1,26 +1,46 @@
 package jpa.springdata.SpringData.entity;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+import org.springframework.data.annotation.Id;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Data
+@NoArgsConstructor
+@ToString(of = {"id", "username", "age"})
+
 public class Member {
 
+    @javax.persistence.Id
     @Id @GeneratedValue
-    private  Long id;
-    private  String username;
+    @Column(name = "member_id")
+    private Long id;
 
-    public Member(String memberA) {
-        this.username = memberA;
+    private String username;
+    private int age;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "team_id")
+    private Team team;
+    public Member(String username) {
+        this(username, 0);
+    }
+    public Member(String username, int age) {
+        this(username, age, null);
+    }
+    public Member(String username, int age, Team team) {
+        this.username = username;
+        this.age = age;
+        if (team != null) {
+            changeTeam(team);
+        }
+    }
+    public void changeTeam(Team team) {
+        this.team = team;
+        team.getMembers().add(this);
     }
 
-    //생성자는 protected까지의 접근제한자를 둔다. 왜냐하면 프록시객체를 생성할때  접근하기 위함
-    public Member() {
 
-    }
 }
