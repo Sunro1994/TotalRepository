@@ -10,6 +10,7 @@ import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.EntityManager;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.*;
@@ -22,6 +23,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class MemberJpaRepositoryTest {
     @Autowired
     MemberJpaRepository memberJpaRepository;
+    @Autowired
+    EntityManager em;
     @Test
     public void testMember() {
         //SpringDataJPA가 해당 인터페이스의 구현체를 자동으로 생성해준다.(프록시 객체)
@@ -58,5 +61,30 @@ class MemberJpaRepositoryTest {
         long deletedCount = memberJpaRepository.count();
         assertThat(deletedCount).isEqualTo(0);
     }
+
+    @Test
+    public void paging(){
+        memberJpaRepository.save(new Member("member1", 10));
+        memberJpaRepository.save(new Member("member2", 10));
+        memberJpaRepository.save(new Member("member3", 10));
+        memberJpaRepository.save(new Member("member4", 10));
+        memberJpaRepository.save(new Member("member5", 10));
+
+        int age = 10;
+        int offset = 1;
+        int limit = 3;
+
+        //when
+        List<Member> members = memberJpaRepository.findByPage(age, offset, limit);
+        long totalCount = memberJpaRepository.totalCount(age);
+
+        //then
+        assertThat(members.size()).isEqualTo(3);
+        assertThat(totalCount).isEqualTo(5);
+
+
+    }
+
+
 
 }
