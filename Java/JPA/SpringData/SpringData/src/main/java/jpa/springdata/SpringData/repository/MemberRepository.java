@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Optional;
 
 //인터페이스끼리 상속받을때에는 extends를 사용한다.
-public interface MemberRepository extends JpaRepository<Member, Long> {
+public interface MemberRepository extends JpaRepository<Member, Long> , MemberRepositoryCustom{
 
 
     List<Member> findByUsernameAndAgeGreaterThan(String username, int age);
