@@ -7,6 +7,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Slice;
 import org.springframework.data.jpa.repository.*;
 import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
 
 import javax.persistence.Entity;
 import javax.persistence.LockModeType;
@@ -16,6 +17,7 @@ import java.util.List;
 import java.util.Optional;
 
 //인터페이스끼리 상속받을때에는 extends를 사용한다.
+@Repository
 public interface MemberRepository extends JpaRepository<Member, Long> , MemberRepositoryCustom{
 
 
