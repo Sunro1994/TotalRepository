@@ -18,7 +18,9 @@ import java.util.Optional;
 
 //인터페이스끼리 상속받을때에는 extends를 사용한다.
 @Repository
-public interface MemberRepository extends JpaRepository<Member, Long> , MemberRepositoryCustom{
+//@Repository는 SpringFramework가 제공하는 Exception으로 자동으로 전환해서 처리해준다.
+//Component 스캔 대상이 된다.
+public interface MemberRepository extends JpaRepository<Member, Long> , MemberRepositoryCustom, JpaSpecificationExecutor<Member>{
 
 
     List<Member> findByUsernameAndAgeGreaterThan(String username, int age);

@@ -6,10 +6,7 @@ import jpa.springdata.SpringData.entity.Team;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Slice;
-import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.*;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -300,6 +297,57 @@ class MemberRepositoryTest {
         System.out.println("member1 = " + member1.getLastModifedDate());
         System.out.println("member1 = " + member1.getCreatedBy());
         System.out.println("member1 = " + member1.getLastModifiedBy());
+        }
+
+        @Test
+    public void findExampleMember(){
+            Team teamA = new Team(("teamA"));
+            em.persist(teamA);
+
+            Member member = new Member("m1", 0, teamA);
+            Member member2 = new Member("m1", 0, teamA);
+            em.persist(member);
+            em.persist(member2);
+
+            em.flush();
+            em.clear();
+
+            //when
+            //정적일떄 사용할 수 있는 쿼리
+            memberRepository.findByUsername("m1");
+
+            //Probe
+            Member searchMember = new Member("m1");
+
+            ExampleMatcher matcher = ExampleMatcher.matching()
+                    .withIgnoreCase("age");
+            Example<Member> example = Example.of(member, matcher);
+
+            //객체 자체가 Example객체가 된다.
+            //JPA클래스 내부에 QUeryByExample 인터페이스에 이러한 내용이  있다.
+            Example<Member> memberExample = Example.of(searchMember);
+
+            List<Member> members = memberRepository.findAll(memberExample);
+            assertThat(members.get(0).getUsername()).isEqualTo("m1");
+
+        }
+
+
+        @Test
+    public void projections(){
+            Team teamA = new Team(("teamA"));
+            em.persist(teamA);
+
+            Member member = new Member("m1", 0, teamA);
+            Member member2 = new Member("m1", 0, teamA);
+            em.persist(member);
+            em.persist(member2);
+
+            em.flush();
+            em.clear();
+
+            //when
+
         }
     }
 
