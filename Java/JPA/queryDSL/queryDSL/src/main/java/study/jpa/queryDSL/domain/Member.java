@@ -18,6 +18,7 @@ public class Member extends BaseEntity {
     @Column(name = "member_id")
     private Long id;
 
+
     private String username;
     private int age;
 
