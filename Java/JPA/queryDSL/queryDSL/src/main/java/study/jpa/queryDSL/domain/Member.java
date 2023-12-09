@@ -1,6 +1,7 @@
 package study.jpa.queryDSL.domain;
 
 import lombok.*;
+import study.jpa.queryDSL.domain.base.BaseEntity;
 
 import javax.persistence.*;
 
@@ -10,7 +11,7 @@ import static javax.persistence.FetchType.*;
 @Data
 @NoArgsConstructor(access = AccessLevel.PROTECTED)//기본생성자 protected
 @ToString(of = {"id","username","age"})
-public class Member {
+public class Member extends BaseEntity {
 
     @Id
     @GeneratedValue
