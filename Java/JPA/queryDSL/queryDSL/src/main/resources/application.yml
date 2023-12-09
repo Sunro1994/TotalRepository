@@ -17,6 +17,7 @@ spring:
         format_sql: true
         dialect: org.hibernate.dialect.Oracle10gDialect
         use_sql_comments: true
+    open-in-view: false
 
   #  ??? ??? ???
   data:
