@@ -1,6 +1,7 @@
 package study.jpa.queryDSL.domain;
 
 import lombok.*;
+import study.jpa.queryDSL.domain.base.BaseEntity;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -10,7 +11,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @ToString(of = {"id","name"})
-public class Team {
+public class Team extends BaseEntity {
 
     @Id
     @GeneratedValue
