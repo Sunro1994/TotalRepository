@@ -72,4 +72,23 @@ public class CordTest {
         System.out.println(s.equals(string) ? "YES" : "NO");
     }
 
+    @Test
+    public void ExtractOnlyNumber(){
+        String target = "g0en2T0s8eSoft";
+        System.out.println((int) '0'); //48
+        System.out.println((int) '9'); //57
+
+        int answer = Integer.parseInt(target.replaceAll("[^0-9]", ""));
+
+        String answer2 = "";
+        for (char x :target.toCharArray()) {
+            if(Character.isDigit(x)) answer2 += x;
+        }
+        System.out.println(answer);
+        System.out.println(Integer.parseInt(answer2));
+
+
+    }
+
+
 }
