@@ -49,4 +49,26 @@ class MemberTest {
         }
     }
 
+    @Test
+    @Transactional
+    public void testLazyLoading(){
+        Team team = new Team();
+        team.setName("teamA");
+        em.persist(team);
+
+        Member member = new Member("memberA");
+        em.persist(member);
+
+        member.changeTeam(team);
+
+        em.flush();
+        em.clear();
+
+        Member findMember = em.find(Member.class, member.getId());
+
+        System.out.println("findMember = " + findMember.getClass());
+        System.out.println("findMember.getTeam = " + findMember.getTeam().getClass());
+        System.out.println("findMember.getTeam Proxy 초기화 = " + findMember.getTeam().getName());
+    }
+
 }

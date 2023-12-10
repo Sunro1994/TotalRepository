@@ -38,7 +38,7 @@ public class Member extends BaseEntity {
         this.username = teamA;
     }
 
-    private void changeTeam(Team team) {
+    public void changeTeam(Team team) {
         this.team = team;
         team.getMembers().add(this);
     }
