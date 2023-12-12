@@ -2,6 +2,7 @@ package com.erp.ErpMaster.member.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import java.time.LocalDateTime;
 
@@ -45,4 +46,9 @@ public class Member {
 
     @Column(name = "updt_date")
     private LocalDateTime updtDate;
+
+    public void setPassword(String password) {
+        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(Integer.parseInt(password));
+        this.password = encoder.toString();
+    }
 }

@@ -1,5 +1,6 @@
 package study.jpa.queryDSL.domain;
 
+import com.querydsl.core.annotations.QueryProjection;
 import lombok.*;
 import study.jpa.queryDSL.domain.base.BaseEntity;
 
