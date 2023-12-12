@@ -1,9 +1,12 @@
 package study.jpa.queryDSL;
 
+import com.querydsl.core.BooleanBuilder;
 import com.querydsl.core.QueryResults;
 import com.querydsl.core.Tuple;
 import com.querydsl.core.types.ExpressionUtils;
+import com.querydsl.core.types.Predicate;
 import com.querydsl.core.types.Projections;
+import com.querydsl.core.types.dsl.BooleanExpression;
 import com.querydsl.core.types.dsl.CaseBuilder;
 import com.querydsl.core.types.dsl.Expressions;
 import com.querydsl.jpa.JPAExpressions;
@@ -12,11 +15,13 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.annotation.Commit;
 import org.springframework.transaction.annotation.Transactional;
 import study.jpa.queryDSL.domain.Member;
 import study.jpa.queryDSL.domain.QMember;
 import study.jpa.queryDSL.domain.Team;
 import study.jpa.queryDSL.dto.MemberDto;
+import study.jpa.queryDSL.dto.QMemberDto;
 import study.jpa.queryDSL.dto.UserDto;
 
 import javax.persistence.EntityManager;
@@ -602,7 +607,166 @@ public class QueryDslBasicTest{
         }
     }
 
+    @Test
+    //MemberDto에서 생성자에 @QueryProjection을 적용한 후 실행하기
+    //이전 프로젝션 방법은 실행 후에야 오류를 발견할 수 있다.
+//    하지만 이 방법은 컴파일과정에서 오류를 찾을 수 있기 때문에 바로 잘못된 곳을 찾을 수 있다.
+//    단점 : QmemberDto를 어노테이션을 통해 꼭 적용해줘야 한다.
+//    MemberDto가 QueryDSL에 대해 의존성을 갖게 된다.
+    public void findDtoByQueryProjection(){
+        List<MemberDto> reslut = queryFactory
+                .select(new QMemberDto(member.username, member.age))
+                .from(member)
+                .fetch();
+
+        for (MemberDto memberDto : reslut) {
+            System.out.println("memberDto = " + memberDto);
+        }
+
     }
+
+    @Test
+    public void dynamicQuery_BooleanBuilder(){
+        String usernameParam = "member1";
+        Integer ageParam = 10;
+
+        List<Member> result = searchMember1(usernameParam, ageParam);
+        assertThat(result.size()).isEqualTo(1);
+    }
+
+
+    private List<Member> searchMember1(String usernameCond, Integer ageCond) {
+
+        BooleanBuilder builder = new BooleanBuilder();
+        if (usernameCond != null) {
+            builder.and(member.username.eq(usernameCond));
+        }
+
+        if (ageCond != null) {
+            builder.and(member.age.eq(ageCond));
+        }
+
+
+        return queryFactory
+                .selectFrom(member)
+                .where(builder) //builder로 동적 조건을 생성하고 넣어주기만 하면 null이 아닌 값들만 조건식으로 들어가게 된다.
+                .fetch();
+    }
+
+    @Test
+    public void dynamicQuery_WhereParam(){
+        String usernameParam = "member1";
+        Integer ageParam = 10;
+
+        List<Member> result = searchMember2(usernameParam, ageParam);
+        assertThat(result.size()).isEqualTo(1);
+
+    }
+
+    private List<Member> searchMember2(String usernameCond, Integer ageCond) {
+        return queryFactory
+                .selectFrom(member)
+//                .where(usernameEq(usernameCond), ageEq(ageCond)) //각 메서드에서 null이 들어가면 알아서 무시된다. 메서드로 정리하면 훨씬 깔끔함
+                .where(allEq(usernameCond,ageCond)) //두 메서드를 통합한 메서드로 사용가능하지만 null처리는 따로 해줘야한다. 재사용이 가능하다는 장점이 있다. //빼놓을수 있는 메서드는 뺴서 사용한다.
+                .fetch();
+    }
+
+    private BooleanExpression usernameEq(String usernameCond) {
+        if (usernameCond == null) {
+            return null;
+        }
+        return member.username.eq(usernameCond);
+    }
+
+    private BooleanExpression ageEq(Integer ageCond) {
+        return ageCond != null ? member.age.eq(ageCond) : null;
+    }
+
+    private BooleanExpression allEq(String usernameCond, Integer ageCond) {
+        return usernameEq(usernameCond).and(ageEq(ageCond));
+    }
+
+    @Test
+    @Commit //Transactional은 롤백을 시킨다.
+    public void bulkUpdate(){
+
+        //member1 = 10 -> 비회원
+        //member2 = 20 -> 비회원
+        // 3,4는 그대로
+        //벌크연산의 문제점 : DB에서는 비회원으로 변경되지만 영속성 컨텍스트는 이전 값이 보존되어 있다.
+        // 1차 캐시를 무시하는 점을 해결해야 한다.
+        long count = queryFactory
+                .update(member)
+                .set(member.username, "비회원")
+                .where(member.age.lt(28))
+                .execute();
+
+        //컨텍스트를 초기화해라! 그러면 해결된다.
+        em.flush();
+        em.clear();
+
+        List<Member> result = queryFactory
+                .selectFrom(member)
+                .fetch();
+
+        for (Member member1 : result) {
+            System.out.println("member1 = " + member1);
+        }
+        /*
+        결과
+        DB보다 영속성컨텍스트가 우선권을 가진다. repeatable Read
+        member1 = Member(id=3, username=member1, age=10)
+        member1 = Member(id=4, username=member2, age=20)
+        member1 = Member(id=5, username=member3, age=30)
+        member1 = Member(id=6, username=member4, age=40)
+         */
+    }
+
+    @Test
+    public void bulkAdd(){
+        long count = queryFactory
+                .update(member)
+                .set(member.age, member.age.add(1))
+                .execute();
+    }
+
+    @Test
+    public void bulkDelete(){
+        long count = queryFactory
+                .delete(member)
+                .where(member.age.gt(18))
+                .execute();
+    }
+
+    @Test
+    public void sqlFunction(){
+        List<String> result = queryFactory
+                .select(Expressions.stringTemplate("function('replace',{0},{1},{2})", member.username, "member", "M")
+                ).from(member)
+                .fetch();
+        for (String s : result) {
+            System.out.println("s = " + s);
+        }
+
+    }
+
+    @Test
+    public void sqlFunction2(){
+        List<String> result = queryFactory
+                .select(member.username)
+                .from(member)
+//                .where(member.username.eq(Expressions.stringTemplate("function('lower',{0})", member.username)))
+                .where(member.username.eq(member.username.lower()))
+                .fetch();
+
+        for (String s : result) {
+            System.out.println("s = " + s);
+        }
+    }
+
+
+
+}
 
 
 
