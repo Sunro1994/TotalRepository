@@ -22,10 +22,11 @@ public class MemberPrincipalDetailService implements UserDetailsService {
         Member member = memberRepository.findByLoginId(username);
         System.out.println("username" + username);
         System.out.println("member" + member);
+
+
         //없을 경우 에러 발생
         if (member == null) {
             throw new UsernameNotFoundException(username + "을 찾을 수 없습니다.");
-
         }
         if (!"Y".equals(member.getIsUsed())) {
             throw new UsernameNotFoundException("사용할 수 없는 계정입니다.");
