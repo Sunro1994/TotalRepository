@@ -71,4 +71,7 @@ class MemberTest {
         System.out.println("findMember.getTeam Proxy 초기화 = " + findMember.getTeam().getName());
     }
 
+
+
+
 }
