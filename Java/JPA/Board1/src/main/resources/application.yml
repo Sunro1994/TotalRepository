@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/querydsl
+    username: sa
+    password:
+    hikari:
+      driver-class-name: org.h2.Driver
+  profiles:
+    active: local # 개발은 develop 이처럼 구분짓는다.
+
+
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        use_sql_comments: true
+    open-in-view: false
+
+  data:
+    web:
+      pageable:
+        default-page-size: 10
+        max-page-size: 2000
+        one-indexed-parameters: true
+
+logging:
+  level:
+    org.hibernate.sql : debug
+    org.hibernate.type : trace
+
+
+

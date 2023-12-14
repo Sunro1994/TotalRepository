@@ -6,7 +6,7 @@ import study.jpa.queryDSL.domain.Member;
 
 import java.util.List;
 
-public interface MemberRepository extends JpaRepository<Member,Long> {
+public interface MemberRepository extends JpaRepository<Member,Long>,MemberRepositoryCustom {
 
     //select m from Member m where m.username = ? 방식으로 알아서 생성됨
     List<Member> findByUsername(String username);

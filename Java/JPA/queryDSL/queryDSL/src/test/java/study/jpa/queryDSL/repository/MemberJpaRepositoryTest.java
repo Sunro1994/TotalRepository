@@ -30,6 +30,8 @@ class MemberJpaRepositoryTest {
     @Autowired
     MemberRepository memberRepository;
 
+
+
     @Test
     public void basicTest(){
         Member member = new Member("member1", 10);
