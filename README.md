@@ -108,7 +108,7 @@ KG IT BANK에서 약 6개월간의 단과과정과 6개월의 국비훈련과정
 
 [Travel Maker](http://ec2-3-34-52-179.ap-northeast-2.compute.amazonaws.com/)
 
-[](https://github.com/Sunro1994/TotalRepository/tree/main/Project/Travel_maker/TravelMaker-workspace/TravelMaker)
+[프로젝트 명세서](https://www.canva.com/design/DAF11uLrrf0/nP4m9xpAb_b6oFK3MRheeA/edit)
 
 - TravelMaker (숙박 및 여행 웹사이트)
 
