@@ -139,4 +139,55 @@ public class CordTest {
     }
 
 
+    /**
+     * 알파벳 대문자로 이루어진 문자열을 입력받아 같은 문자가 연속으로 반복되는 경우 반복되는
+     *
+     * 문자 바로 오른쪽에 반복 횟수를 표기하는 방법으로 문자열을 압축하는 프로그램을 작성하시오.
+     */
+
+    @Test
+    public void compactString(){
+        String x = "KKTFFFFFFEEE";
+
+        char target = x.charAt(0);
+        List<String> arr = new ArrayList<>();
+
+        int count =1;
+        for (int i = 0; i < x.length(); i++) {
+            if(i==0) arr.add(target+"");
+
+            else if(x.charAt(i)==target){
+                count++;
+                if(i==x.length()-1){
+                    arr.add(count+"");
+                }
+            }
+            else{
+                if(count!=1){
+                arr.add(count+"");
+
+                }
+                target = x.charAt(i);
+                arr.add(target+"");
+                count =1;
+            }
+
+        }
+
+
+
+
+        String answer ="";
+        for (String i : arr) {
+            answer += i;
+        }
+        System.out.println(answer);
+
+
+
+
+
+    }
+
+
 }
