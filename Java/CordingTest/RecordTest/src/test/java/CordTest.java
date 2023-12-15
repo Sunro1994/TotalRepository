@@ -90,5 +90,53 @@ public class CordTest {
 
     }
 
+    /**
+     * 한 개의 문자열 s와 문자 t가 주어지면 문자열 s의 각 문자가 문자 t와 떨어진 최소거리를 출력하는 프로그램을 작성하세요.
+     */
+
+    @Test
+    public void shortestStringLnegth(){
+        Scanner sc = new Scanner(System.in);
+
+
+        String a = sc.nextLine();
+        String b = sc.nextLine();
+
+        int[] arr = new int[a.length()];
+
+        int p = 1000;
+        for(int i=0; i<a.length();i++){
+            if(b.equals(a.charAt(i)+"")){
+                p=0;
+                arr[i]=p;
+            }
+            else{
+                p++;
+                arr[i]=p;
+            }
+        }
+
+        p = 1000;
+        for (int i = a.length() - 1; i >= 0; i--) {
+            if(b.equals(a.charAt(i)+"")){
+                p=0;
+                arr[i]=p;
+            }
+            else{
+                p++;
+                arr[i]=Math.min(arr[i],p);
+            }
+        }
+
+        for (int i : arr) {
+            System.out.print(i);
+        }
+
+        sc.close();
+
+
+
+    }
+
 
 }
