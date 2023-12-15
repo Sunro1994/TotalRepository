@@ -1,6 +1,6 @@
 package com.erp.ErpMaster.security.auth;
 
-import com.erp.ErpMaster.member.entity.Member;
+import com.erp.ErpMaster.member.Member;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

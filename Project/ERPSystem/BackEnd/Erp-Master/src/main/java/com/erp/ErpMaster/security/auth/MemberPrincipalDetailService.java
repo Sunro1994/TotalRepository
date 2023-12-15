@@ -1,6 +1,6 @@
 package com.erp.ErpMaster.security.auth;
 
-import com.erp.ErpMaster.member.entity.Member;
+import com.erp.ErpMaster.member.Member;
 import com.erp.ErpMaster.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

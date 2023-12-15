@@ -1,6 +1,6 @@
 package com.erp.ErpMaster.login;
 
-import com.erp.ErpMaster.member.entity.Member;
+import com.erp.ErpMaster.member.Member;
 import com.erp.ErpMaster.security.auth.MemberPrincipalDetails;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
@@ -56,7 +56,7 @@ public class LoginController {
     public String text(@AuthenticationPrincipal MemberPrincipalDetails memberPrincipalDetails
             , Model model) {
 
-        Member member = memberPrincipalDetails.getMember();
+        Member member =memberPrincipalDetails.getMember();
 
         model.addAttribute("member", member);
         return "text/text";

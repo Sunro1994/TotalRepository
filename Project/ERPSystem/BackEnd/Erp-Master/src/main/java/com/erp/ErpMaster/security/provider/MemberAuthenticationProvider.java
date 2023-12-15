@@ -1,6 +1,6 @@
 package com.erp.ErpMaster.security.provider;
 
-import com.erp.ErpMaster.member.entity.Member;
+import com.erp.ErpMaster.member.Member;
 import com.erp.ErpMaster.security.auth.MemberPrincipalDetailService;
 import com.erp.ErpMaster.security.auth.MemberPrincipalDetails;
 import org.springframework.beans.factory.annotation.Autowired;

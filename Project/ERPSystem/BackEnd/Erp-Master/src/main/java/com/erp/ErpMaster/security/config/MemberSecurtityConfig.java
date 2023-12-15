@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
@@ -51,6 +52,8 @@ public class MemberSecurtityConfig {
 
         http.authorizeHttpRequests(authorize -> {
             try {
+                http.sessionManagement(config -> config.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
+
                 authorize
                         .requestMatchers("/css/**", "/images/**", "/js/**", "member/attachment/**", "/member/files/**")
                         .permitAll()//해당 경로는 인증 없이 접근 가능
@@ -66,7 +69,7 @@ public class MemberSecurtityConfig {
 
                 http.logout(httpSecurityLogoutConfigurer -> httpSecurityLogoutConfigurer
                         .logoutUrl("/member/login/logout")//로그아웃 처리 URL 설정
-                        .logoutSuccessUrl("/member/login/loginForm?loguout=1") //로그아웃 성공 후 이도 ㅇ페이지
+                        .logoutSuccessUrl("/member/login/loginForm?loguout=1") //로그아웃 성공 후 이동 페이지
                         .deleteCookies("JSESSIONID")); //로그아웃 후 쿠키 삭제)
 
 
@@ -74,7 +77,7 @@ public class MemberSecurtityConfig {
                 http.rememberMe(httpSecurityRememberMeConfigurer -> httpSecurityRememberMeConfigurer
                         .key("surno")//인증 토큰 생성시 사용할 키
                         .tokenValiditySeconds(60*60*24*7)   //인증 토큰 유효 시간
-                        .userDetailsService(memberPrincipalDetailService)   //인증 토큰 생성 시 사용하 ㄹuserDetailService
+                        .userDetailsService(memberPrincipalDetailService)   //인증 토큰 생성 시 사용할 userDetailService
                         .rememberMeParameter("remember-me"));
             } catch (Exception e) {
                 throw new RuntimeException(e);
