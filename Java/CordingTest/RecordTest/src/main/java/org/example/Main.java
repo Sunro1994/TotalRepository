@@ -12,12 +12,22 @@ public class Main {
             list.add(sc.nextInt());
         }
 
+        int cnt =0;
+        int maxHeight=0;
         for(int i=0; i<list.size();i++){
-           if(i==0) System.out.print(list.get(i)+" ");
-           else if(list.get(i)>list.get(i-1)){
-                System.out.print(list.get(i)+" ");
-            }
+          if(i==0) {
+              cnt++;
+              maxHeight = list.get(i);
+              continue;
+          }
+          if(list.get(i)>maxHeight){
+              cnt++;
+              maxHeight = list.get(i);
+          }
+
+
         }
+            System.out.println(cnt);
 
 
 
