@@ -1,28 +1,27 @@
 package org.example;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int len = sc.nextInt();
+        List<Integer> list = new ArrayList<>();
 
-        Scanner in=new Scanner(System.in);
-        String target = in.nextLine();
-        String answer = "";
-
-        List<Character> arr = new ArrayList<>();
-        for(int i=0; i<target.length(); i++){
-            arr.add(target.charAt(i));
+        for(int i=0; i<len;i++){
+            list.add(sc.nextInt());
         }
 
-        List<Character> collect = arr.stream().distinct().collect(Collectors.toList());
-
-        for (Character c : collect) {
-            answer += c;
+        for(int i=0; i<list.size();i++){
+           if(i==0) System.out.print(list.get(i)+" ");
+           else if(list.get(i)>list.get(i-1)){
+                System.out.print(list.get(i)+" ");
+            }
         }
 
-        System.out.println(answer);
+
 
 
     }
-}
+
+    }

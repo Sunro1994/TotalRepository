@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -199,6 +200,27 @@ public class CordTest {
             answer +=target;
         }
         System.out.println("answer = " + answer);
+    }
+
+    @Test
+    @DisplayName("Scanner는 작동되지 않으니 임의의 수를 넣어줘야 한다.")
+    public void pringBigNumber(){
+        Scanner sc = new Scanner(System.in);
+        int len = sc.nextInt();
+        List<Integer> list = new ArrayList<>();
+
+        for(int i=0; i<len;i++){
+            list.add(sc.nextInt());
+        }
+
+        for(int i=0; i<list.size();i++){
+            if(i==0) System.out.print(list.get(i)+" ");
+            else if(list.get(i)>list.get(i-1)){
+                System.out.print(list.get(i)+" ");
+            }
+        }
+
+
     }
 
 }
