@@ -266,6 +266,36 @@ public class CordTest {
 
         }
 
+    /**
+     * 가위 바위 보
+     */
+
+    @Test
+    public void RockSeizerPepper(){
+            Scanner sc = new Scanner(System.in);
+            int cnt = sc.nextInt();
+            int[] userA = new int[cnt];
+            int[] userB = new int[cnt];
+
+            for (int i = 0; i < cnt; i++) {
+                userA[i] = sc.nextInt();
+            }
+
+            for (int i = 0; i < cnt; i++) {
+                userB[i] = sc.nextInt();
+            }
+            for (int i = 0; i < cnt; i++) {
+                if(userA[i] == userB[i]) System.out.println("D");
+                else if(userA[i]==1 && userB[i]==3) System.out.println("A");
+                else if(userA[i]==2 && userB[i]==1) System.out.println("A");
+                else if(userA[i]==3 && userB[i]==2) System.out.println("A");
+                else System.out.println("B");
+            }
+
+
+        }
+
+
 
     }
 
