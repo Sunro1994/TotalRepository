@@ -57,15 +57,17 @@ public class MemberSecurtityConfig {
                 authorize
                         .requestMatchers("/css/**", "/images/**", "/js/**", "member/attachment/**", "/member/files/**")
                         .permitAll()//해당 경로는 인증 없이 접근 가능
+                        .requestMatchers("/api/**").permitAll()
+                        .requestMatchers("/api/**")
+                        .authenticated()
                         .requestMatchers("/member/**") //해당 경로는 인증이 필요
                         .hasRole("MEMBER"); //ROLE이 MEMBER가 포함된 경우에만 인증 가능
 
-                http.formLogin(httpSecurityFormLoginConfigurer -> httpSecurityFormLoginConfigurer
-                        .loginPage("/member/login/loginForm")
-                        .loginProcessingUrl("/member/login/loginForm")
-                        .loginProcessingUrl("/member/login/login")
-                        .defaultSuccessUrl("/member/main")//로그인 성공 후 이동할 페이지
-                        .failureHandler(new MemberAuthFailureHandler()).permitAll());
+//                http.formLogin(httpSecurityFormLoginConfigurer -> httpSecurityFormLoginConfigurer
+//                        .loginPage("/member/login/loginForm")
+//                        .loginProcessingUrl("/member/login/loginForm")
+//                        .defaultSuccessUrl("/member/main")//로그인 성공 후 이동할 페이지
+//                        .failureHandler(new MemberAuthFailureHandler()).permitAll());
 
                 http.logout(httpSecurityLogoutConfigurer -> httpSecurityLogoutConfigurer
                         .logoutUrl("/member/login/logout")//로그아웃 처리 URL 설정
