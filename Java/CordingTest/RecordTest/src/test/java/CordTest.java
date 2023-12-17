@@ -294,9 +294,48 @@ public class CordTest {
 
 
         }
+    /**
+     * 피보나치 수열 계산법
+     */
+@Test
+    public void fibonacciSequence(){
+        Scanner sc = new Scanner(System.in);
+        int cnt = sc.nextInt();
+        int[] arr = new int[cnt+1];
+        for (int i = 1; i <=cnt; i++) {
+            if(i==1 || i==2)  arr[i] = 1;
+            else {
+                arr[i] = arr[i - 1] + arr[i - 2];
+            }
+        }
+        for (int i : arr) {
+            if(i==0) continue;
+            System.out.print(i+" ");
+        }
+    }
 
 
+    /**
+     * 에라토스테네스 체 - 소수 구하기
+     */
+
+    public void Decimal(){
+        Scanner sc = new Scanner(System.in);
+        int cnt = sc.nextInt();
+        int result = 0;
+        int[] arr = new int[cnt+1];
+        for(int i=2; i<=cnt;i++){
+            if (arr[i] == 0) {
+                result++;
+                for (int j = i; j <= cnt; j = j + i) {
+                    arr[j]=1;
+                }
+            }
+        }
+        System.out.println(result);
 
     }
+
+}
 
 
