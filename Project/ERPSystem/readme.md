@@ -1,0 +1,104 @@
+# ERP Project
+
+## 1. 아이템 선정
+
+전반적인 웹의 기본 소양이 되는 CRUD 게시판을 만들고, 기능을 하나씩 추가해 나가는 식으로 진행한다.
+
+## 2. 개요
+
+- 프로젝트 명칭 : ERP Manager
+- 개발 인원 : 1명
+- 개발 기간 : 2023-12-07~
+- 주요 기능 :
+    - 회원 목록(조직도)
+    - 근태 관리
+    - 급여 관리
+    - 재고 관리
+    - 판매 현황
+    - 재무 현황
+    - 보안 및 권한
+    - 마이 페이지
+- 개발 언어 : Java 17
+- 개발 환경 : SpringBoot 3.x.x, gradle, JPA, Security, Oauth
+- 데이터베이스 : Oracle
+- 형상관리 툴 : GitHub
+- 간단 소개 : 회사 내 ERP 프로그램
+
+## 3. 요구사항 분석
+
+1. 회원 가입 페이지
+    - 유효성 검사
+        - 닉네임은 최소 2~10자
+        - 특수문자를 제외한 한글, 알파벳 대소문자, 숫자로 구성
+        - 한 개의 칸이라도 공백 혹은 빈칸이 있다면, 경고 메시지
+        - 비밀번호는 최소 8~16자, 영문 대소문자, 숫자, 특수문자 사용
+    - 중복확인
+        - 아이디 중복확인
+        - 이메일 중복확인
+        - 닉네임 중복확인
+        - 모든 검사 완료되면 로그인 페이지로 이동
+2. 회원가입 승인 페이지
+    - 회원 승인 페이지
+        - 유저의 권한 설정
+        - 유저의 부서 설정
+        - 승인 또는 미승인 처리
+3. 로그인 페이지
+    - 로그인 하지 않으면 접속 불가능
+    - 로그인 검사
+        - 아이디 비밀번호 일치하지 않은 경우 경고 메시지
+        - 이외의 다른 에러 메시지 처리
+        - 모든 검사 통과 후 메인 페이지로 이동(index)
+4. 회원정보 수정
+    - 닉네임, 비밀번호, 개인 정보만 수정 가능
+    - 수정란이 빈칸 또는 공백으로 된 경우 경고 메시지
+    - 닉네임 중복확인
+    - 특수문자를 제외한 한글, 알파벳 대소문자, 숫자만 가능, 2~10자리
+    - 비밀번호 수정 또한 최소 8자리~16자리, 영어 대소문자, 숫자, 특수문자
+    - 수정 완료 시 수정 날짜 업데이트
+5. 소셜 로그인 기능(어떻게 사용할지 생각해보기)
+    - 네이버, 카카오톡 로그인이 가능하도록 만들기
+    - DB에 이미 존재하는 이메일이 있을 경우 기존 회원 데이터 정보 유지
+    - 소셜 로그인 사용자도 닉네임, 비밀번호 설정이 가능하고, 일반 로그인도 가능하게 하기
+6. 사내 조직도 기능
+    - 사내 직원 리스트 출력
+    - 부서별, 직급별 필터 결과 출력
+    - 직원 클릭시 사원의 사진, 이메일, 간단한 정보 출력
+7. 근태 관리
+    - 출퇴근 관리
+    - 야근 관리
+    - 결석 관리
+    - 연차 및 반차 관리
+8. 급여 관리
+    - 사원별 야근 및 결석 , 출퇴근을 자동으로 연산하여 월급 관리
+    - 연말에는 연차까지 계산후 월급 지급
+9. 재고 관리
+    - 사내 품목 재고 출력 리스트
+    - 재고 추가
+    - 재고 수정
+    - 재고 삭제
+10. 판매 현황
+    - 제품별 판매 현황 리스트(연도별, 월별, 일자별)
+    - 제품별 환불 및 교환 현황(총합으로만)
+    - 매출 통계 그래프로 출력
+11. 재무 현황
+    - 회사 내 연 매출
+    - 회사 성장도
+12. 보안 및 권한
+    - 인사팀중 팀장급인 경우에만 들어갈 수 있도록 설정
+    - 모든 사원들의 권한 출력
+    - 보안 위배사항 출력(부서별 위배 로그)
+
+## 4. DB설계
+[부서 d33166758201457b9814bcc10934c268.csv](https://github.com/Sunro1994/TotalRepository/files/13697349/d33166758201457b9814bcc10934c268.csv)
+[직급 cfc61c53ccf14dc08bb7862aa6db7efb.csv](https://github.com/Sunro1994/TotalRepository/files/13697350/cfc61c53ccf14dc08bb7862aa6db7efb.csv)
+[추가근무신청 1e2bbebe55e04c2c9635ed60ccfa32df.csv](https://github.com/Sunro1994/TotalRepository/files/13697351/1e2bbebe55e04c2c9635ed60ccfa32df.csv)
+[커뮤니티 게시판 712e769a8e7a45da82a54aa217b0a7a7.csv](https://github.com/Sunro1994/TotalRepository/files/13697352/712e769a8e7a45da82a54aa217b0a7a7.csv)
+[패널티 e375ee22bfe447f3b0d46050dcb1a537.csv](https://github.com/Sunro1994/TotalRepository/files/13697353/e375ee22bfe447f3b0d46050dcb1a537.csv)
+[회의록 054fe8b86707449982c37457ad835445.csv](https://github.com/Sunro1994/TotalRepository/files/13697354/054fe8b86707449982c37457ad835445.csv)
+[휴가신청 addc1cb562b94721af8432d7e56891b1.csv](https://github.com/Sunro1994/TotalRepository/files/13697355/addc1cb562b94721af8432d7e56891b1.csv)
+[Member 2cf7ca51a66843229765527c7f45edac.csv](https://github.com/Sunro1994/TotalRepository/files/13697356/Member.2cf7ca51a66843229765527c7f45edac.csv)
+[공지사항 aadc55339ab74435a6528d00cba03340.csv](https://github.com/Sunro1994/TotalRepository/files/13697357/aadc55339ab74435a6528d00cba03340.csv)
+[권한 c16d6684b5914802b383857df04965e5.csv](https://github.com/Sunro1994/TotalRepository/files/13697358/c16d6684b5914802b383857df04965e5.csv)
+[근태 742aef0f5ca14b51ab0c87fc278ceb56.csv](https://github.com/Sunro1994/TotalRepository/files/13697359/742aef0f5ca14b51ab0c87fc278ceb56.csv)
+[급여 efabedd03256418fbde2028f713ced62.csv](https://github.com/Sunro1994/TotalRepository/files/13697360/efabedd03256418fbde2028f713ced62.csv)
+[댓글 f8b173a47f9e4607bbd91c32b3735b73.csv](https://github.com/Sunro1994/TotalRepository/files/13697361/f8b173a47f9e4607bbd91c32b3735b73.csv)
