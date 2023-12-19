@@ -20,8 +20,10 @@ public class LoginRestController {
     public Long login(@RequestBody Map<String,String> params) {
         Member member = memberRepository.findByLoginId(params.get("userid"));
         if (member != null) {
+            System.out.println("정상 수신");
             return member.getId();
         }
+        System.out.println("정상수신되지 않음");
         return 0L;
     }
 }
