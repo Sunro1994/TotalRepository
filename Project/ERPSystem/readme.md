@@ -101,4 +101,3 @@
 ![추가근무신청](https://github.com/Sunro1994/TotalRepository/assets/132982907/9839979d-3ad5-4eb5-a761-37e8b3e8ace4)
 ![휴가신청](https://github.com/Sunro1994/TotalRepository/assets/132982907/798b3bd8-13b0-4d88-a2d2-eee8412a2cd2)
 ![패널티](https://github.com/Sunro1994/TotalRepository/assets/132982907/2c9f7305-43c4-4ddf-a063-503ce024269c)
-
