@@ -29,7 +29,8 @@ public class Member {
     private String password;
 
     @Column(name = "member_role")
-    private String role;
+    @Enumerated(EnumType.STRING)
+    private Role role;
 
     @Column(name = "member_name")
     private String name;
