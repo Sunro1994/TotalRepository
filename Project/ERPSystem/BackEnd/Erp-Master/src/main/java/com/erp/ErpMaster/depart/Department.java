@@ -1,6 +1,6 @@
 package com.erp.ErpMaster.depart;
 
-import com.erp.ErpMaster.member.entity.Member;
+import com.erp.ErpMaster.member.Member;
 import jakarta.persistence.*;
 
 @Entity
