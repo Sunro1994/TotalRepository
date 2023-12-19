@@ -1,11 +1,10 @@
 spring:
   datasource:
-    url: jdbc:h2:tcp://localhost/~/erp_project
-    username: sa
-    password:
+    url: jdbc:mysql://34.64.223.222:3306/erp-project
+    username: root
+    password: Group0000-
     hikari:
-      driver-class-name: org.h2.Driver
-
+      driver-class-name: com.mysql.cj.jdbc.Driver
 
 
   jpa:

@@ -37,7 +37,7 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 
-	runtimeOnly 'com.h2database:h2'
+	runtimeOnly 'mysql:mysql-connector-java'
 
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
@@ -46,6 +46,8 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter-test:3.0.3'
 	testImplementation 'org.springframework.security:spring-security-test'
+	implementation 'mysql:mysql-connector-java:8.0.23' // 최신 버전으로 업데이트 가능
+
 
 
 }
