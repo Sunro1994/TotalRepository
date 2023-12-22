@@ -26,7 +26,7 @@
        </div>
         <button class="login_button" @click="submit" value="Login" >Login</button>
       </div>
-      <div class="signup-link">Not a member? <a href="">Signup now</a></div>
+      <div class="signup-link">Not a member? <a v-bind:href="join">Signup now</a></div>
     </form>
     <form action="#" class="signup" ref="signupForm">
       <div class="field">
@@ -55,8 +55,6 @@ import {reactive} from "vue";
 import axios from "axios";
 
 export default {
-
-
   name :"Home",
   setup(){
     const state  =reactive({
