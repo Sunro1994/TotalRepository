@@ -26,7 +26,7 @@
        </div>
         <button class="login_button" @click="submit" value="Login" >Login</button>
       </div>
-      <div class="signup-link">Not a member? <a v-bind:href="join">Signup now</a></div>
+      <div class="signup-link">Not a member?></div>
     </form>
     <form action="#" class="signup" ref="signupForm">
       <div class="field">
@@ -53,10 +53,16 @@
 
 import {reactive} from "vue";
 import axios from "axios";
+import join from "@/pages/Join.vue";
 
 export default {
   name :"Home",
-  setup(){
+  computed: {
+    join() {
+      return join
+    }
+  },
+    setup(){
     const state  =reactive({
       form:{
         userid:"",

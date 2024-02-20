@@ -7,7 +7,7 @@ import Join from "@/pages/Join.vue"
 
 const routes = [
     {path: '/', component: Home},
-    {path : '/join' , component: Join}
+    {path : '/join' , name: 'join' , component: Join}
 ]
 
 const router = createRouter({
