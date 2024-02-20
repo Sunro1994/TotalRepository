@@ -1,3 +1,4 @@
+import org.example.Main;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -420,6 +421,82 @@ public class CordTest {
             }
             System.out.print(rank+" ");
         }
+
+
+    }
+
+
+    @Test
+    public void findMaxNumInBoard(){
+        Scanner sc = new Scanner(System.in);
+
+        int cnt = sc.nextInt();
+        int[][] arr = new int[cnt][cnt];
+
+        for (int i = 0; i < cnt; i++) {
+            for (int j = 0; j < cnt; j++) {
+                arr[i][j] = sc.nextInt();
+            }
+        }
+
+        int max_sum = 0;
+        int comp_sum =0;
+        int comp_sum2 =0;
+        //가로,세로
+        for (int i = 0; i < cnt; i++) {
+            comp_sum=0;
+            comp_sum2=0;
+            for (int j = 0; j < cnt; j++) {
+                comp_sum += arr[i][j];
+                comp_sum2 += arr[j][i];
+            }
+            max_sum = Math.max(max_sum, comp_sum);
+            max_sum = Math.max(max_sum, comp_sum2);
+        }
+
+        comp_sum=0;
+        comp_sum2=0;
+        //대각선
+        for (int i = 0; i < cnt; i++) {
+            comp_sum += arr[i][i];
+            comp_sum2 += arr[i][cnt-i-1];
+            max_sum = Math.max(max_sum, comp_sum);
+            max_sum = Math.max(max_sum, comp_sum2);
+
+        }
+
+        System.out.println(max_sum);
+
+    }
+
+    @Test
+    public void 봉우리(){
+        int[] dx = {-1, 0 , 1 , 0};
+        int[] dy = {0 , 1, 0 , -1};
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[][] arr = new int[n][n];
+        for(int i=0; i<n; i++) {
+            for (int j = 0; j < n; j++) {
+                arr[i][j] = sc.nextInt();
+            }
+        }
+
+            int answer =0;
+            for(int i=0; i<n;i++){
+                for(int j=0 ; j<n; j++){
+                    boolean flag = true;
+                    for(int k =0; k<4; k++){
+                        int nx = i + dx[k];
+                        int ny = j + dy[k];
+                        if( nx>=0 && nx<n && ny >=0 && ny<n &&arr[nx][ny] >= arr[i][j]) {
+                            flag = false;
+                            break;
+                        }
+                    }
+                    if(flag) answer++;
+                }
+            }
 
 
     }
