@@ -1,0 +1,46 @@
+version: "3.8"
+services:
+  mongodb:
+    image: 'mongo' #로컬이나 도커허브에서 검색, default = detach모드,--rm
+    volumes:
+      - data:/data/db #명명볼륨/컨테이너 내부경로:ro(읽기/쓰기 옵션 설정 가능)
+    container_name: mongodb
+    # env_file:
+    #   - ./env/mongo.env #상대경로를 입력해서 환경변수 설정 가능
+      # '-'가 필요한경우 : 키 와 밸류 값인경우
+      # 아닌경우 : 단일 값
+      #도커가 이파일에 특정된 모든 서비스에 대해 새 환경을 자동으로 생성하고 모든 서비스를 즉시 그 네트워크에 추가하기 때문에
+      #따로 네트워크를 생성할 피룡가 없다.
+  backend:
+    build: ./backend #알아서 DockerFIle을 찾는다.
+    # build:
+    #   context: ./backend
+    #   dockerfile: Dockerfile
+    #   args:
+    #     some-arg: 1
+    container_name: backend
+    ports:
+      - '80:80'
+    volumes:
+      - logs:/app/logs
+      - ./backend:/app
+      - /app/node_modules
+    depends_on:
+      - mongodb
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend/src:/app/src    #바인드마운트
+    stdin_open: true    #개방형 표준 입력이 필요함을 true
+    tty : true          #이 터미널에 연결하기 위함
+    depends_on:
+      - backend
+
+
+volumes:
+  data: #명명된 볼륨을 여기에 지정해줘야한다. 익명과 바인드마운트는 할 필요 없음
+  logs:
+
+
