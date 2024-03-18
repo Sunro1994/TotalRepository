@@ -5,7 +5,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class StackP2164 {
+public class QueP2164 {
     static int N;
     public static void main(String[] args) {
         /*
