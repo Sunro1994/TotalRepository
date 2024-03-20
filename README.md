@@ -1,26 +1,3 @@
-## 둘러보기
-
-1. 자바
-    1. 알고리즘
-    2. 자료 구조
-    3. 디자인패턴
-    4. JSP
-    5. 자바 클래스들
-    6. Spring Framework
-    7. JPA
-    8. 자바 기초 상식
-    9. 코딩 테스트용 문제 풀이
-2. 자바스크립트
-    1. React
-    2. Vanilla
-3. Python
-    1. 크롤링
-4. SQL
-    1. SQLD 대비 자료 정리
-5. Project
-
----
-
 ## Proejct
 
 - [TravelMaker(여행사이트)](https://github.com/Sunro1994/TotalRepository/tree/main/Project/TravelMaker)
@@ -38,6 +15,9 @@
 - [**Java 클래스 바로가기**](https://github.com/Sunro1994/TotalRepository/tree/main/Java/JavaClass)
 - [**Spring Framework 바로가기**](https://github.com/Sunro1994/TotalRepository/tree/main/Java/Spring%20Framework)
 - [**코딩 테스트 문제 연습 바로 가기**](https://github.com/Sunro1994/TotalRepository/blob/main/Java/CordingTest/RecordTest/src/test/java/CordTest.java)
+- [**Vue3 바로가기**](https://github.com/Sunro1994/TotalRepository/tree/main/Vue)
+- [**SpringSecurity6 바로가기**](https://github.com/Sunro1994/TotalRepository/tree/main/Java/Spring%20Security%20%5BUdemy%5D)
+- [**Docker 바로가기**](https://github.com/Sunro1994/TotalRepository/tree/main/Docker)
 
 ---
 
