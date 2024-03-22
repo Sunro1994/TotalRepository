@@ -28,7 +28,7 @@
 	</annotation-driven>
 
 	<resources mapping="/resources/**" location="/resources/" />
-	<resources mapping="/travelImg/**" location="C:/TravelImg/" />
+	<resources mapping="/travelImg/**" location="file:C:/TravelImg/" />
 	
 	<resources mapping="/css/**" location="classpath:/css/" />
 	<resources mapping="/img/**" location="classpath:/img/" />
