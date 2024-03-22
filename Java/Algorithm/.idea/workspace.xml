@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="079b5559-e77e-471d-b687-dd2bf8d4fe3d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Search Algorithm/out/production/DFS/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DFS/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DFS/.idea/DFS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Search Algorithm/.idea/DFS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DFS/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Search Algorithm/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DFS/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Search Algorithm/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DFS/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Search Algorithm/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DFS/out/production/DFS/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Search Algorithm/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DFS/out/production/DFS/.idea/DFS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Search Algorithm/out/production/DFS/.idea/DFS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DFS/out/production/DFS/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Search Algorithm/out/production/DFS/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DFS/out/production/DFS/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Search Algorithm/out/production/DFS/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DFS/out/production/DFS/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Search Algorithm/out/production/DFS/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DFS/out/production/DFS/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/Search Algorithm/out/production/DFS/test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DFS/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/Search Algorithm/DFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DFS/test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Search Algorithm/DFS2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Search Algorithm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Search Algorithm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring Security [Udemy]/untitled/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring Security [Udemy]/untitled/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring Security [Udemy]/untitled/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring Security [Udemy]/untitled/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +20,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2cx7kuDgvsFv4OZqZPy7qR7hy3T" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -44,7 +38,11 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/이선로/Documents/GitHub/TotalRepository/Java/Algorithm/Search Algorithm",
+    "last_opened_file_path": "C:/Users/이선로/Documents/GitHub/TotalRepository/Java/Algorithm",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -60,6 +58,10 @@
       <option name="presentableId" value="Default" />
       <updated>1709041521621</updated>
       <workItem from="1709041522734" duration="246000" />
+      <workItem from="1709678461040" duration="504000" />
+      <workItem from="1710065134500" duration="106000" />
+      <workItem from="1710065250874" duration="14000" />
+      <workItem from="1710432128287" duration="8000" />
     </task>
     <servers />
   </component>
