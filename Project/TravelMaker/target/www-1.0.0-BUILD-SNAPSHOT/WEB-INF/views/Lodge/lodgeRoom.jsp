@@ -250,6 +250,10 @@ navLodgeGuide.addEventListener('click',GuideTabHandler);
                         data: JSON.stringify({ lodge_Idx: lodge_idx, startDate: selectedStartDate, endDate: selectedEndDate }),
                         contentType: 'application/json',
                         success: function (resp) {
+							// 일수 계산하는 함수
+							const timeDiff = new Date(selectedEndDate) - new Date(selectedStartDate);
+
+							const daysDiff = Math.ceil(timeDiff / (1000 * 3600 * 24));
                             // 최상위 태그
                             const parentElement = document.querySelector('.RoomListContainer');
                             parentElement.innerHTML = '';
@@ -290,12 +294,9 @@ navLodgeGuide.addEventListener('click',GuideTabHandler);
                                 // room_detail_price 요소 생성
                                 const roomDetailPrice = document.createElement('div');
                                 roomDetailPrice.className = 'room_detail_price';
-                                roomDetailPrice.textContent = '가격 :' + e.lodge_Room_Type_price;
+                                roomDetailPrice.textContent = '가격 :' + e.lodge_Room_Type_price*daysDiff;
 
-                                // 일수 계산하는 함수
-                                const timeDiff = new Date(selectedEndDate) - new Date(selectedStartDate);
-                                	
-                                const daysDiff = Math.ceil(timeDiff / (1000 * 3600 * 24));
+
 
                                 // room_detail_capacity 요소 생성
                                 const roomDetailCapacity = document.createElement('div');
