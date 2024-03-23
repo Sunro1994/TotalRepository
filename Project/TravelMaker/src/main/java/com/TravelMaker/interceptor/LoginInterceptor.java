@@ -21,7 +21,6 @@ public class LoginInterceptor implements HandlerInterceptor{
 		TravelMaker_MemberDTO user = (TravelMaker_MemberDTO)session.getAttribute("user");
 		
 		if(user==null) {
-			System.out.println("로그인 안됨");
 			response.sendRedirect(cpath+"/WelcomeLogin");
 			return false;
 		}
