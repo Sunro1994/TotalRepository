@@ -154,7 +154,7 @@
         </div>
         <div class="map">
             <div id="map"></div>
-            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9a9243386f258c5d107f2416e0bf8f4e"></script>
+            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4095f9977d699d6a0011d4be6a60d1fd&libraries=services"></script>
             <script>
                 var mapContainer = document.getElementById('map');
                 var mapOptions = {
@@ -189,8 +189,10 @@
 </div>
 
 <script>
+
     const deleteBtn = document.getElementById('deleteBtn')
     const modifyBtn = document.getElementById('modifyBtn')
+    if(deleteBtn){
     deleteBtn.onclick = () => {
         swal({
             title : '정말로 삭제하시겠습니까 ?',
@@ -219,10 +221,13 @@
             }
         })
     }
+    }
+    if(modifyBtn){
 
     modifyBtn.onclick = () => {
         const idx = ${dto.recommend_travel_idx}
         location.href = '${cpath}/Admin/recommendModify/' + idx
+    }
     }
 </script>
 
