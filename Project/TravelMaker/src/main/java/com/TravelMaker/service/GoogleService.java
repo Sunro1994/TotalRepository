@@ -57,8 +57,7 @@ public class GoogleService {
 	        // 응답 데이터 형식은 Hashmap 으로 지정
 	        ResponseEntity<HashMap> result = restTemplate.postForEntity(reqURL, entity, HashMap.class);
 	        Map<String, String> resMap = result.getBody();
-	        System.out.println(resMap);
-	        
+
 	        String access_token = resMap.get("access_token");
 
 		    String userInfoURL = "https://www.googleapis.com/userinfo/v2/me";
@@ -73,15 +72,6 @@ public class GoogleService {
 		    ResponseEntity<HashMap> userResult = restTemplate.exchange(userInfoURL, HttpMethod.GET, userInfoEntity, HashMap.class);
 		    Map<String, String> userResultMap = userResult.getBody();
 
-		    //응답 데이터 확인
-//		    System.out.println("userResult  : " + userResultMap);
-//		    System.out.println(userResultMap.get("name"));
-//		    System.out.println(userResultMap.get("id"));
-//		    System.out.println(userResultMap.get("email"));
-//		    System.out.println(userResultMap.get("picture"));
-		    
-			// 응답 데이터 확인
-//	        System.out.println(resMap);
 		    
 		    //결과를 담을 해쉬맵
 			resultMap.put("name", userResultMap.get("name").toString());
@@ -134,8 +124,7 @@ public class GoogleService {
 	        // 응답 데이터 형식은 Hashmap 으로 지정
 	        ResponseEntity<HashMap> result = restTemplate.postForEntity(reqURL, entity, HashMap.class);
 	        Map<String, String> resMap = result.getBody();
-	        System.out.println(resMap);
-	        
+
 	        String access_token = resMap.get("access_token");
 
 		    String userInfoURL = "https://www.googleapis.com/userinfo/v2/me";
@@ -150,15 +139,7 @@ public class GoogleService {
 		    ResponseEntity<HashMap> userResult = restTemplate.exchange(userInfoURL, HttpMethod.GET, userInfoEntity, HashMap.class);
 		    Map<String, String> userResultMap = userResult.getBody();
 
-		    //응답 데이터 확인
-//		    System.out.println("userResult  : " + userResultMap);
-//		    System.out.println(userResultMap.get("name"));
-//		    System.out.println(userResultMap.get("id"));
-//		    System.out.println(userResultMap.get("email"));
-//		    System.out.println(userResultMap.get("picture"));
-		    
-			// 응답 데이터 확인
-//	        System.out.println(resMap);
+
 		    
 		  //결과를 담을 해쉬맵
 			resultMap.put("name", userResultMap.get("name").toString());

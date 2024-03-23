@@ -63,18 +63,7 @@ public class LodgeController {
 	@GetMapping("/Payment/{idx}/{start}/{end}")
 	public ModelAndView payment(@PathVariable("idx") int idx, @PathVariable("start")String start, @PathVariable("end") String end) {
 		ModelAndView mav = new ModelAndView("/Lodge/payment");
-		 /*		
- 		String[] startArr = start.split("-");
- 		String start1 = startArr[2]; 년
- 		String start2 = startArr[0]; 월
- 		String start3 = startArr[1]; 일
- 		String startDate = start1 + "-" + start2 + "-" + start3;
- 		String[] endArr = end.split("-");
- 		String end1 = endArr[2]; 년
- 		String end2 = endArr[0]; 월
- 		String end3 = endArr[1]; 일
- 		String endDate = end1 + "-" + end2 + "-" + end3;
- 		*/
+
 		Lodge_Room_TypeDTO roomDTO = lodgeService.getOneRoom(idx);
 		mav.addObject("roomDTO",roomDTO);
 		mav.addObject("start", start);
@@ -138,9 +127,7 @@ public class LodgeController {
 	// 찜목록 삭제
 		@GetMapping("/deleteFavorite/{lodge_idx}")
 		public String deleteFavorite(@PathVariable("lodge_idx") int lodge_idx, HttpServletRequest request) {
-			System.out.println(request.getRequestURI());
 			int row = lodgeService.deleteFavorite(lodge_idx);
-			System.out.println(row + "행 삭제");
 			return "redirect:/lodge/LodgeRoom/" + lodge_idx;
 		}
 	

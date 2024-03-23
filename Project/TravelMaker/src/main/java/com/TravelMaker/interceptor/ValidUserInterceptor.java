@@ -19,7 +19,6 @@ public class ValidUserInterceptor implements HandlerInterceptor{
 		
 		
 		if(user!=null &&user.getTravelMaker_Member_IsExist().equals("N")) {
-			System.out.println("없는 회원");
 			response.sendRedirect(cpath+"/notExist");
 			return false;
 		}

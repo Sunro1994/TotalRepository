@@ -36,7 +36,6 @@ public class AdminAjaxController {
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
-        System.out.println(password);
 
         String response = hashcomponent.getHash(password, salt);
         return  response;

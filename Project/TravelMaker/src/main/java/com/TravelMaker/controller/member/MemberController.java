@@ -135,11 +135,9 @@ public class MemberController {
 		int row = memberService.MemberUpDate(dto, session);
 		if(row != 0) {
 			session.invalidate();
-			System.out.println("회원 정보가 수정되었습니다\n다시 로그인 해주세요");
 			mav.setViewName("index");
 		}
 		else {
-			System.out.println("회원정보 수정에 실패하였습니다");
 			mav.setViewName("/Member/myPage");
 		}
 		return mav;

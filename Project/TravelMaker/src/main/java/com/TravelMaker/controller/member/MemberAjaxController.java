@@ -26,7 +26,6 @@ import java.util.Map;
 import java.util.Random;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:8080")
 @RequestMapping("/ajax")
 public class MemberAjaxController {
 
@@ -43,7 +42,6 @@ public class MemberAjaxController {
     @GetMapping("/sendAuthNumber")
     public String sendAuthNumber(String email, HttpSession session) {
     	String authNumber = (ran.nextInt(899999) + 100000) + "";
-    	System.out.println(authNumber);
 
         HashMap<String, String> param = new HashMap<>();
         param.put("receiver", email);
@@ -79,7 +77,6 @@ public class MemberAjaxController {
         TravelMaker_MemberDTO dto = memberService.selectOneById(travelMaker_Member_UserId);
         String msg = dto == null ? "1" : "0";
 
-        System.out.println(msg);
         return msg;
     }
 
@@ -90,7 +87,6 @@ public class MemberAjaxController {
         TravelMaker_MemberDTO dto = memberService.selectOneByNickname(nickname);
         String msg = dto == null ? "1" : "0";
 
-        System.out.println(msg);
         return msg;
     }
     
@@ -100,7 +96,6 @@ public class MemberAjaxController {
         TravelMaker_MemberDTO dto = memberService.selectOneByEmail(email);
         String msg = dto == null ? "1" : "0";
 
-        System.out.println(msg);
         return msg;
     }
     
@@ -186,7 +181,6 @@ public class MemberAjaxController {
     @PostMapping("/getReservedList")
     public List<LodgeAndRoomDTO> getReservedList(@RequestBody String userid) {
         String getId = userid.replace("userid=", "");
-        System.out.println(getId);
         //숙소 정보 + 객실 정보 + 리뷰 아이디 가져오기
         List<LodgeAndRoomDTO>  lodgeAndRoomDTO  = memberService.getSelectedLodge(getId);
         return lodgeAndRoomDTO;
@@ -205,7 +199,6 @@ public class MemberAjaxController {
     /* 이메일 유효 번호 인증 하기 */
     @GetMapping("/checkValidNumber")
     public String checkValidNumber(String email,HttpSession session) {
-    	System.out.println(email);
     	String authNumber = memberService.sendEmail(email,session);
     	
     	

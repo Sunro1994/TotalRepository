@@ -57,7 +57,6 @@ public class NaverService {
 			bw.flush();
 			
 			int responseCode = conn.getResponseCode();
-			System.out.println(responseCode);
 			//
 			BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
 			
@@ -100,7 +99,6 @@ public class NaverService {
 		// 요청에 필요한 Header에 포함될 내용
 		conn.setRequestProperty("Authorization", "Bearer " + token);
 		int responseCode = conn.getResponseCode();
-		System.out.println("responseCode : " + responseCode);
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
 
@@ -165,7 +163,6 @@ public class NaverService {
 			bw.flush();
 			
 			int responseCode = conn.getResponseCode();
-			System.out.println(responseCode);
 			BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
 			
 
@@ -216,7 +213,6 @@ public class NaverService {
 		conn.setRequestProperty("Authorization", "Bearer " + token);
 
 		int responseCode = conn.getResponseCode();
-		System.out.println("responseCode : " + responseCode);
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
 
@@ -234,7 +230,6 @@ public class NaverService {
 		
 		HashMap<String, String> jsonMap2 = (HashMap<String, String>) jsonMap.get("response");
 //		
-		System.out.println(jsonMap2);
 		userInfo.put("id", jsonMap2.get("id").toString());
 		userInfo.put("email", jsonMap2.get("email").toString());
 		userInfo.put("mobile", jsonMap2.get("mobile").toString());
@@ -278,7 +273,6 @@ public class NaverService {
 	        conn.setRequestMethod("GET"); // HTTP POST 메서드를 사용하도록 변경
 
 	        int responseCode = conn.getResponseCode();
-	        System.out.println("네이버 탈퇴 요청 responseCode: " + responseCode);
 
 	        BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
 
@@ -289,7 +283,6 @@ public class NaverService {
 	            result += line;
 	        }
 	        
-	        System.out.println(result);
 	    } catch (IOException e) {
 	        e.printStackTrace();
 	    }

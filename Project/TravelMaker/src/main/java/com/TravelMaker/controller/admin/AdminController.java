@@ -63,7 +63,6 @@ public class AdminController {
 	public String recommendModify(Recommend_TravelDTO dto){
 		int row = adminService.updateRecommend(dto);
 
-		System.out.println(row + "행이 수정 되었습니다");
 
 		return "redirect:/Admin/admin";
 	}
@@ -101,7 +100,6 @@ public class AdminController {
 	public ModelAndView lodgecorrectionOne(LodgeDTO dto) {
 		ModelAndView mav = new ModelAndView("Admin/lodgecorrection");
 		int tmp = adminService.lodgemodifyOne(dto);
-		System.out.println(tmp != 0 ? "lodge수정 성공" : "lodge수정 실패");
 		mav.addObject("tmp", tmp);
 		return mav;
 	}
@@ -117,7 +115,6 @@ public class AdminController {
 	@PostMapping("/roomcorrection/{idx}")
 	public ModelAndView roomcorrection(Lodge_Room_TypeDTO dto) {
 		ModelAndView mav = new ModelAndView("Admin/roomcorrection");
-		System.out.println("이곳으로 이동");
 		int row = adminService.roomcorrection(dto);
 		mav.addObject("row", row);
 		return mav;
@@ -136,7 +133,6 @@ public class AdminController {
 	/* lodgeroom  DB 삽입  */
 	@PostMapping("/lodgeRoomWrite/{idx}")
 	public  String lodgeWrite(Lodge_Room_TypeDTO dto) {
-		System.out.println(dto.getLodge_Idx());
 		int row = adminService.insertLodgeRoom(dto);
 		return "redirect:/lodge/LodgeRoom/" + dto.getLodge_Idx();
 	

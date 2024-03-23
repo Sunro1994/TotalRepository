@@ -157,7 +157,6 @@ public class KaKaoService implements LoginAPIInteface {
 		Map<String, Object> jsonMap = objectMapper.readValue(result, new TypeReference<Map<String, Object>>() {
 		});
 
-		System.out.println(jsonMap.get("properties"));
 		@SuppressWarnings("unchecked")
 		Map<String, Object> properties = (Map<String, Object>) jsonMap.get("properties");
 		@SuppressWarnings("unchecked")
@@ -211,7 +210,6 @@ public class KaKaoService implements LoginAPIInteface {
 			conn.setRequestProperty("Authorization", "Bearer " + token);
 
 			int responseCode = conn.getResponseCode();
-			System.out.println("responseCode : " + responseCode);
 
 			BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
 
@@ -226,7 +224,6 @@ public class KaKaoService implements LoginAPIInteface {
 			Map<String, Object> jsonMap = objectMapper.readValue(result, new TypeReference<Map<String, Object>>() {
 			});
 
-			System.out.println(jsonMap.get("properties"));
 			@SuppressWarnings("unchecked")
 			Map<String, Object> properties = (Map<String, Object>) jsonMap.get("properties");
 			@SuppressWarnings("unchecked")
@@ -298,7 +295,6 @@ public class KaKaoService implements LoginAPIInteface {
 	        conn.setRequestProperty("Authorization", "Bearer " + access_token);
 
 	        int responseCode = conn.getResponseCode();
-	        System.out.println("카카오 탈퇴 요청 responseCode: " + responseCode);
 
 	        BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
 
@@ -349,11 +345,9 @@ public class KaKaoService implements LoginAPIInteface {
 	                in.close();
 
 	                String jsonResponse = response.toString();
-	                System.out.println(jsonResponse); // API 응답 출력
 
 	                return jsonResponse;
 	            } else {
-	                System.out.println("API 요청 실패: " + responseCode);
 	            }
 
 	        } catch (Exception e) {
