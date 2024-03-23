@@ -4,11 +4,11 @@
 
 > 목차
 > 
-> - [프로젝트 소개](https://www.notion.so/TravelMaker-ad89f29831d14b72a7c41fda3467b707?pvs=21)
-> - [팀원 소개](https://www.notion.so/TravelMaker-ad89f29831d14b72a7c41fda3467b707?pvs=21)
-> - [서비스 소개](https://www.notion.so/TravelMaker-ad89f29831d14b72a7c41fda3467b707?pvs=21)
-> - [주요 기능](https://www.notion.so/TravelMaker-ad89f29831d14b72a7c41fda3467b707?pvs=21)
-> - [링크 모음](https://www.notion.so/TravelMaker-ad89f29831d14b72a7c41fda3467b707?pvs=21)
+> - 프로젝트 소개
+> - 팀원 소개
+> - 서비스 소개
+> - 주요 기능
+> - 링크 모음
 > - ERD
 > - API 모아보기
 > - 파일 구조
