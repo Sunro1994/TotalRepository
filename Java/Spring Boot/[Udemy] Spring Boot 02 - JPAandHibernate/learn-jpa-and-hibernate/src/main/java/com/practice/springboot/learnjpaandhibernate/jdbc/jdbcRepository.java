@@ -20,7 +20,7 @@ public class jdbcRepository {
         springJdbctemplate.update("insert into mocktable(id,name,author) values(?,?,?)"
                 ,course.getId()
                 ,course.getName()
-                ,course.getAutrhor());
+                ,course.getAuthor());
     }
 
     public void delete(Long id) {
