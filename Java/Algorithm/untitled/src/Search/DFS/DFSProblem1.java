@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
-public class DFSProbblem1 {
+public class DFSProblem1 {
 
     //방문 배열
     static boolean[] visited;
@@ -24,7 +24,6 @@ public class DFSProbblem1 {
         int n = Integer.parseInt(st.nextToken());
         //에지의 개수
         int m = Integer.parseInt(st.nextToken());
-        arr = new ArrayList<>(n);
         visited = new boolean[n+1];
         A = new ArrayList[n + 1];
         for (int i = 1; i < n + 1; i++) {
@@ -50,7 +49,6 @@ public class DFSProbblem1 {
             }
         }
         System.out.println(count);
-        System.out.println(arr.toString());
     }
 
     private static void DFS(int v) {
@@ -61,7 +59,6 @@ public class DFSProbblem1 {
 
         for (int i : A[v]) {
             if (!visited[i]) {
-                arr.add(i);
                 DFS(i);
             }
         }
