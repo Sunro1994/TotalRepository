@@ -21,6 +21,7 @@ public class UserResource {
     @Autowired
     private UserDaoService service;
 
+
     public UserResource(UserDaoService service) {
         this.service = service;
     }
