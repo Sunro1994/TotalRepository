@@ -1,41 +1,27 @@
 package com.sunro.rest.webservices.restfulwebservices.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.sunro.rest.webservices.restfulwebservices.user.User;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.Size;
+import lombok.Data;
+
+import static jakarta.persistence.FetchType.*;
 
 @Entity
+@Data
 public class Post {
 
     @Id
     @GeneratedValue
     private Integer id;
 
+    @Size(min = 2)
     private String Description;
 
-    @ManyToOne
+    @ManyToOne(fetch = LAZY)
+    @JsonIgnore
     private User user;
 
-    @Override
-    public String toString() {
-        return "Post{" +
-                "id=" + id +
-                ", Description='" + Description + '\'' +
-                '}';
-    }
 
-    public Integer getId() {
-        return id;
-    }
-
-    public String getDescription() {
-        return Description;
-    }
-
-    public Post(Integer id, String description) {
-        this.id = id;
-        Description = description;
-    }
 }
