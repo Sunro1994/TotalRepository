@@ -1,11 +1,11 @@
-package Search.BFS;
+package Search.DFS;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class BFSP2667 {
+public class DFSP2667 {
 
     //배열
     static int[][] arr;

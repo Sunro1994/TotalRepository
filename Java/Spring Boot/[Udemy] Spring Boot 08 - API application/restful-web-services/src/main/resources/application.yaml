@@ -1,0 +1,38 @@
+springdoc:
+    version: '@project.version@'
+    api-docs:
+        path: /api-docs  #?? ?? ??
+    default-consumes-media-type: application/json #??? ?? ??
+    default-produces-media-type: application/json
+    swagger-ui:
+        operations-sorter: alpha #ui??? ??? ???
+        tags-sorter: alpha #ui??? ??? ???
+        path: /swagger-ui.html #ui??? ??
+        disable-swagger-default-url: true #??? ???? ??? ? ???
+        display-query-params-without-oauth2: true #oauth2?? ?? ????? ??
+        doc-expansion: none #?? ?? ????
+    paths-to-match:
+        - /**  #API???? ??? ?? ??
+
+
+
+
+logging:
+    level:
+      org:
+          springframework: info
+spring:
+    jpa:
+        show-sql: true
+        defer-datasource-initialization: true
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQLDialect
+    datasource:
+        url: jdbc:mysql://localhost:3306/Test01
+        username: sunro
+        password: leesunro12
+        driver-class-name: com.mysql.cj.jdbc.Driver
+
