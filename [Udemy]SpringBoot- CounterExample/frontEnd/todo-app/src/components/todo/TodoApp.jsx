@@ -9,10 +9,10 @@ import ErrorComponent from "./ErrorComponent";
 import ListTodosComponent from "./TodoListComponent";
 import AuthProvider, { useAuth } from "./security/AuthContext";
 
-function AuthenticatedRoute(children) {
+function AuthenticatedRoute(props) {
   const authContext = useAuth();
   if (authContext.isAuthenticated) {
-    return children;
+    return props.children;
   }
   return <Navigate to="/" />;
 }
@@ -38,9 +38,7 @@ export default function TodoApp() {
             <Route
               path="*"
               element={
-                <AuthenticatedRoute>
                   <ErrorComponent />
-                </AuthenticatedRoute>
               }
             />
             <Route
