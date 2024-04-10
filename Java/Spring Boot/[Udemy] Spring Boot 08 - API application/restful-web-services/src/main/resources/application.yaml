@@ -20,7 +20,7 @@ springdoc:
 logging:
     level:
       org:
-          springframework: info
+          springframework: debug
 spring:
     jpa:
         show-sql: true
@@ -35,4 +35,7 @@ spring:
         username: sunro
         password: leesunro12
         driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+
 
