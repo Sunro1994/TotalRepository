@@ -1,39 +1,52 @@
 import { useEffect, useState } from "react";
 import { DeleteTodo, retrieveAllTodosForUsername } from "./api/HellowWorldApiService";
+import { useAuth } from "./security/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 export default function ListTodosComponent() {
-    const today = new Date();
-    const targetDate = new Date(today.getFullYear() + 12 , today.getMonth(), today.getDay());
 
     const [todos, setTodos] = useState([]);
     const [message, setMessage] = useState(null);
 
+    const authContext = useAuth();
+
+    const username = authContext.username;
+
+    const navigate = useNavigate();
 
   useEffect(
-    () => refreshTodos(),  []
+    () => refreshTodos(),[]
   )
 
-  function refreshTodos() {
-    retrieveAllTodosForUsername('in28minutes')
+   function refreshTodos() {
+     retrieveAllTodosForUsername(username)
     .then(resp => {
       setTodos(resp.data)
   })
-
     .catch(err => console.log(err))
-    .finally(console.log('clean'))
 
   }
   function deleteTodo(id){
-    DeleteTodo('in28minutes',id)
+    DeleteTodo(username,id)
     .then(
       (resp)=> {
         setMessage(`deleted ${id} is successful`)
-
+        
       }
     ).catch(
       (error) => console.log(error)
     )
   }
+
+  function updateTodo(id){
+    console.log(id);
+    navigate(`/todo/${id}`)
+  }
+
+  function addNewTodo(){
+    navigate('/todo/-1')
+  }
+  
 
 
   return (
@@ -61,13 +74,21 @@ export default function ListTodosComponent() {
                         <td><button 
                         className="btn btn-warning" 
                         onClick={() => deleteTodo(todo.id)}>Delete</button></td>
+                        <td>
+                          <button className="btn btn-success" 
+                          onClick={() => updateTodo(todo.id)}>Update</button>
+                        </td>
                         </tr>
+                        
                     )
                 )
             }
            
           </tbody>
         </table>
+        <div>
+          <button className="btn btn-success m-5" onClick={addNewTodo}>add NewTodo</button>
+        </div>
       </div>
     </div>
   );

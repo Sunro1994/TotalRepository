@@ -20,12 +20,15 @@ export default function LoginComponent() {
     function handlePasswordChange(event) {
       setPassword(event.target.value);
     }
-    function handleSubmit(event) {
-      if (authContext.login(username,password)) {
+   async  function handleSubmit(event) {
+      if (await authContext.login(username,password)) {
         //변수사용시 ${}을 사용하고 문자열과 섞을 경우 백틱(`)을 사용한다.
         navigate(`/welcome/${username}`);
+        setUsername(username);
       } else {
         setShowErrorMessgaae(true);
+        setUsername(null);
+        return false;
       }
     }
   

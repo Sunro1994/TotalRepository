@@ -5,9 +5,9 @@ import FooterComponent from "./FooterComponent";
 import HeaderComponent from "./HeaderComponent";
 import LoginComponent from "./LoginComponent";
 import WelcomeComponent from "./WelcomeComponent";
-import ErrorComponent from "./ErrorComponent";
 import ListTodosComponent from "./TodoListComponent";
 import AuthProvider, { useAuth } from "./security/AuthContext";
+import TodoComponent from "./TodoComponent";
 
 function AuthenticatedRoute(props) {
   const authContext = useAuth();
@@ -35,12 +35,7 @@ export default function TodoApp() {
                 </AuthenticatedRoute>
               }
             />
-            <Route
-              path="*"
-              element={
-                  <ErrorComponent />
-              }
-            />
+            {/* <Route path="*" element={<ErrorComponent />} /> */}
             <Route
               path="/todos"
               element={
@@ -49,6 +44,16 @@ export default function TodoApp() {
                 </AuthenticatedRoute>
               }
             />
+
+            <Route
+              path="/todo/:id"
+              element={
+                <AuthenticatedRoute>
+                  <TodoComponent />
+                </AuthenticatedRoute>
+              }
+            />
+
             <Route
               path="/logout"
               element={
@@ -59,8 +64,8 @@ export default function TodoApp() {
             />
           </Routes>
         </BrowserRouter>
-      </AuthProvider>
       <FooterComponent />
+      </AuthProvider>
     </div>
   );
 }
