@@ -13,6 +13,10 @@ public class HelloWorldController {
     public String helloWorld(){
         return "Hello World v2";
     }
+    @GetMapping(path = "/basicauth")
+    public String basicAuthCheck(){
+        return "Success";
+    }
 
     @GetMapping(path = "/hello-world-bean")
     public HellowWorldBean helloWorldBean(){
