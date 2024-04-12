@@ -11,9 +11,9 @@ export default function WelcomeComponent() {
 
   const [message, setMessage]  = useState(null);
 
-  function callHelloWorldRestApi(){
+  async function callHelloWorldRestApi(){
 
-    retrieveHelloWorldPathVariable('surno')
+    await retrieveHelloWorldPathVariable('surno')
     .then((response)=> successfulResponse(response))
     .catch((error) => errorResponse(error))
     .finally( () => console.log('clean up'))
@@ -28,7 +28,6 @@ export default function WelcomeComponent() {
     console.log(error)
   }
 
-  console.log(username);
   return (
     <div>
       <h1>Welcome Test Page!</h1>
