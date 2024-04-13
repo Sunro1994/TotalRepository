@@ -2,7 +2,7 @@ package twoPoint;
 
 import java.util.*;
 
-public class TowPointerInflearn03_01 {
+public class TwoPointerInflearn03_01 {
     // 첫째 줄 : 첫번째 배열 크기(최대 100)
     // 두번재 줄 오름차순 배열 원소
     // 세번째 줄 : 두번째 배열 크기(최대100)
