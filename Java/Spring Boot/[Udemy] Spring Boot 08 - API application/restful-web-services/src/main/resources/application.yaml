@@ -1,18 +1,18 @@
 springdoc:
     version: '@project.version@'
     api-docs:
-        path: /api-docs  #?? ?? ??
-    default-consumes-media-type: application/json #??? ?? ??
+        path: /api-docs
+    default-consumes-media-type: application/json
     default-produces-media-type: application/json
     swagger-ui:
-        operations-sorter: alpha #ui??? ??? ???
-        tags-sorter: alpha #ui??? ??? ???
-        path: /swagger-ui.html #ui??? ??
-        disable-swagger-default-url: true #??? ???? ??? ? ???
-        display-query-params-without-oauth2: true #oauth2?? ?? ????? ??
-        doc-expansion: none #?? ?? ????
+        operations-sorter: alpha
+        tags-sorter: alpha
+        path: /swagger-ui.html
+        disable-swagger-default-url: true
+        display-query-params-without-oauth2: true
+        doc-expansion: none
     paths-to-match:
-        - /**  #API???? ??? ?? ??
+        - /**
 
 
 
