@@ -2,38 +2,48 @@ package twoPoint;
 
 import java.util.*;
 
+//투포인터는 오름차순 정렬이 필요하다.
+
 public class TwoPointerInflearn03_02 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-
-        int firstLength = sc.nextInt();
-        int[] arr = new int[firstLength];
-
-
-        for (int i = 0; i < firstLength; i++) {
-            int n = sc.nextInt();
-            arr[i] = n;
+        List<Integer> list = new ArrayList<>();
+        int n = sc.nextInt();
+        int[] arr1 = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr1[i] = sc.nextInt();
         }
 
-
-        int secondLength = sc.nextInt();
-        int[] secondArr = new int[secondLength];
-        for (int i = 0; i < secondLength; i++) {
-            int n = sc.nextInt();
-            secondArr[i] = n;
+        int m = sc.nextInt();
+        int[] arr2 = new int[m];
+        for (int i = 0; i < n; i++) {
+            arr2[i] = sc.nextInt();
         }
 
-int left =0;
-int right= 0;
-        while (right != secondArr.length-1) {
-            if (arr[left] == secondArr[right]) {
-                left++;
-                System.out.print(secondArr[right]);
-                right=0;
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+
+        int lt=0;
+        int rt=0;
+
+        while (lt<n && rt < m) {
+            if (arr1[lt] == arr2[rt]) {
+                list.add(arr1[lt]);
+                lt++;
+                rt++;
+            } else if (arr1[lt] < arr2[rt]) {
+                lt++;
             }else{
-                right++;
+                rt++;
             }
+
         }
+        for (Integer i : list) {
+            System.out.print(i+" ");
+        }
+
+
+
     }
 }
