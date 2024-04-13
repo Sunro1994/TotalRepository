@@ -1,0 +1,40 @@
+springdoc:
+  version: '@project.version@'
+  api-docs:
+    path: /api-docs
+  default-consumes-media-type: application/json
+  default-produces-media-type: application/json
+  swagger-ui:
+    operations-sorter: alpha
+    tags-sorter: alpha
+    path: /swagger-ui.html
+    disable-swagger-default-url: true
+    display-query-params-without-oauth2: true
+    doc-expansion: none
+  paths-to-match:
+    - /**
+
+spring:
+  jpa:
+    show-sql: true
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: create
+
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+        use_sql_comments: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/findTeam
+    username: sunro
+    password: leesunro12
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+logging:
+  level:
+    org.hibernate.sql : info
+    org.hibernate.type : trace
+
