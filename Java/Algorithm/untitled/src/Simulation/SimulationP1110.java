@@ -1,15 +1,15 @@
-//package Simulation;
-//
-//import java.util.Scanner;
-//
-//public class SimulationP1110 {
-//    public static void main(String[] args) {
-//        Scanner sc = new Scanner(System.in);
-//        int N = sc.nextInt();
-//
+package Simulation;
+
+import java.util.Scanner;
+
+public class SimulationP1110 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+
 //        System.out.println(showCycleCount(N));
-//    }
-//
+    }
+
 //    private static int showCycleCount(int target) {
 //        int sum =0;
 //        int whileSum;
@@ -35,4 +35,4 @@
 //
 //        return 0;
 //    }
-//}
+}
