@@ -57,10 +57,11 @@ public class JwtAuthorizationFilter extends OncePerRequestFilter {
         }
 
         //3. OPTIONS 요청일 경우 -> 로직 처리 없이 다음 필터로 이동
-        if (request.getMethod().equalsIgnoreCase("OPTIONS")) {
-            filterChain.doFilter(request,response);
-            return;
-        }
+//
+//        if (request.getMethod().equalsIgnoreCase("OPTIONS")) {
+//            filterChain.doFilter(request,response);
+//            return;
+//        }
 
         //[step1] Client에서  API를 요청할때 쿠키를 확인
         Cookie[] cookies = request.getCookies();
