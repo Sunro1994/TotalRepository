@@ -30,8 +30,10 @@ public class User {
     @Column(name=  "email", nullable = false)
     private String email;
 
+    @Column(name = "gender", nullable = false)
+    private String gender;
 
-    @Column(name = "role",nullable = false)
+    @Column(name = "role", nullable = false)
     @Enumerated(EnumType.STRING)
     private RoleType roleType;
 
@@ -39,8 +41,9 @@ public class User {
     @Enumerated(EnumType.STRING)
     private UserStatus userStatus;
 
-
     private LocalDateTime createdAt;
 
     private  LocalDateTime updatedAt;
+
+    //
 }
